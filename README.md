@@ -2,7 +2,7 @@
 
 **DSGCP × ShopOS · Mumbai · Oct 7 or 8** *(date to be confirmed)*
 
-> 📖 **Read the handbook:** *(GitHub Pages link goes here once Pages is enabled)*
+> 📖 **Read the handbook: https://arth6025.github.io/buildathon-handbook/**
 
 A working handbook for a two-track buildathon on ad creative and high-converting landing pages. Patterns you apply, prompts you paste, templates you fill, and the rubric you're scored against — all open, all taking pull requests.
 
@@ -134,4 +134,4 @@ The fastest useful contribution: **add a pattern you've actually seen work, with
 - [ ] Confirm the date — Oct 7 or 8
 - [ ] Agree the scoring weights before the day (current set is a proposal, deliberately weighted toward argument over polish)
 - [ ] Section 04 item 08 — Stack & Agent Map, blocked on the tooling decision
-- [ ] Enable GitHub Pages and drop the link at the top of this file
+- [x] Enable GitHub Pages
