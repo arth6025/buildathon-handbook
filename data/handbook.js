@@ -302,12 +302,23 @@ window.SECTIONS = [
         variants, three weeks, one answer. At that speed a portfolio was impossible. Naming the old
         constraint is what makes the reframe land as an observation rather than an accusation.</p>
 
+      <h3>Ask for the thing you actually want</h3>
+      <p>The easiest mistake is inheriting someone else's call to action. A pitch that ends in
+        “book a 30-minute session” is selling a service; a pitch that ends in “go build one” is
+        selling capacity. <strong>They are different businesses, and the CTA is where you declare
+        which one you're in.</strong></p>
+      <p>Ours is the second. The handbook is open, the repo takes pull requests, and the ask is to
+        build — because the product is a workflow you own, not a batch of pages we deliver. If your
+        build is a tool, your CTA is “use it.” If it's a service, it's “talk to us.” Pick
+        deliberately rather than copying whatever the page you admired happened to do.</p>
+
       <div class="callout">
-        <p><strong>The worked example is in this repo.</strong> A full pitch page built on these
-          two moves — hero, reframe, three steps, offer, objection FAQ, single repeated ask —
-          lives at <a href="pitch/">/pitch</a>. It also obeys the Track 02 rules in the swipe
-          file: no top nav, one goal, no autoplay hero, sticky CTA on mobile, proof next to the
-          ask. Read it as a build reference, then replace the argument with yours.</p>
+        <p><strong>The worked example is the front page of this site.</strong> A full pitch built
+          on these moves — hero, reframe, why-a-workflow, three steps, offer, objection FAQ, one
+          repeated ask — is at <a href="../">the root</a>. It obeys the Track 02 rules in the
+          swipe file: no top nav, one goal, no autoplay hero, sticky CTA on mobile, proof beside
+          the ask, zero form fields. Read it as a build reference, then replace the argument with
+          yours.</p>
       </div>
 
       <div class="callout warn">

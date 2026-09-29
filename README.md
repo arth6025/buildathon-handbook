@@ -2,10 +2,14 @@
 
 **DSGCP × ShopOS · Mumbai · Oct 7 or 8** *(date to be confirmed)*
 
-> 📖 **Read the handbook: https://arth6025.github.io/buildathon-handbook/**
-> 🎯 **Worked pitch page: https://arth6025.github.io/buildathon-handbook/pitch/**
+## Build a workflow that converts for you.
 
-A working handbook for a two-track buildathon on ad creative and high-converting landing pages. Patterns you apply, prompts you paste, templates you fill, and the rubric you're scored against — all open, all taking pull requests.
+Meta already picks the right ad for every single impression. Then the click lands — and every visitor sees the same page, because until now somebody had to build each one by hand. **Build the workflow instead.**
+
+> 🎯 **The pitch: https://arth6025.github.io/buildathon-handbook/**
+> 📖 **The handbook: https://arth6025.github.io/buildathon-handbook/handbook/**
+
+Everything is open — 52 patterns, 13 prompts, two brief templates, the teardown protocol and the scoring rubric. No form, no gate, and it takes pull requests.
 
 ---
 
@@ -110,16 +114,17 @@ Then open `http://localhost:8000`. Opening `index.html` directly from the filesy
 ## Repo layout
 
 ```
-index.html          shell + sidebar
-app.js              renderer — no dependencies
-assets/styles.css   all styling, theme tokens at the top
-data/swipe.js       the 52 swipe-file pattern cards
-data/prompts.js     prompts, brief templates, launch-post skeleton
-data/handbook.js    sections, teardown protocol, scoring, build ideas
-pitch/              worked example: a real post-click pitch page
+index.html            THE PITCH — the front door
+assets/pitch.css      pitch styling
+handbook/index.html   the handbook shell + sidebar
+assets/styles.css     handbook styling, theme tokens at the top
+app.js                renderer — no dependencies
+data/swipe.js         the 52 swipe-file pattern cards
+data/prompts.js       prompts, brief templates, launch-post skeleton
+data/handbook.js      sections, teardown protocol, scoring, build ideas
 ```
 
-The `pitch/` page is a standalone build reference for Track 02 — it obeys the rules the swipe file argues for (no top nav, one goal, no autoplay hero, proof beside the ask, sticky CTA on mobile, zero form fields). Read it, then replace the argument with yours.
+The root page is both the pitch and a build reference for Track 02 — it obeys the rules the swipe file argues for: no top nav, one goal, no autoplay hero, proof beside the ask, sticky CTA on mobile, zero form fields. Read it, then replace the argument with yours.
 
 All content lives in `data/`. You never need to touch `app.js` to add a pattern, a prompt or a section.
 
