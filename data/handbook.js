@@ -280,6 +280,43 @@ window.SECTIONS = [
           pass. The rubric in Scoring rewards exactly the things this structure forces you to
           decide.</p>
       </div>
+
+      <h2>The post-click pitch</h2>
+      <p>Track 02 has its own pitch, and it's a sharper one, because it rests on a gap the buyer
+        can verify in thirty seconds by looking at their own account. Two moves do the work.</p>
+
+      <h3>Borrow a model they've already bought</h3>
+      <p>Meta predicts the best ad for every single impression — the buyer already believes this,
+        because they watch it work every day. <strong>The pitch extends a mechanism they've
+        accepted rather than introducing one they haven't.</strong> Before the click, Meta chooses
+        the ad. After the click, everyone sees the same page. Stated that plainly, the gap argues
+        for itself.</p>
+
+      <h3>Reframe with a question they can't answer</h3>
+      <p>“You'd never run two ads. So why run one page?” This is stronger than any benefit claim
+        because it <strong>exposes an inconsistency in what they already do</strong> rather than
+        asserting something about you. They kill losing creative in a day; the page has been
+        untouched since launch.</p>
+      <p>Then — and this is the part that stops it being glib — <strong>name why nobody did it
+        before.</strong> Every landing page A/B test had to wait for statistical significance: two
+        variants, three weeks, one answer. At that speed a portfolio was impossible. Naming the old
+        constraint is what makes the reframe land as an observation rather than an accusation.</p>
+
+      <div class="callout">
+        <p><strong>The worked example is in this repo.</strong> A full pitch page built on these
+          two moves — hero, reframe, three steps, offer, objection FAQ, single repeated ask —
+          lives at <a href="pitch/">/pitch</a>. It also obeys the Track 02 rules in the swipe
+          file: no top nav, one goal, no autoplay hero, sticky CTA on mobile, proof next to the
+          ask. Read it as a build reference, then replace the argument with yours.</p>
+      </div>
+
+      <div class="callout warn">
+        <p><strong>Don't inherit someone else's number.</strong> A pitch like this usually carries
+          a headline lift figure. Ours deliberately doesn't, because we haven't measured one yet —
+          the page claims the <em>method</em> (“measured against a live holdout on your own
+          traffic”) instead of a result. Put a number there only once you've earned it. An
+          unearned benchmark is the fastest way to lose a room that buys media for a living.</p>
+      </div>
     </div>`
   },
 

@@ -3,6 +3,7 @@
 **DSGCP × ShopOS · Mumbai · Oct 7 or 8** *(date to be confirmed)*
 
 > 📖 **Read the handbook: https://arth6025.github.io/buildathon-handbook/**
+> 🎯 **Worked pitch page: https://arth6025.github.io/buildathon-handbook/pitch/**
 
 A working handbook for a two-track buildathon on ad creative and high-converting landing pages. Patterns you apply, prompts you paste, templates you fill, and the rubric you're scored against — all open, all taking pull requests.
 
@@ -115,7 +116,10 @@ assets/styles.css   all styling, theme tokens at the top
 data/swipe.js       the 52 swipe-file pattern cards
 data/prompts.js     prompts, brief templates, launch-post skeleton
 data/handbook.js    sections, teardown protocol, scoring, build ideas
+pitch/              worked example: a real post-click pitch page
 ```
+
+The `pitch/` page is a standalone build reference for Track 02 — it obeys the rules the swipe file argues for (no top nav, one goal, no autoplay hero, proof beside the ask, sticky CTA on mobile, zero form fields). Read it, then replace the argument with yours.
 
 All content lives in `data/`. You never need to touch `app.js` to add a pattern, a prompt or a section.
 
