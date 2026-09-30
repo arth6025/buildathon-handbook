@@ -88,14 +88,15 @@ Reference libraries to browse before the day. These are other people's collectio
 |---|---|---|
 | 01 | Welcome | The outcome, the tracks, how to use the day |
 | 02 | What good looks like | Worked case + the transferable pattern + build ideas |
-| 03 | The pitch | Six-part anatomy of a pitch page, and the ShopOS festive pitch |
-| 04 | The toolkit | Index of everything below |
-| 05 | Swipe file | 52 patterns across 9 rails — hooks, formats, scripts, LP patterns, benchmarks |
-| 06 | Prompt chain | 13 prompts that run in sequence, research → page |
-| 07 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
-| 08 | Briefs | Creative brief + landing page brief |
-| 09 | Scoring | Judging rubric per track, weights published |
-| 10 | Ship & after | Submission, 3-minute demo, credits + FDE, launch-post skeleton |
+| 03 | The AI build | Seven-stage spec for the festive creative engine — assigned build |
+| 04 | The pitch | Six-part anatomy of a pitch page, and the ShopOS festive pitch |
+| 05 | The toolkit | Index of everything below |
+| 06 | Swipe file | 52 patterns across 9 rails — hooks, formats, scripts, LP patterns, benchmarks |
+| 07 | Prompt chain | 13 prompts that run in sequence, research → page |
+| 08 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
+| 09 | Briefs | Creative brief + landing page brief |
+| 10 | Scoring | Judging rubric per track, weights published |
+| 11 | Ship & after | Submission, 3-minute demo, credits + FDE, launch-post skeleton |
 
 ---
 
@@ -135,6 +136,16 @@ All content lives in `data/`. You never need to touch `app.js` to add a pattern,
 Pull requests welcome — especially new patterns, new prompts, and new outcome cases from teams who shipped. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the shape of each entry.
 
 The fastest useful contribution: **add a pattern you've actually seen work, with the mechanism and a source.** A pattern without a mechanism is an opinion.
+
+---
+
+## Assigned builds
+
+| Build | Owner | Status | Spec |
+|---|---|---|---|
+| **Festive creative engine** — one product URL in, a labelled batch of testable ad variations out. Pairs a frontier model (Claude or GPT) with an agent across seven stages. | **Prashant + engineer** | Not started | [The AI build](https://arth6025.github.io/buildathon-handbook/handbook/#ai-build) |
+
+The spec is written to be implementable without further briefing. Open a PR against `data/handbook.js` as it gets built, and replace the stage descriptions with what the thing actually does once it does it.
 
 ---
 

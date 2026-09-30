@@ -185,6 +185,123 @@ window.SECTIONS = [
   },
 
   {
+    id:"ai-build", nav:"The AI build", tick:"New",
+    title:`One product in. <em>Fifty ads out.</em>`,
+    lede:`A worked spec for the creative engine: pair a frontier model with an agent and turn a single product into a season's worth of testable variations in one pass. <strong>Built for the festive run, not for Black Friday.</strong>`,
+    html:`<div class="prose">
+      <h2>The pattern being copied</h2>
+      <p>The version going around collapses what used to be five separate rounds — strategy,
+        scripting, casting, shooting, production — into a single workflow. One product goes in,
+        fifty-plus ad variations come out, and the model handles creative angles, synthetic actors,
+        real-life product situations, and variation across skin tones, textures, hair, locations
+        and environments.</p>
+      <p><strong>The transferable claim is throughput, not novelty.</strong> Nothing in that list
+        is individually new. What's new is that it happens in one pass, which means the unit of
+        work stops being “an ad” and becomes “a test batch.”</p>
+
+      <h2>Why festive isn't a find-and-replace</h2>
+      <p>The original is built for Black Friday — a single-day, discount-led, largely
+        single-market event. Our festive run is none of those things, and the differences change
+        the spec rather than just the copy.</p>
+      <div class="lesson">
+        <div class="lesson-row"><div class="lk">Occasion, not discount</div><div class="lv">Black Friday's angle is price. The festive angles are <b>gifting, family, new beginnings, self-reward and restocking</b> — arguments that survive with the discount removed. An angle that collapses without a percentage-off is a Black Friday angle wearing festive clothes.</div></div>
+        <div class="lesson-row"><div class="lk">A season, not a day</div><div class="lv">Navratri through Diwali is weeks of distinct moments, each with its own buying reason. That's not one campaign — it's a <b>calendar of angles</b>, which is exactly what a workflow is good at and a shoot is not.</div></div>
+        <div class="lesson-row"><div class="lk">Regional variation is the axis</div><div class="lv">The reference varies skin tone and environment. Here the high-value axis is <b>region, language and household context</b> — the same product, the same angle, rendered for genuinely different festive settings. This is where the variation count actually earns its keep.</div></div>
+        <div class="lesson-row"><div class="lk">Delivery is the objection</div><div class="lv">Festive gifting creates an objection Black Friday doesn't: <b>will it arrive before the date</b>. Every variation needs a proof beat that answers it, or the creative works and the conversion doesn't.</div></div>
+      </div>
+
+      <h2>The build</h2>
+      <p>Seven stages. Stages 01–03 are the prompt chain in this handbook, already written — don't
+        rewrite them. Stages 04–07 are what the team builds around it.</p>
+      <div class="steps">
+        <div class="step"><div class="step-no">01</div><div>
+          <h4>Ingest the product</h4>
+          <p>One input: a Shopify product or collection URL. Pull title, description, images,
+            price and — the part most teams skip — <strong>the existing reviews</strong>, which are
+            where the customer's own language lives.</p>
+          <p class="ask">Prompt: Voice-of-customer extraction. Feed it the reviews, not the product copy.</p>
+        </div></div>
+        <div class="step"><div class="step-no">02</div><div>
+          <h4>Generate festive angles</h4>
+          <p>Twelve angles, then filtered by the festive pass — which ranks them by how badly they
+            break when you remove the discount. <strong>The survivors are the ones worth
+            producing.</strong></p>
+          <p class="ask">Prompts: Angle generation → Festive angle pass. Both already in the chain.</p>
+        </div></div>
+        <div class="step"><div class="step-no">03</div><div>
+          <h4>Write and stress-test the hooks</h4>
+          <p>Twenty hooks per surviving angle, then killed down by the stress test. Expect to keep
+            two or three per angle. This is the step that decides whether the other fifty
+            variations are worth rendering.</p>
+          <p class="ask">Prompts: Hook batch → Hook stress test.</p>
+        </div></div>
+        <div class="step"><div class="step-no">04</div><div>
+          <h4>Expand across the festive matrix</h4>
+          <p>Here the agent takes over. Each surviving hook is rendered across the variation axes
+            that matter for the season: <strong>occasion moment × regional setting × household
+            context × format</strong>. Four hooks across a modest matrix is where the fifty comes
+            from — it's multiplication, not fifty separate ideas.</p>
+          <p class="ask">Cap the matrix before you run it. Unbounded expansion produces volume nobody reviews.</p>
+        </div></div>
+        <div class="step"><div class="step-no">05</div><div>
+          <h4>Produce the assets</h4>
+          <p>Scripts to synthetic presenters, product imagery into festive scenes, statics for
+            retargeting. Everything lands in the ratios you'd actually run, with copy attached —
+            <strong>ready for Ads Manager without a second tool.</strong></p>
+          <p class="ask">The last mile is where these systems usually die. Budget real time for it.</p>
+        </div></div>
+        <div class="step"><div class="step-no">06</div><div>
+          <h4>Label everything on the way out</h4>
+          <p>Every asset carries its angle, hook pattern, and the single variable that distinguishes
+            it from its sibling. Without this you have fifty ads and no ability to learn from
+            them — <strong>volume without attribution is just spend.</strong></p>
+          <p class="ask">This is also what the scoring rubric rewards. Build it in, don't bolt it on.</p>
+        </div></div>
+        <div class="step"><div class="step-no">07</div><div>
+          <h4>Close the loop</h4>
+          <p>Feed hook rate and CPA back in, retire the fatigued, and let the iteration prompt
+            generate fresh openings on bodies that are already winning. <strong>This is the step
+            that makes it a workflow rather than a generator.</strong></p>
+          <p class="ask">Prompt: Iteration pass. Without stage 07 you've built a batch tool.</p>
+        </div></div>
+      </div>
+
+      <h2>Which model</h2>
+      <p>The chain is model-agnostic and works on either <strong>Claude or GPT</strong> — the
+        prompts are written to be portable, and nothing in stages 01–03 depends on a
+        provider-specific feature. Pick on what you already have access to and credits for.</p>
+      <p>The one thing that does matter: stages 02 and 03 hand the model long, constraint-heavy
+        prompts with explicit rejection criteria, and the output is only useful if those
+        constraints are actually honoured. <strong>Test both on the hook batch prompt and keep
+        whichever discards more of its own output.</strong> A model that returns twenty hooks when
+        twelve should have been rejected is doing the expensive half of the work and skipping the
+        valuable half.</p>
+
+      <h2>Done looks like</h2>
+      <ul>
+        <li>A store URL goes in with no other configuration.</li>
+        <li>Out comes a labelled batch — angle, hook pattern, variable — in runnable ratios.</li>
+        <li>Every angle survives the discount being removed.</li>
+        <li>Every variation carries a delivery-timing proof beat.</li>
+        <li>Performance data can be fed back in to produce the next batch.</li>
+      </ul>
+
+      <div class="callout warn">
+        <p><strong>Owner: Prashant + engineer.</strong> This is an assigned build, not an idea on
+          the pile — the spec above is meant to be implementable without further briefing. Open a
+          PR against this section as it gets built, and replace the stage descriptions with what
+          the thing actually does once it does it.</p>
+      </div>
+
+      <div class="callout">
+        <p><strong>Timing is the whole argument.</strong> The buildathon sits just ahead of the
+          festive peak. A creative engine that exists in October is a revenue decision; the same
+          engine in December is a learning experience.</p>
+      </div>
+    </div>`
+  },
+
+  {
     id:"pitch", nav:"The pitch",
     title:`Sell the supply, <em>not the software.</em>`,
     lede:`Whatever you build, you have to pitch it — on the day to judges, and afterwards to a brand. This is the anatomy of a pitch page that works for a creative product, and the ShopOS festive pitch built on the same bones.`,
