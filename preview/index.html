@@ -17,15 +17,24 @@
     border-bottom:3px solid #FFF8E6; display:flex; align-items:center;
     gap:clamp(12px,2.5vw,28px); flex-wrap:wrap; }
 
-  /* wordmark — yellow discs so SLOOSH still reads, pupils on top */
-  .mark { font-size:26px; font-weight:800; letter-spacing:-0.055em; line-height:1;
-    display:flex; align-items:center; gap:0; flex:0 0 auto; }
-  .mark .y { color:var(--sl-yellow); }
-  .mark .eyes { display:inline-flex; gap:.015em; margin:0 .02em; }
-  .mark .eyes i { width:.66em; height:.66em; border-radius:50%;
-    background:var(--sl-yellow); position:relative; display:inline-block; }
-  .mark .eyes i::after { content:""; position:absolute; width:.30em; height:.30em;
-    border-radius:50%; background:var(--sl-ink); left:.18em; top:.21em; }
+  /* event lockup: Assemble, then the two hosts */
+  .lockup { display:flex; align-items:center; gap:16px; flex:0 0 auto; flex-wrap:wrap; }
+  .event { display:flex; flex-direction:column; gap:3px; }
+  .event .nm { font-size:25px; font-weight:800; letter-spacing:-0.045em;
+    line-height:1; color:var(--sl-yellow); }
+  .event .meta { font-family:var(--sl-mono); font-size:10px; letter-spacing:.1em;
+    text-transform:uppercase; color:#9A9A94; white-space:nowrap; }
+
+  .hosts { display:flex; align-items:center; gap:13px;
+    padding-left:16px; border-left:2px solid #2E2E2E; }
+  .hosts .lbl { font-family:var(--sl-mono); font-size:9px; letter-spacing:.11em;
+    text-transform:uppercase; color:#6E6E6E; }
+  .hosts a { display:flex; align-items:center; opacity:.92; transition:opacity .15s; }
+  .hosts a:hover { opacity:1; }
+  .hosts img.shopos { height:20px; width:auto; display:block; }
+  /* DSGCP lockup is 419×300 — needs more height than a wordmark to stay legible */
+  .hosts .dsgcp { height:36px; width:auto; display:block; }
+  .hosts .x { color:#5A5A54; font-size:13px; font-weight:700; }
 
   .tabs { display:flex; gap:7px; flex-wrap:wrap; }
   .tabs button { font-family:var(--sl-display); font-size:13.5px; font-weight:700;
@@ -70,8 +79,21 @@
 <body>
 
 <header class="top">
-  <div class="mark">
-    <span class="y">SL</span><span class="eyes"><i></i><i></i></span><span class="y">SH</span>
+  <div class="lockup">
+    <div class="event">
+      <div class="nm">Assemble</div>
+      <div class="meta">Chapter 1 · Mumbai · 10 Oct</div>
+    </div>
+    <div class="hosts">
+      <span class="lbl">By</span>
+      <a href="https://shopos.ai/" target="_blank" rel="noopener" aria-label="ShopOS">
+        <img class="shopos" src="../assets/logos/shopos-white.svg" alt="ShopOS">
+      </a>
+      <span class="x">×</span>
+      <a href="https://www.dsgcp.com/" target="_blank" rel="noopener" aria-label="DSG Consumer Partners">
+        <img class="dsgcp" src="../assets/logos/dsgcp-white.svg" alt="DSG Consumer Partners">
+      </a>
+    </div>
   </div>
 
   <div class="tabs" id="tabs" role="tablist">

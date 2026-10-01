@@ -15,18 +15,26 @@ a { color:var(--sl-yellow); }
 .wrap { max-width:1500px; margin:0 auto; padding:0 clamp(16px,3.5vw,44px) 80px; }
 
 /* ---------- masthead ---------- */
-.top { padding:clamp(34px,5vw,64px) 0 clamp(22px,3vw,38px); }
-.mark { font-size:clamp(44px,7.4vw,84px); font-weight:800; letter-spacing:-0.055em;
-  line-height:1; display:flex; align-items:center; gap:0; margin-bottom:14px; }
-.mark .y { color:var(--sl-yellow); }
-/* the two O's: yellow discs so the word still reads SLOOSH, with pupils on top */
-.mark .eyes { display:inline-flex; gap:.015em; margin:0 .02em; }
-.mark .eyes i { width:.66em; height:.66em; border-radius:50%; background:var(--sl-yellow);
-  position:relative; display:inline-block; }
-.mark .eyes i::after { content:""; position:absolute; width:.30em; height:.30em;
-  border-radius:50%; background:var(--sl-ink); left:.18em; top:.21em; }
-.by { font-size:14px; font-weight:700; letter-spacing:.02em; color:var(--sl-yellow);
-  margin:0 0 20px; }
+.top { padding:clamp(30px,4.5vw,56px) 0 clamp(22px,3vw,38px); }
+
+/* event lockup: Assemble, then the two hosts */
+.lockup { display:flex; align-items:center; gap:18px; flex-wrap:wrap; margin-bottom:26px; }
+.event { display:flex; flex-direction:column; gap:4px; }
+.event .nm { font-size:30px; font-weight:800; letter-spacing:-0.045em; line-height:1;
+  color:var(--sl-yellow); }
+.event .meta { font-family:var(--sl-mono); font-size:10.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:#9A9A94; white-space:nowrap; }
+.hosts { display:flex; align-items:center; gap:14px;
+  padding-left:18px; border-left:2px solid #2E2E2E; }
+.hosts .lbl { font-family:var(--sl-mono); font-size:9.5px; letter-spacing:.11em;
+  text-transform:uppercase; color:#6E6E6E; }
+.hosts a { display:flex; align-items:center; opacity:.92; transition:opacity .15s; }
+.hosts a:hover { opacity:1; }
+.hosts img.shopos { height:21px; width:auto; display:block; }
+/* DSGCP lockup is 419x300 - needs more height than a wordmark to stay legible */
+.hosts .dsgcp { height:38px; width:auto; display:block; }
+.hosts .x { color:#5A5A54; font-size:14px; font-weight:700; }
+
 h1 { font-size:clamp(30px,4.6vw,56px); font-weight:800; letter-spacing:-0.042em;
   line-height:1.02; margin:0 0 16px; max-width:19ch; text-wrap:balance; }
 .lede { font-size:clamp(15px,1.4vw,18px); line-height:1.55; max-width:62ch;
