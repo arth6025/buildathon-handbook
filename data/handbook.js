@@ -464,15 +464,16 @@ window.SECTIONS = [
     title:`128 problems your brand <em>already has.</em>`,
     lede:`The ShopOS × DSG deck, rewritten for the festive run. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by section, or search a brand name.</strong>`,
     html:`<div class="prose">
-      <p><strong>84 cards name a specific DSG portfolio brand</strong>, drawn from the 70 live
-        companies. The other 44 — <em>Every brand</em> and <em>Shopify pages</em> — are
-        cross-cutting by design, as in the original deck.</p>
+      <p><strong>Every card names a brand.</strong> All 128 are matched to one of the 70 live DSG
+        portfolio companies — Active or Partially Exited, every one above ₹1 Cr. Brand and problem
+        are both chosen to fit the build on the back, so the fix always suits the company named.</p>
       <p>Pick the card that makes you wince. That is your build for the day. If two apply, take the
         one whose metric you already report on, because you will be able to prove the change.</p>
       <div class="callout warn">
         <p><strong>These are conversation starters, not findings.</strong> Each problem is inferred
-          from the brand's category and the festive calendar — not from an audit of anyone's store
-          or ad account. The framing is conditional on purpose: flip it <em>if</em> it's true.</p>
+          from the brand's category, its build, and the festive calendar — not from an audit of
+          anyone's store or ad account. The framing is conditional on purpose: flip it <em>if</em>
+          it's true.</p>
       </div>
     </div>
     <div class="cards-mount" id="cards-mount"></div>`
@@ -490,6 +491,71 @@ window.SECTIONS = [
     title:`Above the fold, proof, <em>and what you're charging them.</em>`,
     lede:`Everything after the click. The creative sold a promise; these are the patterns that decide whether the page keeps it. Same card grammar as the creative file — <strong>dashed</strong> is a benchmark, a <strong>red edge</strong> tested negative.`,
     html:"__SWIPE_LP__"
+  },
+
+  {
+    id:"content-swipe", nav:"Content swipe file", tick:"New",
+    title:`Where to go <em>and look at the work.</em>`,
+    lede:`The libraries worth opening before you build anything. <strong>Study how patterns get filed, not just what's in them</strong> — the taxonomy is usually more useful than any single asset.`,
+    html:`<div class="prose">
+      <p>Everything in sections 07 and 08 was distilled from sources like these. Go upstream when
+        you want more than the pattern — the live examples, the current ones, the ones running in
+        your category this week.</p>
+
+      <h2>Ad creative</h2>
+      <div class="index-list">
+        <a class="index-item" href="https://www.facebook.com/ads/library/" target="_blank" rel="noopener">
+          <div class="n">01</div>
+          <div><div class="nm">Meta Ad Library</div><div class="ds">The primary source, and free. Every active ad, searchable by advertiser. <strong>How long an ad has been running is the only real performance signal you get without an account</strong> — a ninety-day ad is evidence, a new one is a guess.</div></div>
+          <div class="go">Start here →</div></a>
+        <a class="index-item" href="https://ads.tiktok.com/business/creativecenter/" target="_blank" rel="noopener">
+          <div class="n">02</div>
+          <div><div class="nm">TikTok Creative Center</div><div class="ds">Top-performing ads by category, region and objective, with engagement data attached. Free, and the regional filter matters for India.</div></div>
+          <div class="go">Free →</div></a>
+        <a class="index-item" href="https://www.foreplay.co/" target="_blank" rel="noopener">
+          <div class="n">03</div>
+          <div><div class="nm">Foreplay</div><div class="ds">Saved-ad libraries and brand tracking. The useful part is building your own filed collection rather than browsing someone else's.</div></div>
+          <div class="go">Paid →</div></a>
+        <a class="index-item" href="https://www.atria.so/" target="_blank" rel="noopener">
+          <div class="n">04</div>
+          <div><div class="nm">Atria</div><div class="ds">Creative analytics and format breakdowns — what shape of asset is working, not just which one.</div></div>
+          <div class="go">Paid →</div></a>
+        <a class="index-item" href="https://motionapp.com/" target="_blank" rel="noopener">
+          <div class="n">05</div>
+          <div><div class="nm">Motion</div><div class="ds">Creative reporting against spend. Closest thing to a dashboard for the questions in section 07's benchmark rail.</div></div>
+          <div class="go">Paid →</div></a>
+      </div>
+
+      <h2>Landing pages and conversion</h2>
+      <div class="index-list">
+        <a class="index-item" href="https://baymard.com/" target="_blank" rel="noopener">
+          <div class="n">06</div>
+          <div><div class="nm">Baymard Institute</div><div class="ds">Large-sample ecommerce UX research — <strong>the closest thing to primary evidence in this space</strong>, and the one source here that isn't a vendor blog. Check claims against it before you quote them.</div></div>
+          <div class="go">Research →</div></a>
+        <a class="index-item" href="https://land-book.com/" target="_blank" rel="noopener">
+          <div class="n">07</div>
+          <div><div class="nm">Land-book</div><div class="ds">A curated gallery. Useful for structure and sequencing; judge it on layout logic rather than visual taste.</div></div>
+          <div class="go">Gallery →</div></a>
+        <a class="index-item" href="https://saaslandingpage.com/" target="_blank" rel="noopener">
+          <div class="n">08</div>
+          <div><div class="nm">SaaS Landing Page</div><div class="ds">Filed by page section, which is the part worth copying — it lets you study heroes against heroes.</div></div>
+          <div class="go">Gallery →</div></a>
+      </div>
+
+      <h2>Toolkits</h2>
+      <div class="index-list">
+        <a class="index-item" href="https://app.notion.com/p/adcrate/The-Adcrate-Creative-Toolkit-34cd5575919580f18be7fcfa1b91fb58" target="_blank" rel="noopener">
+          <div class="n">09</div>
+          <div><div class="nm">Adcrate Creative Toolkit</div><div class="ds">A Notion resource hub: an ads-menu playbook, a prompt list, brief templates and a creative tracker. Worth reading for how a performance shop files its own working documents.</div></div>
+          <div class="go">Notion →</div></a>
+      </div>
+
+      <div class="callout warn">
+        <p><strong>Browse on a timer.</strong> Reference libraries are the most enjoyable way to
+          avoid building. Give yourself twenty minutes, take three patterns, then close the tab and
+          run the teardown protocol on one of them.</p>
+      </div>
+    </div>`
   },
 
   {

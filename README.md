@@ -109,11 +109,12 @@ Everything runs on **ShopOS workflow**, so what gets built on the day is built o
 | 06 | **The cards** | All 128 cards, filterable and flippable, in-page |
 | 07 | **Creative swipe file** | 31 patterns — hooks, formats, script structures, benchmarks |
 | 08 | **Landing page swipe file** | 21 patterns — above the fold, proof, friction, the ask |
-| 09 | Prompt chain | 13 prompts that run in sequence, research → page |
-| 10 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
-| 11 | Briefs | Creative brief + landing page brief |
-| 12 | Scoring | Judging rubric per track, weights published up front |
-| 13 | Ship & after | Submission, the three-minute demo, credits + FDE, launch-post skeleton |
+| 09 | **Content swipe file** | 9 external libraries — ad libraries, conversion research, toolkits |
+| 10 | Prompt chain | 13 prompts that run in sequence, research → page |
+| 11 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
+| 12 | Briefs | Creative brief + landing page brief |
+| 13 | Scoring | Judging rubric per track, weights published up front |
+| 14 | Ship & after | Submission, the three-minute demo, credits + FDE, launch-post skeleton |
 
 **Card grammar in the swipe files:** a normal card is a pattern. A **dashed card** is a benchmark — judge with it, don't build from it. A card with a **red edge** is an anti-pattern that tested negative.
 
@@ -123,9 +124,9 @@ Everything runs on **ShopOS workflow**, so what gets built on the day is built o
 
 The ShopOS × DSG deck, on screen. Each card names one problem; flip it for the build that fixes it. Filter by section, search by brand.
 
-- **84 cards name a specific DSG portfolio brand** — 53 unique, drawn only from the **70 live companies** (Active and Partially Exited). Exited and wound-down companies are excluded; they aren't attending.
-- **44 cards are cross-brand by design** — *Every brand* (16) and *Shopify pages* (28) are cross-cutting in the original deck.
-- Each card keeps its original build side — build name, three steps, inputs, metric, outputs — and carries a problem rewritten for the festive run.
+- **Every card names a brand.** All 128 are matched to one of the **70 live DSG portfolio companies** (Active or Partially Exited) — every one above **₹1 Cr** revenue. All 70 are used; no card is generic.
+- **Brand and problem are both chosen to fit the build on the back.** A card whose front doesn't match its back is worse than no card, so the build decides who it's addressed to — the scrubs lookbook goes to Knya, the mattress film to SleepyCat.
+- Each card keeps its original build side: build name, three steps, inputs, metric, outputs.
 
 > [!IMPORTANT]
 > **Read the brand-named cards as conversation starters, not findings.** Each problem is inferred from the brand's category and the festive calendar — **not** from an audit of that company's store or ad account. The framing is conditional on purpose: *"Flip this over if your brand has this problem."* Review before using them anywhere outside the room.
@@ -155,15 +156,6 @@ Seeds, not specs. Each is small enough to ship in a day and useful enough that a
 
 ---
 
-## Reference libraries
-
-Worth browsing before the day — other people's collections, useful for seeing how patterns get filed.
-
-**Ad creative** — [Meta Ad Library](https://www.facebook.com/ads/library/) (how long an ad has run is the only free performance signal you get) · [Foreplay](https://www.foreplay.co/) · [Atria](https://www.atria.so/) · [Motion](https://motionapp.com/) · [TikTok Creative Center](https://ads.tiktok.com/business/creativecenter/)
-
-**Landing pages** — [Land-book](https://land-book.com/) · [SaaS Landing Page](https://saaslandingpage.com/) · [Baymard Institute](https://baymard.com/) (the closest thing to primary evidence in this space)
-
----
 
 ## Repo structure
 

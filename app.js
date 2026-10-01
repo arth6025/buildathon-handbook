@@ -147,9 +147,10 @@
   });
 
   var TOOLKIT = [
-    { go:"cards", nm:"The Cards", ds:"128 festive problem cards — 84 named to a DSG portfolio brand. Click one to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
+    { go:"cards", nm:"The Cards", ds:"128 festive problem cards, every one named to a live DSG portfolio brand. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
     { go:"swipe-creative", nm:"Creative Swipe File", ds:"Hooks, formats, script structures and the benchmarks that judge them. Everything before the click, filed by the job it does.", go_label: creativeCount + " patterns →" },
     { go:"swipe-lp", nm:"Landing Page Swipe File", ds:"Above the fold, proof placement, friction and the ask. Everything after the click, with the test numbers attached.", go_label: lpCount + " patterns →" },
+    { go:"content-swipe", nm:"Content Swipe File", ds:"Where to go and look at the work \u2014 ad libraries, conversion research and toolkits, with what each one is actually good for.", go_label:"9 sources \u2192" },
     { go:"prompts",  nm:"The Prompt Chain", ds:"Research → angles → hooks → scripts → page. Built to run in sequence, each stage eating the previous stage's output. Copy straight out.", go_label: promptCount + " prompts →" },
     { go:"teardown", nm:"Teardown Protocol", ds:"How to turn somebody else's winner into your own asset — taking the angle and the structure, never the execution. Run it before you write anything original.", go_label:"6 steps →" },
     { go:"briefs",   nm:"Brief Templates", ds:"One for creative, one for landing pages. Both force the decisions teams normally discover halfway through building — the angle, the one goal, the single objection, what gets omitted.", go_label:"2 templates →" },
