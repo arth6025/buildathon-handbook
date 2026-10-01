@@ -50,8 +50,8 @@ window.IDEAS = [
 window.SECTIONS = [
   {
     id:"welcome", nav:"Welcome",
-    title:`Two tracks. <em>One day.</em> Live before the festive rush.`,
-    lede:`Everything you need for <strong>Assemble | Chapter 1 Mumbai</strong>, a hands-on workshop by DSG Consumer Partners and ShopOS — the patterns, the prompts, the briefs and the rubric. <strong>Read it before the day, not during.</strong> The teams that place have already made their decisions by the time the clock starts.`,
+    title:`Two workflows. <em>One day.</em> Festive-ready by the end of it.`,
+    lede:`Everything you need for <strong>Assemble | Chapter 1 Mumbai</strong> — a hands-on workshop by DSG Consumer Partners and ShopOS on <strong>Friday 10 October 2026</strong>. One day, two workflows: ad creative at scale, and landing pages that convert. <strong>Read this before the day, not during.</strong>`,
     html:`<div class="prose">
       <h2>What we're actually trying to do</h2>
       <p class="big">Give brands a working preview of how to produce ad creative and
@@ -63,15 +63,18 @@ window.SECTIONS = [
       <p>Everything runs on <strong>ShopOS workflow</strong>, so what you build on the day is
         built on the thing you'd keep using afterwards.</p>
 
-      <h2>The two tracks</h2>
-      <h3>Track 01 — Creatives</h3>
-      <p>Build ad creative that survives a feed. The whole game is the first 1.5 seconds and
-        whether there's a real argument underneath. Production value is not the game, and several
-        of the highest-performing formats are deliberately ugly.</p>
-      <h3>Track 02 — High-converting landing pages</h3>
-      <p>Build the page that keeps the promise the ad made. Five seconds to answer what this is,
-        who it's for, and what to do — then proof placed exactly where the objection forms, on a
-        page that loads fast on mobile data.</p>
+      <h2>The two workflows</h2>
+      <h3>01 — Creative, at scale</h3>
+      <p>A workflow that produces ad creative which survives a feed, in volume, with attribution.
+        The whole game is the first 1.5 seconds and whether there's a real argument underneath.
+        Production value is not the game — several of the highest-performing formats are
+        deliberately ugly.</p>
+      <h3>02 — Landing pages that convert</h3>
+      <p>A workflow that produces the page which keeps the promise the ad made. Five seconds to
+        answer what this is, who it's for, and what to do — then proof placed exactly where the
+        objection forms, on a page that loads fast on mobile data.</p>
+      <p><strong>You build both, in that order.</strong> Section 02 explains why the order matters
+        and what you leave each stage holding.</p>
       <p>The two tracks are one funnel. If you're on Track 01, your creative eventually points at
         a page. If you're on Track 02, your page is judged against the ad that feeds it. Read both
         swipe-file tracks regardless of which you're in.</p>
@@ -103,6 +106,93 @@ window.SECTIONS = [
         <li><strong>Building —</strong> live in the Prompt Chain and the swipe file.</li>
         <li><strong>Last hour —</strong> Ship It.</li>
       </ol>
+    </div>`
+  },
+
+  {
+    id:"the-day", nav:"The day", tick:"New",
+    title:`Walk in with a store. <em>Walk out with two workflows.</em>`,
+    lede:`<strong>Friday 10 October 2026 · Mumbai.</strong> One hands-on day, two workflows built in sequence — one that produces ad creative at scale, one that produces landing pages that convert. Both pointed at your own Shopify store, both running before the festive sale.`,
+    html:`<div class="prose">
+      <h2>The objective</h2>
+      <p class="big">Get your brand festive-ready by building the two workflows that decide the
+        season — creative supply, and the pages that creative lands on.</p>
+      <p>Not a tour of what AI can do. By the end of the day the workflows exist, they're pointed
+        at your catalogue, and they've produced real assets you could put behind spend. The
+        festive calendar is the deadline that keeps everything honest: if it can't be switched on
+        in weeks, it doesn't count.</p>
+
+      <h2>Why these two, in this order</h2>
+      <p>They are one funnel, and the order is not arbitrary. <strong>The creative workflow comes
+        first because it decides what promise gets made.</strong> The page workflow comes second
+        because a page can only be built — and judged — against the ad that feeds it. Build them
+        the other way round and you get a page written for nobody in particular, which is the
+        single most common failure in the swipe file.</p>
+
+      <h2>The flow</h2>
+      <div class="steps">
+        <div class="step"><div class="step-no">01</div><div>
+          <h4>Frame · the gap you're closing</h4>
+          <p>Meta already picks the right ad for every impression. After the click, every visitor
+            sees the same page. That asymmetry is the whole workshop. <strong>Pick the card that
+            makes you wince</strong> — it becomes the thing you build.</p>
+          <p class="ask">You leave this with: one problem, named, and the metric it moves.</p>
+        </div></div>
+        <div class="step"><div class="step-no">02</div><div>
+          <h4>Workflow 1 · creative at scale</h4>
+          <p>Research → angles → hooks → scripts → a labelled batch. You run the prompt chain
+            against your own reviews and your own catalogue, so the language comes from your
+            customers rather than from a model's idea of your category.
+            <strong>Volume is the point, but only with attribution</strong> — every variant carries
+            the one variable it changes.</p>
+          <p class="ask">You leave this with: a workflow that turns one product into a tested batch, and the first batch.</p>
+        </div></div>
+        <div class="step"><div class="step-no">03</div><div>
+          <h4>Workflow 2 · landing pages that convert</h4>
+          <p>Message match → the five-second answer → proof placed where the objection forms →
+            friction stripped out. Built against the creative from workflow 1, so the page repeats
+            the promise that earned the click instead of restarting the pitch.</p>
+          <p class="ask">You leave this with: a page workflow that produces one page per angle, and the first pages live.</p>
+        </div></div>
+        <div class="step"><div class="step-no">04</div><div>
+          <h4>Join them · the seam</h4>
+          <p>Point the creative at the pages and check the hand-off. <strong>Message match is the
+            seam</strong>, and it is where most funnels leak — the hook that did the work vanishes
+            at the click. Fix it here, while both halves are still in front of you.</p>
+          <p class="ask">You leave this with: an ad and a page that say the same thing in the same words.</p>
+        </div></div>
+        <div class="step"><div class="step-no">05</div><div>
+          <h4>Show the work</h4>
+          <p>Three minutes. The one sentence, the thing running live on a real input, the argument
+            underneath, and the single variable you'd change next. The rubric in section 13 is
+            published so you can build toward it rather than guess.</p>
+          <p class="ask">You leave this with: a demo that survives a cold start.</p>
+        </div></div>
+        <div class="step"><div class="step-no">06</div><div>
+          <h4>After · into the season</h4>
+          <p>ShopOS credits so the workflows keep running past the day, and a call to scope a
+            forward-deployed engineer who takes them into production for the sale.
+            <strong>The day is the trial; the FDE is how it becomes infrastructure.</strong></p>
+          <p class="ask">You leave this with: credits, and a scoped next step if you want one.</p>
+        </div></div>
+      </div>
+
+      <h2>What to bring</h2>
+      <ul>
+        <li><strong>A real store.</strong> Your Shopify URL, and access to it. Everything is built
+          against your actual catalogue, not a sandbox.</li>
+        <li><strong>Your reviews.</strong> The export, or just the product pages. This is where the
+          customer language comes from and it is the single highest-leverage input.</li>
+        <li><strong>One ad that worked</strong>, and one you can't explain. Both are useful.</li>
+        <li><strong>Your festive calendar</strong> — the dates you've already committed to.</li>
+      </ul>
+
+      <div class="callout warn">
+        <p><strong>The failure mode to avoid.</strong> Teams spend the first three hours choosing
+          what to build and discover their angle at hour six. Everything needed to decide is in
+          this handbook, and it is readable before the day. <strong>Arrive with the card
+          picked.</strong></p>
+      </div>
     </div>`
   },
 

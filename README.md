@@ -4,9 +4,9 @@
 
 **A hands-on workshop by [DSG Consumer Partners](https://www.dsgcp.com/) × [ShopOS](https://shopos.ai/)**
 
-Build ad creative and high-converting landing pages with AI — and ship them into Shopify before the festive rush.
+Build the two workflows that decide your festive season — ad creative at scale, and landing pages that convert — pointed at your own Shopify store.
 
-**Oct 7 or 8, 2026** · Mumbai · Two tracks · *date to be confirmed*
+**Friday 10 October 2026** · Mumbai · One day · Two workflows
 
 [**Preview everything →**](https://arth6025.github.io/buildathon-handbook/preview/)
 
@@ -16,8 +16,8 @@ Build ad creative and high-converting landing pages with AI — and ship them in
 
 ## Contents
 
-- [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [The outcome](#the-outcome)
-- [The two tracks](#the-two-tracks) · [What you leave with](#what-you-leave-with) · [How to use the day](#how-to-use-the-day)
+- [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [The objective](#the-objective)
+- [The flow of the day](#the-flow-of-the-day) · [The two workflows](#the-two-workflows) · [What to bring](#what-to-bring) · [What you leave with](#what-you-leave-with)
 - [The four surfaces](#the-four-surfaces) · [The handbook](#the-handbook) · [The 128 cards](#the-128-cards)
 - [What brands can build](#what-brands-can-build) · [Reference libraries](#reference-libraries)
 - [Repo structure](#repo-structure) · [Running it locally](#running-it-locally) · [Contributing](#contributing)
@@ -46,43 +46,60 @@ The workshop takes its name from ShopOS's own call to action — *Assemble a tea
 
 ---
 
-## The outcome
+## The objective
 
-**Give brands a working preview of how to produce ad creative and high-converting landing pages with AI — and get it into Shopify in time for the festive season.**
+**Get your brand festive-ready by building the two workflows that decide the season — creative supply, and the pages that creative lands on.**
 
-Everything runs on **ShopOS workflow**, so what gets built on the day is built on the thing a brand would keep using afterwards. The day is the trial; what follows is how it becomes infrastructure.
+Not a tour of what AI can do. By the end of the day the workflows exist, they're pointed at your catalogue, and they've produced real assets you could put behind spend. Everything runs on **ShopOS workflow**, so what gets built is built on the thing you'd keep using afterwards.
+
+The festive calendar is the deadline that keeps it honest: **if it can't be switched on in weeks, it doesn't count.**
 
 ---
 
-## The two tracks
+## The flow of the day
 
-| | **Track 01 — Creatives** | **Track 02 — Landing Pages** |
+| | Stage | You leave it holding |
 |---|---|---|
-| **The job** | Ad creative that survives a feed | The page that keeps the ad's promise |
-| **The game** | The first 1.5 seconds, and whether there's a real argument underneath | Five seconds to answer what it is, who it's for, what to do |
-| **Scored on** | Hook strength · angle · platform nativeness · proof · iteration discipline | Five-second answer · message match · placed proof · friction · Shopify-ready |
-| **Not scored on** | Production value | Visual polish |
+| **01** | **Frame** — the gap you're closing. Meta already picks the right ad for every impression; after the click everyone sees the same page. Pick the card that makes you wince. | One problem, named, and the metric it moves |
+| **02** | **Workflow 1 — creative at scale.** Research → angles → hooks → scripts → a labelled batch, run against your own reviews and catalogue. | A workflow that turns one product into a tested batch, and the first batch |
+| **03** | **Workflow 2 — landing pages that convert.** Message match → five-second answer → placed proof → friction stripped, built against the creative from stage 02. | A page workflow that produces one page per angle, and the first pages live |
+| **04** | **Join them.** Point the creative at the pages and check the hand-off. Message match is the seam, and it's where most funnels leak. | An ad and a page that say the same thing in the same words |
+| **05** | **Show the work.** Three minutes: the one sentence, the thing running live, the argument underneath, the next variable. | A demo that survives a cold start |
+| **06** | **After.** Credits, and a scoped FDE if you want the workflows in production for the sale. | Credits, and a next step |
 
-**The two tracks are one funnel.** Track 01 creative eventually points at a page; Track 02 pages are judged against the ad that feeds them. Read both swipe files regardless of which track you're in.
+### Why this order
+
+They are one funnel, and the sequence isn't arbitrary. **The creative workflow comes first because it decides what promise gets made.** The page workflow comes second because a page can only be built — and judged — against the ad that feeds it. Build them the other way round and you get a page written for nobody in particular, which is the single most common failure in the swipe file.
+
+---
+
+## The two workflows
+
+| | **01 — Creative, at scale** | **02 — Landing pages that convert** |
+|---|---|---|
+| **The job** | Ad creative that survives a feed, in volume, with attribution | The page that keeps the promise the ad made |
+| **The game** | The first 1.5 seconds, and whether there's a real argument underneath | Five seconds to answer what it is, who it's for, what to do |
+| **Judged on** | Hook strength · angle · platform nativeness · proof · iteration discipline | Five-second answer · message match · placed proof · friction · Shopify-ready |
+| **Not judged on** | Production value | Visual polish |
+
+---
+
+## What to bring
+
+- **A real store.** Your Shopify URL and access to it — everything is built against your actual catalogue, not a sandbox.
+- **Your reviews.** The export, or just the product pages. This is where customer language comes from, and it's the highest-leverage input you have.
+- **One ad that worked**, and one you can't explain. Both are useful.
+- **Your festive calendar** — the dates you've already committed to.
+
+> **The failure mode to avoid.** Teams spend the first three hours choosing what to build and discover their angle at hour six. Everything needed to decide is in this handbook and it's readable beforehand. **Arrive with the card picked.**
 
 ---
 
 ## What you leave with
 
-- **ShopOS credits** — the workflow doesn't switch off when the room empties.
-- **A call with the ShopOS team** to scope a **forward-deployed engineer** who takes the build into production for the sale season.
+- **ShopOS credits** — the workflows don't switch off when the room empties.
+- **A call with the ShopOS team** to scope a **forward-deployed engineer** who takes them into production for the sale season.
 - **Whatever you built.** It's yours either way.
-
----
-
-## How to use the day
-
-| When | Do this |
-|---|---|
-| **Before** | Read *Welcome*, *What good looks like* and *Scoring*. Skim the swipe file for your track. Pick a card. |
-| **First hour** | Run the *Teardown Protocol* on one competitor winner, then fill the brief for your track. **Don't open a design tool before the brief is done.** |
-| **Building** | Live in the *Prompt Chain* and the swipe files. |
-| **Last hour** | *Ship & after* — submission checklist and the three-minute demo structure. |
 
 ---
 
@@ -91,7 +108,7 @@ Everything runs on **ShopOS workflow**, so what gets built on the day is built o
 | | What it is | Link |
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked Track 02 build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
-| 📖 **The handbook** | 13 sections, read in order | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
+| 📖 **The handbook** | 15 sections, read in order | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 👀 **The cards** | 128 festive problem cards, flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
 | 👁️ **Preview** | All of the above in one link, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
@@ -101,20 +118,21 @@ Everything runs on **ShopOS workflow**, so what gets built on the day is built o
 
 | # | Section | What it gives you |
 |---|---|---|
-| 01 | Welcome | The outcome, the tracks, how to use the day |
-| 02 | What good looks like | A worked case, the transferable pattern, and build ideas |
-| 03 | The AI build | Seven-stage spec for the festive creative engine — *assigned* |
-| 04 | The pitch | Six-part anatomy of a pitch page, plus the ShopOS festive pitch |
-| 05 | The toolkit | Index of everything below |
-| 06 | **The cards** | All 128 cards, filterable and flippable, in-page |
-| 07 | **Creative swipe file** | 31 patterns — hooks, formats, script structures, benchmarks |
-| 08 | **Landing page swipe file** | 21 patterns — above the fold, proof, friction, the ask |
-| 09 | **Content swipe file** | 9 external libraries — ad libraries, conversion research, toolkits |
-| 10 | Prompt chain | 13 prompts that run in sequence, research → page |
-| 11 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
-| 12 | Briefs | Creative brief + landing page brief |
-| 13 | Scoring | Judging rubric per track, weights published up front |
-| 14 | Ship & after | Submission, the three-minute demo, credits + FDE, launch-post skeleton |
+| 01 | Welcome | The objective, the two workflows, how to use the handbook |
+| 02 | **The day** | Objective, the six-stage flow, why the order matters, what to bring |
+| 03 | What good looks like | A worked case, the transferable pattern, and build ideas |
+| 04 | The AI build | Seven-stage spec for the festive creative engine — *assigned* |
+| 05 | The pitch | Six-part anatomy of a pitch page, plus the ShopOS festive pitch |
+| 06 | The toolkit | Index of everything below |
+| 07 | The cards | All 128 cards, filterable and flippable, in-page |
+| 08 | Creative swipe file | 31 patterns — hooks, formats, script structures, benchmarks |
+| 09 | Landing page swipe file | 21 patterns — above the fold, proof, friction, the ask |
+| 10 | Content swipe file | 9 external libraries — ad libraries, conversion research, toolkits |
+| 11 | Prompt chain | 13 prompts that run in sequence, research → page |
+| 12 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
+| 13 | Briefs | Creative brief + landing page brief |
+| 14 | Scoring | Judging rubric per workflow, weights published up front |
+| 15 | Ship & after | Submission, the three-minute demo, credits + FDE, launch-post skeleton |
 
 **Card grammar in the swipe files:** a normal card is a pattern. A **dashed card** is a benchmark — judge with it, don't build from it. A card with a **red edge** is an anti-pattern that tested negative.
 
@@ -219,7 +237,6 @@ The spec is written to be implementable without further briefing. Open a PR agai
 
 ## Open items
 
-- [ ] **Confirm the date** — Oct 7 or 8
 - [ ] **Agree the scoring weights** before the day (current set is a proposal, deliberately weighted toward argument over polish)
 - [ ] **Add the booking link** on the pitch page — currently a placeholder anchor
 - [ ] **Decide on the brand-named cards** staying in a public repo
