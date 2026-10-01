@@ -16,14 +16,15 @@ a { color:var(--sl-yellow); }
 
 /* ---------- masthead ---------- */
 .top { padding:clamp(34px,5vw,64px) 0 clamp(22px,3vw,38px); }
-.mark { font-size:clamp(40px,7vw,78px); font-weight:800; letter-spacing:-0.05em;
-  line-height:1; display:flex; align-items:center; gap:.03em; margin-bottom:14px; }
+.mark { font-size:clamp(44px,7.4vw,84px); font-weight:800; letter-spacing:-0.055em;
+  line-height:1; display:flex; align-items:center; gap:0; margin-bottom:14px; }
 .mark .y { color:var(--sl-yellow); }
-.mark .eyes { display:inline-flex; gap:.07em; }
-.mark .eyes i { width:.78em; height:.78em; border-radius:50%; background:var(--sl-paper);
-  border:.085em solid var(--sl-ink); position:relative; display:inline-block; }
-.mark .eyes i::after { content:""; position:absolute; width:.40em; height:.40em;
-  border-radius:50%; background:var(--sl-ink); left:.15em; top:.19em; }
+/* the two O's: yellow discs so the word still reads SLOOSH, with pupils on top */
+.mark .eyes { display:inline-flex; gap:.015em; margin:0 .02em; }
+.mark .eyes i { width:.66em; height:.66em; border-radius:50%; background:var(--sl-yellow);
+  position:relative; display:inline-block; }
+.mark .eyes i::after { content:""; position:absolute; width:.30em; height:.30em;
+  border-radius:50%; background:var(--sl-ink); left:.18em; top:.21em; }
 .by { font-size:14px; font-weight:700; letter-spacing:.02em; color:var(--sl-yellow);
   margin:0 0 20px; }
 h1 { font-size:clamp(30px,4.6vw,56px); font-weight:800; letter-spacing:-0.042em;

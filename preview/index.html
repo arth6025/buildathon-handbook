@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview — everything in one place · ShopOS × DSG</title>
+<meta name="description" content="All three pages of the ShopOS × DSG buildathon site in one preview: the pitch, the handbook, and the 128 festive cards.">
+<link rel="stylesheet" href="../assets/sloosh.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👀</text></svg>">
+<style>
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; height:100%; }
+  body { background:var(--sl-ink); color:#FFF8E6; font-family:var(--sl-display);
+    display:flex; flex-direction:column; overflow:hidden; -webkit-font-smoothing:antialiased; }
+
+  .top { flex:0 0 auto; padding:14px clamp(14px,2.5vw,26px);
+    border-bottom:3px solid #FFF8E6; display:flex; align-items:center;
+    gap:clamp(12px,2.5vw,28px); flex-wrap:wrap; }
+
+  /* wordmark — yellow discs so SLOOSH still reads, pupils on top */
+  .mark { font-size:26px; font-weight:800; letter-spacing:-0.055em; line-height:1;
+    display:flex; align-items:center; gap:0; flex:0 0 auto; }
+  .mark .y { color:var(--sl-yellow); }
+  .mark .eyes { display:inline-flex; gap:.015em; margin:0 .02em; }
+  .mark .eyes i { width:.66em; height:.66em; border-radius:50%;
+    background:var(--sl-yellow); position:relative; display:inline-block; }
+  .mark .eyes i::after { content:""; position:absolute; width:.30em; height:.30em;
+    border-radius:50%; background:var(--sl-ink); left:.18em; top:.21em; }
+
+  .tabs { display:flex; gap:7px; flex-wrap:wrap; }
+  .tabs button { font-family:var(--sl-display); font-size:13.5px; font-weight:700;
+    line-height:1; padding:11px 16px; cursor:pointer; white-space:nowrap;
+    background:transparent; color:#FFF8E6; border:2px solid #3A3A3A; border-radius:999px;
+    transition:border-color .15s, background .15s, color .15s; }
+  .tabs button:hover { border-color:#FFF8E6; }
+  .tabs button[aria-selected="true"] { background:var(--sl-yellow); color:var(--sl-ink);
+    border-color:var(--sl-yellow); }
+  .tabs button .n { opacity:.6; margin-left:6px; font-variant-numeric:tabular-nums; }
+
+  .right { margin-left:auto; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .sizes { display:flex; gap:5px; }
+  .sizes button { font-family:var(--sl-mono); font-size:10.5px; font-weight:700;
+    letter-spacing:.06em; text-transform:uppercase; padding:8px 11px; cursor:pointer;
+    background:transparent; color:#9A9A94; border:2px solid #2E2E2E; border-radius:7px; }
+  .sizes button[aria-pressed="true"] { color:var(--sl-ink); background:#FFF8E6;
+    border-color:#FFF8E6; }
+  .open { font-family:var(--sl-display); font-size:12.5px; font-weight:700;
+    color:var(--sl-ink); background:var(--sl-yellow); border:2px solid var(--sl-ink);
+    border-radius:999px; padding:9px 14px; text-decoration:none; white-space:nowrap; }
+
+  .stage { flex:1 1 auto; min-height:0; background:#1A1A1A; display:grid;
+    place-items:start center; overflow:auto; padding:clamp(10px,2vw,22px); }
+  .frame { background:#fff; border:3px solid #FFF8E6; border-radius:12px;
+    overflow:hidden; width:100%; height:100%; max-width:100%;
+    box-shadow:0 10px 40px rgba(0,0,0,.5); }
+  .frame.phone { width:390px; height:844px; max-height:100%; flex:0 0 auto; }
+  .frame.tablet { width:834px; height:100%; }
+  iframe { width:100%; height:100%; border:0; display:block; background:#fff; }
+
+  .note { flex:0 0 auto; padding:9px clamp(14px,2.5vw,26px); font-size:11.5px;
+    color:#8A8A84; border-top:2px solid #2A2A2A; line-height:1.4; }
+  .note a { color:var(--sl-yellow); }
+
+  @media (max-width: 760px) {
+    .right { margin-left:0; width:100%; }
+    .sizes { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="mark">
+    <span class="y">SL</span><span class="eyes"><i></i><i></i></span><span class="y">SH</span>
+  </div>
+
+  <div class="tabs" id="tabs" role="tablist">
+    <button role="tab" aria-selected="true"  data-src="../"          data-label="The pitch">The pitch</button>
+    <button role="tab" aria-selected="false" data-src="../handbook/" data-label="The handbook">The handbook<span class="n">11</span></button>
+    <button role="tab" aria-selected="false" data-src="../cards/"    data-label="The 128 cards">The 128 cards<span class="n">128</span></button>
+  </div>
+
+  <div class="right">
+    <div class="sizes" id="sizes">
+      <button aria-pressed="true"  data-size="full">Desktop</button>
+      <button aria-pressed="false" data-size="tablet">Tablet</button>
+      <button aria-pressed="false" data-size="phone">Phone</button>
+    </div>
+    <a class="open" id="open" href="../" target="_blank" rel="noopener">Open full ↗</a>
+  </div>
+</header>
+
+<div class="stage">
+  <div class="frame" id="frame">
+    <iframe id="view" src="../" title="The pitch" loading="eager"></iframe>
+  </div>
+</div>
+
+<p class="note">
+  All three pages, one link. Tabs switch the page; the size buttons resize the frame so you can
+  check mobile without a device. <a href="https://github.com/arth6025/buildathon-handbook">Source</a>
+</p>
+
+<script>
+(function () {
+  "use strict";
+  var view  = document.getElementById("view");
+  var frame = document.getElementById("frame");
+  var open  = document.getElementById("open");
+
+  function select(btn) {
+    document.querySelectorAll("#tabs button").forEach(function (b) {
+      b.setAttribute("aria-selected", String(b === btn));
+    });
+    view.src = btn.dataset.src;
+    view.title = btn.dataset.label;
+    open.href = btn.dataset.src;
+    if (location.hash.slice(1) !== btn.dataset.src) {
+      history.replaceState(null, "", "#" + btn.dataset.src);
+    }
+  }
+
+  document.getElementById("tabs").addEventListener("click", function (e) {
+    var b = e.target.closest("button[role=tab]");
+    if (b) select(b);
+  });
+
+  document.getElementById("sizes").addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-size]");
+    if (!b) return;
+    document.querySelectorAll("#sizes button").forEach(function (x) {
+      x.setAttribute("aria-pressed", String(x === b));
+    });
+    frame.className = "frame" + (b.dataset.size === "full" ? "" : " " + b.dataset.size);
+  });
+
+  // deep link: #../cards/ etc.
+  var want = location.hash.slice(1);
+  if (want) {
+    var match = [].slice.call(document.querySelectorAll("#tabs button"))
+      .filter(function (b) { return b.dataset.src === want; })[0];
+    if (match) select(match);
+  }
+})();
+</script>
+</body>
+</html>

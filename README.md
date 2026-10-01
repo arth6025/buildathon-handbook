@@ -6,6 +6,8 @@
 
 Meta already picks the right ad for every single impression. Then the click lands — and every visitor sees the same page, because until now somebody had to build each one by hand. **Build the workflow instead.**
 
+> 👁️ **Preview everything in one link: https://arth6025.github.io/buildathon-handbook/preview/**
+>
 > 🎯 **The pitch: https://arth6025.github.io/buildathon-handbook/**
 > 📖 **The handbook: https://arth6025.github.io/buildathon-handbook/handbook/**
 > 👀 **The 128 cards: https://arth6025.github.io/buildathon-handbook/cards/**
@@ -117,6 +119,7 @@ Then open `http://localhost:8000`. Opening `index.html` directly from the filesy
 
 ```
 index.html            THE PITCH — the front door
+preview/              all three pages in one link, with desktop/tablet/phone frames
 cards/                the 128 festive problem cards (Sloosh deck, on screen)
 assets/sloosh.css     SLOOSH brand tokens — link this before any page stylesheet
 data/cards.js         the 128 cards
