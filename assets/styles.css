@@ -1,19 +1,20 @@
+/* Sloosh palette — tokens from assets/sloosh.css, mapped onto the handbook */
 :root {
-  --paper:#EFEDE7; --card:#F7F6F2; --ink:#16161A; --dim:#6E6E66;
-  --rule:#D8D5CC; --signal:#1B34F0; --warn:#A8412A; --chip:#E4E1D8;
-  --side:#E7E4DC;
+  --paper:#FFF8E6; --card:#FFFFFF; --ink:#090909; --dim:#6E6E6E;
+  --rule:#090909; --signal:#5C4ADE; --warn:#FA4903; --chip:#FECC15;
+  --side:#FECC15;
   --display:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
   --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
   --pad:clamp(22px,4vw,64px);
 }
 @media (prefers-color-scheme: dark) {
-  :root { --paper:#121316; --card:#1A1B20; --ink:#EAE8E1; --dim:#8C8C86;
-    --rule:#2B2C33; --signal:#7A8AFF; --warn:#E0785C; --chip:#24252C; --side:#0D0E11; }
+  :root { --paper:#090909; --card:#161616; --ink:#FFF8E6; --dim:#9A9A94;
+    --rule:#FFF8E6; --signal:#9E92FF; --warn:#FF7A47; --chip:#FECC15; --side:#000000; }
 }
-:root[data-theme="dark"] { --paper:#121316; --card:#1A1B20; --ink:#EAE8E1; --dim:#8C8C86;
-  --rule:#2B2C33; --signal:#7A8AFF; --warn:#E0785C; --chip:#24252C; --side:#0D0E11; }
-:root[data-theme="light"] { --paper:#EFEDE7; --card:#F7F6F2; --ink:#16161A; --dim:#6E6E66;
-  --rule:#D8D5CC; --signal:#1B34F0; --warn:#A8412A; --chip:#E4E1D8; --side:#E7E4DC; }
+:root[data-theme="dark"] { --paper:#090909; --card:#161616; --ink:#FFF8E6; --dim:#9A9A94;
+  --rule:#FFF8E6; --signal:#9E92FF; --warn:#FF7A47; --chip:#FECC15; --side:#000000; }
+:root[data-theme="light"] { --paper:#FFF8E6; --card:#FFFFFF; --ink:#090909; --dim:#6E6E6E;
+  --rule:#090909; --signal:#5C4ADE; --warn:#FA4903; --chip:#FECC15; --side:#FECC15; }
 
 * { box-sizing:border-box; }
 html, body { margin:0; padding:0; }
@@ -317,3 +318,38 @@ code { font-family:var(--mono); font-size:12.5px; background:var(--chip);
   * { transition:none !important; scroll-behavior:auto !important; }
   .card:hover { transform:none; }
 }
+
+/* ============================================================================
+   SLOOSH sticker treatment — thick rules, offset shadows
+   ========================================================================== */
+.sidebar { border-right-width:3px; }
+.toc button[aria-current="true"] { border:2px solid var(--ink); font-weight:800; }
+.toc .tick { border-width:2px; font-weight:800; background:var(--chip); color:var(--ink); }
+.progress i.on { background:var(--ink); }
+
+.card { border-width:3px; border-radius:14px; box-shadow:4px 4px 0 var(--ink); }
+.card:hover { transform:translate(2px,2px); box-shadow:2px 2px 0 var(--ink); }
+.card.is-anti { border-left-width:9px; border-left-color:var(--warn); }
+.card.is-bench { border-style:dashed; }
+.card-stat { border:2px solid var(--ink); border-radius:7px; color:var(--ink); }
+
+.block, .steps, .index-list, .case, .lesson, .table-wrap, .ideas {
+  border-width:3px; border-radius:14px; box-shadow:4px 4px 0 var(--ink); }
+.steps, .index-list, .lesson, .ideas, .case-facts { gap:3px; }
+.copy { border-width:2px; border-radius:999px; font-weight:700; }
+.step-no { font-weight:800; }
+.step .ask { border:2px solid var(--ink); border-radius:7px; }
+.rail-arrows button { border-width:2px; border-radius:999px; font-weight:800; }
+.sec-rule { height:5px; background:var(--ink); }
+.stage-head { border-top-width:4px; }
+.rail-tab { border-top-width:4px; }
+.track-card { border-top-width:4px; }
+.callout { border-left-width:5px; }
+.pager button { border-width:3px; border-radius:9px; box-shadow:3px 3px 0 var(--ink); font-weight:700; }
+.pager button:hover { transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); }
+blockquote.post { border-width:3px; border-radius:11px; }
+th { border-bottom-width:3px; }
+/* small mono labels stay ink for contrast on cream/yellow */
+.sec-no { color:var(--ink); font-weight:700; }
+.eyebrow { color:var(--ink); font-weight:700; }
+.toc .tick { color:var(--ink); border-color:var(--ink); }

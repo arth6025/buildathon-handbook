@@ -8,6 +8,7 @@ Meta already picks the right ad for every single impression. Then the click land
 
 > 🎯 **The pitch: https://arth6025.github.io/buildathon-handbook/**
 > 📖 **The handbook: https://arth6025.github.io/buildathon-handbook/handbook/**
+> 👀 **The 128 cards: https://arth6025.github.io/buildathon-handbook/cards/**
 
 Everything is open — 52 patterns, 13 prompts, two brief templates, the teardown protocol and the scoring rubric. No form, no gate, and it takes pull requests.
 
@@ -116,6 +117,9 @@ Then open `http://localhost:8000`. Opening `index.html` directly from the filesy
 
 ```
 index.html            THE PITCH — the front door
+cards/                the 128 festive problem cards (Sloosh deck, on screen)
+assets/sloosh.css     SLOOSH brand tokens — link this before any page stylesheet
+data/cards.js         the 128 cards
 assets/pitch.css      pitch styling
 handbook/index.html   the handbook shell + sidebar
 assets/styles.css     handbook styling, theme tokens at the top
@@ -136,6 +140,28 @@ All content lives in `data/`. You never need to touch `app.js` to add a pattern,
 Pull requests welcome — especially new patterns, new prompts, and new outcome cases from teams who shipped. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the shape of each entry.
 
 The fastest useful contribution: **add a pattern you've actually seen work, with the mechanism and a source.** A pattern without a mechanism is an opinion.
+
+---
+
+## The 128 cards
+
+[`cards/`](https://arth6025.github.io/buildathon-handbook/cards/) is the ShopOS × DSG Sloosh deck on screen — every card names one problem, flip it for the build that fixes it. Filter by section, search by brand.
+
+Rewritten from the generic print deck for **the festive season**, and personalised:
+
+- **84 cards name a specific DSG portfolio brand** (53 unique brands), drawn from the 70 live portfolio companies — Active and Partially Exited only. Exited and wound-down companies are excluded; they aren't attending.
+- **44 cards are cross-brand by design** — the *Every brand* (16) and *Shopify pages* (28) sections are cross-cutting in the original deck and stay that way.
+- Each card keeps the original build side (build name, three steps, inputs, metric, outputs) and carries a rewritten, festive-specific problem.
+
+> **Read the brand-named cards as conversation starters, not findings.** Each problem is inferred from the brand's category and the festive calendar — not from an audit of that company's store or ad account. The card framing is conditional on purpose: *"Flip this over if your brand has this problem."* Review before using them anywhere outside the room.
+
+---
+
+## Branding
+
+The whole site uses the **Sloosh** identity from the ShopOS × DSG print deck: near-black and `#FECC15` yellow, the googly-eye wordmark, thick black rules, offset shadows, and the nine section colours (`#FA4903` food, `#E8CCFF` beauty, `#54DA9C` health, `#090909` fashion, `#5C4ADE` home, `#793A04` cafés, `#4DA2FF` stays, `#FECC15` every brand, `#008060` Shopify pages).
+
+Tokens live in [`assets/sloosh.css`](assets/sloosh.css) and are linked before every page stylesheet, so changing a brand colour in one place changes it everywhere.
 
 ---
 

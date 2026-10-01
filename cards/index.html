@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>128 problems your brand already has — ShopOS × DSG</title>
+<meta name="description" content="128 festive-season problem cards for DSG portfolio brands. Each card names one problem. Flip it to get the build that fixes it.">
+<link rel="stylesheet" href="../assets/sloosh.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👀</text></svg>">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="mark">
+      <span class="y">SL</span>
+      <span class="eyes"><i></i><i></i></span>
+      <span class="y">SH</span>
+    </div>
+    <p class="by">× ShopOS × DSG</p>
+    <h1>128 problems your brand already has.</h1>
+    <p class="lede">Each card names one problem a DSG brand would recognise in a second, rewritten
+      for <b>the festive season</b>. Flip it to get the build that fixes it.</p>
+    <p class="lede"><b>84 cards name a specific portfolio brand.</b> The other 44 — Every brand and
+      Shopify pages — are cross-cutting by design, as in the original deck.</p>
+  </header>
+
+  <div class="bar" id="bar">
+    <input id="q" type="search" placeholder="Search brand, problem, build…" aria-label="Search cards">
+    <span id="count"></span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>Nothing matches that. Try a brand name or a section.</div>
+</div>
+
+<script src="../data/cards.js"></script>
+<script>
+(function () {
+  "use strict";
+  var CARDS = window.CARDS;
+  var DARK = ["#090909"];            // sections whose ground is already near-black
+  var esc = function (s) {
+    return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+      return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c];
+    });
+  };
+
+  var SECTIONS = [];
+  CARDS.forEach(function (c) { if (SECTIONS.indexOf(c.section) < 0) SECTIONS.push(c.section); });
+
+  var active = null, query = "";
+
+  // ---- filter chips, built from the data
+  var bar = document.getElementById("bar");
+  var chips = document.createElement("div");
+  chips.style.cssText = "display:flex;flex-wrap:wrap;gap:9px;flex:1 1 100%";
+  chips.innerHTML =
+    '<button class="chip" data-sec="" aria-pressed="true">All<span class="ct">' + CARDS.length + '</span></button>' +
+    SECTIONS.map(function (s) {
+      var n = CARDS.filter(function (c) { return c.section === s; }).length;
+      return '<button class="chip" data-sec="' + esc(s) + '" aria-pressed="false">' +
+             esc(s) + '<span class="ct">' + n + '</span></button>';
+    }).join("");
+  bar.insertBefore(chips, bar.firstChild);
+
+  function cardEl(c) {
+    var dark = DARK.indexOf(c.colour) >= 0;
+    return '<button class="card" style="--c:' + c.colour + '" aria-pressed="false" ' +
+      'aria-label="Card ' + c.n + '. ' + esc(c.problem) + ' Activate to see the build.">' +
+      '<div class="inner">' +
+
+        '<div class="face front' + (dark ? ' dark-ground' : '') + '">' +
+          '<div class="f-top">' +
+            '<span class="sec-pill">' + esc(c.section) + '</span>' +
+            '<span class="num">#' + String(c.n).padStart(2, "0") + '</span>' +
+          '</div>' +
+          '<div class="mascot">' +
+            '<div class="pack"><span class="eye l"></span><span class="eye r"></span></div>' +
+            '<span class="quip">' + esc(c.quip) + '</span>' +
+          '</div>' +
+          '<div class="flipnote">Flip this over if your brand has this problem.</div>' +
+          (c.brand ? '<div class="brandtag">' + esc(c.brand) + '</div>' : '') +
+          '<p class="problem">' + esc(c.problem) + '</p>' +
+          '<div class="f-foot">' +
+            '<span class="flip-pill">' + esc(c.flip) + '</span>' +
+            '<span class="by-small">ShopOS × DSG</span>' +
+            '<span class="flipcue">Flip ↻</span>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="face back">' +
+          '<div class="b-head' + (dark ? ' dark-ground' : '') + '">' +
+            '<span class="t"><span class="eyes2"><i></i><i></i></span>Build this Sloosh</span>' +
+            '<span class="num">#' + String(c.n).padStart(2, "0") + '</span>' +
+          '</div>' +
+          '<h3 class="buildname">' + esc(c.build) + '</h3>' +
+          '<p class="lbl">How do you build it</p>' +
+          c.steps.map(function (s, i) {
+            return '<div class="bstep"><b>' + (i + 1) + '</b><span>' + esc(s) + '</span></div>';
+          }).join("") +
+          '<p class="lbl" style="margin-top:13px">What do you need</p>' +
+          '<div class="needs">' + c.needs.map(function (n) {
+            return '<span>' + esc(n) + '</span>'; }).join("") + '</div>' +
+          '<p class="lbl">What metric does this move</p>' +
+          '<p class="metric">' + esc(c.metric) + '</p>' +
+          '<p class="lbl">What are the outputs</p>' +
+          '<p class="outs">' + esc(c.outputs) + '</p>' +
+          '<span class="run">Run This For Me</span>' +
+        '</div>' +
+
+      '</div></button>';
+  }
+
+  var grid = document.getElementById("grid");
+  var empty = document.getElementById("empty");
+  var count = document.getElementById("count");
+
+  function render() {
+    var q = query.trim().toLowerCase();
+    var list = CARDS.filter(function (c) {
+      if (active && c.section !== active) return false;
+      if (!q) return true;
+      return (c.brand || "").toLowerCase().indexOf(q) >= 0 ||
+             c.problem.toLowerCase().indexOf(q) >= 0 ||
+             c.build.toLowerCase().indexOf(q) >= 0 ||
+             c.flip.toLowerCase().indexOf(q) >= 0 ||
+             c.section.toLowerCase().indexOf(q) >= 0;
+    });
+    grid.innerHTML = list.map(cardEl).join("");
+    empty.hidden = list.length > 0;
+    count.textContent = list.length + " of " + CARDS.length + " cards";
+  }
+
+  document.addEventListener("click", function (e) {
+    var chip = e.target.closest(".chip");
+    if (chip) {
+      active = chip.dataset.sec || null;
+      document.querySelectorAll(".chip").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b === chip));
+      });
+      render();
+      return;
+    }
+    var card = e.target.closest(".card");
+    if (card) {
+      card.setAttribute("aria-pressed",
+        card.getAttribute("aria-pressed") === "true" ? "false" : "true");
+    }
+  });
+
+  document.getElementById("q").addEventListener("input", function (e) {
+    query = e.target.value; render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

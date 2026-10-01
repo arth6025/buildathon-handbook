@@ -1,0 +1,92 @@
+/* ============================================================================
+   SLOOSH — shared brand tokens. Link this BEFORE any page stylesheet.
+   Extracted from the ShopOS × DSG print deck.
+   ========================================================================== */
+:root {
+  /* core */
+  --sl-ink:      #090909;   /* near-black ground */
+  --sl-yellow:   #FECC15;   /* primary accent */
+  --sl-paper:    #FFFFFF;
+  --sl-cream:    #FFF8E6;
+
+  /* the 9 section colours, straight off the deck */
+  --sl-food:     #FA4903;
+  --sl-beauty:   #E8CCFF;
+  --sl-health:   #54DA9C;
+  --sl-fashion:  #090909;
+  --sl-home:     #5C4ADE;
+  --sl-cafe:     #793A04;
+  --sl-stays:    #4DA2FF;
+  --sl-every:    #FECC15;
+  --sl-pages:    #008060;
+
+  /* derived */
+  --sl-ink-soft: #1C1C1C;
+  --sl-grey:     #6E6E6E;
+  --sl-line:     #090909;
+  --sl-shadow:   4px 4px 0 var(--sl-ink);
+  --sl-shadow-sm:3px 3px 0 var(--sl-ink);
+  --sl-radius:   14px;
+  --sl-radius-sm:9px;
+  --sl-pill:     999px;
+  --sl-border:   3px;
+
+  --sl-display: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --sl-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---------- the googly-eye device ---------- */
+.sl-eyes { display:inline-flex; gap:.14em; vertical-align:-0.06em; }
+.sl-eyes i {
+  width:.82em; height:.82em; border-radius:50%;
+  background:var(--sl-paper); border:.1em solid var(--sl-ink);
+  display:inline-block; position:relative; font-style:normal;
+}
+.sl-eyes i::after {
+  content:""; position:absolute; width:.42em; height:.42em; border-radius:50%;
+  background:var(--sl-ink); left:.14em; top:.2em;
+}
+.sl-eyes.on-dark i { border-color:var(--sl-ink); }
+
+/* wordmark: SL[eyes]SH */
+.sl-wordmark {
+  font-family:var(--sl-display); font-weight:800; letter-spacing:-0.045em;
+  display:inline-flex; align-items:center; gap:.04em; line-height:1;
+}
+.sl-wordmark .y { color:var(--sl-yellow); }
+
+/* ---------- shared sticker components ---------- */
+.sl-pill {
+  display:inline-block; font-family:var(--sl-display); font-weight:700;
+  font-size:13px; line-height:1; padding:9px 15px;
+  border:var(--sl-border) solid var(--sl-ink); border-radius:var(--sl-pill);
+  background:var(--sl-ink); color:var(--sl-paper); white-space:nowrap;
+}
+.sl-pill.ghost { background:transparent; color:var(--sl-ink); }
+.sl-pill.light { background:var(--sl-paper); color:var(--sl-ink); }
+
+.sl-btn {
+  display:inline-block; font-family:var(--sl-display); font-weight:800;
+  font-size:17px; line-height:1; padding:17px 26px; cursor:pointer;
+  background:var(--sl-yellow); color:var(--sl-ink); text-decoration:none;
+  border:var(--sl-border) solid var(--sl-ink); border-radius:var(--sl-radius-sm);
+  box-shadow:var(--sl-shadow); transition:transform .1s, box-shadow .1s;
+}
+.sl-btn:hover { transform:translate(2px,2px); box-shadow:2px 2px 0 var(--sl-ink); }
+.sl-btn:active { transform:translate(4px,4px); box-shadow:0 0 0 var(--sl-ink); }
+
+.sl-bubble {
+  position:relative; display:inline-block; background:var(--sl-paper);
+  color:var(--sl-ink); font-weight:700; font-size:15px;
+  padding:10px 16px; border:var(--sl-border) solid var(--sl-ink);
+  border-radius:var(--sl-radius-sm);
+}
+.sl-bubble::after {
+  content:""; position:absolute; left:16px; bottom:-11px;
+  border:8px solid transparent; border-top-color:var(--sl-ink); border-bottom:0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sl-btn { transition:none; }
+  .sl-btn:hover, .sl-btn:active { transform:none; box-shadow:var(--sl-shadow); }
+}

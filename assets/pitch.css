@@ -1,19 +1,20 @@
+/* Sloosh palette — tokens from assets/sloosh.css, mapped onto the pitch */
 :root {
-  --paper:#EFEDE7; --card:#F7F6F2; --ink:#16161A; --dim:#6E6E66;
-  --rule:#D8D5CC; --signal:#1B34F0; --warn:#A8412A; --chip:#E4E1D8;
+  --paper:#FECC15; --card:#FFFFFF; --ink:#090909; --dim:#4A4A42;
+  --rule:#090909; --signal:#5C4ADE; --warn:#FA4903; --chip:#FFFFFF;
   --display:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
   --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
   --pad:clamp(22px,5vw,80px);
   --measure:66ch;
 }
 @media (prefers-color-scheme: dark) {
-  :root { --paper:#121316; --card:#1A1B20; --ink:#EAE8E1; --dim:#8C8C86;
-    --rule:#2B2C33; --signal:#7A8AFF; --warn:#E0785C; --chip:#24252C; }
+  :root { --paper:#090909; --card:#161616; --ink:#FFF8E6; --dim:#9A9A94;
+    --rule:#FFF8E6; --signal:#9E92FF; --warn:#FF7A47; --chip:#1C1C1C; }
 }
-:root[data-theme="dark"] { --paper:#121316; --card:#1A1B20; --ink:#EAE8E1; --dim:#8C8C86;
-  --rule:#2B2C33; --signal:#7A8AFF; --warn:#E0785C; --chip:#24252C; }
-:root[data-theme="light"] { --paper:#EFEDE7; --card:#F7F6F2; --ink:#16161A; --dim:#6E6E66;
-  --rule:#D8D5CC; --signal:#1B34F0; --warn:#A8412A; --chip:#E4E1D8; }
+:root[data-theme="dark"] { --paper:#090909; --card:#161616; --ink:#FFF8E6; --dim:#9A9A94;
+  --rule:#FFF8E6; --signal:#9E92FF; --warn:#FF7A47; --chip:#1C1C1C; }
+:root[data-theme="light"] { --paper:#FECC15; --card:#FFFFFF; --ink:#090909; --dim:#4A4A42;
+  --rule:#090909; --signal:#5C4ADE; --warn:#FA4903; --chip:#FFFFFF; }
 
 * { box-sizing:border-box; }
 html, body { margin:0; padding:0; }
@@ -163,3 +164,42 @@ footer a:hover { color:var(--signal); border-bottom-color:var(--signal); }
   html { scroll-behavior:auto; }
   * { transition:none !important; }
 }
+
+/* ============================================================================
+   SLOOSH sticker treatment — thick rules, offset shadows, yellow CTA
+   ========================================================================== */
+.bar { border-bottom-width:3px; }
+.bar .tag { border-width:2px; border-radius:999px; font-weight:700;
+  color:var(--ink); background:var(--card); }
+
+.model { border-width:3px; border-radius:14px; box-shadow:5px 5px 0 var(--ink); }
+.model-head .live { border-width:2px; border-radius:999px; font-weight:700; color:var(--ink); }
+.model-foot > div { border-width:2px; border-radius:9px; }
+.chips span { border-width:2px; border-radius:7px; font-weight:700; }
+.chips.solved span { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+
+.steps, .offer { border-width:3px; border-radius:14px; box-shadow:5px 5px 0 var(--ink); gap:3px; }
+.steps > div, .offer > div { background:var(--card); }
+.steps .n { font-weight:800; color:var(--ink); background:var(--chip);
+  width:30px; height:30px; display:grid; place-items:center;
+  border:2px solid var(--ink); border-radius:999px; font-size:13px; }
+
+.cta { background:#FECC15; color:#090909; border:3px solid #090909;
+  border-radius:9px; box-shadow:4px 4px 0 #090909; font-weight:800;
+  transition:transform .1s, box-shadow .1s; }
+.cta:hover { opacity:1; transform:translate(2px,2px); box-shadow:2px 2px 0 #090909; }
+.cta:active { transform:translate(4px,4px); box-shadow:0 0 0 #090909; }
+
+.proof-line { border-left-width:4px; }
+.faq details { border-bottom-width:2px; }
+.checks li::before { font-weight:800; }
+section { border-top-width:3px; }
+footer { border-top-width:3px; }
+.sticky { border-top-width:3px; }
+.sticky .cta { box-shadow:none; border-width:3px; }
+.sticky .cta:hover, .sticky .cta:active { transform:none; box-shadow:none; }
+/* small text stays black on yellow; violet reserved for display-size accents */
+.eyebrow { color:var(--ink); font-weight:700; }
+.kicker { color:var(--ink); font-weight:700; opacity:.72; }
+.checks li::before { color:var(--ink); font-weight:800; }
+.divider span { color:var(--ink); }
