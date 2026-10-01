@@ -94,12 +94,14 @@ Reference libraries to browse before the day. These are other people's collectio
 | 03 | The AI build | Seven-stage spec for the festive creative engine — assigned build |
 | 04 | The pitch | Six-part anatomy of a pitch page, and the ShopOS festive pitch |
 | 05 | The toolkit | Index of everything below |
-| 06 | Swipe file | 52 patterns across 9 rails — hooks, formats, scripts, LP patterns, benchmarks |
-| 07 | Prompt chain | 13 prompts that run in sequence, research → page |
-| 08 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
-| 09 | Briefs | Creative brief + landing page brief |
-| 10 | Scoring | Judging rubric per track, weights published |
-| 11 | Ship & after | Submission, 3-minute demo, credits + FDE, launch-post skeleton |
+| 06 | The cards | All 128 festive problem cards, filterable and flippable, in-page |
+| 07 | Creative swipe file | 31 patterns — hooks, formats, script structures, benchmarks |
+| 08 | Landing page swipe file | 21 patterns — above the fold, proof, friction, the ask |
+| 09 | Prompt chain | 13 prompts that run in sequence, research → page |
+| 10 | Teardown protocol | 6 steps to turn a competitor's winner into your own asset |
+| 11 | Briefs | Creative brief + landing page brief |
+| 12 | Scoring | Judging rubric per track, weights published |
+| 13 | Ship & after | Submission, 3-minute demo, credits + FDE, launch-post skeleton |
 
 ---
 
@@ -122,6 +124,8 @@ index.html            THE PITCH — the front door
 preview/              all three pages in one link, with desktop/tablet/phone frames
 cards/                the 128 festive problem cards (Sloosh deck, on screen)
 assets/sloosh.css     SLOOSH brand tokens — link this before any page stylesheet
+assets/cards.css      card components, shared by /cards/ and the handbook section
+assets/cardgrid.js    CardGrid.mount(root, CARDS) — the shared card renderer
 data/cards.js         the 128 cards
 assets/pitch.css      pitch styling
 handbook/index.html   the handbook shell + sidebar

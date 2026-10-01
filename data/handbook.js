@@ -460,10 +460,36 @@ window.SECTIONS = [
   },
 
   {
-    id:"swipe", nav:"Swipe file",
-    title:`Patterns, filed by the <em>job they do.</em>`,
-    lede:`Not by the brand that ran them. Each card carries what it is, the mechanism underneath, and the number attached where one exists. A <strong>dashed card</strong> is a benchmark — judge with it, don't build from it. A card with a <strong>red edge</strong> tested negative.`,
-    html:"__SWIPE__"
+    id:"cards", nav:"The cards", tick:"New",
+    title:`128 problems your brand <em>already has.</em>`,
+    lede:`The ShopOS × DSG deck, rewritten for the festive run. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by section, or search a brand name.</strong>`,
+    html:`<div class="prose">
+      <p><strong>84 cards name a specific DSG portfolio brand</strong>, drawn from the 70 live
+        companies. The other 44 — <em>Every brand</em> and <em>Shopify pages</em> — are
+        cross-cutting by design, as in the original deck.</p>
+      <p>Pick the card that makes you wince. That is your build for the day. If two apply, take the
+        one whose metric you already report on, because you will be able to prove the change.</p>
+      <div class="callout warn">
+        <p><strong>These are conversation starters, not findings.</strong> Each problem is inferred
+          from the brand's category and the festive calendar — not from an audit of anyone's store
+          or ad account. The framing is conditional on purpose: flip it <em>if</em> it's true.</p>
+      </div>
+    </div>
+    <div class="cards-mount" id="cards-mount"></div>`
+  },
+
+  {
+    id:"swipe-creative", nav:"Creative swipe file",
+    title:`Hooks, formats, <em>and the first 1.5 seconds.</em>`,
+    lede:`Everything before the click, filed by the job it does rather than the brand that ran it. Each card carries what it is, the mechanism underneath, and the number attached where one exists. A <strong>dashed card</strong> is a benchmark — judge with it, don't build from it. A card with a <strong>red edge</strong> tested negative.`,
+    html:"__SWIPE_CREATIVE__"
+  },
+
+  {
+    id:"swipe-lp", nav:"Landing page swipe file",
+    title:`Above the fold, proof, <em>and what you're charging them.</em>`,
+    lede:`Everything after the click. The creative sold a promise; these are the patterns that decide whether the page keeps it. Same card grammar as the creative file — <strong>dashed</strong> is a benchmark, a <strong>red edge</strong> tested negative.`,
+    html:"__SWIPE_LP__"
   },
 
   {

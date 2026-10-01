@@ -70,16 +70,22 @@
 
   /* ---------- built section bodies ---------- */
 
+  function trackEl(t) {
+    return '<section class="track">' +
+      '<div class="track-head">' +
+        '<div class="sec-no" style="margin:0">' + esc(t.tag) + '</div>' +
+        '<h3 class="track-title">' + esc(t.title) + '</h3>' +
+        '<p class="track-note">' + esc(t.note) + '</p>' +
+      '</div>' + t.rails.map(railEl).join("") +
+    '</section>';
+  }
+  var byId = function (id) {
+    return FILE.filter(function (t) { return t.id === id; }).map(trackEl).join("");
+  };
+
   var BUILT = {
-    __SWIPE__: FILE.map(function (t) {
-      return '<section class="track">' +
-        '<div class="track-head">' +
-          '<div class="sec-no" style="margin:0">' + esc(t.tag) + '</div>' +
-          '<h3 class="track-title">' + esc(t.title) + '</h3>' +
-          '<p class="track-note">' + esc(t.note) + '</p>' +
-        '</div>' + t.rails.map(railEl).join("") +
-      '</section>';
-    }).join(""),
+    __SWIPE_CREATIVE__: byId("creative"),
+    __SWIPE_LP__: byId("lp"),
 
     __PROMPTS__: '<div class="prose">' + PROMPTS.map(function (s) {
       return '<section class="stage">' +
@@ -126,15 +132,24 @@
   };
 
   function expand(html) {
-    return html.replace(/__[A-Z]+__/g, function (k) {
+    return html.replace(/__[A-Z_]+__/g, function (k) {
       return Object.prototype.hasOwnProperty.call(BUILT, k) ? BUILT[k] : k;
     });
   }
 
   /* ---------- toolkit index (derived from SECTIONS) ---------- */
 
+  var creativeCount = 0, lpCount = 0;
+  FILE.forEach(function (t) {
+    t.rails.forEach(function (r) {
+      if (t.id === "creative") creativeCount += r.cards.length; else lpCount += r.cards.length;
+    });
+  });
+
   var TOOLKIT = [
-    { go:"swipe",    nm:"The Swipe File", ds:"Every hook, format, script structure and landing-page pattern worth knowing, with the mechanism that makes it fire and the benchmark attached where one exists. Filed by the job it does.", go_label: patternCount + " patterns →" },
+    { go:"cards", nm:"The Cards", ds:"128 festive problem cards — 84 named to a DSG portfolio brand. Click one to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
+    { go:"swipe-creative", nm:"Creative Swipe File", ds:"Hooks, formats, script structures and the benchmarks that judge them. Everything before the click, filed by the job it does.", go_label: creativeCount + " patterns →" },
+    { go:"swipe-lp", nm:"Landing Page Swipe File", ds:"Above the fold, proof placement, friction and the ask. Everything after the click, with the test numbers attached.", go_label: lpCount + " patterns →" },
     { go:"prompts",  nm:"The Prompt Chain", ds:"Research → angles → hooks → scripts → page. Built to run in sequence, each stage eating the previous stage's output. Copy straight out.", go_label: promptCount + " prompts →" },
     { go:"teardown", nm:"Teardown Protocol", ds:"How to turn somebody else's winner into your own asset — taking the angle and the structure, never the execution. Run it before you write anything original.", go_label:"6 steps →" },
     { go:"briefs",   nm:"Brief Templates", ds:"One for creative, one for landing pages. Both force the decisions teams normally discover halfway through building — the angle, the one goal, the single objection, what gets omitted.", go_label:"2 templates →" },
@@ -202,6 +217,12 @@
 
   document.getElementById("progress").innerHTML =
     SECTIONS.map(function () { return "<i></i>"; }).join("");
+
+  // the 128 cards live inside the Cards section
+  var mount = document.getElementById("cards-mount");
+  if (mount && window.CardGrid && window.CARDS) {
+    window.CardGrid.mount(mount, window.CARDS);
+  }
 
   function show(id) {
     var i = SECTIONS.findIndex(function (s) { return s.id === id; });

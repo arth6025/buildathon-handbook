@@ -353,3 +353,9 @@ th { border-bottom-width:3px; }
 .sec-no { color:var(--ink); font-weight:700; }
 .eyebrow { color:var(--ink); font-weight:700; }
 .toc .tick { color:var(--ink); border-color:var(--ink); }
+
+/* the 128 cards, mounted inside the handbook's Cards section */
+.cards-mount { padding:0 var(--pad); }
+.cards-mount.cardset { --cg-fg:var(--ink); --cg-bg:var(--paper); --cg-line:var(--ink);
+  --cg-mute:var(--dim); --cg-field:var(--card); }
+.cards-mount .cg-bar { padding-top:10px; }
