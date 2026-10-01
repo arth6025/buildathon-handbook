@@ -51,7 +51,7 @@ window.SECTIONS = [
   {
     id:"welcome", nav:"Welcome",
     title:`Two tracks. <em>One day.</em> Live before the festive rush.`,
-    lede:`Everything you need for the DSGCP × ShopOS buildathon in Mumbai — the patterns, the prompts, the briefs and the rubric. <strong>Read it before the day, not during.</strong> The teams that place have already made their decisions by the time the clock starts.`,
+    lede:`Everything you need for <strong>Assemble | Chapter 1 Mumbai</strong>, a hands-on workshop by DSG Consumer Partners and ShopOS — the patterns, the prompts, the briefs and the rubric. <strong>Read it before the day, not during.</strong> The teams that place have already made their decisions by the time the clock starts.`,
     html:`<div class="prose">
       <h2>What we're actually trying to do</h2>
       <p class="big">Give brands a working preview of how to produce ad creative and
@@ -294,7 +294,7 @@ window.SECTIONS = [
       </div>
 
       <div class="callout">
-        <p><strong>Timing is the whole argument.</strong> The buildathon sits just ahead of the
+        <p><strong>Timing is the whole argument.</strong> Assemble sits just ahead of the
           festive peak. A creative engine that exists in October is a revenue decision; the same
           engine in December is a learning experience.</p>
       </div>
