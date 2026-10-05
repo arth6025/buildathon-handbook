@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before Mumbai — Assemble | Chapter 1</title>
+<meta name="description" content="The action list for Assemble | Chapter 1 Mumbai. Tick what you own, copy your list, circle back.">
+<link rel="stylesheet" href="../assets/sloosh.css">
+<link rel="stylesheet" href="checklist.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="lockup">
+      <div class="event">
+        <div class="nm">Assemble</div>
+        <div class="meta">Chapter 1 · Mumbai · 10 Oct</div>
+      </div>
+      <div class="hosts">
+        <span class="lbl">By</span>
+        <a href="https://shopos.ai/" target="_blank" rel="noopener" aria-label="ShopOS"><img class="shopos" src="../assets/logos/shopos-white.svg" alt="ShopOS"></a>
+        <span class="x">×</span>
+        <a href="https://www.dsgcp.com/" target="_blank" rel="noopener" aria-label="DSG Consumer Partners"><img class="dsgcp" src="../assets/logos/dsgcp-white.svg" alt="DSG Consumer Partners"></a>
+      </div>
+    </div>
+
+    <h1>Tick what you own. <em>Circle back Friday.</em></h1>
+    <p class="lede">Five things stand between now and the room. Each one has an owner and a
+      definition of done — <b>tick it, copy your list, and send it to the group.</b></p>
+
+    <div class="meter">
+      <div class="bar"><i id="fill"></i></div>
+      <div class="meterlab"><span id="count">0 of 5 done</span><span id="daysleft"></span></div>
+    </div>
+
+    <div class="filters" id="filters"></div>
+  </header>
+
+  <ul class="list" id="list"></ul>
+
+  <div class="actions">
+    <button class="btn" id="copy">Copy my list</button>
+    <span class="hint" id="hint">Copies the open items with owners.</span>
+    <button class="btn ghost" id="reset">Reset ticks</button>
+  </div>
+
+  <p class="foot">Ticks are saved in this browser only — they are a personal tracker, not a shared
+    status. Send the copied list to the group to make it everyone's.</p>
+</div>
+
+<script>
+const ITEMS = [
+  { id:"cards", owners:["Baisakhi","Urmit"],
+    t:"Fill the 128 cards with the attendees' real problems",
+    d:"Replace the inferred problems with what each attending brand actually says. Card 1–128, brand by brand." },
+  { id:"workflows", owners:["Baisakhi","Workflow engineer"],
+    t:"Build at least 3 custom workflows per brand",
+    d:"Three working workflows per attending brand, pointed at their own catalogue, before the day." },
+  { id:"pages", owners:["Baisakhi","Prashant"],
+    t:"Build the workflow for multiple landing pages",
+    d:"One page per angle, message-matched to the ad that feeds it, live on a real Shopify store." },
+  { id:"dates", owners:["Urmit"],
+    t:"Confirm dates and the soft commit from brands",
+    d:"10 Oct locked, and a named soft commit from each brand expected in the room." },
+  { id:"credits", owners:["Baisakhi"],
+    t:"Onboard ByteDance credit redemption via ShopOS",
+    d:"Redemption path live so credits can be claimed through ShopOS on the day." }
+];
+
+const KEY = "assemble-ch1-checklist";
+const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+const save = s => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} };
+let state = load(), filter = null;
+
+const OWNERS = [...new Set(ITEMS.flatMap(i => i.owners))];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+
+document.getElementById("filters").innerHTML =
+  `<button class="chip" data-o="" aria-pressed="true">Everyone<span class="ct">${ITEMS.length}</span></button>` +
+  OWNERS.map(o => `<button class="chip" data-o="${esc(o)}" aria-pressed="false">${esc(o)}` +
+    `<span class="ct">${ITEMS.filter(i=>i.owners.includes(o)).length}</span></button>`).join("");
+
+function render() {
+  const list = ITEMS.filter(i => !filter || i.owners.includes(filter));
+  document.getElementById("list").innerHTML = list.map(i => {
+    const on = !!state[i.id];
+    return `<li class="item${on ? " done" : ""}">
+      <button class="box" data-id="${i.id}" role="checkbox" aria-checked="${on}"
+        aria-label="${esc(i.t)}">${on ? "✓" : ""}</button>
+      <div class="body">
+        <div class="t">${esc(i.t)}</div>
+        <div class="d">${esc(i.d)}</div>
+        <div class="who">${i.owners.map(o=>`<span class="own">${esc(o)}</span>`).join("")}</div>
+      </div></li>`;
+  }).join("");
+
+  const done = ITEMS.filter(i => state[i.id]).length;
+  document.getElementById("count").textContent = `${done} of ${ITEMS.length} done`;
+  document.getElementById("fill").style.width = (done / ITEMS.length * 100) + "%";
+}
+
+(function days() {
+  const d = Math.ceil((new Date(2026, 9, 10) - new Date()) / 864e5);
+  document.getElementById("daysleft").textContent =
+    d > 1 ? `${d} days to Mumbai` : d === 1 ? "tomorrow" : d === 0 ? "today" : "";
+})();
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".box");
+  if (b) { state[b.dataset.id] = !state[b.dataset.id]; save(state); render(); return; }
+  const c = e.target.closest(".chip");
+  if (c) {
+    filter = c.dataset.o || null;
+    document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === c)));
+    render(); return;
+  }
+  if (e.target.id === "reset") { state = {}; save(state); render(); return; }
+  if (e.target.id === "copy") {
+    const lines = ITEMS.filter(i => !filter || i.owners.includes(filter))
+      .map(i => `${state[i.id] ? "[x]" : "[ ]"} ${i.t} — ${i.owners.join(" + ")}`);
+    const txt = `Assemble | Chapter 1 Mumbai — 10 Oct\n\n${lines.join("\n")}`;
+    navigator.clipboard.writeText(txt).then(() => {
+      document.getElementById("hint").textContent = "Copied. Paste it to the group.";
+      setTimeout(() => document.getElementById("hint").textContent = "Copies the open items with owners.", 2200);
+    }).catch(() => document.getElementById("hint").textContent = "Press ⌘C to copy.");
+  }
+});
+
+render();
+</script>
+</body>
+</html>

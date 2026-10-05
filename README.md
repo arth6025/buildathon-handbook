@@ -18,7 +18,7 @@ Build the two workflows that decide your festive season — ad creative at scale
 
 - [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [The objective](#the-objective)
 - [The flow of the day](#the-flow-of-the-day) · [The two workflows](#the-two-workflows) · [What to bring](#what-to-bring) · [What you leave with](#what-you-leave-with)
-- [The four surfaces](#the-four-surfaces) · [The handbook](#the-handbook) · [The 128 cards](#the-128-cards)
+- [The five surfaces](#the-five-surfaces) · [The handbook](#the-handbook) · [The 128 cards](#the-128-cards)
 - [What brands can build](#what-brands-can-build) · [Reference libraries](#reference-libraries)
 - [Repo structure](#repo-structure) · [Running it locally](#running-it-locally) · [Contributing](#contributing)
 - [Assigned builds](#assigned-builds) · [Open items](#open-items) · [On sourcing](#on-sourcing)
@@ -103,14 +103,16 @@ They are one funnel, and the sequence isn't arbitrary. **The creative workflow c
 
 ---
 
-## The four surfaces
+## The five surfaces
 
 | | What it is | Link |
 |---|---|---|
-| 🎯 **The pitch** | The argument, and a worked Track 02 build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
+| 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
+| 🎞️ **The flow** | 21-stage story deck: feed → ad → personalised page → proof | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 15 sections, read in order | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 👀 **The cards** | 128 festive problem cards, flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| 👁️ **Preview** | All of the above in one link, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
+| ✅ **The checklist** | 5 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
 
@@ -225,13 +227,20 @@ The fastest useful contribution: **add a pattern you've actually seen work, with
 
 ---
 
-## Assigned builds
+## Action items
 
-| Build | Owner | Status | Spec |
+Owners and definitions of done. Live, tickable version: **[the checklist](https://arth6025.github.io/buildathon-handbook/checklist/)**.
+
+| # | Action | Owner | Done means |
 |---|---|---|---|
-| **Festive creative engine** — one product URL in, a labelled batch of testable ad variations out. Pairs a frontier model (Claude or GPT) with an agent across seven stages. | **Prashant + engineer** | Not started | [The AI build](https://arth6025.github.io/buildathon-handbook/handbook/#ai-build) |
+| 1 | Fill the 128 cards with the attendees' real problems | **Baisakhi × Urmit** | Inferred problems replaced with what each attending brand actually says, card by card |
+| 2 | Build at least 3 custom workflows per brand | **Baisakhi + workflow engineer** | Three working workflows per brand, pointed at their own catalogue |
+| 3 | Build the workflow for multiple landing pages | **Baisakhi + Prashant** | One page per angle, message-matched to its ad, live on a real Shopify store |
+| 4 | Confirm dates and the soft commit from brands | **Urmit** | 10 Oct locked, and a named soft commit from each brand |
+| 5 | Onboard ByteDance credit redemption via ShopOS | **Baisakhi** | Redemption path live so credits can be claimed on the day |
 
-The spec is written to be implementable without further briefing. Open a PR against `data/handbook.js` as it gets built.
+Also open, from the AI build spec: the **festive creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/handbook/#ai-build)) — Prashant + engineer.
+
 
 ---
 
@@ -240,7 +249,6 @@ The spec is written to be implementable without further briefing. Open a PR agai
 - [ ] **Agree the scoring weights** before the day (current set is a proposal, deliberately weighted toward argument over polish)
 - [ ] **Add the booking link** on the pitch page — currently a placeholder anchor
 - [ ] **Decide on the brand-named cards** staying in a public repo
-- [ ] Section 05 item 08 — *Stack & Agent Map*, blocked on the tooling decision
 - [ ] Consider renaming this repo to `assemble` — the Pages URL would change with it
 
 ---
