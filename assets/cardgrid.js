@@ -14,6 +14,11 @@ window.CardGrid = (function () {
     });
   }
 
+  function recipeName(id) {
+    var r = (window.RECIPES || []).find(function (x) { return x.id === id; });
+    return r ? r.name : "Orbit";
+  }
+
   function cardEl(c) {
     var dark = DARK.indexOf(c.colour) >= 0;
     return '<button class="card3d" style="--c:' + c.colour + '" aria-pressed="false" ' +
@@ -30,7 +35,7 @@ window.CardGrid = (function () {
             '<span class="quip">' + esc(c.quip) + '</span>' +
           '</div>' +
           '<div class="flipnote">Flip this over if your brand has this problem.</div>' +
-          (c.brand ? '<div class="brandtag">' + esc(c.brand) + '</div>' : '') +
+          (c.brand ? '<div class="brandtag">' + esc(c.brand) + (c.recipe ? ' · ' + esc(recipeName(c.recipe)) : '') + '</div>' : '') +
           '<p class="problem">' + esc(c.problem) + '</p>' +
           '<div class="f-foot">' +
             '<span class="flip-pill">' + esc(c.flip) + '</span>' +

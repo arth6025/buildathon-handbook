@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Orbit Runs · Internal</title>
+<meta name="description" content="Internal run sheet for the Orbit Buildathon (Sloosh × DSGCP): teams, mentors, check-ins, submission and judging.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../../assets/sloosh.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+<style>
+  :root { --bg:var(--sl-cream); --fg:var(--sl-ink); --mute:#5E5A50; --card:#fff; --acc:var(--sl-yellow); --line:var(--sl-ink); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0E0E0E; --fg:#F4F1E8; --mute:#A7A398; --card:#191919; --line:#F4F1E8; } }
+  :root[data-theme="dark"] { --bg:#0E0E0E; --fg:#F4F1E8; --mute:#A7A398; --card:#191919; --line:#F4F1E8; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:var(--sl-display); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  a { color:inherit; }
+  .wrap { width:min(100% - 32px, 760px); margin-inline:auto; }
+
+  /* top bar */
+  .top { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:2px solid var(--line); }
+  .top .wrap { display:flex; align-items:center; gap:14px; height:56px; }
+  .brand { font-weight:800; letter-spacing:-.03em; font-size:19px; white-space:nowrap; }
+  .brand small { font-family:var(--sl-mono); font-weight:500; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin-left:8px; }
+  .menu { margin-left:auto; font:700 14px var(--sl-display); background:var(--card); color:var(--fg); border:2px solid var(--line); border-radius:999px; padding:7px 14px; cursor:pointer; }
+  .toc { display:none; border-top:2px solid var(--line); background:var(--bg); }
+  .toc.open { display:block; }
+  .toc ol { list-style:none; margin:0; padding:10px 0 14px; display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:4px 16px; }
+  .toc button { all:unset; cursor:pointer; display:flex; gap:10px; padding:7px 0; font-weight:600; }
+  .toc button span { font-family:var(--sl-mono); color:var(--mute); font-weight:500; }
+  .toc button[aria-current="true"] { text-decoration:underline; text-decoration-thickness:3px; text-decoration-color:var(--acc); text-underline-offset:5px; }
+
+  /* chapters */
+  .ch { display:none; padding:44px 0 32px; }
+  .ch.on { display:block; }
+  .kicker { font-family:var(--sl-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--mute); margin:0 0 10px; }
+  h1 { font-size:clamp(34px, 6vw, 52px); line-height:1.02; letter-spacing:-.04em; margin:0 0 14px; }
+  .lede { font-size:20px; color:var(--mute); margin:0 0 28px; max-width:34em; }
+  h2 { font-size:24px; letter-spacing:-.02em; margin:36px 0 12px; }
+  p { margin:0 0 14px; }
+
+  /* hero */
+  .hero { text-align:center; padding:40px 0 8px; }
+  .hero .eyebrow { font-family:var(--sl-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--mute); }
+  .hero h1 { font-size:clamp(56px, 13vw, 112px); margin:10px 0 6px; }
+  .hero h1 em { font-style:normal; background:var(--acc); color:var(--sl-ink); padding:0 .12em; border-radius:8px; }
+  .hero .sub { font-size:19px; margin:18px auto 26px; max-width:30em; }
+  .hero .meta { font-family:var(--sl-mono); font-size:13px; letter-spacing:.06em; color:var(--mute); margin-bottom:26px; }
+
+  /* blocks */
+  .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); }
+  .card { background:var(--card); border:2px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--mute); font-size:15.5px; }
+  .card .big { font-size:28px; font-weight:800; letter-spacing:-.03em; color:var(--fg); margin-bottom:2px; }
+  .card.hot { background:var(--acc); color:var(--sl-ink); }
+  .card.hot p { color:#3a3a3a; }
+  .rows { border:2px solid var(--line); border-radius:14px; overflow:hidden; background:var(--card); }
+  .row { display:grid; grid-template-columns:120px 1fr; gap:14px; padding:14px 18px; border-top:2px solid var(--line); }
+  .row:first-child { border-top:0; }
+  .row .k { font-family:var(--sl-mono); font-weight:700; font-size:14px; }
+  .row .v b { display:block; }
+  .row .v span { color:var(--mute); font-size:15.5px; }
+  @media (max-width:520px) { .row { grid-template-columns:1fr; gap:4px; } }
+  .rule { display:grid; grid-template-columns:44px 1fr; gap:12px; padding:14px 0; border-top:2px dashed color-mix(in oklab, var(--line) 30%, transparent); }
+  .rule:first-of-type { border-top:0; }
+  .rule .n { font-family:var(--sl-mono); font-weight:700; color:var(--mute); padding-top:2px; }
+  .rule b { display:block; font-size:18px; }
+  .rule span { color:var(--mute); }
+  .two { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); }
+  ul.tick, ul.cross { list-style:none; padding:0; margin:0; }
+  ul.tick li, ul.cross li { padding:6px 0 6px 28px; position:relative; }
+  ul.tick li::before { content:"✓"; position:absolute; left:0; font-weight:800; color:#1d8a4f; }
+  ul.cross li::before { content:"✕"; position:absolute; left:0; font-weight:800; color:#d9453a; }
+  .note { border-left:4px solid var(--acc); padding:10px 16px; background:var(--card); border-radius:0 10px 10px 0; margin:18px 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:2px solid var(--line); border-radius:14px; overflow:hidden; font-size:15.5px; }
+  th, td { text-align:left; padding:11px 14px; border-top:2px solid var(--line); vertical-align:top; }
+  thead th { border-top:0; font-family:var(--sl-mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); }
+  td.w { font-family:var(--sl-mono); font-weight:700; white-space:nowrap; }
+  .tablewrap { overflow-x:auto; }
+  pre { white-space:pre-wrap; background:var(--card); border:2px solid var(--line); border-radius:14px; padding:16px 18px; font:14px/1.55 var(--sl-mono); margin:0; }
+  .copy { margin-top:10px; }
+
+  /* ideas */
+  .filters { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 16px; }
+  .chip { font:700 14px var(--sl-display); background:var(--card); color:var(--fg); border:2px solid var(--line); border-radius:999px; padding:6px 14px; cursor:pointer; }
+  .chip[aria-pressed="true"] { background:var(--acc); color:var(--sl-ink); }
+  .idea .tag { font-family:var(--sl-mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin-bottom:6px; }
+  .idea h3 { font-size:17px; }
+  .idea ol.chain { margin:8px 0 0; padding-left:20px; color:var(--mute); font-size:14.5px; }
+  .card.hot ol.chain { color:#3a3a3a; }
+  .idea ol.chain li { padding:2px 0; }
+  .idea .brand-line { font-size:13.5px; font-weight:700; margin-top:8px; color:var(--fg); }
+
+  /* buttons + pager */
+  .btn { display:inline-flex; align-items:center; gap:8px; font:800 16px var(--sl-display); background:var(--acc); color:var(--sl-ink); border:2px solid var(--sl-ink); border-radius:999px; padding:12px 22px; cursor:pointer; text-decoration:none; box-shadow:3px 3px 0 var(--sl-ink); }
+  .btn.ghost { background:var(--card); color:var(--fg); border-color:var(--line); box-shadow:none; }
+  .pager { display:flex; justify-content:space-between; gap:12px; border-top:2px solid var(--line); padding:20px 0 48px; }
+  .pager button { all:unset; cursor:pointer; display:flex; flex-direction:column; gap:2px; max-width:48%; }
+  .pager button:last-child { text-align:right; margin-left:auto; }
+  .pager small { font-family:var(--sl-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--mute); }
+  .pager b { font-size:18px; }
+  .pager button[hidden], .pager[hidden] { display:none; }
+  :focus-visible { outline:3px dashed var(--acc); outline-offset:3px; }
+
+  .banner { background:#d9453a; color:#fff; font:700 13px var(--sl-mono); letter-spacing:.1em; text-transform:uppercase; text-align:center; padding:9px 12px; position:sticky; top:0; z-index:6; }
+  .sec { padding:36px 0 8px; border-bottom:2px dashed color-mix(in oklab, var(--line) 25%, transparent); }
+  .sec:last-child { border-bottom:0; padding-bottom:60px; }
+  h3 { font-size:18px; margin:22px 0 8px; }
+</style>
+</head>
+<body>
+<div class="banner">Internal · Sloosh × DSGCP · not for brands</div>
+<main class="wrap">
+
+  <section class="sec">
+    <p class="kicker">Orbit Buildathon · 16 Dec 2026 · Mumbai</p>
+    <h1>How Orbit runs.</h1>
+    <p class="lede">The run sheet for the team: who's in the room, how teams form, how mentors are matched, the check-ins, how teams submit, and how a winner is picked. The brand-facing version is the <a href="../../handbook/">handbook</a>; the story is <a href="../">How Orbit works</a>.</p>
+    <div class="grid">
+      <div class="card hot"><div class="big">28</div><p>brands</p></div>
+      <div class="card"><div class="big">3</div><p>tracks · 9 engine recipes</p></div>
+      <div class="card"><div class="big">7 + 10</div><p>floor mentors + paired AI experts</p></div>
+      <div class="card"><div class="big">≤ 67</div><p>people on the floor</p></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">01 / Teams</p>
+    <h2>Teams of 2 or 3. Never more.</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Team shape</th><th>Who</th><th>For</th><th>Teams</th><th>People</th></tr></thead>
+      <tbody>
+        <tr><td><b>Brand duo</b></td><td>Founder + operator</td><td>Brands already using AI</td><td class="w">18</td><td class="w">36</td></tr>
+        <tr><td><b>Assisted pair</b></td><td>Operator + paired AI expert</td><td>New to AI, founder not attending</td><td class="w">6</td><td class="w">12</td></tr>
+        <tr><td><b>Assisted trio</b></td><td>Founder + operator + paired AI expert</td><td>New to AI, founder attending</td><td class="w">4</td><td class="w">12</td></tr>
+        <tr><td><b>Floor mentors</b></td><td>Agency owners, AI + creative</td><td>One for every 4 teams</td><td class="w">7</td><td class="w">7</td></tr>
+        <tr><td colspan="3"><b>Total</b></td><td class="w">28 brands</td><td class="w">67</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note"><b>The trio cap is the room cap.</b> Every assisted pair that becomes a trio adds one person. Hold trios at 4 to stay under ~67.</p>
+
+    <h2>How a team forms</h2>
+    <div class="rows">
+      <div class="row"><div class="k">Invite</div><div class="v"><b>Urmit + DSG send personal invites</b><span>To portfolio founders doing ₹1Cr+, with the handbook link and the sign-up form.</span></div></div>
+      <div class="row"><div class="k">Sign-up</div><div class="v"><b>Two names, one track, a 3-question AI check</b><span>Have you made an ad with AI? Do you use Claude or ChatGPT weekly? Who runs creative today? Low scores get an AI expert.</span></div></div>
+      <div class="row"><div class="k">T-5</div><div class="v"><b>Shape assigned</b><span>Duo, assisted pair or assisted trio. Paired AI expert named and introduced on email.</span></div></div>
+      <div class="row"><div class="k">T-1</div><div class="v"><b>Idea locked with the mentor</b><span>A recipe from the idea library, or a custom idea under the track. 10-minute call.</span></div></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">02 / Mentors and experts</p>
+    <h2>Matched by track and recipe.</h2>
+    <p>Mentors run <b>pods of 4 teams on the same track</b>, grouped by recipe where possible, so one person sees four versions of the same engine and can unblock fast. Pod sizes follow sign-ups; a likely split is 2–3 pods on 01, 2 on 02 and 2 on 03.</p>
+    <div class="two">
+      <div class="card"><h3>Floor mentor (7)</h3>
+        <ul class="tick"><li>Owns one pod of 4 teams all day</li><li>Runs the T-1 call with each of them</li><li>Stamps every check-in</li><li>Checks the gates: on-brand, no false claims</li><li>Points; never takes the keyboard</li></ul></div>
+      <div class="card"><h3>Paired AI expert (10)</h3>
+        <ul class="tick"><li>Sits with one assisted team all day</li><li>Sets up Claude + the Sloosh MCP and BYOK with them</li><li>Teaches the recipe; the brand drives</li><li>Flags fair-play doubts to the mentor</li></ul></div>
+    </div>
+    <p class="note"><b>Experts in the CXO room</b> (BytePlus, Shopify or Meta, Saif from Kovra group) also sit on the final panel.</p>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">03 / The day and its check-ins</p>
+    <h2>Four check-ins. Each one is a stamp.</h2>
+    <div class="rows">
+      <div class="row"><div class="k">09:00</div><div class="v"><b>Check-in 0 · Arrival</b><span>Badge, table, and the access check: Sloosh workspace live, Claude connected to the Sloosh MCP, BytePlus key verified in BYOK. Red? A fixer comes over.</span></div></div>
+      <div class="row"><div class="k">09:30</div><div class="v"><b>Opening</b><span>Hari from DSG (tentative), then the rules and scoring in 10 minutes.</span></div></div>
+      <div class="row"><div class="k">10:00</div><div class="v"><b>Check-in 1 · Idea lock</b><span>Mentor signs the idea card: track, recipe, problem, the metric it moves.</span></div></div>
+      <div class="row"><div class="k">10:15</div><div class="v"><b>Access opens · build</b><span>Every workspace logged from the first click.</span></div></div>
+      <div class="row"><div class="k">12:00</div><div class="v"><b>Check-in 2 · The map</b><span>The recipe wired through the MCP and a first output in the team's Sloosh Project.</span></div></div>
+      <div class="row"><div class="k">12:30</div><div class="v"><b>Lunch · CXO room</b><span>Founders go behind the closed door. Operators and experts keep building.</span></div></div>
+      <div class="row"><div class="k">14:00</div><div class="v"><b>The curveball</b><span>One twist for every team, same time.</span></div></div>
+      <div class="row"><div class="k">15:30</div><div class="v"><b>Check-in 3 · Batch + re-run</b><span>The batch is in the Project and the engine has run on the second product. Mentor checks the gates.</span></div></div>
+      <div class="row"><div class="k">16:00</div><div class="v"><b>Submissions close</b><span>Then the Feed Test, head-to-heads and cold runs.</span></div></div>
+      <div class="row"><div class="k">16:45</div><div class="v"><b>Top 5 announced</b></div></div>
+      <div class="row"><div class="k">17:00</div><div class="v"><b>Top 5 present</b><span>To the whole room and the panel.</span></div></div>
+      <div class="row"><div class="k">17:40</div><div class="v"><b>Champion crowned · drinks</b></div></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">04 / Submission</p>
+    <h2>One form, one window, no extensions.</h2>
+    <p>Modelled on the GrowthX rule: if a judge can't open it from their own device, it doesn't count. The window opens at <b>15:30</b> and closes at <b>16:00</b>. Late is not judged.</p>
+    <div class="rows">
+      <div class="row"><div class="k">1</div><div class="v"><b>Team, track, recipe</b><span>Picked from a list, so scoring sorts itself.</span></div></div>
+      <div class="row"><div class="k">2</div><div class="v"><b>The Sloosh Project link</b><span>Final assets marked Approved. Rejected ones stay for the audit.</span></div></div>
+      <div class="row"><div class="k">3</div><div class="v"><b>The Claude share link</b><span>The conversation that ran the MCP chain. This is the engine, not the output.</span></div></div>
+      <div class="row"><div class="k">4</div><div class="v"><b>The angle in one sentence</b><span>No product name in it.</span></div></div>
+      <div class="row"><div class="k">5</div><div class="v"><b>Track extras</b><span>01: three ads for the Feed Test. 02: ads for the Feed Test plus the rival listing for the head-to-head. 03: the engine ready for a cold run.</span></div></div>
+    </div>
+    <p class="note"><b>Attached automatically:</b> the workspace log and the Project's CSV export. Engineering flags anything made before 10:15 or imported from outside.</p>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">05 / Judging</p>
+    <h2>Two rounds. The room picks five; the panel picks one.</h2>
+    <h3>Round 1 · everyone (16:00–16:45)</h3>
+    <ul class="tick">
+      <li><b>Root parameter</b> by track: thumb-stops (01), buy taps and head-to-head wins (02), approved assets from a cold run (03). Overflow uncapped.</li>
+      <li><b>Power-ups</b>: +10 each for a regional version, a video cut, the curveball cleared, under credit budget.</li>
+      <li><b>Gates</b>, checked by mentors and the logs: off-brand assets don't count; a false claim or a fair-play miss is out.</li>
+    </ul>
+    <h3>The top 5</h3>
+    <p>The five highest Round 1 scores, <b>with at least one team from each track</b>. If a track has no team in the top five, its best team takes the fifth seat.</p>
+    <h3>Round 2 · the top 5 present (17:00)</h3>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Segment</th><th>Time</th><th>What</th></tr></thead>
+      <tbody>
+        <tr><td><b>Demo</b></td><td class="w">2 min</td><td>The panel picks a product. The engine runs on it live.</td></tr>
+        <tr><td><b>Proof</b></td><td class="w">1 min</td><td>Round 1 numbers on screen.</td></tr>
+        <tr><td><b>Q&amp;A</b></td><td class="w">1 min</td><td>Usually about the weakest number.</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:14px"><b>The panel:</b> BytePlus (director or head), Shopify or Meta, Saif (Kovra group), DSG. Each scores <b>does it run (40) · proof (30) · would they use it in 2027 (30)</b>. Final = Round 1 (normalised) 50% + panel 50%.</p>
+    <div class="grid" style="margin-top:12px">
+      <div class="card hot"><div class="big">$1,500</div><p>Champion, on stage</p></div>
+      <div class="card"><div class="big">$500</div><p>Runner-up</p></div>
+      <div class="card"><div class="big">$500</div><p>Shipped in 30, judged mid-January</p></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">06 / Who runs what on the day</p>
+    <h2>One owner per job.</h2>
+    <div class="rows">
+      <div class="row"><div class="k">Arvind</div><div class="v"><span>Room lead, CXO room host, the panel.</span></div></div>
+      <div class="row"><div class="k">Arvind + Sai</div><div class="v"><span>The full dry run before invites go out.</span></div></div>
+      <div class="row"><div class="k">Urmit + DSG</div><div class="v"><span>Brands, invites, the opening, the venue.</span></div></div>
+      <div class="row"><div class="k">Baisakhi</div><div class="v"><span>Sloosh MCP and BYOK for every team, the paired AI experts.</span></div></div>
+      <div class="row"><div class="k">Manish + eng</div><div class="v"><span>Fair-play logs, the Feed Test app, the submission form.</span></div></div>
+      <div class="row"><div class="k">Tushna</div><div class="v"><span>F&amp;B, photo and video, signage.</span></div></div>
+    </div>
+    <p class="note">Owners follow the <a href="../../checklist/">checklist</a>. Anything without an owner there isn't real yet.</p>
+  </section>
+
+  <section class="sec">
+    <p class="kicker">07 / Still to decide</p>
+    <ul class="cross">
+      <li>The submission form: build it, and its link.</li>
+      <li>The Feed Test app: built and tested in the dry run.</li>
+      <li>Landing-page and email HTML workflows: reachable through the MCP on the day?</li>
+      <li>BYOK switched on for all 28 workspaces, and a small credit float for the BYOK fee.</li>
+      <li>MCP re-auth loops seen in Claude Code (Oct): fixed before the day?</li>
+      <li>The panel's names, and the trio count.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

@@ -87,6 +87,9 @@
   .chip[aria-pressed="true"] { background:var(--acc); color:var(--sl-ink); }
   .idea .tag { font-family:var(--sl-mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin-bottom:6px; }
   .idea h3 { font-size:17px; }
+  .idea ol.chain { margin:8px 0 0; padding-left:20px; color:var(--mute); font-size:14.5px; }
+  .card.hot ol.chain { color:#3a3a3a; }
+  .idea ol.chain li { padding:2px 0; }
   .idea .brand-line { font-size:13.5px; font-weight:700; margin-top:8px; color:var(--fg); }
 
   /* buttons + pager */
@@ -171,7 +174,7 @@
     <div class="rows">
       <div class="row"><div class="k">09:00</div><div class="v"><b>Check-in and kickoff</b><span>Access check, then the opening at 09:30. Tracks lock.</span></div></div>
       <div class="row"><div class="k">10:15</div><div class="v"><b>Build</b><span>Platform access opens. Checkpoints at 12:00 and 15:30, a curveball at 14:00. Founders join the CXO room at lunch.</span></div></div>
-      <div class="row"><div class="k">16:00</div><div class="v"><b>Feed Test and showcase</b><span>The room scrolls your ads, then three minutes each on stage, live. Awards and drinks.</span></div></div>
+      <div class="row"><div class="k">16:00</div><div class="v"><b>Feed Test, then the top 5</b><span>The room scrolls your ads. The five best scores present live to the room and the panel. The champion is crowned on stage.</span></div></div>
     </div>
 
     <h2>What's at stake.</h2>
@@ -265,6 +268,8 @@
       <li>Finishing under your credit budget</li>
     </ul>
     <p class="note"><b>Cross-track bonus:</b> results outside your track count as bonus points. Your main rubric stays locked.</p>
+    <h2>Then the top 5</h2>
+    <p>The five highest scores (at least one per track) present live to the room and the panel. The panel scores <b>does it run (40) · proof (30) · would they use it in 2027 (30)</b>. Final: your score 50%, the panel 50%.</p>
   </section>
 
   <!-- 05 SETUP -->
@@ -275,7 +280,7 @@
       <div class="row"><div class="k">Registration</div><div class="v"><b>Pick a track, take the AI check</b><span>Three quick questions. If you're newer to AI, we pair an AI expert at your table.</span></div></div>
       <div class="row"><div class="k">3 days out</div><div class="v"><b>Send your inputs</b><span>Brand kit (logo, colours, fonts) · top 3 ads · review export · 2 product links (one to build on, one for the re-run).</span></div></div>
       <div class="row"><div class="k">1 day out</div><div class="v"><b>Write your problem</b><span>One sentence: the problem, and the metric it moves. Then a 10-minute call with your mentor to sharpen it. No platform access yet.</span></div></div>
-      <div class="row"><div class="k">On the day</div><div class="v"><b>Access opens at 10:15</b><span>Your Sloosh workspace and the Sloosh MCP go live, with BytePlus build credits loaded. Check it at 09:00 so we can fix anything before then.</span></div></div>
+      <div class="row"><div class="k">On the day</div><div class="v"><b>Access opens at 10:15</b><span>Your Sloosh workspace goes live, Claude connects to the Sloosh MCP, and your BytePlus key is verified in BYOK. Check it at 09:00 so we can fix anything before then.</span></div></div>
     </div>
 
     <h2>Common breaks and fixes.</h2>
@@ -312,20 +317,20 @@
   <section class="ch" data-id="ideas" data-name="Idea library">
     <p class="kicker">07 / Idea library</p>
     <h1>The idea library.</h1>
-    <p class="lede">Bring your own problem, or steal one of ours. Each is a real DSG brand's problem, matched to a track. More are landing from the DSG portfolio before the day.</p>
-    <h2>A taste</h2>
-    <div class="grid">
-      <div class="card"><p class="kicker">Track 01</p><h3>Scroll-stopper refresh</h3><p>Take your winners apart, then ship 20 fresh hooks on the bodies that already work.</p></div>
-      <div class="card hot"><p class="kicker" style="color:#3a3a3a">Track 02</p><h3>Full-funnel engine</h3><p>The ad, the landing page and the email HTML are each a Sloosh workflow. Your engine runs all three through the Sloosh MCP and personalises them for every audience: one promise, start to finish.</p></div>
-      <div class="card"><p class="kicker">Track 03</p><h3>Shoot without a shoot</h3><p>One packshot in, a full catalogue out: lifestyle, in use, on a model.</p></div>
-    </div>
-    <h2>Pick one, or pitch your own</h2>
-    <div class="filters" id="ideaFilters">
+    <p class="lede">Every idea runs on the same stack: <b>Claude, connected to Sloosh through the Sloosh MCP</b>, chaining several Sloosh tools, with BytePlus models on your own key (BYOK). Pick a recipe, then a problem it solves.</p>
+
+    <h2>Nine engine recipes</h2>
+    <div class="filters" id="recipeFilters">
       <button class="chip" data-t="" aria-pressed="true">All</button>
       <button class="chip" data-t="01" aria-pressed="false">01 Stop the Scroll</button>
       <button class="chip" data-t="02" aria-pressed="false">02 Make Them Buy</button>
       <button class="chip" data-t="03" aria-pressed="false">03 Your Own Engine</button>
     </div>
+    <div class="grid" id="recipeGrid"></div>
+    <p class="note"><b>"confirm"</b> marks a Sloosh workflow we're still confirming for the day. Mentors will tell you at the pre-call.</p>
+
+    <h2>Problems that need an engine</h2>
+    <p>Each one is a real DSG brand's problem, matched to a recipe. Steal one, tweak it, or pitch your own. More land from the DSG portfolio before the day.</p>
     <div class="grid" id="ideaGrid"></div>
     <p style="margin-top:16px">These are conversation starters, not audits. <a href="../cards/">See all 128 cards →</a></p>
   </section>
@@ -333,36 +338,37 @@
   <!-- 08 SUBMIT -->
   <section class="ch" data-id="submit" data-name="Submit">
     <p class="kicker">08 / Submit</p>
-    <h1>Lock it by 16:00, or it doesn't count.</h1>
+    <h1>Submit 15:30–16:00, or it doesn't count.</h1>
     <div class="rows">
+      <div class="row"><div class="k">Every team</div><div class="v"><span>Your Sloosh Project link (finals marked Approved) and the Claude share link that ran the MCP chain.</span></div></div>
       <div class="row"><div class="k">Track 01</div><div class="v"><span>Your 3 strongest ads for the Feed Test, in feed and story sizes.</span></div></div>
       <div class="row"><div class="k">Track 02</div><div class="v"><span>Your ads for the Feed Test, plus your listing or creative next to the rival's for the head-to-head.</span></div></div>
       <div class="row"><div class="k">Track 03</div><div class="v"><span>Your engine, ready to run cold on the judges' product.</span></div></div>
       <div class="row"><div class="k">Every track</div><div class="v"><span>The angle in one sentence, with no product name in it.</span></div></div>
     </div>
-    <p class="note">The workspace log is your receipt. Judges see it before they score.</p>
+    <p class="note">One form, one window, no extensions. If a judge can't open it on their own device, it doesn't count. The workspace log is attached for you.</p>
   </section>
 
   <!-- 09 DEMO -->
   <section class="ch" data-id="demo" data-name="Demo prep">
     <p class="kicker">09 / Demo prep</p>
-    <h1>Three minutes. Live. No slides.</h1>
+    <h1>Top 5? Four minutes. Live.</h1>
     <div class="tablewrap"><table>
       <thead><tr><th>Segment</th><th>Time</th><th>What to show</th></tr></thead>
       <tbody>
-        <tr><td><b>Context</b></td><td class="w">20 sec</td><td>Your track and your angle, in one sentence.</td></tr>
-        <tr><td><b>Live run</b></td><td class="w">100 sec</td><td>A judge picks a product. Run your engine on it, end to end.</td></tr>
-        <tr><td><b>Proof</b></td><td class="w">40 sec</td><td>Your Feed Test numbers or head-to-head wins on screen. If it isn't on screen, it doesn't count.</td></tr>
-        <tr><td><b>January</b></td><td class="w">20 sec</td><td>The first 2027 campaign this engine will make.</td></tr>
+        <tr><td><b>Demo</b></td><td class="w">2 min</td><td>One sentence on your track and angle, then the panel picks a product and your engine runs on it.</td></tr>
+        
+        <tr><td><b>Proof</b></td><td class="w">1 min</td><td>Your Feed Test numbers or head-to-head wins on screen. If it isn't on screen, it doesn't count.</td></tr>
+        <tr><td><b>Q&amp;A</b></td><td class="w">1 min</td><td>Usually about your weakest number. Know it cold.</td></tr>
       </tbody>
     </table></div>
 
     <h2>Prepare your script with AI.</h2>
     <p>Paste this into any AI assistant, fill the brackets, read the result twice.</p>
-<pre id="scriptPrompt">I'm demoing what I built at the Orbit Buildathon. I have 3 minutes,
-live, no slides: 20 seconds of context, 100 seconds running my engine
-on a product the judges pick, 40 seconds of proof on screen, 20 seconds
-on what it will make in January.
+<pre id="scriptPrompt">I'm demoing what I built at the Orbit Buildathon. I made the top 5
+and have 4 minutes, live: 2 minutes of demo (one sentence, then my engine
+runs on a product the panel picks), 1 minute of proof on screen, 1 minute
+of Q&A.
 
 My brand: [what we sell, to whom]
 My track: [01 Stop the Scroll / 02 Make Them Buy / 03 Your Own Creative Engine]
@@ -408,6 +414,7 @@ Write the script, word for word, with timings. Keep it plain.</pre>
 </main>
 
 <script src="../data/cards.js"></script>
+<script src="../data/recipes.js"></script>
 <script>
 (function () {
   var chs = [].slice.call(document.querySelectorAll(".ch"));
@@ -442,22 +449,28 @@ Write the script, word for word, with timings. Keep it plain.</pre>
     toc.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", String(open));
   });
 
-  // idea library: the cards tagged to an Orbit track
+  // idea library: recipes, then the cards that run on them
+  var recipes = window.RECIPES || [];
+  var rname = {}; recipes.forEach(function (r) { rname[r.id] = r.name; });
   var cards = (window.CARDS || []).filter(function (c) { return c.track; });
   var names = { "01": "Track 01 · Stop the Scroll", "02": "Track 02 · Make Them Buy", "03": "Track 03 · Your Own Creative Engine" };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]; }); }
-  function renderIdeas(t) {
+  function render(t) {
+    document.getElementById("recipeGrid").innerHTML = recipes.filter(function (r) { return !t || r.track === t; }).map(function (r) {
+      return '<div class="card idea' + (r.id === "full-funnel" ? ' hot' : '') + '"><div class="tag">' + names[r.track] + '</div><h3>' + esc(r.name) + '</h3><ol class="chain">' +
+        r.chain.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ol><div class="brand-line">Proves it with: ' + esc(r.proves) + '</div></div>';
+    }).join("");
     document.getElementById("ideaGrid").innerHTML = cards.filter(function (c) { return !t || c.track === t; }).map(function (c) {
-      return '<div class="card idea"><div class="tag">' + names[c.track] + '</div><h3>' + esc(c.build) + '</h3><p>' +
+      return '<div class="card idea"><div class="tag">' + names[c.track] + ' · ' + esc(rname[c.recipe] || "") + '</div><h3>' + esc(c.build) + '</h3><p>' +
         esc(c.problem) + '</p><div class="brand-line">' + esc(c.brand) + ' · ' + esc(c.outputs) + '</div></div>';
     }).join("");
   }
-  document.getElementById("ideaFilters").addEventListener("click", function (e) {
+  document.getElementById("recipeFilters").addEventListener("click", function (e) {
     var b = e.target.closest(".chip"); if (!b) return;
     this.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
-    renderIdeas(b.dataset.t);
+    render(b.dataset.t);
   });
-  renderIdeas("");
+  render("");
 
   document.getElementById("copyBtn").addEventListener("click", function () {
     var btn = this, txt = document.getElementById("scriptPrompt").textContent;

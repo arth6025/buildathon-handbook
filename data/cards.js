@@ -3,7 +3,8 @@
    all above Rs 1 Cr revenue). Brand and problem are chosen to match the
    build on the back of the card. "track" is the Orbit track the build fits
    ("01" Stop the Scroll, "02" Make Them Buy, "03" Your Own Creative
-   Engine), or null if it is beyond the day.
+   Engine), or null if it is beyond the day. "recipe" is the engine recipe
+   id in recipes.js the build runs on.
    See CONTRIBUTING.md. */
 window.CARDS = [
  {
@@ -28,7 +29,8 @@ window.CARDS = [
   ],
   "metric": "Add-to-cart rate on the quick commerce listing",
   "outputs": "6 test tiles + exports for each app",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 2,
@@ -53,7 +55,8 @@ window.CARDS = [
   ],
   "metric": "Cost per purchase holds steady past day 10",
   "outputs": "20 statics, 5 motion ads, hook sheet",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 3,
@@ -77,7 +80,8 @@ window.CARDS = [
   ],
   "metric": "Saves per reel and recipe page visits",
   "outputs": "7 reels, 7 recipe cards, captions",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 4,
@@ -102,7 +106,8 @@ window.CARDS = [
   ],
   "metric": "Listing conversion and fewer \"what size is this?\" questions",
   "outputs": "7 listing images + 5 A+ modules",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 5,
@@ -126,7 +131,8 @@ window.CARDS = [
   ],
   "metric": "One product or pack fix shipped from the gripes list",
   "outputs": "Insight poster + 10 ad-ready quotes",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 6,
@@ -151,7 +157,8 @@ window.CARDS = [
   ],
   "metric": "Votes and waitlist signups per flavour",
   "outputs": "10 pack renders + a vote carousel",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 7,
@@ -176,7 +183,8 @@ window.CARDS = [
   ],
   "metric": "Listings won per buyer meeting",
   "outputs": "8-slide deck + one sell sheet",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 8,
@@ -200,7 +208,8 @@ window.CARDS = [
   ],
   "metric": "Order value and hamper share of orders",
   "outputs": "Hamper renders, 6 banners, 3 posts",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 9,
@@ -224,7 +233,8 @@ window.CARDS = [
   ],
   "metric": "Zero reprints caused by label errors",
   "outputs": "Marked proofs + pass or fail sheet",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 10,
@@ -249,7 +259,8 @@ window.CARDS = [
   ],
   "metric": "Usable posts per 100 boxes sent",
   "outputs": "Brief, sample storyboard, checklist card",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 11,
@@ -273,7 +284,8 @@ window.CARDS = [
   ],
   "metric": "Bundle attach rate and average order value",
   "outputs": "A styled shot for every bundle",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 12,
@@ -298,7 +310,8 @@ window.CARDS = [
   ],
   "metric": "Thumb-stop rate and fewer \"is this healthy?\" comments",
   "outputs": "15 s explainer, 6 s cut, one static",
-  "track": "01"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 13,
@@ -322,7 +335,8 @@ window.CARDS = [
   ],
   "metric": "Store sell-through during the promo",
   "outputs": "4 designs + print-ready files",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 14,
@@ -346,7 +360,8 @@ window.CARDS = [
   ],
   "metric": "Month-three retention",
   "outputs": "Insert card, brew guide, teaser",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 15,
@@ -370,7 +385,8 @@ window.CARDS = [
   ],
   "metric": "CTR in the new market against the home baseline",
   "outputs": "Localised versions of 5 ads",
-  "track": "01"
+  "track": "01",
+  "recipe": "bharat"
  },
  {
   "n": 16,
@@ -394,7 +410,8 @@ window.CARDS = [
   ],
   "metric": "Product page conversion in an A/B test",
   "outputs": "3 copy versions, a shot, 5 headlines",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 17,
@@ -418,7 +435,8 @@ window.CARDS = [
   ],
   "metric": "Bars stocking the new batch in week one",
   "outputs": "4 labels, mockups, one merch design",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 18,
@@ -442,7 +460,8 @@ window.CARDS = [
   ],
   "metric": "Repeat questions per week",
   "outputs": "12 carousels, page FAQ, reply sheet",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 19,
@@ -458,15 +477,16 @@ window.CARDS = [
   "steps": [
    "Upload swatches and shade names",
    "Apply each on 6 house models",
-   "Build the shade finder grid"
+   "Lay out the shade grid"
   ],
   "needs": [
    "Shade swatches",
    "House models, 6 skin tones"
   ],
   "metric": "Shade returns and \"which shade?\" DMs",
-  "outputs": "72 try-on images + shade finder",
-  "track": "01"
+  "outputs": "72 try-on images + a shade grid",
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 20,
@@ -490,7 +510,8 @@ window.CARDS = [
   ],
   "metric": "\"Did nothing for me\" reviews drop",
   "outputs": "One 20 s how-to per SKU",
-  "track": "01"
+  "track": "01",
+  "recipe": "reviews-ugc"
  },
  {
   "n": 21,
@@ -514,7 +535,8 @@ window.CARDS = [
   ],
   "metric": "Days from trend spotted to concept brief",
   "outputs": "Weekly radar page + one concept pack",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 22,
@@ -538,7 +560,8 @@ window.CARDS = [
   ],
   "metric": "Ad CTR against studio creative",
   "outputs": "Carousel + 10 s reel per customer",
-  "track": "01"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 23,
@@ -562,7 +585,8 @@ window.CARDS = [
   ],
   "metric": "Sample orders and time on page",
   "outputs": "3 stills, a film, a note pyramid",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 24,
@@ -586,7 +610,8 @@ window.CARDS = [
   ],
   "metric": "Trial to full-size conversion",
   "outputs": "4-step message sequence + visuals",
-  "track": "02"
+  "track": "02",
+  "recipe": "winback"
  },
  {
   "n": 25,
@@ -610,7 +635,8 @@ window.CARDS = [
   ],
   "metric": "Approval rate on first submission",
   "outputs": "6 policy-safe ads + review notes",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 26,
@@ -626,7 +652,7 @@ window.CARDS = [
   "steps": [
    "List the hair types it suits",
    "Show results on each type",
-   "Build a find-your-routine block"
+   "Build a routine block on the landing page"
   ],
   "needs": [
    "Product shot",
@@ -634,7 +660,8 @@ window.CARDS = [
   ],
   "metric": "Hair-type questions in support",
   "outputs": "Hair-type grid + 3 reels",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 27,
@@ -658,7 +685,8 @@ window.CARDS = [
   ],
   "metric": "Ads paused for claim issues",
   "outputs": "Claim table with proof + rewrites",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 28,
@@ -682,7 +710,8 @@ window.CARDS = [
   ],
   "metric": "A decision made in one meeting",
   "outputs": "Renders, shelf tests, unboxing clip",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 29,
@@ -706,7 +735,8 @@ window.CARDS = [
   ],
   "metric": "Coverage pieces in launch week",
   "outputs": "Press PDF, film, stills, pitch emails",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 30,
@@ -730,7 +760,8 @@ window.CARDS = [
   ],
   "metric": "Days from shoot to live everywhere",
   "outputs": "A ready image folder per marketplace",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 31,
@@ -754,7 +785,8 @@ window.CARDS = [
   ],
   "metric": "Quiz to cart conversion",
   "outputs": "Quiz logic, 12 cards, result copy",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 32,
@@ -770,7 +802,7 @@ window.CARDS = [
   "steps": [
    "Pick theme and 6 products",
    "Make the set and overlays",
-   "Add price cards and countdowns"
+   "Add price cards per product"
   ],
   "needs": [
    "Product shots",
@@ -778,7 +810,8 @@ window.CARDS = [
   ],
   "metric": "Live viewers to orders",
   "outputs": "Live set, overlays, 6 product cards",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 33,
@@ -802,7 +835,8 @@ window.CARDS = [
   ],
   "metric": "Scroll depth and add-to-cart on the page",
   "outputs": "Ingredient cards, reel, page section",
-  "track": "01"
+  "track": "01",
+  "recipe": "reviews-ugc"
  },
  {
   "n": 34,
@@ -826,7 +860,8 @@ window.CARDS = [
   ],
   "metric": "Day-30 reorder rate",
   "outputs": "30 messages, 8 visuals, reorder nudge",
-  "track": "02"
+  "track": "02",
+  "recipe": "winback"
  },
  {
   "n": 35,
@@ -850,7 +885,8 @@ window.CARDS = [
   ],
   "metric": "Handle time and escalations",
   "outputs": "20 reviewed answers + routing sheet",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 36,
@@ -874,7 +910,8 @@ window.CARDS = [
   ],
   "metric": "Saves and shares per post",
   "outputs": "12 posts with copy + illustrations",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 37,
@@ -898,7 +935,8 @@ window.CARDS = [
   ],
   "metric": "CTR against product-only ads",
   "outputs": "3 data-led ads + stills",
-  "track": "01"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 38,
@@ -922,7 +960,8 @@ window.CARDS = [
   ],
   "metric": "Package booking conversion",
   "outputs": "One-page guide, body map, 20 s video",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 39,
@@ -946,7 +985,8 @@ window.CARDS = [
   ],
   "metric": "CTR among 28 to 45 year old buyers",
   "outputs": "6 rewritten ads with copy",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 40,
@@ -970,7 +1010,8 @@ window.CARDS = [
   ],
   "metric": "Subscription share of orders",
   "outputs": "Page block, 3 visuals, copy options",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 41,
@@ -994,7 +1035,8 @@ window.CARDS = [
   ],
   "metric": "Creator posts that use the template",
   "outputs": "6 templates, recipe cards, sample video",
-  "track": "01"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 42,
@@ -1018,7 +1060,8 @@ window.CARDS = [
   ],
   "metric": "ROAS of the best moment against the generic ad",
   "outputs": "5 moment ads + a ranking",
-  "track": "01"
+  "track": "01",
+  "recipe": "reviews-ugc"
  },
  {
   "n": 43,
@@ -1042,7 +1085,8 @@ window.CARDS = [
   ],
   "metric": "Days from sample to live",
   "outputs": "A 3-angle on-model set per style",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 44,
@@ -1066,7 +1110,8 @@ window.CARDS = [
   ],
   "metric": "Size-related returns",
   "outputs": "Fit grid + page block per style",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 45,
@@ -1090,7 +1135,8 @@ window.CARDS = [
   ],
   "metric": "Thumb-stop rate and CTR",
   "outputs": "4 ads + 4 cutdowns",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 46,
@@ -1114,7 +1160,8 @@ window.CARDS = [
   ],
   "metric": "Hospital and clinic enquiries",
   "outputs": "Lookbook PDF + 6 social posts",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 47,
@@ -1138,7 +1185,8 @@ window.CARDS = [
   ],
   "metric": "Try-on to purchase rate",
   "outputs": "Frame-by-face grid + page block",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 48,
@@ -1162,7 +1210,8 @@ window.CARDS = [
   ],
   "metric": "Listing conversion against rivals",
   "outputs": "Proof video, listing video, 3 ad cuts",
-  "track": "02"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 49,
@@ -1186,7 +1235,8 @@ window.CARDS = [
   ],
   "metric": "Colours that hit MOQ on pre-orders",
   "outputs": "8 renders, cards, a poll set",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 50,
@@ -1210,7 +1260,8 @@ window.CARDS = [
   ],
   "metric": "Items per order",
   "outputs": "3 tagged outfits per hero item",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 51,
@@ -1234,7 +1285,8 @@ window.CARDS = [
   ],
   "metric": "Collection page click-through",
   "outputs": "Banner, 4 tiles, collection copy",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 52,
@@ -1258,7 +1310,8 @@ window.CARDS = [
   ],
   "metric": "Footfall while the window runs",
   "outputs": "3 window concepts + print files",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 53,
@@ -1282,7 +1335,8 @@ window.CARDS = [
   ],
   "metric": "Page conversion and trial requests",
   "outputs": "Layer film, page film, 3 ad cuts",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 54,
@@ -1306,7 +1360,8 @@ window.CARDS = [
   ],
   "metric": "Conversion and safety questions in support",
   "outputs": "Comparison visual, explainer, trust strip",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 55,
@@ -1330,7 +1385,8 @@ window.CARDS = [
   ],
   "metric": "Plant complaints in the first 30 days",
   "outputs": "Care card, video, in-box QR card",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 56,
@@ -1354,7 +1410,8 @@ window.CARDS = [
   ],
   "metric": "Repeat purchase and reel saves",
   "outputs": "6 test reels + stills",
-  "track": "01"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 57,
@@ -1378,7 +1435,8 @@ window.CARDS = [
   ],
   "metric": "Page conversion and fewer size questions",
   "outputs": "5 scenes in page and ad sizes",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 58,
@@ -1402,7 +1460,8 @@ window.CARDS = [
   ],
   "metric": "Repeat purchase and wash-question tickets",
   "outputs": "Guide video, print card, 3 tips",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 59,
@@ -1426,7 +1485,8 @@ window.CARDS = [
   ],
   "metric": "CTR by breed against the generic ad",
   "outputs": "12 breed ads with copy",
-  "track": "01"
+  "track": "01",
+  "recipe": "winner-batch"
  },
  {
   "n": 60,
@@ -1450,7 +1510,8 @@ window.CARDS = [
   ],
   "metric": "Trial pack sales",
   "outputs": "A carousel + a trial pack ad",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 61,
@@ -1474,7 +1535,8 @@ window.CARDS = [
   ],
   "metric": "Checkout conversion on personalised gifts",
   "outputs": "Personalised render + share card",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 62,
@@ -1498,7 +1560,8 @@ window.CARDS = [
   ],
   "metric": "Add-to-cart after a preview",
   "outputs": "Room previews in 3 options",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 63,
@@ -1522,7 +1585,8 @@ window.CARDS = [
   ],
   "metric": "Time to resolve a claim",
   "outputs": "Classified claim, reply, route flags",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 64,
@@ -1546,7 +1610,8 @@ window.CARDS = [
   ],
   "metric": "CTR against last season's creative",
   "outputs": "Season sets for 10 products",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 65,
@@ -1570,7 +1635,8 @@ window.CARDS = [
   ],
   "metric": "Menu to cart conversion",
   "outputs": "Full menu set in every app spec",
-  "track": "02"
+  "track": "02",
+  "recipe": "marketplace"
  },
  {
   "n": 66,
@@ -1594,7 +1660,8 @@ window.CARDS = [
   ],
   "metric": "Units sold in launch week",
   "outputs": "Poster, counter card, reel, posts",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 67,
@@ -1618,7 +1685,8 @@ window.CARDS = [
   ],
   "metric": "Days to roll out a campaign",
   "outputs": "A print folder per outlet",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 68,
@@ -1642,7 +1710,8 @@ window.CARDS = [
   ],
   "metric": "Days to train a new hire and remake rate",
   "outputs": "Step cards + videos per item",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 69,
@@ -1666,7 +1735,8 @@ window.CARDS = [
   ],
   "metric": "Return visits from lapsed guests",
   "outputs": "A message + visual per group",
-  "track": "02"
+  "track": "02",
+  "recipe": "winback"
  },
  {
   "n": 70,
@@ -1690,7 +1760,8 @@ window.CARDS = [
   ],
   "metric": "Reply rate and rating trend",
   "outputs": "Drafted replies + weekly issue log",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 71,
@@ -1714,7 +1785,8 @@ window.CARDS = [
   ],
   "metric": "Proposal to order rate",
   "outputs": "A 4-page proposal PDF",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 72,
@@ -1738,7 +1810,8 @@ window.CARDS = [
   ],
   "metric": "Pre-orders before the occasion week",
   "outputs": "Box visuals, catalogue PDF, share cards",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 73,
@@ -1762,7 +1835,8 @@ window.CARDS = [
   ],
   "metric": "Orders per bowl after the refresh",
   "outputs": "Restyled bowls, overlays, a reel",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 74,
@@ -1786,7 +1860,8 @@ window.CARDS = [
   ],
   "metric": "App orders in the morning rush",
   "outputs": "A timer video + 3 ads",
-  "track": "01"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 75,
@@ -1810,7 +1885,8 @@ window.CARDS = [
   ],
   "metric": "Listing click-through",
   "outputs": "Fixed photos, cover, listing score",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 76,
@@ -1834,7 +1910,8 @@ window.CARDS = [
   ],
   "metric": "Average bill per guest",
   "outputs": "Item map, new menu, delivery version",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 77,
@@ -1858,7 +1935,8 @@ window.CARDS = [
   ],
   "metric": "Listing CTR and booking rate",
   "outputs": "Mood sets per guest type",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 78,
@@ -1882,7 +1960,8 @@ window.CARDS = [
   ],
   "metric": "Enquiry to booking",
   "outputs": "A trip reel + story set",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 79,
@@ -1906,7 +1985,8 @@ window.CARDS = [
   ],
   "metric": "Quote turnaround time",
   "outputs": "Itinerary PDF + WhatsApp card",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 80,
@@ -1931,7 +2011,8 @@ window.CARDS = [
   ],
   "metric": "RSVP rate and next-event signups",
   "outputs": "Poster, invite, recap reel, stills",
-  "track": "03"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 81,
@@ -1955,7 +2036,8 @@ window.CARDS = [
   ],
   "metric": "Ticket sales per city",
   "outputs": "A folder per city, every format",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 82,
@@ -1979,7 +2061,8 @@ window.CARDS = [
   ],
   "metric": "Counselling call bookings",
   "outputs": "City video + cost card",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 83,
@@ -2003,7 +2086,8 @@ window.CARDS = [
   ],
   "metric": "Shares and referral bookings",
   "outputs": "A postcard per guest",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 84,
@@ -2027,7 +2111,8 @@ window.CARDS = [
   ],
   "metric": "Weekday occupancy",
   "outputs": "3 themed offers with ads",
-  "track": "02"
+  "track": "02",
+  "recipe": "full-funnel"
  },
  {
   "n": 85,
@@ -2051,7 +2136,8 @@ window.CARDS = [
   ],
   "metric": "Off-brand assets that go live",
   "outputs": "A score + marked-up fixes",
-  "track": "03"
+  "track": "03",
+  "recipe": "brand-guard"
  },
  {
   "n": 86,
@@ -2075,7 +2161,8 @@ window.CARDS = [
   ],
   "metric": "One new angle tested each week",
   "outputs": "A weekly rival board",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 87,
@@ -2099,7 +2186,8 @@ window.CARDS = [
   ],
   "metric": "Hit rate of new ads",
   "outputs": "Pattern report + 5 briefs",
-  "track": "03"
+  "track": "03",
+  "recipe": "brand-guard"
  },
  {
   "n": 88,
@@ -2123,7 +2211,8 @@ window.CARDS = [
   ],
   "metric": "Followers and inbound DMs",
   "outputs": "8 posts with visuals",
-  "track": "03"
+  "track": "03",
+  "recipe": "launch"
  },
  {
   "n": 89,
@@ -2147,7 +2236,8 @@ window.CARDS = [
   ],
   "metric": "Founder hours spent",
   "outputs": "Update email, PDF, 4 charts",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 90,
@@ -2171,7 +2261,8 @@ window.CARDS = [
   ],
   "metric": "Qualified applicants per post",
   "outputs": "Job post, carousel, careers copy",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 91,
@@ -2195,7 +2286,8 @@ window.CARDS = [
   ],
   "metric": "Days to a new hire's first solo task",
   "outputs": "2-minute video + one-page card",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 92,
@@ -2219,7 +2311,8 @@ window.CARDS = [
   ],
   "metric": "UGC videos delivered per month",
   "outputs": "20 scripts, sample cuts, briefs",
-  "track": "01"
+  "track": "01",
+  "recipe": "reviews-ugc"
  },
  {
   "n": 93,
@@ -2243,7 +2336,8 @@ window.CARDS = [
   ],
   "metric": "Reply rate on sales chats",
   "outputs": "Product cards + a 2 MB PDF",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 94,
@@ -2267,7 +2361,8 @@ window.CARDS = [
   ],
   "metric": "Open and click rate trend",
   "outputs": "8 emails with headers",
-  "track": "02"
+  "track": "02",
+  "recipe": "winback"
  },
  {
   "n": 95,
@@ -2291,7 +2386,8 @@ window.CARDS = [
   ],
   "metric": "Conversion on the fixed SKUs",
   "outputs": "A scorecard + fixes for 10 SKUs",
-  "track": "02"
+  "track": null,
+  "recipe": null
  },
  {
   "n": 96,
@@ -2315,7 +2411,8 @@ window.CARDS = [
   ],
   "metric": "Decisions closed per week",
   "outputs": "One page: outcomes, numbers, decisions",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 97,
@@ -2339,7 +2436,8 @@ window.CARDS = [
   ],
   "metric": "Tagged unboxing posts",
   "outputs": "3 concepts, renders, print files",
-  "track": "03"
+  "track": "03",
+  "recipe": "shoot"
  },
  {
   "n": 98,
@@ -2363,7 +2461,8 @@ window.CARDS = [
   ],
   "metric": "Wrong-price errors per sale",
   "outputs": "Offer assets that match the sheet",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 99,
@@ -2387,7 +2486,8 @@ window.CARDS = [
   ],
   "metric": "CTR in tier 2 and tier 3 cities",
   "outputs": "30 localised ads",
-  "track": "01"
+  "track": "01",
+  "recipe": "bharat"
  },
  {
   "n": 100,
@@ -2410,7 +2510,8 @@ window.CARDS = [
   ],
   "metric": "Briefs that cite a real customer quote",
   "outputs": "3 personas, quote bank, poster",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 101,
@@ -2434,7 +2535,8 @@ window.CARDS = [
   ],
   "metric": "Landing page conversion vs homepage",
   "outputs": "5 ad-matched landing pages",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 102,
@@ -2458,7 +2560,8 @@ window.CARDS = [
   ],
   "metric": "Conversion by audience segment",
   "outputs": "3 audience pages for one product",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 103,
@@ -2482,7 +2585,8 @@ window.CARDS = [
   ],
   "metric": "Revenue per creator link",
   "outputs": "A storefront page per creator",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 104,
@@ -2506,7 +2610,8 @@ window.CARDS = [
   ],
   "metric": "Repeat purchase rate",
   "outputs": "A personal reorder page per group",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 105,
@@ -2530,7 +2635,8 @@ window.CARDS = [
   ],
   "metric": "Conversion in tier 2 and 3 cities",
   "outputs": "A landing page per city",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 106,
@@ -2554,7 +2660,8 @@ window.CARDS = [
   ],
   "metric": "Cold traffic conversion and CPA",
   "outputs": "An advertorial page + 3 headline tests",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 107,
@@ -2578,7 +2685,8 @@ window.CARDS = [
   ],
   "metric": "Click-through to the PDP",
   "outputs": "A listicle page + 2 headline versions",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 108,
@@ -2602,7 +2710,8 @@ window.CARDS = [
   ],
   "metric": "Time on page and conversion",
   "outputs": "A founder letter page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 109,
@@ -2626,7 +2735,8 @@ window.CARDS = [
   ],
   "metric": "Conversion from comparison shoppers",
   "outputs": "A buyer's guide pre-lander",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 110,
@@ -2650,7 +2760,8 @@ window.CARDS = [
   ],
   "metric": "Conversion from comparison traffic",
   "outputs": "A comparison page with sources",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 111,
@@ -2674,7 +2785,8 @@ window.CARDS = [
   ],
   "metric": "Play rate and conversion",
   "outputs": "A video-first sales page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 112,
@@ -2698,7 +2810,8 @@ window.CARDS = [
   ],
   "metric": "PDP conversion rate",
   "outputs": "A rebuilt PDP ready to A/B test",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 113,
@@ -2722,7 +2835,8 @@ window.CARDS = [
   ],
   "metric": "Variant conversion and returns",
   "outputs": "Variant pages and images",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 114,
@@ -2746,7 +2860,8 @@ window.CARDS = [
   ],
   "metric": "Bundle attach rate and AOV",
   "outputs": "A bundle landing page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 115,
@@ -2770,7 +2885,8 @@ window.CARDS = [
   ],
   "metric": "Conversion from skeptical traffic",
   "outputs": "An ingredient page with sources",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 116,
@@ -2794,7 +2910,8 @@ window.CARDS = [
   ],
   "metric": "Conversion on premium SKUs",
   "outputs": "A cost-per-use page + calculator block",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 117,
@@ -2818,7 +2935,8 @@ window.CARDS = [
   ],
   "metric": "Quiz completion and quiz-to-cart",
   "outputs": "A quiz with result pages",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 118,
@@ -2842,7 +2960,8 @@ window.CARDS = [
   ],
   "metric": "Items per order",
   "outputs": "A build-your-routine page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 119,
@@ -2866,7 +2985,8 @@ window.CARDS = [
   ],
   "metric": "Conversion and right-size orders",
   "outputs": "A calculator page that ends in a pack",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 120,
@@ -2890,7 +3010,8 @@ window.CARDS = [
   ],
   "metric": "Gift order conversion",
   "outputs": "A gift finder page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 121,
@@ -2914,7 +3035,8 @@ window.CARDS = [
   ],
   "metric": "Organic visits and assisted sales",
   "outputs": "A free tool page that sells softly",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 122,
@@ -2938,7 +3060,8 @@ window.CARDS = [
   ],
   "metric": "Gift-occasion conversion",
   "outputs": "A gift guide page per persona",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 123,
@@ -2962,7 +3085,8 @@ window.CARDS = [
   ],
   "metric": "Repeat purchase rate",
   "outputs": "A use-case hub page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 124,
@@ -2986,7 +3110,8 @@ window.CARDS = [
   ],
   "metric": "Organic and AI search traffic",
   "outputs": "10 answer pages",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 125,
@@ -3010,7 +3135,8 @@ window.CARDS = [
   ],
   "metric": "Waitlist signups and sell-through",
   "outputs": "A drop page with waitlist",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 126,
@@ -3034,7 +3160,8 @@ window.CARDS = [
   ],
   "metric": "VIP conversion and AOV",
   "outputs": "A gated VIP sale page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 127,
@@ -3058,7 +3185,8 @@ window.CARDS = [
   ],
   "metric": "Units cleared per week",
   "outputs": "A clearance page",
-  "track": null
+  "track": null,
+  "recipe": null
  },
  {
   "n": 128,
@@ -3082,6 +3210,7 @@ window.CARDS = [
   ],
   "metric": "Second order and referral rate",
   "outputs": "A post-purchase page",
-  "track": null
+  "track": null,
+  "recipe": null
  }
 ];

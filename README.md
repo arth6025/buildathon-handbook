@@ -81,9 +81,10 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 | 14:00 | The curveball. |
 | 15:30 | Checkpoint: the batch. |
 | 16:00 | Lock. **The Feed Test.** |
-| 16:30 | Showcase: 3 minutes each, live, numbers on screen. Awards, drinks. |
+| 16:45 | Top 5 announced (at least one per track). |
+| 17:00 | **Top 5 present** to the room and the panel: 2 min demo, 1 min proof, 1 min Q&A. Champion crowned. |
 
-The whole day as a story: **[How Orbit works →](https://arth6025.github.io/buildathon-handbook/flow/)**
+The whole day as a story: **[How Orbit works →](https://arth6025.github.io/buildathon-handbook/flow/)** · Internal run sheet (teams, check-ins, submission, judging): **[How Orbit runs →](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/)**
 
 ### The CXO room
 
@@ -106,11 +107,12 @@ $1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live 
 | | What it is | Link |
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
+| 📋 **Run sheet** (internal) | Sloosh × DSGCP: teams, mentors, check-ins, submission, judging, owners | [Open](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/) |
 | 🎞️ **How it works** | 17-stage story deck: pick a track, pick an idea, build, the CXO room, the Feed Test | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
-| 👀 **The cards** | 128 problem cards, 60 tagged to the three Orbit tracks; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| ✅ **The checklist** | 19 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| 👀 **The cards** | 128 problem cards; 51 tagged to a track and an engine recipe (Claude + Sloosh MCP + BYOK) | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
+| ✅ **The checklist** | 21 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
