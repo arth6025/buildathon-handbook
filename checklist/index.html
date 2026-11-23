@@ -27,8 +27,8 @@
     </div>
 
     <h1>Tick what you own. <em>Circle back Friday.</em></h1>
-    <p class="lede">Everything between now and the room: speakers, marketing, logistics and the
-      build. Each item has an owner and a definition of done. <b>Tick it, copy your list, send it
+    <p class="lede">Everything between now and the room: mentors and experts, marketing, logistics
+      and the build. Each item has an owner and a definition of done. <b>Tick it, copy your list, send it
       to the group.</b></p>
 
     <div class="meter">
@@ -53,19 +53,27 @@
 
 <script>
 const ITEMS = [
-    // speakers
-  { id:"spk-hari", g:"Speakers", owners:["Urmit"],
+    // mentors and experts
+  { id:"spk-byteplus", g:"Mentors & experts", owners:["Arvind"],
+    t:"Onboard a BytePlus (ByteDance) director or head",
+    d:"Brings the global view into the CXO room: how the top consumer brands across the globe use AI. Confirmed, briefed and on the floor for the day." },
+  { id:"spk-enabler", g:"Mentors & experts", owners:["Arvind"],
+    t:"Onboard a consumer enabler from Shopify or Meta",
+    d:"How AI is the lever to scale, with fresh BFCM sale-season insights. Confirmed and briefed." },
+  { id:"spk-saif", g:"Mentors & experts", owners:["Arvind"],
+    t:"Onboard Saif, Kovra group, as an AI expert",
+    d:"How AI deployment actually works, from the team running AI deployment for 50M+ brands. Confirmed and briefed." },
+  { id:"mentors", g:"Mentors & experts", owners:["Arvind","Urmit"],
+    t:"Bring in 7 floor mentors",
+    d:"Agency owners with deep AI and creative know-how, one for every 4 teams. Confirmed, briefed on the tracks and scoring, and on the 10-minute pre-calls the day before." },
+  { id:"experts", g:"Mentors & experts", owners:["Baisakhi"],
+    t:"Bring in 10 paired AI experts",
+    d:"One per assisted team, matched from the registration AI check. Confirmed, Sloosh-fluent, and briefed on fair play: guide, don't build." },
+
+  // run of show
+  { id:"spk-hari", g:"Run of show", owners:["Urmit"],
     t:"Hari, DSGCP: the opening talk",
     d:"Hari opens the day at 09:30: why this room, why now. Slot confirmed and his name on the invite." },
-  { id:"spk-byteplus", g:"Speakers", owners:["Arvind"],
-    t:"BytePlus (ByteDance): book a top director or head",
-    d:"Opens the CXO room with the playbook: how the top consumer brands across the globe are using AI. Name, slot and topic confirmed." },
-  { id:"spk-enabler", g:"Speakers", owners:["Arvind"],
-    t:"A top consumer enabler: Shopify or Meta",
-    d:"How AI is the lever to scale, with fresh insights from the BFCM sale season. Name, slot and topic confirmed." },
-  { id:"spk-saif", g:"Speakers", owners:["Arvind"],
-    t:"Saif, Kovra group: how AI deployment actually works",
-    d:"The AI leader view from the team running AI deployment for 50M+ brands. Confirmed and briefed on the room." },
 
   // marketing and distribution
   { id:"mkt-invites", g:"Marketing & distribution", owners:["Urmit","DSGCP"],

@@ -371,7 +371,7 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s21" data-ch="3" aria-roledescription="slide" aria-label="21 of 22">
     <p class="eyebrow"><b>the finish</b> · 21 / 22</p>
     <h2 class="head rough-text"><span class="a">still</span> <span class="b">open</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="four sticky notes: the Feed Test app, the mentor roster, the venue, CXO speakers"></svg></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="four sticky notes: the Feed Test app, mentors and experts, the venue, the CXO room"></svg></div>
     <div class="capwrap"><p class="cap">four things to lock with DSG and BytePlus before invites go out.</p></div>
   </section>
   <section class="slide" id="s22" data-ch="3" aria-roledescription="slide" aria-label="22 of 22">
@@ -1110,7 +1110,7 @@ body{overflow:hidden;padding-inline:0}
     },
     // 21 · still open
     S => {
-      const N4=['the Feed Test app','the mentor roster','the venue','CXO speakers'];
+      const N4=['the Feed Test app','mentors + experts','the venue','the CXO room'];
       N4.forEach((s,i)=>S.add(i<2?0:1,'draw',p=>{const x=140+i*190,y=170+(i%2)*40;p.rect(x,y,170,150,{fill:'var(--yolk)',hachureGap:5});T(p,x+85,y+82,s,22,'var(--line)',{rot:i%2?3:-3});},{delay:(i%2)*220}));
       S.text(2,500,450,'settled before invites go out',{size:24,color:'var(--accent)',rot:-2},{delay:200});
       S.doodle(2,'pencil',860,170,{delay:400});

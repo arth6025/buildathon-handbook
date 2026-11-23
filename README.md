@@ -110,7 +110,7 @@ $1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live 
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards, 60 tagged to the three Orbit tracks; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| ✅ **The checklist** | 15 action items in four groups (speakers, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| ✅ **The checklist** | 17 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
@@ -242,9 +242,11 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 5 | BytePlus build credits loaded for every team | **Baisakhi** | Amount per team agreed, loaded into each workspace before 10:15 |
 | 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
 | 7 | Hari, DSGCP: the opening talk | **Urmit** | 09:30 slot confirmed, name on the invite |
-| 8 | BytePlus (ByteDance): a top director or head for the CXO room | **Arvind** | Global consumer-brand AI playbook; name, slot, topic confirmed |
-| 9 | A consumer enabler from Shopify or Meta | **Arvind** | AI as the lever to scale, with BFCM insights; confirmed |
-| 10 | Saif, Kovra group: how AI deployment works | **Arvind** | Confirmed and briefed on the room |
+| 8 | Onboard a BytePlus (ByteDance) director or head | **Arvind** | Global consumer-brand AI view for the CXO room; confirmed and briefed |
+| 9 | Onboard a consumer enabler from Shopify or Meta | **Arvind** | AI as the lever to scale, with BFCM insights; confirmed and briefed |
+| 10 | Onboard Saif, Kovra group, as an AI expert | **Arvind** | Confirmed and briefed |
+| 10a | Bring in 7 floor mentors | **Arvind, Urmit** | Agency owners, 1 for every 4 teams; briefed on tracks, scoring and the day-before calls |
+| 10b | Bring in 10 paired AI experts | **Baisakhi** | One per assisted team; briefed on fair play: guide, don't build |
 | 11 | Invites out to 28 brands | **Urmit + DSGCP** | Personal invites with the handbook link and sign-up form |
 | 12 | Marketing and distribution plan | **Urmit + DSGCP** | Before: poster, LinkedIn, portfolio channels. After: shipped work, quotes, Feed Test numbers |
 | 13 | Venue locked | **Urmit** | ~63 at build tables, a closed CXO room, stage and screen, wifi for 60+ laptops |
@@ -264,7 +266,7 @@ Also open, from the AI build spec: the **creative engine** ([spec](https://arth6
 - [ ] **The mentor roster:** named AI creative experts for the floor
 - [ ] **The venue**
 - [ ] **Build the Feed Test app:** a phone web app that shows a mock feed and logs pauses and buy taps
-- [ ] **Confirm CXO room speakers** (Meta, Shopify, BytePlus, AI and consumer operators)
+- [ ] **Onboard the CXO room experts** (BytePlus, Shopify or Meta, Saif from Kovra group)
 - [ ] **BytePlus build credits:** how many per team, and loaded before 10:15
 - [ ] **Who audits "Shipped in 30"** results in January
 - [ ] **Lock the multipliers and base points** with DSG (the current set is a proposal)
