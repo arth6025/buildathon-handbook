@@ -155,9 +155,10 @@
     { go:"briefs",   nm:"Brief Templates", ds:"One for creative, one for landing pages. Both force the decisions teams normally discover halfway through building — the angle, the one goal, the single objection, what gets omitted.", go_label:"2 templates →" },
     { go:"ai-build", nm:"The AI Build", ds:"A worked seven-stage spec for the creative engine — one product URL in, a labelled batch of testable variations out. Model-agnostic, assigned, implementable without further briefing.", go_label:"7 stages →" },
     { go:"pitch",    nm:"The Pitch", ds:"The six-part anatomy of a pitch page for a creative product, and the Orbit pitch built on the same bones. Doubles as your demo narrative.", go_label:"Anatomy + pitch →" },
-    { go:"scoring",  nm:"Judging Rubric", ds:"What the judges weight, per track, with the weights published. Both rubrics reward the argument over the polish, deliberately.", go_label:"2 rubrics →" },
-    { go:"ship",     nm:"Ship & After", ds:"What to submit, how to run a three-minute demo that doesn't collapse, what you leave with, and the launch-post skeleton for the days after.", go_label:"Demo + post →" },
-    { go:null,       nm:"Stack & Agent Map", ds:"Which ShopOS workflow surfaces participants get on the day, and which parts of the chain above are automated versus hand-run. Blocked on the tooling decision.", go_label:"Pending" }
+    { go:"scoring",  nm:"Judging Rubric", ds:"One outcome per track (Virality, Revenue, Your AI Agency), proven on screen, with the points published. Then the top 5 present to the panel.", go_label:"3 tracks →" },
+    { go:"ship",     nm:"Ship & After", ds:"Where submitting and the top-5 demo live now, plus the launch-post skeleton for the days after.", go_label:"Launch post →" },
+    { go:"outcomes", nm:"What Good Looks Like", ds:"The Gimme Gimme Ads swipe: one URL in, 500 ads a month out, 1st of 80 teams. The winning shape, and the pattern to steal from it.", go_label:"Case 01 →" },
+    { go:null,       nm:"Engine Recipes", ds:"Nine recipes on Claude + the Sloosh MCP + BYOK, one per idea. They live in the builder handbook's idea library.", go_label:"In the handbook" }
   ];
 
   var SOURCES = '<div class="srcs"><h4>Sources</h4><ul>' + [

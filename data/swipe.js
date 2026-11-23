@@ -10,7 +10,7 @@
    ========================================================================== */
 window.FILE = [
   {
-    id: "creative", tag: "Track 01", title: "Creative",
+    id: "creative", tag: "Before the click", title: "Creative",
     note: "Everything before the click. Ordered by where it sits in the ad — the open, the format it's shot in, the script under it, and the numbers that judge it.",
     rails: [
       { name: "Hooks", sub: "first 1.5 seconds", cards: [
@@ -55,7 +55,7 @@ window.FILE = [
     ]
   },
   {
-    id: "lp", tag: "Track 02", title: "Landing Pages",
+    id: "lp", tag: "After the click", title: "Landing Pages",
     note: "Everything after the click. The creative sold a promise; the page either keeps it in five seconds or loses the traffic you just paid for.",
     rails: [
       { name: "Above the fold", sub: "the first five seconds", cards: [
