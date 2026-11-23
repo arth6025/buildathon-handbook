@@ -43,9 +43,9 @@ One invite-only day where **30+ consumer brands (₹1Cr+)** each build the AI cr
 
 ---
 
-## Who's in the room (60–72 people)
+## Who's in the room (60–75 people)
 
-Every team is one brand plus one AI expert: **a team of 2** (founder or operator + AI expert) or **a team of 3** (founder + operator + AI expert). One mentor for every 4 teams. The plan at 72 people: 26 teams of 2 + 4 teams of 3 = **30 brands, 30 AI experts, 8 mentors**. Sizing for 60–72 is in the [run sheet](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/) (internal).
+Every team is one brand plus one AI expert: **a team of 2** (founder or operator + AI expert) or **a team of 3** (founder + operator + AI expert). One mentor for every 4 teams. The plan at 72 people: 26 teams of 2 + 4 teams of 3 = **30 brands, 30 AI experts, 8 mentors**. Sizing for 60–75 is in the [run sheet](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/) (internal).
 
 ---|---|---|---|
 | Brands already using AI | **Brand duo:** founder + operator | 18 | 36 |

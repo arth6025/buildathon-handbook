@@ -269,8 +269,8 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s4" data-ch="0" aria-roledescription="slide" aria-label="4 of 19">
     <p class="eyebrow"><b>the idea</b> · 4 / 19</p>
     <h2 class="head rough-text"><span class="a">the day in</span> <span class="b">five numbers</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="five numbers: 30+ brands, 3 tracks, 1 day, 1 mentor for 4 teams, 2,500 dollars in prizes"></svg></div>
-    <div class="capwrap"><p class="cap">for brands doing <b class="hw">₹1Cr+</b>. teams of 2 or 3: founder, operator, and an AI expert if you want one.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="five numbers: 30+ brands, 3 tracks, 60 to 75 people, 1 mentor for 4 teams, 2,500 dollars in prizes"></svg></div>
+    <div class="capwrap"><p class="cap">for brands doing <b class="hw">₹1Cr+</b>. teams of 2 or 3: founder or operator, plus an AI expert. <b class="hw">60–75</b> people in the room.</p></div>
   </section>
   <section class="slide" id="s5" data-ch="1" data-chstart="1" data-chname="the path" aria-roledescription="slide" aria-label="5 of 19">
     <p class="eyebrow"><b>the path</b> · 5 / 19</p>
@@ -299,20 +299,20 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s9" data-ch="1" aria-roledescription="slide" aria-label="9 of 19">
     <p class="eyebrow"><b>the path</b> · 9 / 19</p>
     <h2 class="head rough-text"><span class="a">the idea library:</span> <span class="b">a taste.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="three idea cards: track 01 scroll-stopper refresh, track 02 full-funnel engine, track 03 shoot without a shoot"></svg></div>
-    <div class="capwrap"><p class="cap">steal one, tweak it, or pitch your own. more land from the DSG portfolio before the day.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="three recipe cards, reviews to UGC, the full-funnel engine and shoot without a shoot, over a bar that says built on Sloosh with BytePlus Seedream and Seedance"></svg></div>
+    <div class="capwrap"><p class="cap">every recipe runs on Sloosh, with BytePlus Seedream and Seedance as the models. steal one, tweak it, or pitch your own.</p></div>
   </section>
   <section class="slide" id="s10" data-ch="1" aria-roledescription="slide" aria-label="10 of 19">
     <p class="eyebrow"><b>the path</b> · 10 / 19</p>
     <h2 class="head rough-text"><span class="a">track 02, done right:</span> <span class="b">one engine, three workflows.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="an engine bar on top, connected through the Sloosh MCP, orchestrating three Sloosh workflows, the ad, the landing page and the email HTML, each with a version for the gifter, the first-timer and the regular"></svg></div>
-    <div class="capwrap"><p class="cap">the ad, the landing page and the email HTML are each a Sloosh workflow. your engine runs all three through the Sloosh MCP, personalised for every audience.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="one engine on Sloosh on top, personalising three Sloosh workflows, the ad, the landing page and the email HTML, each with a version for the gifter, the first-timer and the regular"></svg></div>
+    <div class="capwrap"><p class="cap">the ad, the landing page and the email are each a Sloosh workflow. your engine personalises all three for every audience, so the promise never breaks.</p></div>
   </section>
   <section class="slide" id="s11" data-ch="1" aria-roledescription="slide" aria-label="11 of 19">
     <p class="eyebrow"><b>the path</b> · 11 / 19</p>
     <h2 class="head rough-text"><span class="a">step 3:</span> <span class="b">build the engine.</span></h2>
     <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="twenty hook strips go through a funnel and three come out"></svg></div>
-    <div class="capwrap"><p class="cap">Claude runs your recipe through the Sloosh MCP. 20 hooks in, 3 survive, and each ad changes one thing so you know what won.</p></div>
+    <div class="capwrap"><p class="cap">your recipe runs in Sloosh on BytePlus models. 20 hooks in, 3 survive, and each ad changes one thing so you know what won.</p></div>
   </section>
   <section class="slide" id="s12" data-ch="2" data-chstart="1" data-chname="the room" aria-roledescription="slide" aria-label="12 of 19">
     <p class="eyebrow"><b>the room</b> · 12 / 19</p>
@@ -953,8 +953,8 @@ body{overflow:hidden;padding-inline:0}
     },
     // 4 · five numbers
     S => {
-      const N5=[['30+','brands','var(--accent)'],['3','tracks','var(--accent-2)'],['1','day','var(--accent)'],['1:4','mentor to teams','var(--accent-2)'],['$2,500','in prizes','var(--accent)']];
-      N5.forEach(([n,l,c],i)=>S.add(i<2?0:(i<4?1:2),'draw',p=>{const x=140+i*180;T(p,x,280,n,i===4?38:54,c);T(p,x,340,l,21,'var(--line-soft)');},{delay:(i%2)*250}));
+      const N5=[['30+','brands','var(--accent)'],['3','tracks','var(--accent-2)'],['60–75','people','var(--accent)'],['1:4','mentor to teams','var(--accent-2)'],['$2,500','in prizes','var(--accent)']];
+      N5.forEach(([n,l,c],i)=>S.add(i<2?0:(i<4?1:2),'draw',p=>{const x=140+i*180;T(p,x,280,n,i===4||i===2?38:54,c);T(p,x,340,l,21,'var(--line-soft)');},{delay:(i%2)*250}));
       S.doodle(2,'spark',500,170,{delay:300});
     },
     // 5 · four roles
@@ -1007,22 +1007,26 @@ body{overflow:hidden;padding-inline:0}
     },
     // 9 · the idea library
     S => {
-      const I=[['01','reviews → UGC','reviews → Synora → Reels','var(--accent-2)'],['02','full-funnel engine','ad → page → email, per audience','var(--accent)'],['03','shoot without a shoot','one packshot → a full catalogue','var(--accent-2)']];
-      I.forEach(([k,n,d,c],i)=>S.add(i,'draw',p=>{const x=110+i*270;box(p,x,140,250,230);T(p,x+125,190,'track '+k,20,c);T(p,x+125,250,n,21,'var(--line)');T(p,x+125,305,d,13,'var(--line-soft)');}));
-      S.doodle(2,'star',395,135,{soft:.8,delay:300});
-      S.text(2,500,440,'51 problems, 9 engine recipes, one stack: Claude + Sloosh MCP',{size:21,color:'var(--accent)',rot:-1},{delay:400});
+      const I=[['track 01 · virality','reviews → UGC',['your reviews','→ a Synora video','→ Reels cuts'],'var(--accent-2)'],
+               ['track 02 · revenue','full-funnel engine',['an ad per audience','→ its landing page','→ its email'],'var(--accent)'],
+               ['track 03 · your AI agency','shoot without a shoot',['one packshot','→ on-model shots','→ a full catalogue'],'var(--accent-2)']];
+      I.forEach(([k,n,steps,c],i)=>S.add(i,'draw',p=>{const x=110+i*270;box(p,x,100,250,250);T(p,x+125,140,k,16,c);T(p,x+125,190,n,21,'var(--line)');steps.forEach((t,j)=>T(p,x+125,245+j*32,t,16,'var(--line-soft)'));}));
+      S.add(2,'draw',p=>{p.rect(110,385,790,82,{fill:'var(--accent-2-soft)',fillStyle:'solid',stroke:'var(--accent-2)'});T(p,505,418,'built on Sloosh',22,'var(--accent-2)');T(p,505,448,'BytePlus Seedream for images · Seedance for video',17,'var(--line)');},{delay:300});
     },
     // 10 · track 02 spotlight
     S => {
-      S.add(0,'draw',p=>{p.rect(170,100,660,56,{fill:'var(--accent-2-soft)',fillStyle:'solid',stroke:'var(--accent-2)'});T(p,500,136,'your engine, via the Sloosh MCP',22,'var(--accent-2)');});
-      const C=[['ad workflow',260],['landing page workflow',500],['email HTML workflow',740]];
-      C.forEach(([t,x],i)=>S.add(0,'draw',p=>{arrow(p,x,160,x,196,'var(--accent-2)',0);T(p,x,222,t,17,'var(--line)');},{delay:300+i*120}));
-      const A=[['gifter','var(--blush)'],['first-timer','var(--tint)'],['regular','var(--accent-2-soft)']];
-      A.forEach(([a,col],r)=>{
-        S.add(1,'draw',p=>{T(p,50,276+r*72,a,17,'var(--line)',{anchor:'start'});},{delay:r*200});
-        C.forEach(([t,x],i)=>S.add(1,'draw',p=>{p.rect(x-90,245+r*72,180,52,{fill:col,hachureGap:4});},{delay:r*200+i*90}));
+      S.add(0,'draw',p=>{p.rect(220,88,680,52,{fill:'var(--accent-2-soft)',fillStyle:'solid',stroke:'var(--accent-2)'});T(p,560,121,'one engine on Sloosh, personalised per audience',20,'var(--accent-2)');});
+      const C=[['the ad',340],['the landing page',560],['the email',780]];
+      C.forEach(([t,x],i)=>S.add(0,'draw',p=>{arrow(p,x,142,x,166,'var(--accent-2)',0);T(p,x,190,t,20,'var(--line)');T(p,x,210,'a Sloosh workflow',13,'var(--line-soft)');},{delay:250+i*120}));
+      const A=[['gifter','var(--blush)',['"the gift they keep"','gift box + a note','"it arrives on time"']],
+               ['first-timer','var(--yolk)',['"try it for ₹299"','the starter pack','"how to use it"']],
+               ['regular','var(--accent-2-soft)',['"your usual, again"','reorder in one tap','"thank you, again"']]];
+      A.forEach(([a,col,cells],r)=>{
+        const y=228+r*76;
+        S.add(1,'draw',p=>T(p,60,y+36,a,19,'var(--line)',{anchor:'start'}),{delay:r*220});
+        C.forEach(([t,x],i)=>S.add(1,'draw',p=>{p.rect(x-100,y,200,58,{fill:col,hachureGap:5});T(p,x,y+35,cells[i],14,'var(--line)');},{delay:r*220+i*90}));
       });
-      S.text(2,500,500,'one promise, start to finish',{size:22,color:'var(--accent)',rot:-1},{delay:200});
+      S.text(2,560,490,'one promise per audience: ad → page → email',{size:21,color:'var(--accent)',rot:-1},{delay:200});
     },
     // 11 · hooks funnel
     S => {
