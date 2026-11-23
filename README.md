@@ -60,7 +60,7 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 | Track | What teams build | Root parameter | Points |
 |---|---|---|---|
 | **01 Stop the Scroll** | Statics, carousels, hooks, UGC-style video, regional cuts | Thumb-stops in the Feed Test, 10× | 150 base, overflow uncapped |
-| **02 Make Them Buy** | Listings, quick-commerce tiles, rival counter-ads, lifecycle creative | Buy taps + blind head-to-head wins, 20× | 200 base, overflow uncapped |
+| **02 Make Them Buy** | A personalised funnel (ad → landing page → email HTML) run as one engine through the Sloosh MCP; listings, rival counter-ads | Buy taps + blind head-to-head wins, 20× | 200 base, overflow uncapped |
 | **03 Your Own Creative Engine** | Replace the shoot, the catalogue or the rollout | Approved assets from a cold run on an unseen product, 5× | 150 base, overflow uncapped |
 
 **Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
@@ -110,7 +110,7 @@ $1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live 
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards, 60 tagged to the three Orbit tracks; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| ✅ **The checklist** | 18 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| ✅ **The checklist** | 19 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
@@ -240,6 +240,7 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 3 | Build the workflow for multiple landing pages | **Baisakhi + Prashant** | One page per angle, message-matched to its ad, live on a real Shopify store |
 | 4 | Confirm dates and the soft commit from brands | **Urmit** | 16 Dec locked, and a named soft commit from each brand |
 | 5 | BytePlus build credits loaded for every team | **Baisakhi** | Amount per team agreed, loaded into each workspace before 10:15 |
+| 5a | Sloosh MCP ready for every team | **Baisakhi + engineering** | Teams orchestrate ad, landing-page and email workflows through the MCP; tested in the simulation |
 | 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
 | 7 | Hari, DSGCP: opening talk (tentative) | **Urmit** | Ask Hari; once he confirms, add him to the invite and handbook |
 | 7a | Simulate the whole day, end to end | **Arvind, Sai** | Full run as a brand team, from registration to showcase; fixes made before invites go out |

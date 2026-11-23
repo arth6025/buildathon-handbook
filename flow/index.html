@@ -293,8 +293,8 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s8" data-ch="1" aria-roledescription="slide" aria-label="8 of 17">
     <p class="eyebrow"><b>the path</b> · 8 / 17</p>
     <h2 class="head rough-text"><span class="a">track 02, done right:</span> <span class="b">one engine, three workflows.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="an engine bar on top orchestrating three Sloosh workflows, the ad, the landing page and the email HTML, each with a version for the gifter, the first-timer and the regular"></svg></div>
-    <div class="capwrap"><p class="cap">the ad, the landing page and the email HTML are each a Sloosh workflow. the engine on top personalises all three for every audience.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="an engine bar on top, connected through the Sloosh MCP, orchestrating three Sloosh workflows, the ad, the landing page and the email HTML, each with a version for the gifter, the first-timer and the regular"></svg></div>
+    <div class="capwrap"><p class="cap">the ad, the landing page and the email HTML are each a Sloosh workflow. your engine runs all three through the Sloosh MCP, personalised for every audience.</p></div>
   </section>
   <section class="slide" id="s9" data-ch="1" aria-roledescription="slide" aria-label="9 of 17">
     <p class="eyebrow"><b>the path</b> · 9 / 17</p>
@@ -969,7 +969,7 @@ body{overflow:hidden;padding-inline:0}
     },
     // 8 · track 02 spotlight
     S => {
-      S.add(0,'draw',p=>{p.rect(170,100,660,56,{fill:'var(--accent-2-soft)',fillStyle:'solid',stroke:'var(--accent-2)'});T(p,500,136,'your engine: personalise everything',22,'var(--accent-2)');});
+      S.add(0,'draw',p=>{p.rect(170,100,660,56,{fill:'var(--accent-2-soft)',fillStyle:'solid',stroke:'var(--accent-2)'});T(p,500,136,'your engine, via the Sloosh MCP',22,'var(--accent-2)');});
       const C=[['ad workflow',260],['landing page workflow',500],['email HTML workflow',740]];
       C.forEach(([t,x],i)=>S.add(0,'draw',p=>{arrow(p,x,160,x,196,'var(--accent-2)',0);T(p,x,222,t,17,'var(--line)');},{delay:300+i*120}));
       const A=[['gifter','var(--blush)'],['first-timer','var(--tint)'],['regular','var(--accent-2-soft)']];
