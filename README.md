@@ -50,7 +50,7 @@ Every team is one brand plus one AI expert: **a team of 2** (founder or operator
 ---|---|---|---|
 | Brands already using AI | **Brand duo:** founder + operator | 18 | 36 |
 | Brands new to AI | **Assisted pair:** operator + paired AI expert | 10 | 20 |
-| Floor mentors | Agency owners: AI + subject experts, 1 for every 4 teams | 7 | 7 |
+| Floor mentors | Agency owners: AI + creative experts, 1 for every 4 teams | 7 | 7 |
 | The panel | Consumer-tech + AI leaders who judge the top 5 | 4 | 4 |
 
 Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-question AI-comfort check at registration.
