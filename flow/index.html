@@ -274,13 +274,13 @@ body{overflow:hidden;padding-inline:0}
   </section>
   <section class="slide" id="s5" data-ch="1" data-chstart="1" data-chname="the path" aria-roledescription="slide" aria-label="5 of 17">
     <p class="eyebrow"><b>the path</b> · 5 / 17</p>
-    <h2 class="head rough-text"><span class="a">rung 1:</span> <span class="b">pick your track.</span></h2>
+    <h2 class="head rough-text"><span class="a">step 1:</span> <span class="b">pick a track.</span></h2>
     <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="three track cards, 01 stop the scroll, 02 make them buy, 03 your own engine, with 01 circled as the default"></svg></div>
-    <div class="capwrap"><p class="cap">pick the outcome you can prove by 4pm. ads already running? take 01.</p></div>
+    <div class="capwrap"><p class="cap"><b class="hw">01</b> stop the scroll · <b class="hw">02</b> make them buy · <b class="hw">03</b> your own creative engine. pick the one you can prove by 4pm.</p></div>
   </section>
   <section class="slide" id="s6" data-ch="1" aria-roledescription="slide" aria-label="6 of 17">
     <p class="eyebrow"><b>the path</b> · 6 / 17</p>
-    <h2 class="head rough-text"><span class="a">rung 2: pick an idea.</span> <span class="b">or pitch your own.</span></h2>
+    <h2 class="head rough-text"><span class="a">step 2:</span> <span class="b">pick an idea.</span></h2>
     <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="a stack of idea library cards and a blank card for your own idea, both pointing to a circle marked track 02"></svg></div>
     <div class="capwrap"><p class="cap">steal one from the library or pitch your own. either way, it has to prove your track by 4pm.</p></div>
   </section>
@@ -298,9 +298,9 @@ body{overflow:hidden;padding-inline:0}
   </section>
   <section class="slide" id="s9" data-ch="1" aria-roledescription="slide" aria-label="9 of 17">
     <p class="eyebrow"><b>the path</b> · 9 / 17</p>
-    <h2 class="head rough-text"><span class="a">rung 3: 20 hooks in.</span> <span class="b">3 survive.</span></h2>
+    <h2 class="head rough-text"><span class="a">step 3:</span> <span class="b">build the engine.</span></h2>
     <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="twenty hook strips go through a funnel and three come out"></svg></div>
-    <div class="capwrap"><p class="cap">each ad changes one thing: the hook. so when one wins, you know exactly why.</p></div>
+    <div class="capwrap"><p class="cap">Claude runs your recipe through the Sloosh MCP. 20 hooks in, 3 survive, and each ad changes one thing so you know what won.</p></div>
   </section>
   <section class="slide" id="s10" data-ch="2" data-chstart="1" data-chname="the room" aria-roledescription="slide" aria-label="10 of 17">
     <p class="eyebrow"><b>the room</b> · 10 / 17</p>
@@ -1080,10 +1080,10 @@ body{overflow:hidden;padding-inline:0}
     svg.querySelectorAll('text').forEach(t => { if (!t.dataset.fs) t.dataset.fs = parseFloat(t.style.fontSize) || 24; t.style.fontSize = Math.max(+t.dataset.fs, 14 / m.a) + 'px'; });
   }
   function writeHead(h) {
-    if (!h._orig) h._orig = [...h.querySelectorAll('span')].map(s => s.textContent);
+    if (!h._orig) h._orig = [...h.querySelectorAll(':scope > span')].map(s => s.textContent);
     h.setAttribute('aria-label', h._orig.join(' '));
     let k = 0; const sp = RM ? 0 : 42;
-    h.querySelectorAll('span').forEach((s, j) => {
+    h.querySelectorAll(':scope > span').forEach((s, j) => {
       s.textContent = ''; s.setAttribute('aria-hidden', 'true');
       h._orig[j].split(/(\s+)/).forEach(w => {
         if (!w) return; const ws = document.createElement('span'); ws.className = 'w';
