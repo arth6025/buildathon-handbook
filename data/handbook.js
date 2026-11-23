@@ -19,9 +19,9 @@ window.PROTOCOL = {
 
 window.SCORING = {
   orbit: [
-    { n:"01 Stop the Scroll", w:"10× · 150 base", d:"Thumb-stops in the Feed Test: a pause of 1.5 seconds or more on your ad, across 100+ phones in the room." },
-    { n:"02 Make Them Buy", w:"20× · 200 base", d:"Buy taps in the Feed Test plus blind head-to-head wins against your top rival's real listing or ad." },
-    { n:"03 Your Own Creative Engine", w:"5× · 150 base", d:"Approved, on-brand assets from a cold run on a product the judges pick and you've never seen." }
+    { n:"01 Virality", w:"10× · 150 base", d:"Thumb-stops in the Feed Test: a pause of 1.5 seconds or more on your ad, across 100+ phones in the room." },
+    { n:"02 Revenue", w:"20× · 200 base", d:"Buy taps in the Feed Test plus blind head-to-head wins against your top rival's real listing or ad." },
+    { n:"03 Your AI Agency", w:"5× · 150 base", d:"Approved, on-brand assets from a cold run on a product the judges pick and you've never seen." }
   ]
 };
 

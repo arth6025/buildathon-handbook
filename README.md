@@ -59,9 +59,9 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 
 | Track | What teams build | Root parameter | Points |
 |---|---|---|---|
-| **01 Stop the Scroll** | Statics, carousels, hooks, UGC-style video, regional cuts | Thumb-stops in the Feed Test, 10× | 150 base, overflow uncapped |
-| **02 Make Them Buy** | A personalised funnel (ad → landing page → email HTML) run as one engine through the Sloosh MCP; listings, rival counter-ads | Buy taps + blind head-to-head wins, 20× | 200 base, overflow uncapped |
-| **03 Your Own Creative Engine** | Replace the shoot, the catalogue or the rollout | Approved assets from a cold run on an unseen product, 5× | 150 base, overflow uncapped |
+| **01 Virality** | Statics, carousels, hooks, UGC-style video, regional cuts | Thumb-stops in the Feed Test, 10× | 150 base, overflow uncapped |
+| **02 Revenue** | A personalised funnel (ad → landing page → email HTML) run as one engine through the Sloosh MCP; listings, rival counter-ads | Buy taps + blind head-to-head wins, 20× | 200 base, overflow uncapped |
+| **03 Your AI Agency** | Replace the shoot, the catalogue or the rollout | Approved assets from a cold run on an unseen product, 5× | 150 base, overflow uncapped |
 
 **Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
 **Power-ups (+10 each):** a regional-language version · a video cut · the 14:00 curveball cleared · finishing under the credit budget.

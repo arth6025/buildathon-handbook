@@ -247,9 +247,9 @@
     <div class="tablewrap"><table>
       <thead><tr><th>Track</th><th>Root parameter</th><th>Points</th></tr></thead>
       <tbody>
-        <tr><td><b>01 Stop the Scroll</b></td><td>Thumb-stops in the Feed Test (a pause of 1.5 seconds or more), 10×</td><td class="w">150 base</td></tr>
-        <tr><td><b>02 Make Them Buy</b></td><td>Buy taps in the Feed Test plus blind head-to-head wins against your top rival, 20×</td><td class="w">200 base</td></tr>
-        <tr><td><b>03 Your Own Creative Engine</b></td><td>Approved assets from the cold run on a product you've never seen, 5×</td><td class="w">150 base</td></tr>
+        <tr><td><b>01 Virality</b></td><td>Thumb-stops in the Feed Test (a pause of 1.5 seconds or more), 10×</td><td class="w">150 base</td></tr>
+        <tr><td><b>02 Revenue</b></td><td>Buy taps in the Feed Test plus blind head-to-head wins against your top rival, 20×</td><td class="w">200 base</td></tr>
+        <tr><td><b>03 Your AI Agency</b></td><td>Approved assets from the cold run on a product you've never seen, 5×</td><td class="w">150 base</td></tr>
       </tbody>
     </table></div>
 
@@ -298,9 +298,9 @@
     <h1>Pick one outcome. Prove it.</h1>
     <p class="lede">Three tracks. You pick one at registration, and that's the rubric you're scored on.</p>
     <div class="grid">
-      <div class="card"><p class="kicker">Track 01</p><h3>Stop the Scroll</h3><p>Creative people can't scroll past: statics, carousels, hooks, UGC-style video, regional cuts.</p><p style="margin-top:10px"><b>Root parameter:</b> thumb-stops, 10×. 150 base, overflow uncapped.</p></div>
-      <div class="card hot"><p class="kicker" style="color:#3a3a3a">Track 02 · hardest</p><h3>Make Them Buy</h3><p>Turn attention into a click or a cart: listings, quick-commerce tiles, rival counter-ads, lifecycle creative.</p><p style="margin-top:10px"><b>Root parameter:</b> buy taps and head-to-head wins, 20×. 200 base, overflow uncapped.</p></div>
-      <div class="card"><p class="kicker">Track 03</p><h3>Your Own Creative Engine</h3><p>Replace a creative function: the shoot, the catalogue, the campaign rollout across every surface.</p><p style="margin-top:10px"><b>Root parameter:</b> approved assets from the cold run, 5×. 150 base, overflow uncapped.</p></div>
+      <div class="card"><p class="kicker">Track 01</p><h3>Virality</h3><p>Creative people can't scroll past: statics, carousels, hooks, UGC-style video, regional cuts.</p><p style="margin-top:10px"><b>Root parameter:</b> thumb-stops, 10×. 150 base, overflow uncapped.</p></div>
+      <div class="card hot"><p class="kicker" style="color:#3a3a3a">Track 02 · hardest</p><h3>Revenue</h3><p>Turn attention into a click or a cart: listings, quick-commerce tiles, rival counter-ads, lifecycle creative.</p><p style="margin-top:10px"><b>Root parameter:</b> buy taps and head-to-head wins, 20×. 200 base, overflow uncapped.</p></div>
+      <div class="card"><p class="kicker">Track 03</p><h3>Your AI Agency</h3><p>A team of AI agents that does an agency's job: the shoot, the catalogue, the campaign rollout across every surface.</p><p style="margin-top:10px"><b>Root parameter:</b> approved assets from the cold run, 5×. 150 base, overflow uncapped.</p></div>
     </div>
     <h2>Every track, same four steps.</h2>
     <div class="rows">
@@ -322,9 +322,9 @@
     <h2>Nine engine recipes</h2>
     <div class="filters" id="recipeFilters">
       <button class="chip" data-t="" aria-pressed="true">All</button>
-      <button class="chip" data-t="01" aria-pressed="false">01 Stop the Scroll</button>
-      <button class="chip" data-t="02" aria-pressed="false">02 Make Them Buy</button>
-      <button class="chip" data-t="03" aria-pressed="false">03 Your Own Engine</button>
+      <button class="chip" data-t="01" aria-pressed="false">01 Virality</button>
+      <button class="chip" data-t="02" aria-pressed="false">02 Revenue</button>
+      <button class="chip" data-t="03" aria-pressed="false">03 Your AI Agency</button>
     </div>
     <div class="grid" id="recipeGrid"></div>
     <p class="note"><b>"confirm"</b> marks a Sloosh workflow we're still confirming for the day. Mentors will tell you at the pre-call.</p>
@@ -371,7 +371,7 @@ runs on a product the panel picks), 1 minute of proof on screen, 1 minute
 of Q&A.
 
 My brand: [what we sell, to whom]
-My track: [01 Stop the Scroll / 02 Make Them Buy / 03 Your Own Creative Engine]
+My track: [01 Virality / 02 Revenue / 03 Your AI Agency]
 My proof: [thumb-stops / buy taps and head-to-head wins / assets from the cold run]
 My angle: [one sentence, no product name]
 Hooks that survived: [the 3]
@@ -453,7 +453,7 @@ Write the script, word for word, with timings. Keep it plain.</pre>
   var recipes = window.RECIPES || [];
   var rname = {}; recipes.forEach(function (r) { rname[r.id] = r.name; });
   var cards = (window.CARDS || []).filter(function (c) { return c.track; });
-  var names = { "01": "Track 01 · Stop the Scroll", "02": "Track 02 · Make Them Buy", "03": "Track 03 · Your Own Creative Engine" };
+  var names = { "01": "Track 01 · Virality", "02": "Track 02 · Revenue", "03": "Track 03 · Your AI Agency" };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]; }); }
   function render(t) {
     document.getElementById("recipeGrid").innerHTML = recipes.filter(function (r) { return !t || r.track === t; }).map(function (r) {

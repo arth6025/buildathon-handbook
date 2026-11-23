@@ -2,8 +2,7 @@
    Every card names a live DSG portfolio brand (Active / Partially Exited,
    all above Rs 1 Cr revenue). Brand and problem are chosen to match the
    build on the back of the card. "track" is the Orbit track the build fits
-   ("01" Stop the Scroll, "02" Make Them Buy, "03" Your Own Creative
-   Engine), or null if it is beyond the day. "recipe" is the engine recipe
+   ("01" Virality, "02" Revenue, "03" Your AI Agency), or null if it is beyond the day. "recipe" is the engine recipe
    id in recipes.js the build runs on.
    See CONTRIBUTING.md. */
 window.CARDS = [
