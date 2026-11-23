@@ -142,7 +142,7 @@ Due **three days before**, so the day goes on building, not logins:
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
 | 🎞️ **How it works** | 20-stage story deck: how the Orbit day runs, from the brief to the showcase | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 15 sections, read in order | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
-| 👀 **The cards** | 128 festive problem cards, flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
+| 👀 **The cards** | 128 problem cards, 36 tagged to Orbit tracks A/B/C; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
 | ✅ **The checklist** | 5 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
@@ -155,8 +155,8 @@ Due **three days before**, so the day goes on building, not logins:
 | 01 | Welcome | The objective, the two workflows, how to use the handbook |
 | 02 | **The day** | Objective, the six-stage flow, why the order matters, what to bring |
 | 03 | What good looks like | A worked case, the transferable pattern, and build ideas |
-| 04 | The AI build | Seven-stage spec for the festive creative engine — *assigned* |
-| 05 | The pitch | Six-part anatomy of a pitch page, plus the ShopOS festive pitch |
+| 04 | The AI build | Seven-stage spec for the creative engine, on Seedream and Seedance — *assigned* |
+| 05 | The pitch | Six-part anatomy of a pitch page, plus the Orbit pitch |
 | 06 | The toolkit | Index of everything below |
 | 07 | The cards | All 128 cards, filterable and flippable, in-page |
 | 08 | Creative swipe file | 31 patterns — hooks, formats, script structures, benchmarks |
@@ -181,7 +181,7 @@ The ShopOS × DSG deck, on screen. Each card names one problem; flip it for the 
 - Each card keeps its original build side: build name, three steps, inputs, metric, outputs.
 
 > [!IMPORTANT]
-> **Read the brand-named cards as conversation starters, not findings.** Each problem is inferred from the brand's category and the festive calendar — **not** from an audit of that company's store or ad account. The framing is conditional on purpose: *"Flip this over if your brand has this problem."* Review before using them anywhere outside the room.
+> **Read the brand-named cards as conversation starters, not findings.** Each problem is inferred from the brand's category and its build — **not** from an audit of that company's store or ad account. The framing is conditional on purpose: *"Flip this over if your brand has this problem."* Review before using them anywhere outside the room.
 
 **Sections and colours** — straight from the print deck:
 
@@ -191,18 +191,18 @@ The ShopOS × DSG deck, on screen. Each card names one problem; flip it for the 
 
 ## What brands can build
 
-Seeds, not specs. Each is small enough to ship in a day and useful enough that a store would switch it on for the season.
+Seeds, not specs. Each fits one Orbit track, is small enough to build in a day, and is useful enough that a brand would keep running it through 2027.
 
 | Idea | What it does | Track |
 |---|---|---|
-| **Ad engine from a URL** | One input — a store URL. Learns the brand, studies what's working in the category, returns a month of ad variants with images and copy ready for Ads Manager. | 01 |
-| **Festive page generator** | Point it at a Shopify collection, get a campaign landing page — message-matched to the ad, proof pulled from existing reviews, nav stripped out. | 02 |
-| **Review-to-creative pipeline** | Reads the store's own reviews, extracts verbatim customer language, writes UGC scripts that use it. | 01 |
-| **Creative refresh loop** | Watches which ads are fatiguing, generates iterations of the winner rather than fresh concepts from zero. | 01 |
-| **Message-match checker** | Give it an ad and a page. Scores the match, names every promise the page dropped, rewrites the headline in the ad's own words. | 02 |
-| **Offer and bundle builder** | Turns festive SKU combinations into a page with bundle logic, urgency, and the objection-to-proof map already placed. | 02 |
-| **Hook tester** | Twenty openings against one angle, each stress-tested as a skeptical media buyer. | 01 |
-| **Storefront teardown** | Runs the five-second test against a store's top pages, returns a ranked fix list. | 02 |
+| **Ad engine from your winners** | One input: your top 3 ads. Finds what made them work and returns 12+ statics ready for Ads Manager. | A |
+| **Creative refresh loop** | Watches which ads are fatiguing, generates iterations of the winner rather than fresh concepts from zero. | A |
+| **Hook tester** | Twenty openings against one angle, each stress-tested as a skeptical media buyer. | A |
+| **Occasion switcher** | Re-stages one winning static for every moment in your 2027 calendar, with an argument that survives the discount being removed. | A |
+| **Rival rebuild** | Names the pattern and angle in a competitor's longest-running ad, then rebuilds the angle on your product with your own proof. | B |
+| **Category watch** | Pulls what rivals claim this month and returns the three claims nobody in the category is making, as ready-to-test statics. | B |
+| **Review-to-video pipeline** | Turns the verbatim language in your reviews into UGC-style scripts and Seedance videos. | C |
+| **Proof explainer** | Answers the one objection in your comments with a 15-second video and a 6-second cut. | C |
 
 **The shape that wins is consistent:** narrowest possible input, output so complete it needs no second tool.
 
@@ -268,10 +268,10 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 1 | Fill the 128 cards with the attendees' real problems | **Baisakhi × Urmit** | Inferred problems replaced with what each attending brand actually says, card by card |
 | 2 | Build at least 3 custom workflows per brand | **Baisakhi + workflow engineer** | Three working workflows per brand, pointed at their own catalogue |
 | 3 | Build the workflow for multiple landing pages | **Baisakhi + Prashant** | One page per angle, message-matched to its ad, live on a real Shopify store |
-| 4 | Confirm dates and the soft commit from brands | **Urmit** | 10 Oct locked, and a named soft commit from each brand |
-| 5 | Onboard ByteDance credit redemption via ShopOS | **Baisakhi** | Redemption path live so credits can be claimed on the day |
+| 4 | Confirm dates and the soft commit from brands | **Urmit** | 16 Dec locked, and a named soft commit from each brand |
+| 5 | Onboard BytePlus credit redemption via Sloosh | **Baisakhi** | Redemption path live so credits can be claimed on the day |
 
-Also open, from the AI build spec: the **festive creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/handbook/#ai-build)) — Prashant + engineer.
+Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/handbook/#ai-build)) — Prashant + engineer.
 
 
 ---
@@ -287,7 +287,7 @@ Also open, from the AI build spec: the **festive creative engine** ([spec](https
 - [ ] **Who audits "Shipped in 30"** results in January
 - [ ] **Lock the scoring weights** with DSG and BytePlus (the current set is a proposal)
 
-**Not yet updated for Orbit:** the 128 cards and three handbook sections (What good looks like, The AI build, The pitch) still carry the earlier Assemble festive and landing-page framing.
+**Still from the earlier landing-page plan:** the landing page swipe file and action item 3 (the multi-page workflow). Orbit has no landing-page track, so decide whether item 3 stays.
 
 **Carried over:**
 

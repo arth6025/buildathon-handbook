@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Before Mumbai — Assemble | Chapter 1</title>
-<meta name="description" content="The action list for Assemble | Chapter 1 Mumbai. Tick what you own, copy your list, circle back.">
+<title>Before Mumbai — Orbit Buildathon</title>
+<meta name="description" content="The action list for the Orbit Buildathon, Mumbai. Tick what you own, copy your list, circle back.">
 <link rel="stylesheet" href="../assets/sloosh.css">
 <link rel="stylesheet" href="checklist.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
@@ -14,8 +14,8 @@
   <header class="top">
     <div class="lockup">
       <div class="event">
-        <div class="nm">Assemble</div>
-        <div class="meta">Chapter 1 · Mumbai · 10 Oct</div>
+        <div class="nm">Orbit</div>
+        <div class="meta">Buildathon · Mumbai · 16 Dec</div>
       </div>
       <div class="hosts">
         <span class="lbl">By</span>
@@ -62,10 +62,10 @@ const ITEMS = [
     d:"One page per angle, message-matched to the ad that feeds it, live on a real Shopify store." },
   { id:"dates", owners:["Urmit"],
     t:"Confirm dates and the soft commit from brands",
-    d:"10 Oct locked, and a named soft commit from each brand expected in the room." },
+    d:"16 Dec locked, and a named soft commit from each brand expected in the room." },
   { id:"credits", owners:["Baisakhi"],
-    t:"Onboard ByteDance credit redemption via ShopOS",
-    d:"Redemption path live so credits can be claimed through ShopOS on the day." }
+    t:"Onboard BytePlus credit redemption via Sloosh",
+    d:"Redemption path live so credits can be claimed through Sloosh before the day." }
 ];
 
 const KEY = "assemble-ch1-checklist";
@@ -119,7 +119,7 @@ document.addEventListener("click", e => {
   if (e.target.id === "copy") {
     const lines = ITEMS.filter(i => !filter || i.owners.includes(filter))
       .map(i => `${state[i.id] ? "[x]" : "[ ]"} ${i.t} — ${i.owners.join(" + ")}`);
-    const txt = `Assemble | Chapter 1 Mumbai — 10 Oct\n\n${lines.join("\n")}`;
+    const txt = `Orbit Buildathon, Mumbai — 16 Dec\n\n${lines.join("\n")}`;
     navigator.clipboard.writeText(txt).then(() => {
       document.getElementById("hint").textContent = "Copied. Paste it to the group.";
       setTimeout(() => document.getElementById("hint").textContent = "Copies the open items with owners.", 2200);

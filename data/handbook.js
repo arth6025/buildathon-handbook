@@ -29,14 +29,14 @@ window.SCORING = {
 
 /* What brands can build — seeds, not specs. */
 window.IDEAS = [
-  { t:"Ad engine from a URL", d:"One input — a store URL. Learns the brand, studies what's working in the category, returns a month of ad variants with images and copy ready for Ads Manager.", s:"Track 01 · the proven shape" },
-  { t:"Festive page generator", d:"Point it at a Shopify collection and get a dedicated campaign landing page — message-matched to the ad, proof pulled from existing reviews, nav stripped out.", s:"Track 02" },
-  { t:"Review-to-creative pipeline", d:"Reads the store's own product reviews, extracts the verbatim customer language, and writes UGC scripts that use it. The proof and the copy come from the same place.", s:"Track 01" },
-  { t:"Creative refresh loop", d:"Watches which ads are fatiguing and generates iterations of the winner — new hooks on a proven body — instead of fresh concepts from zero.", s:"Track 01" },
-  { t:"Message-match checker", d:"Give it an ad and a landing page. It scores the match, names every promise the page dropped, and rewrites the headline in the ad's own words.", s:"Track 02" },
-  { t:"Offer and bundle builder", d:"Turns festive SKU combinations into a page with the bundle logic, the urgency, and the objection-to-proof map already placed.", s:"Track 02" },
-  { t:"Hook tester", d:"Generates twenty openings against one angle, then stress-tests each as a skeptical media buyer and kills the ones that pattern-match as ads.", s:"Track 01" },
-  { t:"Storefront teardown", d:"Runs the five-second test against any Shopify store's top pages and returns a ranked list of what to fix before the sale season starts.", s:"Track 02" }
+  { t:"Ad engine from your winners", d:"One input: your top 3 ads. Finds what made them work, writes new angles on the same bones and returns 12+ statics ready for Ads Manager.", s:"Track A · the proven shape" },
+  { t:"Creative refresh loop", d:"Watches which ads are fatiguing and generates iterations of the winner (new hooks on a proven body) instead of fresh concepts from zero.", s:"Track A" },
+  { t:"Hook tester", d:"Generates twenty openings against one angle, then stress-tests each as a skeptical media buyer and kills the ones that pattern-match as ads.", s:"Track A" },
+  { t:"Occasion switcher", d:"Takes one winning static and re-stages it for every moment in your 2027 calendar, with an argument that survives the discount being removed.", s:"Track A" },
+  { t:"Rival rebuild", d:"Give it a competitor's longest-running ad. It names the pattern and the angle, then rebuilds the angle on your product with your own proof. Never a copy.", s:"Track B" },
+  { t:"Category watch", d:"Pulls what rivals are claiming this month and returns the three claims nobody in the category is making, as ready-to-test statics.", s:"Track B" },
+  { t:"Review-to-video pipeline", d:"Reads the store's own reviews, pulls the verbatim customer language and turns it into short UGC-style scripts and Seedance videos. The proof and the copy come from the same place.", s:"Track C" },
+  { t:"Proof explainer", d:"Takes the one objection in your comments and answers it in a 15-second video and a 6-second cut, built from your own product shots.", s:"Track C" }
 ];
 
 /* ---------- sections ---------- */
@@ -261,8 +261,8 @@ window.SECTIONS = [
       </div>
 
       <h2>What brands can build</h2>
-      <p>Seeds, not specs. Each of these is small enough to ship in a day and useful enough that a
-        store would switch it on for the festive season.</p>
+      <p>Seeds, not specs. Each of these fits one Orbit track, is small enough to build in a day,
+        and is useful enough that a brand would keep running it through 2027.</p>
       <div class="ideas">
         ${window.IDEAS.map((i) => `<div class="idea">
           <div class="t">${i.t}</div>
@@ -283,7 +283,7 @@ window.SECTIONS = [
   {
     id:"ai-build", nav:"The AI build", tick:"New",
     title:`One product in. <em>Fifty ads out.</em>`,
-    lede:`A worked spec for the creative engine: pair a frontier model with an agent and turn a single product into a season's worth of testable variations in one pass. <strong>Built for the festive run, not for Black Friday.</strong>`,
+    lede:`A worked spec for the creative engine: pair a frontier model with an agent and turn a single product into a quarter's worth of testable variations in one pass. <strong>Built for a year of launches, not one sale.</strong>`,
     html:`<div class="prose">
       <h2>The pattern being copied</h2>
       <p>The version going around collapses what used to be five separate rounds — strategy,
@@ -295,15 +295,15 @@ window.SECTIONS = [
         is individually new. What's new is that it happens in one pass, which means the unit of
         work stops being “an ad” and becomes “a test batch.”</p>
 
-      <h2>Why festive isn't a find-and-replace</h2>
-      <p>The original is built for Black Friday — a single-day, discount-led, largely
-        single-market event. Our festive run is none of those things, and the differences change
-        the spec rather than just the copy.</p>
+      <h2>Why India in 2027 isn't a find-and-replace</h2>
+      <p>The original is built for Black Friday: a single-day, discount-led, largely single-market
+        event. A brand's 2027 in India is none of those things, and the differences change the spec
+        rather than just the copy.</p>
       <div class="lesson">
-        <div class="lesson-row"><div class="lk">Occasion, not discount</div><div class="lv">Black Friday's angle is price. The festive angles are <b>gifting, family, new beginnings, self-reward and restocking</b> — arguments that survive with the discount removed. An angle that collapses without a percentage-off is a Black Friday angle wearing festive clothes.</div></div>
-        <div class="lesson-row"><div class="lk">A season, not a day</div><div class="lv">Navratri through Diwali is weeks of distinct moments, each with its own buying reason. That's not one campaign — it's a <b>calendar of angles</b>, which is exactly what a workflow is good at and a shoot is not.</div></div>
-        <div class="lesson-row"><div class="lk">Regional variation is the axis</div><div class="lv">The reference varies skin tone and environment. Here the high-value axis is <b>region, language and household context</b> — the same product, the same angle, rendered for genuinely different festive settings. This is where the variation count actually earns its keep.</div></div>
-        <div class="lesson-row"><div class="lk">Delivery is the objection</div><div class="lv">Festive gifting creates an objection Black Friday doesn't: <b>will it arrive before the date</b>. Every variation needs a proof beat that answers it, or the creative works and the conversion doesn't.</div></div>
+        <div class="lesson-row"><div class="lk">Occasion, not discount</div><div class="lv">Black Friday's angle is price. The angles that work across an Indian year are <b>gifting, family, new beginnings, self-reward and restocking</b>: arguments that survive with the discount removed. An angle that collapses without a percentage-off is a sale wearing a costume.</div></div>
+        <div class="lesson-row"><div class="lk">A year, not a day</div><div class="lv">From the new year through summer, monsoon, the wedding season and the festive run, 2027 is a string of distinct moments, each with its own buying reason. That's not one campaign. It's a <b>calendar of angles</b>, which is exactly what a workflow is good at and a shoot is not.</div></div>
+        <div class="lesson-row"><div class="lk">Regional variation is the axis</div><div class="lv">The reference varies skin tone and environment. Here the high-value axis is <b>region, language and household context</b> — the same product, the same angle, rendered for genuinely different settings. This is where the variation count actually earns its keep.</div></div>
+        <div class="lesson-row"><div class="lk">Proof is the objection</div><div class="lv">Every occasion creates its own doubt: <b>will it arrive before the date, is it actually healthy, will it fit</b>. Every variation needs a proof beat that answers the doubt of its moment, or the creative works and the conversion doesn't.</div></div>
       </div>
 
       <h2>The build</h2>
@@ -318,11 +318,11 @@ window.SECTIONS = [
           <p class="ask">Prompt: Voice-of-customer extraction. Feed it the reviews, not the product copy.</p>
         </div></div>
         <div class="step"><div class="step-no">02</div><div>
-          <h4>Generate festive angles</h4>
-          <p>Twelve angles, then filtered by the festive pass — which ranks them by how badly they
+          <h4>Generate angles</h4>
+          <p>Twelve angles, then filtered by the occasion pass, which ranks them by how badly they
             break when you remove the discount. <strong>The survivors are the ones worth
             producing.</strong></p>
-          <p class="ask">Prompts: Angle generation → Festive angle pass. Both already in the chain.</p>
+          <p class="ask">Prompts: Angle generation → Occasion angle pass. Both already in the chain.</p>
         </div></div>
         <div class="step"><div class="step-no">03</div><div>
           <h4>Write and stress-test the hooks</h4>
@@ -332,17 +332,17 @@ window.SECTIONS = [
           <p class="ask">Prompts: Hook batch → Hook stress test.</p>
         </div></div>
         <div class="step"><div class="step-no">04</div><div>
-          <h4>Expand across the festive matrix</h4>
+          <h4>Expand across the variation matrix</h4>
           <p>Here the agent takes over. Each surviving hook is rendered across the variation axes
-            that matter for the season: <strong>occasion moment × regional setting × household
+            that matter for your 2027 calendar: <strong>occasion moment × regional setting × household
             context × format</strong>. Four hooks across a modest matrix is where the fifty comes
             from — it's multiplication, not fifty separate ideas.</p>
           <p class="ask">Cap the matrix before you run it. Unbounded expansion produces volume nobody reviews.</p>
         </div></div>
         <div class="step"><div class="step-no">05</div><div>
           <h4>Produce the assets</h4>
-          <p>Scripts to synthetic presenters, product imagery into festive scenes, statics for
-            retargeting. Everything lands in the ratios you'd actually run, with copy attached —
+          <p>Statics on Seedream, short videos on Seedance, product imagery into real-life
+            scenes, all inside Sloosh on the brand's own BytePlus credits. Everything lands in the ratios you'd actually run, with copy attached —
             <strong>ready for Ads Manager without a second tool.</strong></p>
           <p class="ask">The last mile is where these systems usually die. Budget real time for it.</p>
         </div></div>
@@ -363,9 +363,10 @@ window.SECTIONS = [
       </div>
 
       <h2>Which model</h2>
-      <p>The chain is model-agnostic and works on either <strong>Claude or GPT</strong> — the
-        prompts are written to be portable, and nothing in stages 01–03 depends on a
-        provider-specific feature. Pick on what you already have access to and credits for.</p>
+      <p>At Orbit the images and video come from <strong>BytePlus</strong> (Seedream for statics,
+        Seedance for video), run inside Sloosh on each brand's own credits. The text chain in stages
+        01–03 is model-agnostic and works on either <strong>Claude or GPT</strong>: the prompts are
+        written to be portable, and nothing in them depends on a provider-specific feature.</p>
       <p>The one thing that does matter: stages 02 and 03 hand the model long, constraint-heavy
         prompts with explicit rejection criteria, and the output is only useful if those
         constraints are actually honoured. <strong>Test both on the hook batch prompt and keep
@@ -378,7 +379,8 @@ window.SECTIONS = [
         <li>A store URL goes in with no other configuration.</li>
         <li>Out comes a labelled batch — angle, hook pattern, variable — in runnable ratios.</li>
         <li>Every angle survives the discount being removed.</li>
-        <li>Every variation carries a delivery-timing proof beat.</li>
+        <li>Every variation carries a proof beat for the doubt its occasion creates.</li>
+        <li>It runs again on a second product with no edits.</li>
         <li>Performance data can be fed back in to produce the next batch.</li>
       </ul>
 
@@ -390,9 +392,9 @@ window.SECTIONS = [
       </div>
 
       <div class="callout">
-        <p><strong>Timing is the whole argument.</strong> Assemble sits just ahead of the
-          festive peak. A creative engine that exists in October is a revenue decision; the same
-          engine in December is a learning experience.</p>
+        <p><strong>Timing is the whole argument.</strong> Orbit sits on 16 December, two weeks
+          before the year turns. A creative engine that exists on 1 January runs every launch of
+          2027; the same engine built in March has already missed a quarter.</p>
       </div>
     </div>`
   },
@@ -400,7 +402,7 @@ window.SECTIONS = [
   {
     id:"pitch", nav:"The pitch",
     title:`Sell the supply, <em>not the software.</em>`,
-    lede:`Whatever you build, you have to pitch it — on the day to judges, and afterwards to a brand. This is the anatomy of a pitch page that works for a creative product, and the ShopOS festive pitch built on the same bones.`,
+    lede:`Whatever you build, you have to pitch it — on the day to judges, and afterwards to a brand. This is the anatomy of a pitch page that works for a creative product, and the Orbit pitch built on the same bones.`,
     html:`<div class="prose">
       <h2>The anatomy</h2>
       <p>A creative product is hard to pitch because the buyer has been sold "AI for marketing"
@@ -452,21 +454,21 @@ window.SECTIONS = [
         </div></div>
       </div>
 
-      <h2>The ShopOS festive pitch</h2>
+      <h2>The Orbit pitch</h2>
       <p>Same bones, our offer. This is the version you're effectively demoing on the day, and the
         one a brand hears when they ask what they're walking away with.</p>
 
       <div class="case">
         <div class="case-top">
-          <h3 class="case-nm">Ship the festive season in a day, not a quarter.</h3>
-          <p class="case-one">Built to run before the rush, not to look good in a deck. Creative
-            and landing pages produced on ShopOS workflow and live in your Shopify store.</p>
+          <h3 class="case-nm">Build like the top 1%.</h3>
+          <p class="case-one">Your brand problem. Our playbook. A working AI workflow, built by your
+            own team in one day on Sloosh, running on your own BytePlus credits into 2027.</p>
         </div>
         <div class="case-facts">
-          <div class="fact"><div class="k">Input</div><div class="v">Your store URL</div></div>
-          <div class="fact"><div class="k">Output</div><div class="v">Ads + pages</div></div>
-          <div class="fact"><div class="k">Lands in</div><div class="v">Shopify</div></div>
-          <div class="fact"><div class="k">Timeline</div><div class="v">This season</div></div>
+          <div class="fact"><div class="k">Input</div><div class="v">Your top ads + reviews</div></div>
+          <div class="fact"><div class="k">Output</div><div class="v">A creative workflow</div></div>
+          <div class="fact"><div class="k">Lands in</div><div class="v">Sloosh + Ads Manager</div></div>
+          <div class="fact"><div class="k">Timeline</div><div class="v">One day</div></div>
         </div>
         <div class="case-body">
           <h4>The inventory</h4>
@@ -476,14 +478,13 @@ window.SECTIONS = [
             against.</p>
 
           <h4>What a brand walks away with</h4>
-          <p>ShopOS credits to keep the workflow running past the event, and a call with the team
-            to scope a forward-deployed engineer who takes it into production for the sale season.
-            <strong>The event is the trial; the FDE is how it becomes infrastructure.</strong></p>
+          <p>The workflow itself, the first approved batch, and BytePlus credits still in their
+            account so it keeps running. <strong>The day is the build; "Shipped in 30" is how it
+            becomes the first campaign of 2027.</strong></p>
 
           <h4>Who it's for</h4>
-          <p>Brands on Shopify with a festive calendar already committed and a media budget
-            already allocated — where the constraint is creative supply and page throughput, not
-            strategy.</p>
+          <p>Consumer brands doing ₹1Cr+ in revenue, with ads already running, where the
+            constraint is creative supply rather than strategy.</p>
         </div>
       </div>
 
@@ -495,7 +496,8 @@ window.SECTIONS = [
       </div>
 
       <h2>The post-click pitch</h2>
-      <p>Track 02 has its own pitch, and it's a sharper one, because it rests on a gap the buyer
+      <p>Landing pages are beyond the Orbit day, but if your creative lands on a page, this is the
+        pitch for it. It's a sharp one, because it rests on a gap the buyer
         can verify in thirty seconds by looking at their own account. Two moves do the work.</p>
 
       <h3>Borrow a model they've already bought</h3>
@@ -528,8 +530,7 @@ window.SECTIONS = [
       <div class="callout">
         <p><strong>The worked example is the front page of this site.</strong> A full pitch built
           on these moves — hero, reframe, why-a-workflow, three steps, offer, objection FAQ, one
-          repeated ask — is at <a href="../">the root</a>. It obeys the Track 02 rules in the
-          swipe file: no top nav, one goal, no autoplay hero, sticky CTA on mobile, proof beside
+          repeated ask — is at <a href="../">the root</a>. It obeys the rules in the landing page swipe file: no top nav, one goal, no autoplay hero, sticky CTA on mobile, proof beside
           the ask, zero form fields. Read it as a build reference, then replace the argument with
           yours.</p>
       </div>
@@ -558,16 +559,16 @@ window.SECTIONS = [
   {
     id:"cards", nav:"The cards", tick:"New",
     title:`128 problems your brand <em>already has.</em>`,
-    lede:`The ShopOS × DSG deck, rewritten for the festive run. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by section, or search a brand name.</strong>`,
+    lede:`The Sloosh × DSG deck, rewritten for 2027, with 36 cards tagged to Orbit tracks A, B and C. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
     html:`<div class="prose">
       <p><strong>Every card names a brand.</strong> All 128 are matched to one of the 70 live DSG
         portfolio companies — Active or Partially Exited, every one above ₹1 Cr. Brand and problem
         are both chosen to fit the build on the back, so the fix always suits the company named.</p>
-      <p>Pick the card that makes you wince. That is your build for the day. If two apply, take the
+      <p>Pick the card that makes you wince. For Orbit, pick from the Track A, B or C filters: those builds fit one day on Sloosh. If two apply, take the
         one whose metric you already report on, because you will be able to prove the change.</p>
       <div class="callout warn">
         <p><strong>These are conversation starters, not findings.</strong> Each problem is inferred
-          from the brand's category, its build, and the festive calendar — not from an audit of
+          from the brand's category and its build, not from an audit of
           anyone's store or ad account. The framing is conditional on purpose: flip it <em>if</em>
           it's true.</p>
       </div>

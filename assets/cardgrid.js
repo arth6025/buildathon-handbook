@@ -34,7 +34,7 @@ window.CardGrid = (function () {
           '<p class="problem">' + esc(c.problem) + '</p>' +
           '<div class="f-foot">' +
             '<span class="flip-pill">' + esc(c.flip) + '</span>' +
-            '<span class="by-small">ShopOS × DSG</span>' +
+            '<span class="by-small">' + (c.track ? 'Orbit · Track ' + c.track : 'Sloosh × DSG') + '</span>' +
             '<span class="flipcue">Flip ↻</span>' +
           '</div>' +
         '</div>' +
@@ -62,6 +62,9 @@ window.CardGrid = (function () {
       '</div></button>';
   }
 
+  // Orbit tracks: cards tagged with the track their build fits
+  var TRACKS = [["A", "Velocity"], ["B", "Competitor"], ["C", "Video"]];
+
   function mount(root, CARDS) {
     if (!root || !CARDS) return;
     root.classList.add("cardset");
@@ -76,6 +79,11 @@ window.CardGrid = (function () {
         '<div class="cg-chips">' +
           '<button class="cg-chip" data-sec="" aria-pressed="true">All' +
             '<span class="ct">' + CARDS.length + '</span></button>' +
+          TRACKS.map(function (t) {
+            var n = CARDS.filter(function (c) { return c.track === t[0]; }).length;
+            return '<button class="cg-chip" data-sec="track:' + t[0] + '" aria-pressed="false">Track ' +
+                   t[0] + ' · ' + t[1] + '<span class="ct">' + n + '</span></button>';
+          }).join("") +
           sections.map(function (s) {
             var n = CARDS.filter(function (c) { return c.section === s; }).length;
             return '<button class="cg-chip" data-sec="' + esc(s) + '" aria-pressed="false">' +
@@ -97,7 +105,8 @@ window.CardGrid = (function () {
     function render() {
       var q = query.trim().toLowerCase();
       var list = CARDS.filter(function (c) {
-        if (active && c.section !== active) return false;
+        if (active && active.indexOf("track:") === 0) { if (c.track !== active.slice(6)) return false; }
+        else if (active && c.section !== active) return false;
         if (!q) return true;
         return (c.brand || "").toLowerCase().indexOf(q) >= 0 ||
                c.problem.toLowerCase().indexOf(q) >= 0 ||

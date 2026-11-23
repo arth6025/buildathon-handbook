@@ -58,18 +58,18 @@ Rules:
   pre-empts.
 
 Reject any angle that is just a feature restated as a benefit.` },
-    { name:"Festive angle pass", use:"Run after angle generation when you're building for a sale season.", text:
+    { name:"Occasion angle pass", use:"Run after angle generation when you're building for a launch, a sale or an occasion in your 2027 calendar.", text:
 `Here are my angles: <b>[PASTE THE 12 ANGLES]</b>
-Season: <b>[FESTIVE PERIOD + THE DATES THAT MATTER]</b>
+Occasion: <b>[THE MOMENT + THE DATES THAT MATTER]</b>
 Category: <b>[WHAT THE BRAND SELLS]</b>
 
 For each angle:
-1. Does the season change the argument, or just the urgency? Only the
-   first is a festive angle. The second is a discount with a costume on.
+1. Does the occasion change the argument, or just the urgency? Only the
+   first is an occasion angle. The second is a discount with a costume on.
 2. What does the shopper believe during this period that they don't
    believe in a normal month? Gifting, self-reward, restocking, upgrading.
 3. Rewrite the angle to use that belief, without mentioning a discount.
-4. Name the objection the season CREATES — delivery timing, authenticity,
+4. Name the objection the occasion CREATES — delivery timing, authenticity,
    "will it arrive before the date" — and what proof kills it.
 
 Rank the rewritten angles by how badly they break if you remove the
@@ -209,7 +209,7 @@ you'd ship first.` },
 `Store: <b>[SHOPIFY STORE URL]</b>
 Target collection or product: <b>[URL]</b>
 Traffic source: <b>[THE AD OR CAMPAIGN THAT WILL SEND TRAFFIC]</b>
-Season: <b>[FESTIVE PERIOD]</b>
+Occasion: <b>[THE MOMENT, IF ANY]</b>
 
 Produce a build spec for a dedicated campaign landing page:
 

@@ -1,7 +1,9 @@
-/* 128 festive cards for Assemble | Chapter 1 Mumbai.
+/* 128 problem cards for the Orbit Buildathon (16 Dec 2026, Mumbai).
    Every card names a live DSG portfolio brand (Active / Partially Exited,
    all above Rs 1 Cr revenue). Brand and problem are chosen to match the
-   build on the back of the card. See CONTRIBUTING.md. */
+   build on the back of the card. "track" is the Orbit track the build fits
+   (A velocity, B competitor, C video), or null if it is beyond the day.
+   See CONTRIBUTING.md. */
 window.CARDS = [
  {
   "n": 1,
@@ -12,7 +14,7 @@ window.CARDS = [
   "revenueCr": 394,
   "flip": "Commerce",
   "quip": "oof.",
-  "problem": "Your festive gift pack reads premium in the hand and like a brown blur on a 2 cm quick commerce tile.",
+  "problem": "Your gift pack reads premium in the hand and like a brown blur on a 2 cm quick commerce tile.",
   "build": "Q-Comm Tile Tester",
   "steps": [
    "Upload pack and your one claim",
@@ -24,7 +26,8 @@ window.CARDS = [
    "Pack size and main claim"
   ],
   "metric": "Add-to-cart rate on the quick commerce listing",
-  "outputs": "6 test tiles + exports for each app"
+  "outputs": "6 test tiles + exports for each app",
+  "track": null
  },
  {
   "n": 2,
@@ -35,7 +38,7 @@ window.CARDS = [
   "revenueCr": 44.3,
   "flip": "Creative",
   "quip": "yep.",
-  "problem": "Your cold brew ads fatigue by day 9 of the festive run and the next shoot lands after Diwali.",
+  "problem": "Your cold brew ads fatigue by day 9 and the next shoot is six weeks away.",
   "build": "Ad Refresh Engine",
   "steps": [
    "Upload pack and last winning ad",
@@ -48,7 +51,8 @@ window.CARDS = [
    "Top 3 hooks"
   ],
   "metric": "Cost per purchase holds steady past day 10",
-  "outputs": "20 statics, 5 motion ads, hook sheet"
+  "outputs": "20 statics, 5 motion ads, hook sheet",
+  "track": "A"
  },
  {
   "n": 3,
@@ -59,7 +63,7 @@ window.CARDS = [
   "revenueCr": 173.7,
   "flip": "Content",
   "quip": "again?",
-  "problem": "Yogurt is an ingredient in half the festive sweets being made this month and you have no recipe content.",
+  "problem": "Yogurt is an ingredient in half the dishes your buyers make every week and you have no recipe content.",
   "build": "Recipe Reel Factory",
   "steps": [
    "Pick 7 recipes for the product",
@@ -71,7 +75,8 @@ window.CARDS = [
    "Flavour and best uses"
   ],
   "metric": "Saves per reel and recipe page visits",
-  "outputs": "7 reels, 7 recipe cards, captions"
+  "outputs": "7 reels, 7 recipe cards, captions",
+  "track": "C"
  },
  {
   "n": 4,
@@ -82,7 +87,7 @@ window.CARDS = [
   "revenueCr": 55.6,
   "flip": "Merchandising",
   "quip": "sigh.",
-  "problem": "Your festive listings are missing pack size, weight and shelf life, so buyers ask instead of buying.",
+  "problem": "Your listings are missing pack size, weight and shelf life, so buyers ask instead of buying.",
   "build": "Listing Slot Filler",
   "steps": [
    "Pull claims from back of pack",
@@ -95,7 +100,8 @@ window.CARDS = [
    "Top 5 buyer questions"
   ],
   "metric": "Listing conversion and fewer \"what size is this?\" questions",
-  "outputs": "7 listing images + 5 A+ modules"
+  "outputs": "7 listing images + 5 A+ modules",
+  "track": null
  },
  {
   "n": 5,
@@ -106,7 +112,7 @@ window.CARDS = [
   "revenueCr": 77,
   "flip": "Research",
   "quip": "hmm.",
-  "problem": "Three hundred reviews mention the same festive packaging gripe and nobody has read them in order.",
+  "problem": "Three hundred reviews mention the same packaging gripe and nobody has read them in order.",
   "build": "Review Miner",
   "steps": [
    "Upload review exports",
@@ -118,7 +124,8 @@ window.CARDS = [
    "SKU list"
   ],
   "metric": "One product or pack fix shipped from the gripes list",
-  "outputs": "Insight poster + 10 ad-ready quotes"
+  "outputs": "Insight poster + 10 ad-ready quotes",
+  "track": null
  },
  {
   "n": 6,
@@ -129,7 +136,7 @@ window.CARDS = [
   "revenueCr": 206.5,
   "flip": "Growth",
   "quip": "help.",
-  "problem": "You want a festive flavour and the decision has been three meetings of opinions with no customer in them.",
+  "problem": "You want a new flavour for 2027 and the decision has been three meetings of opinions with no customer in them.",
   "build": "Flavour Concept Lab",
   "steps": [
    "List 10 flavour ideas",
@@ -142,7 +149,8 @@ window.CARDS = [
    "Review and search trends"
   ],
   "metric": "Votes and waitlist signups per flavour",
-  "outputs": "10 pack renders + a vote carousel"
+  "outputs": "10 pack renders + a vote carousel",
+  "track": null
  },
  {
   "n": 7,
@@ -153,7 +161,7 @@ window.CARDS = [
   "revenueCr": 154.2,
   "flip": "Sales",
   "quip": "same.",
-  "problem": "Modern-trade buyers decide festive shelf space in September and your pitch deck is last year's.",
+  "problem": "Modern-trade buyers decide next year's shelf space in January and your pitch deck is last year's.",
   "build": "Buyer Pitch Pack",
   "steps": [
    "Enter buyer and store format",
@@ -166,7 +174,8 @@ window.CARDS = [
    "Range shots"
   ],
   "metric": "Listings won per buyer meeting",
-  "outputs": "8-slide deck + one sell sheet"
+  "outputs": "8-slide deck + one sell sheet",
+  "track": null
  },
  {
   "n": 8,
@@ -177,19 +186,20 @@ window.CARDS = [
   "revenueCr": 234.7,
   "flip": "Creative",
   "quip": "ugh.",
-  "problem": "Corporate Diwali gifting is the biggest order of your year and you have no hamper SKU to sell.",
-  "build": "Festive Hamper Drop",
+  "problem": "Corporate gifting is the biggest order of your year and you have no hamper SKU to sell.",
+  "build": "Gift Hamper Drop",
   "steps": [
-   "Pick festival, offer, hero SKUs",
+   "Pick occasion, offer, hero SKUs",
    "Render hampers and gift boxes",
    "Resize banners and posts"
   ],
   "needs": [
    "Range shots",
-   "Festival and offer"
+   "Occasion and offer"
   ],
-  "metric": "Festive order value and hamper share of orders",
-  "outputs": "Hamper renders, 6 banners, 3 posts"
+  "metric": "Order value and hamper share of orders",
+  "outputs": "Hamper renders, 6 banners, 3 posts",
+  "track": "A"
  },
  {
   "n": 9,
@@ -200,7 +210,7 @@ window.CARDS = [
   "revenueCr": 20.7,
   "flip": "Ops",
   "quip": "seen it.",
-  "problem": "A label error on a festive batch means a reprint, a delay and a missed dry-day window.",
+  "problem": "A label error on a batch means a reprint, a delay and a missed launch window.",
   "build": "Label Proof Checker",
   "steps": [
    "Upload every label size + spec",
@@ -212,7 +222,8 @@ window.CARDS = [
    "Master spec sheet"
   ],
   "metric": "Zero reprints caused by label errors",
-  "outputs": "Marked proofs + pass or fail sheet"
+  "outputs": "Marked proofs + pass or fail sheet",
+  "track": null
  },
  {
   "n": 10,
@@ -223,7 +234,7 @@ window.CARDS = [
   "revenueCr": 7.8,
   "flip": "Marketing",
   "quip": "uh oh.",
-  "problem": "You send a hundred festive boxes to creators and get back eleven posts you can actually use.",
+  "problem": "You send a hundred boxes to creators and get back eleven posts you can actually use.",
   "build": "Creator Brief Kit",
   "steps": [
    "Upload one great creator video",
@@ -236,7 +247,8 @@ window.CARDS = [
    "One great creator video"
   ],
   "metric": "Usable posts per 100 boxes sent",
-  "outputs": "Brief, sample storyboard, checklist card"
+  "outputs": "Brief, sample storyboard, checklist card",
+  "track": "C"
  },
  {
   "n": 11,
@@ -247,7 +259,7 @@ window.CARDS = [
   "revenueCr": 5,
   "flip": "Commerce",
   "quip": "oof.",
-  "problem": "Your festive bundle outsells singles and the only photo you have is of one bottle.",
+  "problem": "Your bundle outsells singles and the only photo you have is of one bottle.",
   "build": "Bundle Shot Studio",
   "steps": [
    "Pick the SKUs in each bundle",
@@ -259,7 +271,8 @@ window.CARDS = [
    "Bundle list and prices"
   ],
   "metric": "Bundle attach rate and average order value",
-  "outputs": "A styled shot for every bundle"
+  "outputs": "A styled shot for every bundle",
+  "track": null
  },
  {
   "n": 12,
@@ -270,7 +283,7 @@ window.CARDS = [
   "revenueCr": 100,
   "flip": "Marketing",
   "quip": "yep.",
-  "problem": "Every festive ad gets \"but is this actually healthy?\" in the comments and nothing on the asset answers it.",
+  "problem": "Every ad gets \"but is this actually healthy?\" in the comments and nothing on the asset answers it.",
   "build": "Proof Explainer",
   "steps": [
    "Pick one claim and its number",
@@ -283,7 +296,8 @@ window.CARDS = [
    "Nutrition panel"
   ],
   "metric": "Thumb-stop rate and fewer \"is this healthy?\" comments",
-  "outputs": "15 s explainer, 6 s cut, one static"
+  "outputs": "15 s explainer, 6 s cut, one static",
+  "track": "C"
  },
  {
   "n": 13,
@@ -294,7 +308,7 @@ window.CARDS = [
   "revenueCr": 6.6,
   "flip": "Retail",
   "quip": "again?",
-  "problem": "Your masala sits next to four rivals on a festive end-cap with nothing on the shelf saying why yours.",
+  "problem": "Your masala sits next to four rivals on an end-cap with nothing on the shelf saying why yours.",
   "build": "Shelf Talker Studio",
   "steps": [
    "Pick store format and offer",
@@ -306,7 +320,8 @@ window.CARDS = [
    "Store chain and offer"
   ],
   "metric": "Store sell-through during the promo",
-  "outputs": "4 designs + print-ready files"
+  "outputs": "4 designs + print-ready files",
+  "track": "B"
  },
  {
   "n": 14,
@@ -317,7 +332,7 @@ window.CARDS = [
   "revenueCr": 20.4,
   "flip": "Retention",
   "quip": "sigh.",
-  "problem": "Festive subscribers sign up in October and cancel in January, and nobody knows what month three should feel like.",
+  "problem": "Subscribers sign up in October and cancel in January, and nobody knows what month three should feel like.",
   "build": "Subscriber Box Story",
   "steps": [
    "Enter this month's blend notes",
@@ -329,7 +344,8 @@ window.CARDS = [
    "Bag shot"
   ],
   "metric": "Month-three retention",
-  "outputs": "Insert card, brew guide, teaser"
+  "outputs": "Insert card, brew guide, teaser",
+  "track": null
  },
  {
   "n": 15,
@@ -340,7 +356,7 @@ window.CARDS = [
   "revenueCr": 30.8,
   "flip": "Growth",
   "quip": "hmm.",
-  "problem": "Your Bangladesh festive calendar is not Diwali and the creative is translated, not rewritten.",
+  "problem": "Your Bangladesh calendar is not India's and the creative is translated, not rewritten.",
   "build": "Market Localiser",
   "steps": [
    "Upload winning ads, pick market",
@@ -352,7 +368,8 @@ window.CARDS = [
    "New market and language"
   ],
   "metric": "CTR in the new market against the home baseline",
-  "outputs": "Localised versions of 5 ads"
+  "outputs": "Localised versions of 5 ads",
+  "track": "A"
  },
  {
   "n": 16,
@@ -363,7 +380,7 @@ window.CARDS = [
   "revenueCr": 23.8,
   "flip": "Content",
   "quip": "help.",
-  "problem": "Nobody can describe what your festive brew tastes like, so the product page describes the hops instead.",
+  "problem": "Nobody can describe what your brew tastes like, so the product page describes the hops instead.",
   "build": "Taste Words",
   "steps": [
    "Pull taste words from reviews",
@@ -375,7 +392,8 @@ window.CARDS = [
    "Top reviews"
   ],
   "metric": "Product page conversion in an A/B test",
-  "outputs": "3 copy versions, a shot, 5 headlines"
+  "outputs": "3 copy versions, a shot, 5 headlines",
+  "track": null
  },
  {
   "n": 17,
@@ -386,7 +404,7 @@ window.CARDS = [
   "revenueCr": 13.6,
   "flip": "Creative",
   "quip": "same.",
-  "problem": "Bars decide their festive list in a fortnight and your can looks like every other non-alc on the back bar.",
+  "problem": "Bars rebuild their drinks list every quarter and your can looks like every other non-alc on the back bar.",
   "build": "Can Art Drop",
   "steps": [
    "Turn tasting notes into a style",
@@ -398,7 +416,8 @@ window.CARDS = [
    "Current can or bottle"
   ],
   "metric": "Bars stocking the new batch in week one",
-  "outputs": "4 labels, mockups, one merch design"
+  "outputs": "4 labels, mockups, one merch design",
+  "track": "B"
  },
  {
   "n": 18,
@@ -409,7 +428,7 @@ window.CARDS = [
   "revenueCr": 620,
   "flip": "Support",
   "quip": "ugh.",
-  "problem": "The same six festive drink questions arrive every day and a human answers each one.",
+  "problem": "The same six drink questions arrive every day and a human answers each one.",
   "build": "FAQ to Carousel",
   "steps": [
    "Cluster the last 500 questions",
@@ -421,7 +440,8 @@ window.CARDS = [
    "Product spec"
   ],
   "metric": "Repeat questions per week",
-  "outputs": "12 carousels, page FAQ, reply sheet"
+  "outputs": "12 carousels, page FAQ, reply sheet",
+  "track": null
  },
  {
   "n": 19,
@@ -432,7 +452,7 @@ window.CARDS = [
   "revenueCr": 178.2,
   "flip": "Creative",
   "quip": "seen it.",
-  "problem": "Your festive shade range is the whole pitch and every ad shows it on one skin tone.",
+  "problem": "Your shade range is the whole pitch and every ad shows it on one skin tone.",
   "build": "Shade on Every Skin",
   "steps": [
    "Upload swatches and shade names",
@@ -444,7 +464,8 @@ window.CARDS = [
    "House models, 6 skin tones"
   ],
   "metric": "Shade returns and \"which shade?\" DMs",
-  "outputs": "72 try-on images + shade finder"
+  "outputs": "72 try-on images + shade finder",
+  "track": "A"
  },
  {
   "n": 20,
@@ -455,7 +476,7 @@ window.CARDS = [
   "revenueCr": 130,
   "flip": "Content",
   "quip": "uh oh.",
-  "problem": "\"Did nothing for me\" is your most common festive review and the product was being used wrong.",
+  "problem": "\"Did nothing for me\" is your most common review and the product was being used wrong.",
   "build": "Routine Explainer",
   "steps": [
    "Enter steps, amount, AM or PM",
@@ -467,7 +488,8 @@ window.CARDS = [
    "Steps, amount, AM or PM"
   ],
   "metric": "\"Did nothing for me\" reviews drop",
-  "outputs": "One 20 s how-to per SKU"
+  "outputs": "One 20 s how-to per SKU",
+  "track": "C"
  },
  {
   "n": 21,
@@ -478,7 +500,7 @@ window.CARDS = [
   "revenueCr": 53.4,
   "flip": "Research",
   "quip": "oof.",
-  "problem": "A festive ingredient trend takes six weeks to reach your concept brief, by which point it is over.",
+  "problem": "An ingredient trend takes six weeks to reach your concept brief, by which point it is over.",
   "build": "Ingredient Radar",
   "steps": [
    "Upload trend exports",
@@ -490,7 +512,8 @@ window.CARDS = [
    "Your ingredient list"
   ],
   "metric": "Days from trend spotted to concept brief",
-  "outputs": "Weekly radar page + one concept pack"
+  "outputs": "Weekly radar page + one concept pack",
+  "track": null
  },
  {
   "n": 22,
@@ -513,7 +536,8 @@ window.CARDS = [
    "Days used and routine"
   ],
   "metric": "Ad CTR against studio creative",
-  "outputs": "Carousel + 10 s reel per customer"
+  "outputs": "Carousel + 10 s reel per customer",
+  "track": "C"
  },
  {
   "n": 23,
@@ -524,7 +548,7 @@ window.CARDS = [
   "revenueCr": 17,
   "flip": "Creative",
   "quip": "again?",
-  "problem": "Fragrance cannot be smelled through a screen and your festive page never offers a sample.",
+  "problem": "Fragrance cannot be smelled through a screen and your page never offers a sample.",
   "build": "Scent Story",
   "steps": [
    "Enter top, heart and base notes",
@@ -536,7 +560,8 @@ window.CARDS = [
    "Top, heart and base notes"
   ],
   "metric": "Sample orders and time on page",
-  "outputs": "3 stills, a film, a note pyramid"
+  "outputs": "3 stills, a film, a note pyramid",
+  "track": "C"
  },
  {
   "n": 24,
@@ -547,7 +572,7 @@ window.CARDS = [
   "revenueCr": 132,
   "flip": "Retention",
   "quip": "sigh.",
-  "problem": "Festive trial sizes sell well and almost nobody moves up to the full size afterwards.",
+  "problem": "Trial sizes sell well and almost nobody moves up to the full size afterwards.",
   "build": "Trial to Hero Flow",
   "steps": [
    "Map feelings on day 1, 4, 7, 14",
@@ -559,7 +584,8 @@ window.CARDS = [
    "What to expect by day"
   ],
   "metric": "Trial to full-size conversion",
-  "outputs": "4-step message sequence + visuals"
+  "outputs": "4-step message sequence + visuals",
+  "track": null
  },
  {
   "n": 25,
@@ -570,7 +596,7 @@ window.CARDS = [
   "revenueCr": 132,
   "flip": "Marketing",
   "quip": "hmm.",
-  "problem": "Half your festive creative gets rejected by ad review and you find out after the slot is gone.",
+  "problem": "Half your creative gets rejected by ad review and you find out after the slot is gone.",
   "build": "Policy-Safe Creative",
   "steps": [
    "Upload rejected ads + reasons",
@@ -582,7 +608,8 @@ window.CARDS = [
    "Rejection reasons"
   ],
   "metric": "Approval rate on first submission",
-  "outputs": "6 policy-safe ads + review notes"
+  "outputs": "6 policy-safe ads + review notes",
+  "track": "A"
  },
  {
   "n": 26,
@@ -593,7 +620,7 @@ window.CARDS = [
   "revenueCr": 15,
   "flip": "Merchandising",
   "quip": "help.",
-  "problem": "\"Which one for my hair type?\" is the question support answers most during festive season.",
+  "problem": "\"Which one for my hair type?\" is the question support answers most, every single week.",
   "build": "Hair Type Matcher",
   "steps": [
    "List the hair types it suits",
@@ -605,7 +632,8 @@ window.CARDS = [
    "Hair types it suits"
   ],
   "metric": "Hair-type questions in support",
-  "outputs": "Hair-type grid + 3 reels"
+  "outputs": "Hair-type grid + 3 reels",
+  "track": null
  },
  {
   "n": 27,
@@ -616,7 +644,7 @@ window.CARDS = [
   "revenueCr": 74.8,
   "flip": "Ops",
   "quip": "same.",
-  "problem": "A single unverified claim in a festive ad can pause the whole account and nobody checks before upload.",
+  "problem": "A single unverified claim in an ad can pause the whole account and nobody checks before upload.",
   "build": "Claim Checker",
   "steps": [
    "Upload trials and certificates",
@@ -628,7 +656,8 @@ window.CARDS = [
    "New ad and page copy"
   ],
   "metric": "Ads paused for claim issues",
-  "outputs": "Claim table with proof + rewrites"
+  "outputs": "Claim table with proof + rewrites",
+  "track": null
  },
  {
   "n": 28,
@@ -639,7 +668,7 @@ window.CARDS = [
   "revenueCr": 130,
   "flip": "Creative",
   "quip": "ugh.",
-  "problem": "Your festive pack redesign has been open for five weeks across three threads and no decision.",
+  "problem": "Your pack redesign has been open for five weeks across three threads and no decision.",
   "build": "Pack Redesign Sprint",
   "steps": [
    "Upload new and current artwork",
@@ -651,7 +680,8 @@ window.CARDS = [
    "Current pack"
   ],
   "metric": "A decision made in one meeting",
-  "outputs": "Renders, shelf tests, unboxing clip"
+  "outputs": "Renders, shelf tests, unboxing clip",
+  "track": null
  },
  {
   "n": 29,
@@ -662,7 +692,7 @@ window.CARDS = [
   "revenueCr": 132,
   "flip": "Marketing",
   "quip": "seen it.",
-  "problem": "Your festive launch gets no coverage because the press kit is a Drive folder nobody opened.",
+  "problem": "Your launch gets no coverage because the press kit is a Drive folder nobody opened.",
   "build": "Launch PR Kit",
   "steps": [
    "Enter the launch story",
@@ -674,7 +704,8 @@ window.CARDS = [
    "Launch story in 5 lines"
   ],
   "metric": "Coverage pieces in launch week",
-  "outputs": "Press PDF, film, stills, pitch emails"
+  "outputs": "Press PDF, film, stills, pitch emails",
+  "track": null
  },
  {
   "n": 30,
@@ -685,7 +716,7 @@ window.CARDS = [
   "revenueCr": 53.4,
   "flip": "Commerce",
   "quip": "uh oh.",
-  "problem": "One festive shoot has to reach six retailers in six formats and it takes a fortnight each time.",
+  "problem": "One shoot has to reach six retailers in six formats and it takes a fortnight each time.",
   "build": "One Shoot, Every Store",
   "steps": [
    "Upload shoot, pick marketplaces",
@@ -697,7 +728,8 @@ window.CARDS = [
    "Marketplace spec list"
   ],
   "metric": "Days from shoot to live everywhere",
-  "outputs": "A ready image folder per marketplace"
+  "outputs": "A ready image folder per marketplace",
+  "track": null
  },
  {
   "n": 31,
@@ -708,7 +740,7 @@ window.CARDS = [
   "revenueCr": 117,
   "flip": "Growth",
   "quip": "oof.",
-  "problem": "Festive buyers don't know which oil is for them and there is no quiz, so they guess and churn.",
+  "problem": "Buyers don't know which oil is for them and there is no quiz, so they guess and churn.",
   "build": "Real Regimen Quiz",
   "steps": [
    "Map concerns to routines",
@@ -720,7 +752,8 @@ window.CARDS = [
    "Skin types and concerns"
   ],
   "metric": "Quiz to cart conversion",
-  "outputs": "Quiz logic, 12 cards, result copy"
+  "outputs": "Quiz logic, 12 cards, result copy",
+  "track": null
  },
  {
   "n": 32,
@@ -731,7 +764,7 @@ window.CARDS = [
   "revenueCr": 178.2,
   "flip": "Commerce",
   "quip": "yep.",
-  "problem": "Live shopping is where your category sells in the Philippines and your festive set is a phone on a stack of books.",
+  "problem": "Live shopping is where your category sells in the Philippines and your set is a phone on a stack of books.",
   "build": "Live Shop Set",
   "steps": [
    "Pick theme and 6 products",
@@ -743,7 +776,8 @@ window.CARDS = [
    "Session theme and offers"
   ],
   "metric": "Live viewers to orders",
-  "outputs": "Live set, overlays, 6 product cards"
+  "outputs": "Live set, overlays, 6 product cards",
+  "track": null
  },
  {
   "n": 33,
@@ -754,7 +788,7 @@ window.CARDS = [
   "revenueCr": 3.5,
   "flip": "Marketing",
   "quip": "again?",
-  "problem": "Your festive ad lists ingredients and the shopper scrolls past before reaching the one that matters.",
+  "problem": "Your ad lists ingredients and the shopper scrolls past before reaching the one that matters.",
   "build": "Ingredient Cards",
   "steps": [
    "Upload formulation and dosage",
@@ -766,7 +800,8 @@ window.CARDS = [
    "Product shot"
   ],
   "metric": "Scroll depth and add-to-cart on the page",
-  "outputs": "Ingredient cards, reel, page section"
+  "outputs": "Ingredient cards, reel, page section",
+  "track": "C"
  },
  {
   "n": 34,
@@ -777,7 +812,7 @@ window.CARDS = [
   "revenueCr": 37.4,
   "flip": "Retention",
   "quip": "sigh.",
-  "problem": "Festive buyers take the supplement for nine days and the thirtieth-day reorder never comes.",
+  "problem": "Buyers take the supplement for nine days and the thirtieth-day reorder never comes.",
   "build": "Habit Nudge Pack",
   "steps": [
    "Split 30 days into 4 weeks",
@@ -789,7 +824,8 @@ window.CARDS = [
    "Product shot"
   ],
   "metric": "Day-30 reorder rate",
-  "outputs": "30 messages, 8 visuals, reorder nudge"
+  "outputs": "30 messages, 8 visuals, reorder nudge",
+  "track": null
  },
  {
   "n": 35,
@@ -800,7 +836,7 @@ window.CARDS = [
   "revenueCr": 16.5,
   "flip": "Support",
   "quip": "hmm.",
-  "problem": "Support answers clinical questions during festive spikes by improvising, which is a compliance problem.",
+  "problem": "Support answers clinical questions during spikes by improvising, which is a compliance problem.",
   "build": "Safe Answer Library",
   "steps": [
    "Pull the top 20 safety questions",
@@ -812,7 +848,8 @@ window.CARDS = [
    "Support ticket export"
   ],
   "metric": "Handle time and escalations",
-  "outputs": "20 reviewed answers + routing sheet"
+  "outputs": "20 reviewed answers + routing sheet",
+  "track": null
  },
  {
   "n": 36,
@@ -835,7 +872,8 @@ window.CARDS = [
    "Brand illustrations"
   ],
   "metric": "Saves and shares per post",
-  "outputs": "12 posts with copy + illustrations"
+  "outputs": "12 posts with copy + illustrations",
+  "track": null
  },
  {
   "n": 37,
@@ -846,7 +884,7 @@ window.CARDS = [
   "revenueCr": 30.1,
   "flip": "Marketing",
   "quip": "same.",
-  "problem": "You sit on real behaviour data and the festive ads look like every other wearable ad.",
+  "problem": "You sit on real behaviour data and your ads look like every other wearable ad.",
   "build": "Data Story Ads",
   "steps": [
    "Pick 3 outcomes with numbers",
@@ -858,7 +896,8 @@ window.CARDS = [
    "Device and app screens"
   ],
   "metric": "CTR against product-only ads",
-  "outputs": "3 data-led ads + stills"
+  "outputs": "3 data-led ads + stills",
+  "track": "B"
  },
  {
   "n": 38,
@@ -869,7 +908,7 @@ window.CARDS = [
   "revenueCr": 3.4,
   "flip": "Commerce",
   "quip": "ugh.",
-  "problem": "Your festive health-check packages differ in ways no page explains, so people pick the cheapest.",
+  "problem": "Your health-check packages differ in ways no page explains, so people pick the cheapest.",
   "build": "Package Explainer",
   "steps": [
    "Upload tests in each package",
@@ -881,7 +920,8 @@ window.CARDS = [
    "Who it is for"
   ],
   "metric": "Package booking conversion",
-  "outputs": "One-page guide, body map, 20 s video"
+  "outputs": "One-page guide, body map, 20 s video",
+  "track": null
  },
  {
   "n": 39,
@@ -892,7 +932,7 @@ window.CARDS = [
   "revenueCr": 27.2,
   "flip": "Marketing",
   "quip": "seen it.",
-  "problem": "The after-the-feast use case is your strongest festive argument and the copy is written for clinicians.",
+  "problem": "The after-the-feast use case is your strongest argument and the copy is written for clinicians.",
   "build": "Buyer Lens Rewrite",
   "steps": [
    "Upload ads, name buyer and user",
@@ -904,7 +944,8 @@ window.CARDS = [
    "Who buys and who uses"
   ],
   "metric": "CTR among 28 to 45 year old buyers",
-  "outputs": "6 rewritten ads with copy"
+  "outputs": "6 rewritten ads with copy",
+  "track": "A"
  },
  {
   "n": 40,
@@ -915,7 +956,7 @@ window.CARDS = [
   "revenueCr": 16.5,
   "flip": "Commerce",
   "quip": "uh oh.",
-  "problem": "Festive buyers purchase once and subscription is a checkbox nobody has ever argued for.",
+  "problem": "Buyers purchase once and subscription is a checkbox nobody has ever argued for.",
   "build": "Subscribe Pitch",
   "steps": [
    "Enter price, discount, frequency",
@@ -927,7 +968,8 @@ window.CARDS = [
    "Price, discount, frequency"
   ],
   "metric": "Subscription share of orders",
-  "outputs": "Page block, 3 visuals, copy options"
+  "outputs": "Page block, 3 visuals, copy options",
+  "track": null
  },
  {
   "n": 41,
@@ -938,7 +980,7 @@ window.CARDS = [
   "revenueCr": 4.4,
   "flip": "Marketing",
   "quip": "oof.",
-  "problem": "Festive join offers need creator posts and every creator invents their own format.",
+  "problem": "Join offers need creator posts and every creator invents their own format.",
   "build": "Gym Content Pack",
   "steps": [
    "Enter 3 workouts and 3 shakes",
@@ -950,7 +992,8 @@ window.CARDS = [
    "3 workouts, 3 shake recipes"
   ],
   "metric": "Creator posts that use the template",
-  "outputs": "6 templates, recipe cards, sample video"
+  "outputs": "6 templates, recipe cards, sample video",
+  "track": "C"
  },
  {
   "n": 42,
@@ -973,7 +1016,8 @@ window.CARDS = [
    "Product shot"
   ],
   "metric": "ROAS of the best moment against the generic ad",
-  "outputs": "5 moment ads + a ranking"
+  "outputs": "5 moment ads + a ranking",
+  "track": null
  },
  {
   "n": 43,
@@ -984,7 +1028,7 @@ window.CARDS = [
   "revenueCr": 187,
   "flip": "Creative",
   "quip": "again?",
-  "problem": "Festive gifting creative needs a model and your samples arrive eleven days before the sale.",
+  "problem": "Gifting creative needs a model and your samples arrive eleven days before the launch.",
   "build": "Flat Lay to Model",
   "steps": [
    "Upload flat lays, pick 3 models",
@@ -996,7 +1040,8 @@ window.CARDS = [
    "House models"
   ],
   "metric": "Days from sample to live",
-  "outputs": "A 3-angle on-model set per style"
+  "outputs": "A 3-angle on-model set per style",
+  "track": "A"
  },
  {
   "n": 44,
@@ -1007,7 +1052,7 @@ window.CARDS = [
   "revenueCr": 187,
   "flip": "Commerce",
   "quip": "sigh.",
-  "problem": "Size anxiety kills the festive gift purchase and returns come back as the wrong size, every time.",
+  "problem": "Size anxiety kills the gift purchase and returns come back as the wrong size, every time.",
   "build": "Fit Visualiser",
   "steps": [
    "Upload garment and size chart",
@@ -1019,7 +1064,8 @@ window.CARDS = [
    "Size chart"
   ],
   "metric": "Size-related returns",
-  "outputs": "Fit grid + page block per style"
+  "outputs": "Fit grid + page block per style",
+  "track": null
  },
  {
   "n": 45,
@@ -1030,7 +1076,7 @@ window.CARDS = [
   "revenueCr": 110,
   "flip": "Creative",
   "quip": "hmm.",
-  "problem": "Comfort over a twelve-hour shift is the whole argument and the festive ad shows folded fabric.",
+  "problem": "Comfort over a twelve-hour shift is the whole argument and the ad shows folded fabric.",
   "build": "Comfort Proof Ads",
   "steps": [
    "List 3 comfort claims + proof",
@@ -1042,7 +1088,8 @@ window.CARDS = [
    "Fabric tech and claims"
   ],
   "metric": "Thumb-stop rate and CTR",
-  "outputs": "4 ads + 4 cutdowns"
+  "outputs": "4 ads + 4 cutdowns",
+  "track": "A"
  },
  {
   "n": 46,
@@ -1053,7 +1100,7 @@ window.CARDS = [
   "revenueCr": 110,
   "flip": "Sales",
   "quip": "help.",
-  "problem": "Hospitals and clinics buy scrubs in bulk at festive bonus time and you have no lookbook to send them.",
+  "problem": "Hospitals and clinics buy scrubs in bulk at the start of the year and you have no lookbook to send them.",
   "build": "Shift Lookbook",
   "steps": [
    "Pick roles and styles",
@@ -1065,7 +1112,8 @@ window.CARDS = [
    "Roles: nurse, surgeon, dentist"
   ],
   "metric": "Hospital and clinic enquiries",
-  "outputs": "Lookbook PDF + 6 social posts"
+  "outputs": "Lookbook PDF + 6 social posts",
+  "track": null
  },
  {
   "n": 47,
@@ -1076,7 +1124,7 @@ window.CARDS = [
   "revenueCr": 149.6,
   "flip": "Commerce",
   "quip": "same.",
-  "problem": "Buyers don't know which frame suits their face, so festive eyewear gifting never converts.",
+  "problem": "Buyers don't know which frame suits their face, so eyewear gifting never converts.",
   "build": "Face Shape Guide",
   "steps": [
    "Upload frames, front and side",
@@ -1088,7 +1136,8 @@ window.CARDS = [
    "House models, 6 face shapes"
   ],
   "metric": "Try-on to purchase rate",
-  "outputs": "Frame-by-face grid + page block"
+  "outputs": "Frame-by-face grid + page block",
+  "track": null
  },
  {
   "n": 48,
@@ -1099,7 +1148,7 @@ window.CARDS = [
   "revenueCr": 12,
   "flip": "Marketing",
   "quip": "ugh.",
-  "problem": "Festive luggage shoppers compare on durability and your listing argues about colour.",
+  "problem": "Luggage shoppers compare on durability and your listing argues about colour.",
   "build": "Durability Proof",
   "steps": [
    "Enter your real test numbers",
@@ -1111,7 +1160,8 @@ window.CARDS = [
    "Real test specs"
   ],
   "metric": "Listing conversion against rivals",
-  "outputs": "Proof video, listing video, 3 ad cuts"
+  "outputs": "Proof video, listing video, 3 ad cuts",
+  "track": "C"
  },
  {
   "n": 49,
@@ -1122,7 +1172,7 @@ window.CARDS = [
   "revenueCr": 12,
   "flip": "Merchandising",
   "quip": "seen it.",
-  "problem": "You commit festive stock to colourways chosen in a meeting rather than by pre-orders.",
+  "problem": "You commit stock to colourways chosen in a meeting rather than by pre-orders.",
   "build": "Colourway Pre-Sell",
   "steps": [
    "Render 8 colourways",
@@ -1134,7 +1184,8 @@ window.CARDS = [
    "8 colourway ideas"
   ],
   "metric": "Colours that hit MOQ on pre-orders",
-  "outputs": "8 renders, cards, a poll set"
+  "outputs": "8 renders, cards, a poll set",
+  "track": null
  },
  {
   "n": 50,
@@ -1157,7 +1208,8 @@ window.CARDS = [
    "3 occasions"
   ],
   "metric": "Items per order",
-  "outputs": "3 tagged outfits per hero item"
+  "outputs": "3 tagged outfits per hero item",
+  "track": null
  },
  {
   "n": 51,
@@ -1168,7 +1220,7 @@ window.CARDS = [
   "revenueCr": 187,
   "flip": "Commerce",
   "quip": "oof.",
-  "problem": "Your festive collection page is a grid of SKUs with no reason to click any of them.",
+  "problem": "Your collection page is a grid of SKUs with no reason to click any of them.",
   "build": "Collection Page Refresh",
   "steps": [
    "Pick collection and its story",
@@ -1180,7 +1232,8 @@ window.CARDS = [
    "Collection name and mood"
   ],
   "metric": "Collection page click-through",
-  "outputs": "Banner, 4 tiles, collection copy"
+  "outputs": "Banner, 4 tiles, collection copy",
+  "track": null
  },
  {
   "n": 52,
@@ -1191,7 +1244,7 @@ window.CARDS = [
   "revenueCr": 149.6,
   "flip": "Retail",
   "quip": "yep.",
-  "problem": "Your retail window is the same as it was in August and festive footfall walks past it.",
+  "problem": "Your retail window is the same as it was in August and the footfall walks past it.",
   "build": "Window Swap",
   "steps": [
    "Upload window photo and size",
@@ -1203,7 +1256,8 @@ window.CARDS = [
    "New collection shots"
   ],
   "metric": "Footfall while the window runs",
-  "outputs": "3 window concepts + print files"
+  "outputs": "3 window concepts + print files",
+  "track": null
  },
  {
   "n": 53,
@@ -1214,7 +1268,7 @@ window.CARDS = [
   "revenueCr": 98,
   "flip": "Marketing",
   "quip": "again?",
-  "problem": "A mattress is a feel you cannot photograph and the festive page tries anyway.",
+  "problem": "A mattress is a feel you cannot photograph and the product page tries anyway.",
   "build": "Sleep Feel Film",
   "steps": [
    "Upload the layer spec",
@@ -1226,7 +1280,8 @@ window.CARDS = [
    "Layer spec"
   ],
   "metric": "Page conversion and trial requests",
-  "outputs": "Layer film, page film, 3 ad cuts"
+  "outputs": "Layer film, page film, 3 ad cuts",
+  "track": "C"
  },
  {
   "n": 54,
@@ -1237,7 +1292,7 @@ window.CARDS = [
   "revenueCr": 84.3,
   "flip": "Marketing",
   "quip": "sigh.",
-  "problem": "Parents ask what the fabric is actually made of and the festive page answers with a certification logo.",
+  "problem": "Parents ask what the fabric is actually made of and the page answers with a certification logo.",
   "build": "Material Proof Story",
   "steps": [
    "Upload certificates and lab reports",
@@ -1249,7 +1304,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Conversion and safety questions in support",
-  "outputs": "Comparison visual, explainer, trust strip"
+  "outputs": "Comparison visual, explainer, trust strip",
+  "track": "A"
  },
  {
   "n": 55,
@@ -1260,7 +1316,7 @@ window.CARDS = [
   "revenueCr": 95,
   "flip": "Support",
   "quip": "hmm.",
-  "problem": "Festive plant gifts die in three weeks and the buyer blames you, not the watering.",
+  "problem": "Plant gifts die in three weeks and the buyer blames you, not the watering.",
   "build": "Plant Care Coach",
   "steps": [
    "Enter light, water, soil needs",
@@ -1272,7 +1328,8 @@ window.CARDS = [
    "Light, water, soil needs"
   ],
   "metric": "Plant complaints in the first 30 days",
-  "outputs": "Care card, video, in-box QR card"
+  "outputs": "Care card, video, in-box QR card",
+  "track": null
  },
  {
   "n": 56,
@@ -1283,7 +1340,7 @@ window.CARDS = [
   "revenueCr": 23.4,
   "flip": "Marketing",
   "quip": "help.",
-  "problem": "\"Natural\" is a word everyone uses and your festive cleaning ad has no test that proves yours.",
+  "problem": "\"Natural\" is a word everyone uses and your cleaning ad has no test that proves yours.",
   "build": "Clean Proof Test",
   "steps": [
    "Pick the surface and the stain",
@@ -1295,7 +1352,8 @@ window.CARDS = [
    "Surfaces and stains"
   ],
   "metric": "Repeat purchase and reel saves",
-  "outputs": "6 test reels + stills"
+  "outputs": "6 test reels + stills",
+  "track": "C"
  },
  {
   "n": 57,
@@ -1306,7 +1364,7 @@ window.CARDS = [
   "revenueCr": 84.3,
   "flip": "Commerce",
   "quip": "same.",
-  "problem": "Festive kidswear sizing questions outnumber orders and the size chart is a table of numbers.",
+  "problem": "Kidswear sizing questions outnumber orders and the size chart is a table of numbers.",
   "build": "Kid-Safe Lifestyle Set",
   "steps": [
    "Pick 5 moments of the day",
@@ -1318,7 +1376,8 @@ window.CARDS = [
    "Age group and moments"
   ],
   "metric": "Page conversion and fewer size questions",
-  "outputs": "5 scenes in page and ad sizes"
+  "outputs": "5 scenes in page and ad sizes",
+  "track": null
  },
  {
   "n": 58,
@@ -1329,7 +1388,7 @@ window.CARDS = [
   "revenueCr": 84.3,
   "flip": "Support",
   "quip": "ugh.",
-  "problem": "The first week with a reusable decides whether they repeat, and nobody tells the festive buyer how to wash it.",
+  "problem": "The first week with a reusable decides whether they repeat, and nobody tells the new buyer how to wash it.",
   "build": "First Week Guide",
   "steps": [
    "Enter use, wash and dry steps",
@@ -1341,7 +1400,8 @@ window.CARDS = [
    "How to use, wash, dry"
   ],
   "metric": "Repeat purchase and wash-question tickets",
-  "outputs": "Guide video, print card, 3 tips"
+  "outputs": "Guide video, print card, 3 tips",
+  "track": null
  },
  {
   "n": 59,
@@ -1352,7 +1412,7 @@ window.CARDS = [
   "revenueCr": 108.3,
   "flip": "Marketing",
   "quip": "seen it.",
-  "problem": "A Labrador and an Indie need different food and your festive ads speak to \"dog parents\".",
+  "problem": "A Labrador and an Indie need different food and your ads speak to \"dog parents\".",
   "build": "Breed Ad Matrix",
   "steps": [
    "Pick top breeds from orders",
@@ -1364,7 +1424,8 @@ window.CARDS = [
    "Top breeds from orders"
   ],
   "metric": "CTR by breed against the generic ad",
-  "outputs": "12 breed ads with copy"
+  "outputs": "12 breed ads with copy",
+  "track": "A"
  },
  {
   "n": 60,
@@ -1375,7 +1436,7 @@ window.CARDS = [
   "revenueCr": 6.3,
   "flip": "Marketing",
   "quip": "uh oh.",
-  "problem": "Cats reject new food and festive buyers won't risk a full bag without a trial pack that proves it.",
+  "problem": "Cats reject new food and buyers won't risk a full bag without a trial pack that proves it.",
   "build": "Picky Eater Proof",
   "steps": [
    "Pull taste-test wins",
@@ -1387,7 +1448,8 @@ window.CARDS = [
    "Product shot"
   ],
   "metric": "Trial pack sales",
-  "outputs": "A carousel + a trial pack ad"
+  "outputs": "A carousel + a trial pack ad",
+  "track": "A"
  },
  {
   "n": 61,
@@ -1398,7 +1460,7 @@ window.CARDS = [
   "revenueCr": 27.9,
   "flip": "Commerce",
   "quip": "oof.",
-  "problem": "Personalised festive gifting is your unlock and the buyer cannot see the name on the bottle before paying.",
+  "problem": "Personalised gifting is your unlock and the buyer cannot see the name on the bottle before paying.",
   "build": "Personal Gift Preview",
   "steps": [
    "Upload the gift templates",
@@ -1410,7 +1472,8 @@ window.CARDS = [
    "Name, message, occasion"
   ],
   "metric": "Checkout conversion on personalised gifts",
-  "outputs": "Personalised render + share card"
+  "outputs": "Personalised render + share card",
+  "track": null
  },
  {
   "n": 62,
@@ -1421,7 +1484,7 @@ window.CARDS = [
   "revenueCr": 98,
   "flip": "Commerce",
   "quip": "yep.",
-  "problem": "Festive buyers cannot picture the bed in their room, so they close the tab and think about it.",
+  "problem": "Buyers cannot picture the bed in their room, so they close the tab and think about it.",
   "build": "Your Room Preview",
   "steps": [
    "Upload product and room photo",
@@ -1433,7 +1496,8 @@ window.CARDS = [
    "Customer room photo"
   ],
   "metric": "Add-to-cart after a preview",
-  "outputs": "Room previews in 3 options"
+  "outputs": "Room previews in 3 options",
+  "track": null
  },
  {
   "n": 63,
@@ -1444,7 +1508,7 @@ window.CARDS = [
   "revenueCr": 95,
   "flip": "Support",
   "quip": "again?",
-  "problem": "Plants arrive broken during peak festive courier weeks and every claim is resolved by hand.",
+  "problem": "Plants arrive broken during peak courier weeks and every claim is resolved by hand.",
   "build": "Damage Claim Sorter",
   "steps": [
    "Upload photo and order note",
@@ -1456,7 +1520,8 @@ window.CARDS = [
    "Order details"
   ],
   "metric": "Time to resolve a claim",
-  "outputs": "Classified claim, reply, route flags"
+  "outputs": "Classified claim, reply, route flags",
+  "track": null
  },
  {
   "n": 64,
@@ -1467,7 +1532,7 @@ window.CARDS = [
   "revenueCr": 98,
   "flip": "Creative",
   "quip": "sigh.",
-  "problem": "Your festive creative is the same creative you ran in summer, for a buyer with a different problem.",
+  "problem": "Your creative is the same creative you ran last season, for a buyer with a different problem.",
   "build": "Season Switch",
   "steps": [
    "Pick season and use cases",
@@ -1478,8 +1543,9 @@ window.CARDS = [
    "Top 10 product shots",
    "Season and use cases"
   ],
-  "metric": "Seasonal CTR against last season",
-  "outputs": "Season sets for 10 products"
+  "metric": "CTR against last season's creative",
+  "outputs": "Season sets for 10 products",
+  "track": "A"
  },
  {
   "n": 65,
@@ -1490,7 +1556,7 @@ window.CARDS = [
   "revenueCr": 115,
   "flip": "Commerce",
   "quip": "hmm.",
-  "problem": "Your delivery menu is the dine-in menu with prices changed, and festive orders stall at the cart.",
+  "problem": "Your delivery menu is the dine-in menu with prices changed, and orders stall at the cart.",
   "build": "Delivery Menu Refresh",
   "steps": [
    "Upload phone photos and menu",
@@ -1502,7 +1568,8 @@ window.CARDS = [
    "Current menu"
   ],
   "metric": "Menu to cart conversion",
-  "outputs": "Full menu set in every app spec"
+  "outputs": "Full menu set in every app spec",
+  "track": null
  },
  {
   "n": 66,
@@ -1513,8 +1580,8 @@ window.CARDS = [
   "revenueCr": 115,
   "flip": "Marketing",
   "quip": "help.",
-  "problem": "Your festive mithai drop has one week to sell and the launch kit gets built the night before.",
-  "build": "Seasonal Drop Kit",
+  "problem": "Your limited mithai drop has one week to sell and the launch kit gets built the night before.",
+  "build": "Drop Kit",
   "steps": [
    "Enter drink, price, launch date",
    "Make hero, poster, counter card",
@@ -1525,7 +1592,8 @@ window.CARDS = [
    "Name, price, story"
   ],
   "metric": "Units sold in launch week",
-  "outputs": "Poster, counter card, reel, posts"
+  "outputs": "Poster, counter card, reel, posts",
+  "track": "A"
  },
  {
   "n": 67,
@@ -1536,7 +1604,7 @@ window.CARDS = [
   "revenueCr": 340,
   "flip": "Ops",
   "quip": "same.",
-  "problem": "A festive campaign has to reach stores across three markets and each one rebuilds the assets locally.",
+  "problem": "A campaign has to reach stores across three markets and each one rebuilds the assets locally.",
   "build": "Store Kit Generator",
   "steps": [
    "Upload master and outlet list",
@@ -1548,7 +1616,8 @@ window.CARDS = [
    "Outlet list with frame sizes"
   ],
   "metric": "Days to roll out a campaign",
-  "outputs": "A print folder per outlet"
+  "outputs": "A print folder per outlet",
+  "track": null
  },
  {
   "n": 68,
@@ -1559,7 +1628,7 @@ window.CARDS = [
   "revenueCr": 110.5,
   "flip": "Internal",
   "quip": "ugh.",
-  "problem": "Every new festive drink is trained store by store and tastes different in each one.",
+  "problem": "Every new drink is trained store by store and tastes different in each one.",
   "build": "Recipe Training Cards",
   "steps": [
    "Enter steps and measures",
@@ -1571,7 +1640,8 @@ window.CARDS = [
    "Station photo"
   ],
   "metric": "Days to train a new hire and remake rate",
-  "outputs": "Step cards + videos per item"
+  "outputs": "Step cards + videos per item",
+  "track": null
  },
  {
   "n": 69,
@@ -1582,7 +1652,7 @@ window.CARDS = [
   "revenueCr": 139,
   "flip": "Retention",
   "quip": "seen it.",
-  "problem": "Diners who booked through you last Diwali have not heard from you since.",
+  "problem": "Diners who booked through you last year have not heard from you since.",
   "build": "Lapsed Guest Win-Back",
   "steps": [
    "Group lapsed guests by favourite",
@@ -1594,7 +1664,8 @@ window.CARDS = [
    "Menu photos"
   ],
   "metric": "Return visits from lapsed guests",
-  "outputs": "A message + visual per group"
+  "outputs": "A message + visual per group",
+  "track": null
  },
  {
   "n": 70,
@@ -1605,7 +1676,7 @@ window.CARDS = [
   "revenueCr": 139,
   "flip": "Support",
   "quip": "uh oh.",
-  "problem": "Festive reviews arrive faster than anyone can reply and the rating slides through the season.",
+  "problem": "Reviews arrive faster than anyone can reply and the rating slides every busy month.",
   "build": "Review Reply Desk",
   "steps": [
    "Upload the week's reviews",
@@ -1617,7 +1688,8 @@ window.CARDS = [
    "Voice and escalation rules"
   ],
   "metric": "Reply rate and rating trend",
-  "outputs": "Drafted replies + weekly issue log"
+  "outputs": "Drafted replies + weekly issue log",
+  "track": null
  },
  {
   "n": 71,
@@ -1628,7 +1700,7 @@ window.CARDS = [
   "revenueCr": 37.5,
   "flip": "Sales",
   "quip": "oof.",
-  "problem": "Corporate festive catering enquiries wait three days for a proposal built from scratch each time.",
+  "problem": "Corporate catering enquiries wait three days for a proposal built from scratch each time.",
   "build": "Catering Proposal Pack",
   "steps": [
    "Enter client, headcount, budget",
@@ -1640,7 +1712,8 @@ window.CARDS = [
    "Catering menu"
   ],
   "metric": "Proposal to order rate",
-  "outputs": "A 4-page proposal PDF"
+  "outputs": "A 4-page proposal PDF",
+  "track": null
  },
  {
   "n": 72,
@@ -1651,19 +1724,20 @@ window.CARDS = [
   "revenueCr": 115,
   "flip": "Marketing",
   "quip": "yep.",
-  "problem": "Festive boxes sell out or sit, and the pre-order window is guessed rather than planned.",
-  "build": "Festive Box Planner",
+  "problem": "Gift boxes sell out or sit, and the pre-order window is guessed rather than planned.",
+  "build": "Gift Box Planner",
   "steps": [
-   "Pick festivals and price tiers",
+   "Pick occasions and price tiers",
    "Make box and hamper visuals",
    "Build the gifting catalogue"
   ],
   "needs": [
    "Box and sweet photos",
-   "Festivals and price tiers"
+   "Occasions and price tiers"
   ],
-  "metric": "Pre-orders before festival week",
-  "outputs": "Box visuals, catalogue PDF, share cards"
+  "metric": "Pre-orders before the occasion week",
+  "outputs": "Box visuals, catalogue PDF, share cards",
+  "track": "A"
  },
  {
   "n": 73,
@@ -1674,7 +1748,7 @@ window.CARDS = [
   "revenueCr": 340,
   "flip": "Creative",
   "quip": "again?",
-  "problem": "Your best-selling festive bowl has not been looked at in two years and orders are drifting.",
+  "problem": "Your best-selling bowl has not been looked at in two years and orders are drifting.",
   "build": "Bowl Glow-Up",
   "steps": [
    "Upload your bowl photos",
@@ -1686,7 +1760,8 @@ window.CARDS = [
    "Ingredients and macros"
   ],
   "metric": "Orders per bowl after the refresh",
-  "outputs": "Restyled bowls, overlays, a reel"
+  "outputs": "Restyled bowls, overlays, a reel",
+  "track": "A"
  },
  {
   "n": 74,
@@ -1697,7 +1772,7 @@ window.CARDS = [
   "revenueCr": 620,
   "flip": "Marketing",
   "quip": "sigh.",
-  "problem": "The festive morning rush is where you win or lose the day and the app order takes ninety seconds.",
+  "problem": "The morning rush is where you win or lose the day and the app order takes ninety seconds.",
   "build": "60-Second Coffee",
   "steps": [
    "Enter your real order-to-cup time",
@@ -1709,7 +1784,8 @@ window.CARDS = [
    "Real order-to-cup time"
   ],
   "metric": "App orders in the morning rush",
-  "outputs": "A timer video + 3 ads"
+  "outputs": "A timer video + 3 ads",
+  "track": "C"
  },
  {
   "n": 75,
@@ -1720,7 +1796,7 @@ window.CARDS = [
   "revenueCr": 139,
   "flip": "Commerce",
   "quip": "hmm.",
-  "problem": "Half your festive restaurant listings use photos the restaurant sent in 2023.",
+  "problem": "Half your restaurant listings use photos the restaurant sent in 2023.",
   "build": "Partner Photo Fixer",
   "steps": [
    "Upload the partner's photos",
@@ -1732,7 +1808,8 @@ window.CARDS = [
    "Cuisine and vibe"
   ],
   "metric": "Listing click-through",
-  "outputs": "Fixed photos, cover, listing score"
+  "outputs": "Fixed photos, cover, listing score",
+  "track": null
  },
  {
   "n": 76,
@@ -1743,7 +1820,7 @@ window.CARDS = [
   "revenueCr": 37.5,
   "flip": "Ops",
   "quip": "help.",
-  "problem": "You do not know which festive menu item raises the bill, so the menu is ordered by category.",
+  "problem": "You do not know which menu item raises the bill, so the menu is ordered by category.",
   "build": "Menu Hero Finder",
   "steps": [
    "Upload sales and food cost",
@@ -1755,7 +1832,8 @@ window.CARDS = [
    "Current menu"
   ],
   "metric": "Average bill per guest",
-  "outputs": "Item map, new menu, delivery version"
+  "outputs": "Item map, new menu, delivery version",
+  "track": null
  },
  {
   "n": 77,
@@ -1766,7 +1844,7 @@ window.CARDS = [
   "revenueCr": 181,
   "flip": "Commerce",
   "quip": "same.",
-  "problem": "Diwali long-weekend villa demand is decided eight weeks out and your listing photos say \"nice house\".",
+  "problem": "Long-weekend villa demand is decided eight weeks out and your listing photos say \"nice house\".",
   "build": "Villa Mood Set",
   "steps": [
    "Upload real property photos",
@@ -1778,7 +1856,8 @@ window.CARDS = [
    "Guest types"
   ],
   "metric": "Listing CTR and booking rate",
-  "outputs": "Mood sets per guest type"
+  "outputs": "Mood sets per guest type",
+  "track": null
  },
  {
   "n": 78,
@@ -1789,7 +1868,7 @@ window.CARDS = [
   "revenueCr": 100,
   "flip": "Sales",
   "quip": "ugh.",
-  "problem": "Festive group trips sell on who else is going and your page shows a day-by-day itinerary.",
+  "problem": "Group trips sell on who else is going and your page shows a day-by-day itinerary.",
   "build": "Trip Vibe Reel",
   "steps": [
    "Enter the itinerary",
@@ -1801,7 +1880,8 @@ window.CARDS = [
    "Past trip photos"
   ],
   "metric": "Enquiry to booking",
-  "outputs": "A trip reel + story set"
+  "outputs": "A trip reel + story set",
+  "track": null
  },
  {
   "n": 79,
@@ -1812,7 +1892,7 @@ window.CARDS = [
   "revenueCr": 100,
   "flip": "Sales",
   "quip": "seen it.",
-  "problem": "A custom festive trip quote takes two days and the traveller books something else on day one.",
+  "problem": "A custom trip quote takes two days and the traveller books something else on day one.",
   "build": "Itinerary Builder",
   "steps": [
    "Paste the call notes",
@@ -1824,7 +1904,8 @@ window.CARDS = [
    "Your trip inventory"
   ],
   "metric": "Quote turnaround time",
-  "outputs": "Itinerary PDF + WhatsApp card"
+  "outputs": "Itinerary PDF + WhatsApp card",
+  "track": null
  },
  {
   "n": 80,
@@ -1835,7 +1916,7 @@ window.CARDS = [
   "revenueCr": 102,
   "flip": "Marketing",
   "quip": "uh oh.",
-  "problem": "Festive programming is the membership argument and nobody leaves an event booked onto the next one.",
+  "problem": "Programming is the membership argument and nobody leaves an event booked onto the next one.",
   "build": "Event Loop",
   "steps": [
    "Enter the event details",
@@ -1848,7 +1929,8 @@ window.CARDS = [
    "Event clips"
   ],
   "metric": "RSVP rate and next-event signups",
-  "outputs": "Poster, invite, recap reel, stills"
+  "outputs": "Poster, invite, recap reel, stills",
+  "track": null
  },
  {
   "n": 81,
@@ -1859,7 +1941,7 @@ window.CARDS = [
   "revenueCr": 176,
   "flip": "Marketing",
   "quip": "oof.",
-  "problem": "A festive tour announcement has 48 hours of attention and the city-by-city assets take a week.",
+  "problem": "A tour announcement has 48 hours of attention and the city-by-city assets take a week.",
   "build": "Tour City Pack",
   "steps": [
    "Upload key art and date list",
@@ -1871,7 +1953,8 @@ window.CARDS = [
    "Tour dates and venues"
   ],
   "metric": "Ticket sales per city",
-  "outputs": "A folder per city, every format"
+  "outputs": "A folder per city, every format",
+  "track": "A"
  },
  {
   "n": 82,
@@ -1882,7 +1965,7 @@ window.CARDS = [
   "revenueCr": 173,
   "flip": "Sales",
   "quip": "yep.",
-  "problem": "Applications close during festive season and nobody can picture the campus they are applying to.",
+  "problem": "Applications close in a few weeks and nobody can picture the campus they are applying to.",
   "build": "Campus Life Preview",
   "steps": [
    "Enter university and course",
@@ -1894,7 +1977,8 @@ window.CARDS = [
    "Cost of living data"
   ],
   "metric": "Counselling call bookings",
-  "outputs": "City video + cost card"
+  "outputs": "City video + cost card",
+  "track": null
  },
  {
   "n": 83,
@@ -1905,7 +1989,7 @@ window.CARDS = [
   "revenueCr": 181,
   "flip": "Growth",
   "quip": "again?",
-  "problem": "Your best festive marketing is a guest telling three friends, and nothing on checkout asks them to.",
+  "problem": "Your best marketing is a guest telling three friends, and nothing on checkout asks them to.",
   "build": "Guest Postcard",
   "steps": [
    "Pick property and stay",
@@ -1917,7 +2001,8 @@ window.CARDS = [
    "Guest name and stay dates"
   ],
   "metric": "Shares and referral bookings",
-  "outputs": "A postcard per guest"
+  "outputs": "A postcard per guest",
+  "track": null
  },
  {
   "n": 84,
@@ -1928,8 +2013,8 @@ window.CARDS = [
   "revenueCr": 102,
   "flip": "Growth",
   "quip": "sigh.",
-  "problem": "Festive weekends are full and the weekdays either side are empty.",
-  "build": "Off-Season Offer",
+  "problem": "Weekends are full and the weekdays either side are empty.",
+  "build": "Weekday Offer",
   "steps": [
    "Pick the empty dates",
    "Find 3 reasons to go",
@@ -1940,7 +2025,8 @@ window.CARDS = [
    "Empty dates and offer"
   ],
   "metric": "Weekday occupancy",
-  "outputs": "3 themed offers with ads"
+  "outputs": "3 themed offers with ads",
+  "track": null
  },
  {
   "n": 85,
@@ -1951,7 +2037,7 @@ window.CARDS = [
   "revenueCr": 27.9,
   "flip": "Creative",
   "quip": "hmm.",
-  "problem": "Three agencies make your festive drinkware assets and no two use the same logo lockup.",
+  "problem": "Three agencies make your drinkware assets and no two use the same logo lockup.",
   "build": "Brand Guard",
   "steps": [
    "Upload your brand book once",
@@ -1963,7 +2049,8 @@ window.CARDS = [
    "New creative"
   ],
   "metric": "Off-brand assets that go live",
-  "outputs": "A score + marked-up fixes"
+  "outputs": "A score + marked-up fixes",
+  "track": null
  },
  {
   "n": 86,
@@ -1974,7 +2061,7 @@ window.CARDS = [
   "revenueCr": 149.6,
   "flip": "Research",
   "quip": "help.",
-  "problem": "Plant-based rivals launch a festive SKU every fortnight and nobody is tracking what they claim.",
+  "problem": "Plant-based rivals launch a SKU every fortnight and nobody is tracking what they claim.",
   "build": "Rival Watch",
   "steps": [
    "Upload ad library screenshots",
@@ -1986,7 +2073,8 @@ window.CARDS = [
    "Rival list"
   ],
   "metric": "One new angle tested each week",
-  "outputs": "A weekly rival board"
+  "outputs": "A weekly rival board",
+  "track": "B"
  },
  {
   "n": 87,
@@ -1997,7 +2085,7 @@ window.CARDS = [
   "revenueCr": 123.2,
   "flip": "Growth",
   "quip": "same.",
-  "problem": "Your best festive gummy ad won last year and nobody wrote down why it worked.",
+  "problem": "Your best gummy ad won last year and nobody wrote down why it worked.",
   "build": "Winner Decoder",
   "steps": [
    "Upload ads and results",
@@ -2009,7 +2097,8 @@ window.CARDS = [
    "Ad creatives"
   ],
   "metric": "Hit rate of new ads",
-  "outputs": "Pattern report + 5 briefs"
+  "outputs": "Pattern report + 5 briefs",
+  "track": "A"
  },
  {
   "n": 88,
@@ -2032,7 +2121,8 @@ window.CARDS = [
    "Founder photo"
   ],
   "metric": "Followers and inbound DMs",
-  "outputs": "8 posts with visuals"
+  "outputs": "8 posts with visuals",
+  "track": "A"
  },
  {
   "n": 89,
@@ -2043,7 +2133,7 @@ window.CARDS = [
   "revenueCr": 49.8,
   "flip": "Internal",
   "quip": "seen it.",
-  "problem": "The festive-quarter board update takes three days to assemble from six dashboards.",
+  "problem": "The quarterly board update takes three days to assemble from six dashboards.",
   "build": "Board Update Builder",
   "steps": [
    "Upload the numbers sheet",
@@ -2055,7 +2145,8 @@ window.CARDS = [
    "Wins, misses, asks"
   ],
   "metric": "Founder hours spent",
-  "outputs": "Update email, PDF, 4 charts"
+  "outputs": "Update email, PDF, 4 charts",
+  "track": null
  },
  {
   "n": 90,
@@ -2066,7 +2157,7 @@ window.CARDS = [
   "revenueCr": 80.7,
   "flip": "Hiring",
   "quip": "uh oh.",
-  "problem": "You need six seasonal production hires before Diwali and the job post reads like a legal notice.",
+  "problem": "You need six production hires before the 2027 ramp and the job post reads like a legal notice.",
   "build": "Job Post Glow-Up",
   "steps": [
    "Enter role and what great looks like",
@@ -2078,7 +2169,8 @@ window.CARDS = [
    "Team photo"
   ],
   "metric": "Qualified applicants per post",
-  "outputs": "Job post, carousel, careers copy"
+  "outputs": "Job post, carousel, careers copy",
+  "track": null
  },
  {
   "n": 91,
@@ -2089,7 +2181,7 @@ window.CARDS = [
   "revenueCr": 39.6,
   "flip": "Internal",
   "quip": "oof.",
-  "problem": "Every new festive-batch teacher learns the format from whoever is free that day.",
+  "problem": "Every new batch teacher learns the format from whoever is free that day.",
   "build": "SOP to Video",
   "steps": [
    "Upload the SOP",
@@ -2101,7 +2193,8 @@ window.CARDS = [
    "Screens or photos"
   ],
   "metric": "Days to a new hire's first solo task",
-  "outputs": "2-minute video + one-page card"
+  "outputs": "2-minute video + one-page card",
+  "track": null
  },
  {
   "n": 92,
@@ -2112,7 +2205,7 @@ window.CARDS = [
   "revenueCr": 35.2,
   "flip": "Content",
   "quip": "yep.",
-  "problem": "You need thirty festive UGC scripts and the creator brief is a WhatsApp voice note.",
+  "problem": "You need thirty UGC scripts and the creator brief is a WhatsApp voice note.",
   "build": "UGC Script Bank",
   "steps": [
    "Pull phrases from real reviews",
@@ -2124,7 +2217,8 @@ window.CARDS = [
    "Top reviews"
   ],
   "metric": "UGC videos delivered per month",
-  "outputs": "20 scripts, sample cuts, briefs"
+  "outputs": "20 scripts, sample cuts, briefs",
+  "track": "C"
  },
  {
   "n": 93,
@@ -2135,7 +2229,7 @@ window.CARDS = [
   "revenueCr": 341.9,
   "flip": "Sales",
   "quip": "again?",
-  "problem": "Merchant festive onboarding happens over WhatsApp and your catalogue is a PDF from March.",
+  "problem": "Merchant onboarding happens over WhatsApp and your catalogue is a PDF from March.",
   "build": "WhatsApp Catalogue",
   "steps": [
    "Upload price list and shots",
@@ -2147,7 +2241,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Reply rate on sales chats",
-  "outputs": "Product cards + a 2 MB PDF"
+  "outputs": "Product cards + a 2 MB PDF",
+  "track": null
  },
  {
   "n": 94,
@@ -2158,7 +2253,7 @@ window.CARDS = [
   "revenueCr": 34,
   "flip": "Retention",
   "quip": "sigh.",
-  "problem": "Your festive party-season emails are last year's three sends, resent.",
+  "problem": "Your party-season emails are last year's three sends, resent.",
   "build": "Email Story Rotation",
   "steps": [
    "Plan 8 emails across 3 types",
@@ -2170,7 +2265,8 @@ window.CARDS = [
    "This month's goals"
   ],
   "metric": "Open and click rate trend",
-  "outputs": "8 emails with headers"
+  "outputs": "8 emails with headers",
+  "track": null
  },
  {
   "n": 95,
@@ -2181,7 +2277,7 @@ window.CARDS = [
   "revenueCr": 129.8,
   "flip": "Commerce",
   "quip": "hmm.",
-  "problem": "Half your baby food listings carry the wrong festive pack shot and nobody owns the audit.",
+  "problem": "Half your baby food listings carry the wrong pack shot and nobody owns the audit.",
   "build": "Listing Health Check",
   "steps": [
    "Upload listings from each channel",
@@ -2193,7 +2289,8 @@ window.CARDS = [
    "Channels"
   ],
   "metric": "Conversion on the fixed SKUs",
-  "outputs": "A scorecard + fixes for 10 SKUs"
+  "outputs": "A scorecard + fixes for 10 SKUs",
+  "track": null
  },
  {
   "n": 96,
@@ -2204,7 +2301,7 @@ window.CARDS = [
   "revenueCr": 340,
   "flip": "Internal",
   "quip": "help.",
-  "problem": "Festive menu decisions take four meetings across three markets and still get reopened.",
+  "problem": "Menu decisions take four meetings across three markets and still get reopened.",
   "build": "One-Page Review",
   "steps": [
    "Paste the team updates",
@@ -2216,7 +2313,8 @@ window.CARDS = [
    "Last week's decisions"
   ],
   "metric": "Decisions closed per week",
-  "outputs": "One page: outcomes, numbers, decisions"
+  "outputs": "One page: outcomes, numbers, decisions",
+  "track": null
  },
  {
   "n": 97,
@@ -2239,7 +2337,8 @@ window.CARDS = [
    "Brand line"
   ],
   "metric": "Tagged unboxing posts",
-  "outputs": "3 concepts, renders, print files"
+  "outputs": "3 concepts, renders, print files",
+  "track": null
  },
  {
   "n": 98,
@@ -2250,7 +2349,7 @@ window.CARDS = [
   "revenueCr": 6.3,
   "flip": "Ops",
   "quip": "ugh.",
-  "problem": "Your Diwali offer went live at two different prices because three people built the creative.",
+  "problem": "Your last offer went live at two different prices because three people built the creative.",
   "build": "Offer Creative Locker",
   "steps": [
    "Upload the offer price sheet",
@@ -2262,7 +2361,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Wrong-price errors per sale",
-  "outputs": "Offer assets that match the sheet"
+  "outputs": "Offer assets that match the sheet",
+  "track": null
  },
  {
   "n": 99,
@@ -2273,7 +2373,7 @@ window.CARDS = [
   "revenueCr": 30.8,
   "flip": "Growth",
   "quip": "seen it.",
-  "problem": "Your festive enrolment ads are written in English for parents who search in Bangla.",
+  "problem": "Your enrolment ads are written in English for parents who search in Bangla.",
   "build": "Bharat Ads",
   "steps": [
    "Pick top 5 ads and 6 languages",
@@ -2285,7 +2385,8 @@ window.CARDS = [
    "Languages and regions"
   ],
   "metric": "CTR in tier 2 and tier 3 cities",
-  "outputs": "30 localised ads"
+  "outputs": "30 localised ads",
+  "track": "A"
  },
  {
   "n": 100,
@@ -2296,7 +2397,7 @@ window.CARDS = [
   "revenueCr": 5,
   "flip": "Research",
   "quip": "uh oh.",
-  "problem": "Nobody has spoken to a buyer who commissioned festive art since last year, so every brief is a guess.",
+  "problem": "Nobody has spoken to a buyer who commissioned art since last year, so every brief is a guess.",
   "build": "Interview Synthesiser",
   "steps": [
    "Upload the transcripts",
@@ -2307,7 +2408,8 @@ window.CARDS = [
    "Call notes or transcripts"
   ],
   "metric": "Briefs that cite a real customer quote",
-  "outputs": "3 personas, quote bank, poster"
+  "outputs": "3 personas, quote bank, poster",
+  "track": null
  },
  {
   "n": 101,
@@ -2318,7 +2420,7 @@ window.CARDS = [
   "revenueCr": 394,
   "flip": "Personalised pages",
   "quip": "oof.",
-  "problem": "Your festive gifting ad sends paid traffic to the homepage, where dry fruit competes with everything else.",
+  "problem": "Your gifting ad sends paid traffic to the homepage, where dry fruit competes with everything else.",
   "build": "Ad-Matched Lander",
   "steps": [
    "Upload your top 5 ads",
@@ -2330,7 +2432,8 @@ window.CARDS = [
    "Product feed"
   ],
   "metric": "Landing page conversion vs homepage",
-  "outputs": "5 ad-matched landing pages"
+  "outputs": "5 ad-matched landing pages",
+  "track": null
  },
  {
   "n": 102,
@@ -2341,7 +2444,7 @@ window.CARDS = [
   "revenueCr": 173.7,
   "flip": "Personalised pages",
   "quip": "yep.",
-  "problem": "The everyday yogurt buyer and the festive gifting buyer get the same landing page.",
+  "problem": "The everyday yogurt buyer and the gifting buyer get the same landing page.",
   "build": "Audience Split Pages",
   "steps": [
    "Pick 3 audiences from your data",
@@ -2353,7 +2456,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Conversion by audience segment",
-  "outputs": "3 audience pages for one product"
+  "outputs": "3 audience pages for one product",
+  "track": null
  },
  {
   "n": 103,
@@ -2364,7 +2468,7 @@ window.CARDS = [
   "revenueCr": 15,
   "flip": "Personalised pages",
   "quip": "again?",
-  "problem": "Creators send you festive traffic and it all lands on one page with no sign they sent it.",
+  "problem": "Creators send you traffic and it all lands on one page with no sign they sent it.",
   "build": "Creator Storefront",
   "steps": [
    "Upload the creator photo and picks",
@@ -2376,7 +2480,8 @@ window.CARDS = [
    "Their picks and code"
   ],
   "metric": "Revenue per creator link",
-  "outputs": "A storefront page per creator"
+  "outputs": "A storefront page per creator",
+  "track": null
  },
  {
   "n": 104,
@@ -2387,7 +2492,7 @@ window.CARDS = [
   "revenueCr": 108.3,
   "flip": "Personalised pages",
   "quip": "sigh.",
-  "problem": "Returning pet parents see the same first-time-buyer page every festive season.",
+  "problem": "Returning pet parents see the same first-time-buyer page every visit.",
   "build": "Returning Customer Page",
   "steps": [
    "Group customers by last purchase",
@@ -2399,7 +2504,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Repeat purchase rate",
-  "outputs": "A personal reorder page per group"
+  "outputs": "A personal reorder page per group",
+  "track": null
  },
  {
   "n": 105,
@@ -2410,7 +2516,7 @@ window.CARDS = [
   "revenueCr": 234.7,
   "flip": "Personalised pages",
   "quip": "hmm.",
-  "problem": "Tier 2 festive demand is your fastest-growing segment and every page is written for Bengaluru.",
+  "problem": "Tier 2 demand is your fastest-growing segment and every page is written for Bengaluru.",
   "build": "City Pages",
   "steps": [
    "List cities and delivery times",
@@ -2422,7 +2528,8 @@ window.CARDS = [
    "Reviews by city"
   ],
   "metric": "Conversion in tier 2 and 3 cities",
-  "outputs": "A landing page per city"
+  "outputs": "A landing page per city",
+  "track": null
  },
  {
   "n": 106,
@@ -2433,7 +2540,7 @@ window.CARDS = [
   "revenueCr": 16.5,
   "flip": "Pre-sell & pre-landers",
   "quip": "help.",
-  "problem": "Cold festive traffic hits a supplement product page with no pre-sell and bounces at the price.",
+  "problem": "Cold traffic hits a supplement product page with no pre-sell and bounces at the price.",
   "build": "Advertorial Builder",
   "steps": [
    "Pick the problem your buyer feels",
@@ -2445,7 +2552,8 @@ window.CARDS = [
    "Reviews and proof"
   ],
   "metric": "Cold traffic conversion and CPA",
-  "outputs": "An advertorial page + 3 headline tests"
+  "outputs": "An advertorial page + 3 headline tests",
+  "track": null
  },
  {
   "n": 107,
@@ -2456,7 +2564,7 @@ window.CARDS = [
   "revenueCr": 55.6,
   "flip": "Pre-sell & pre-landers",
   "quip": "same.",
-  "problem": "Nobody has written the three reasons your festive sweets beat the box the neighbour brought.",
+  "problem": "Nobody has written the three reasons your sweets beat the box the neighbour brought.",
   "build": "Reasons Why Listicle",
   "steps": [
    "Pull top reasons from reviews",
@@ -2468,7 +2576,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Click-through to the PDP",
-  "outputs": "A listicle page + 2 headline versions"
+  "outputs": "A listicle page + 2 headline versions",
+  "track": null
  },
  {
   "n": 108,
@@ -2479,7 +2588,7 @@ window.CARDS = [
   "revenueCr": 77,
   "flip": "Pre-sell & pre-landers",
   "quip": "ugh.",
-  "problem": "Your founder's cold-press story converts in person and appears nowhere in the festive funnel.",
+  "problem": "Your founder's cold-press story converts in person and appears nowhere in the funnel.",
   "build": "Founder Letter Page",
   "steps": [
    "Record the founder's story as a voice note",
@@ -2491,7 +2600,8 @@ window.CARDS = [
    "Founder photo"
   ],
   "metric": "Time on page and conversion",
-  "outputs": "A founder letter page"
+  "outputs": "A founder letter page",
+  "track": null
  },
  {
   "n": 109,
@@ -2502,7 +2612,7 @@ window.CARDS = [
   "revenueCr": 98,
   "flip": "Pre-sell & pre-landers",
   "quip": "seen it.",
-  "problem": "Festive mattress shoppers compare five brands and you have no buyer's guide to land them on.",
+  "problem": "Mattress shoppers compare five brands and you have no buyer's guide to land them on.",
   "build": "Buyer's Guide Pre-Lander",
   "steps": [
    "List 5 things a good product needs",
@@ -2514,7 +2624,8 @@ window.CARDS = [
    "Specs and certificates"
   ],
   "metric": "Conversion from comparison shoppers",
-  "outputs": "A buyer's guide pre-lander"
+  "outputs": "A buyer's guide pre-lander",
+  "track": null
  },
  {
   "n": 110,
@@ -2537,7 +2648,8 @@ window.CARDS = [
    "Specs and prices"
   ],
   "metric": "Conversion from comparison traffic",
-  "outputs": "A comparison page with sources"
+  "outputs": "A comparison page with sources",
+  "track": null
  },
  {
   "n": 111,
@@ -2548,7 +2660,7 @@ window.CARDS = [
   "revenueCr": 30.1,
   "flip": "Pre-sell & pre-landers",
   "quip": "oof.",
-  "problem": "Your festive demo is a two-minute video on YouTube rather than a page that sells.",
+  "problem": "Your demo is a two-minute video on YouTube rather than a page that sells.",
   "build": "Video Sales Page",
   "steps": [
    "Upload the demo or founder video",
@@ -2560,7 +2672,8 @@ window.CARDS = [
    "Offer"
   ],
   "metric": "Play rate and conversion",
-  "outputs": "A video-first sales page"
+  "outputs": "A video-first sales page",
+  "track": null
  },
  {
   "n": 112,
@@ -2571,7 +2684,7 @@ window.CARDS = [
   "revenueCr": 130,
   "flip": "Product pages",
   "quip": "yep.",
-  "problem": "Your best-selling festive product page is a wall of ingredient percentages and one photo.",
+  "problem": "Your best-selling product page is a wall of ingredient percentages and one photo.",
   "build": "PDP Rebuild",
   "steps": [
    "Pull claims, reviews and specs",
@@ -2583,7 +2696,8 @@ window.CARDS = [
    "Specs and reviews"
   ],
   "metric": "PDP conversion rate",
-  "outputs": "A rebuilt PDP ready to A/B test"
+  "outputs": "A rebuilt PDP ready to A/B test",
+  "track": null
  },
  {
   "n": 113,
@@ -2594,7 +2708,7 @@ window.CARDS = [
   "revenueCr": 178.2,
   "flip": "Product pages",
   "quip": "again?",
-  "problem": "Festive shades share one page, so the buyer scrolls past the one she came for.",
+  "problem": "All your shades share one page, so the buyer scrolls past the one she came for.",
   "build": "Variant Pages",
   "steps": [
    "Upload variant shots and specs",
@@ -2606,7 +2720,8 @@ window.CARDS = [
    "Variant specs"
   ],
   "metric": "Variant conversion and returns",
-  "outputs": "Variant pages and images"
+  "outputs": "Variant pages and images",
+  "track": null
  },
  {
   "n": 114,
@@ -2617,7 +2732,7 @@ window.CARDS = [
   "revenueCr": 206.5,
   "flip": "Product pages",
   "quip": "sigh.",
-  "problem": "Your festive gift bundle exists in the warehouse and not as a page anyone can buy.",
+  "problem": "Your gift bundle exists in the warehouse and not as a page anyone can buy.",
   "build": "Bundle Page",
   "steps": [
    "Pick the bundle and its saving",
@@ -2629,7 +2744,8 @@ window.CARDS = [
    "Bundle and saving"
   ],
   "metric": "Bundle attach rate and AOV",
-  "outputs": "A bundle landing page"
+  "outputs": "A bundle landing page",
+  "track": null
  },
  {
   "n": 115,
@@ -2640,7 +2756,7 @@ window.CARDS = [
   "revenueCr": 53.4,
   "flip": "Product pages",
   "quip": "hmm.",
-  "problem": "Ingredient skepticism is the festive objection and your proof is a logo in the footer.",
+  "problem": "Ingredient skepticism is the main objection and your proof is a logo in the footer.",
   "build": "Ingredient Proof Page",
   "steps": [
    "Upload formulation and certificates",
@@ -2652,7 +2768,8 @@ window.CARDS = [
    "Product shot"
   ],
   "metric": "Conversion from skeptical traffic",
-  "outputs": "An ingredient page with sources"
+  "outputs": "An ingredient page with sources",
+  "track": null
  },
  {
   "n": 116,
@@ -2663,7 +2780,7 @@ window.CARDS = [
   "revenueCr": 110,
   "flip": "Product pages",
   "quip": "help.",
-  "problem": "Festive scrub sets cost more than the market and nothing does the cost-per-wear maths.",
+  "problem": "Scrub sets cost more than the market and nothing does the cost-per-wear maths.",
   "build": "Cost per Use Page",
   "steps": [
    "Enter price, uses and lifespan",
@@ -2675,7 +2792,8 @@ window.CARDS = [
    "Product shot"
   ],
   "metric": "Conversion on premium SKUs",
-  "outputs": "A cost-per-use page + calculator block"
+  "outputs": "A cost-per-use page + calculator block",
+  "track": null
  },
  {
   "n": 117,
@@ -2686,7 +2804,7 @@ window.CARDS = [
   "revenueCr": 14.7,
   "flip": "Quizzes & tools",
   "quip": "same.",
-  "problem": "Festive gift buyers don't know which skin type they are buying for and no quiz tells them.",
+  "problem": "Gift buyers don't know which skin type they are buying for and no quiz tells them.",
   "build": "Product Finder Quiz",
   "steps": [
    "Map needs to products",
@@ -2698,7 +2816,8 @@ window.CARDS = [
    "Needs it solves"
   ],
   "metric": "Quiz completion and quiz-to-cart",
-  "outputs": "A quiz with result pages"
+  "outputs": "A quiz with result pages",
+  "track": null
  },
  {
   "n": 118,
@@ -2709,7 +2828,7 @@ window.CARDS = [
   "revenueCr": 117,
   "flip": "Quizzes & tools",
   "quip": "ugh.",
-  "problem": "Your festive routine is four products and the store sells them as four unrelated SKUs.",
+  "problem": "Your routine is four products and the store sells them as four unrelated SKUs.",
   "build": "Routine Builder Page",
   "steps": [
    "Group products into steps",
@@ -2721,7 +2840,8 @@ window.CARDS = [
    "Routine steps"
   ],
   "metric": "Items per order",
-  "outputs": "A build-your-routine page"
+  "outputs": "A build-your-routine page",
+  "track": null
  },
  {
   "n": 119,
@@ -2732,7 +2852,7 @@ window.CARDS = [
   "revenueCr": 23.4,
   "flip": "Quizzes & tools",
   "quip": "seen it.",
-  "problem": "Pre-Diwali cleaning buyers guess quantities, over-order once and never return.",
+  "problem": "Deep-cleaning buyers guess quantities, over-order once and never return.",
   "build": "Calculator Page",
   "steps": [
    "Pick the number buyers need to know",
@@ -2744,7 +2864,8 @@ window.CARDS = [
    "Pack sizes"
   ],
   "metric": "Conversion and right-size orders",
-  "outputs": "A calculator page that ends in a pack"
+  "outputs": "A calculator page that ends in a pack",
+  "track": null
  },
  {
   "n": 120,
@@ -2755,7 +2876,7 @@ window.CARDS = [
   "revenueCr": 95,
   "flip": "Quizzes & tools",
   "quip": "uh oh.",
-  "problem": "Diwali plant gifting is your peak and with no gift finder everyone buys the same money plant.",
+  "problem": "Plant gifting is your peak and with no gift finder everyone buys the same money plant.",
   "build": "Gift Finder Page",
   "steps": [
    "Ask who, budget and occasion",
@@ -2767,7 +2888,8 @@ window.CARDS = [
    "Occasions and budgets"
   ],
   "metric": "Gift order conversion",
-  "outputs": "A gift finder page"
+  "outputs": "A gift finder page",
+  "track": null
  },
  {
   "n": 121,
@@ -2790,7 +2912,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Organic visits and assisted sales",
-  "outputs": "A free tool page that sells softly"
+  "outputs": "A free tool page that sells softly",
+  "track": null
  },
  {
   "n": 122,
@@ -2801,7 +2924,7 @@ window.CARDS = [
   "revenueCr": 181,
   "flip": "Trojan horse",
   "quip": "yep.",
-  "problem": "Gifting a villa stay is a real festive purchase and you have no gift guide page for it.",
+  "problem": "Gifting a villa stay is a real purchase and you have no gift guide page for it.",
   "build": "Gift Guide Page",
   "steps": [
    "Pick a persona and occasion",
@@ -2812,8 +2935,9 @@ window.CARDS = [
    "Product catalogue",
    "Persona and occasion"
   ],
-  "metric": "Gift season conversion",
-  "outputs": "A gift guide page per persona"
+  "metric": "Gift-occasion conversion",
+  "outputs": "A gift guide page per persona",
+  "track": null
  },
  {
   "n": 123,
@@ -2824,7 +2948,7 @@ window.CARDS = [
   "revenueCr": 84.3,
   "flip": "Trojan horse",
   "quip": "again?",
-  "problem": "Parents buy the festive starter pack once and never learn the second and third use.",
+  "problem": "Parents buy the starter pack once and never learn the second and third use.",
   "build": "Use-It-More Hub",
   "steps": [
    "List 20 uses from reviews and recipes",
@@ -2836,7 +2960,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Repeat purchase rate",
-  "outputs": "A use-case hub page"
+  "outputs": "A use-case hub page",
+  "track": null
  },
  {
   "n": 124,
@@ -2859,7 +2984,8 @@ window.CARDS = [
    "Product catalogue"
   ],
   "metric": "Organic and AI search traffic",
-  "outputs": "10 answer pages"
+  "outputs": "10 answer pages",
+  "track": null
  },
  {
   "n": 125,
@@ -2870,7 +2996,7 @@ window.CARDS = [
   "revenueCr": 12,
   "flip": "Drops & offers",
   "quip": "hmm.",
-  "problem": "Your festive drop sells out in an hour with no countdown page and no waitlist.",
+  "problem": "Your drop sells out in an hour with no countdown page and no waitlist.",
   "build": "Drop Countdown Page",
   "steps": [
    "Enter the drop date and real stock",
@@ -2882,7 +3008,8 @@ window.CARDS = [
    "Drop date and stock"
   ],
   "metric": "Waitlist signups and sell-through",
-  "outputs": "A drop page with waitlist"
+  "outputs": "A drop page with waitlist",
+  "track": null
  },
  {
   "n": 126,
@@ -2893,7 +3020,7 @@ window.CARDS = [
   "revenueCr": 102,
   "flip": "Drops & offers",
   "quip": "help.",
-  "problem": "Festive member events are the whole value and non-members have no page showing what they are missing.",
+  "problem": "Member events are the whole value and non-members have no page showing what they are missing.",
   "build": "VIP Access Page",
   "steps": [
    "Pick the VIP list and the offer",
@@ -2905,7 +3032,8 @@ window.CARDS = [
    "VIP offer"
   ],
   "metric": "VIP conversion and AOV",
-  "outputs": "A gated VIP sale page"
+  "outputs": "A gated VIP sale page",
+  "track": null
  },
  {
   "n": 127,
@@ -2916,7 +3044,7 @@ window.CARDS = [
   "revenueCr": 149.6,
   "flip": "Drops & offers",
   "quip": "same.",
-  "problem": "Last season's frames sit in the warehouse and the festive sale banner gets ignored.",
+  "problem": "Last season's frames sit in the warehouse and the sale banner gets ignored.",
   "build": "Clearance Page",
   "steps": [
    "Upload the overstock list",
@@ -2928,7 +3056,8 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Units cleared per week",
-  "outputs": "A clearance page"
+  "outputs": "A clearance page",
+  "track": null
  },
  {
   "n": 128,
@@ -2939,7 +3068,7 @@ window.CARDS = [
   "revenueCr": 100,
   "flip": "Drops & offers",
   "quip": "ugh.",
-  "problem": "Your festive booking confirmation says thanks and never asks who else is coming.",
+  "problem": "Your booking confirmation says thanks and never asks who else is coming.",
   "build": "Thank-You Page Upsell",
   "steps": [
    "Pick the next best product",
@@ -2951,6 +3080,7 @@ window.CARDS = [
    "Product shots"
   ],
   "metric": "Second order and referral rate",
-  "outputs": "A post-purchase page"
+  "outputs": "A post-purchase page",
+  "track": null
  }
 ];
