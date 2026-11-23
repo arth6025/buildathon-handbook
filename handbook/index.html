@@ -99,9 +99,34 @@
   .pager b { font-size:18px; }
   .pager button[hidden], .pager[hidden] { display:none; }
   :focus-visible { outline:3px dashed var(--acc); outline-offset:3px; }
+  /* left sidebar on wide screens, like the GrowthX handbook */
+  .side { display:none; }
+  @media (min-width:1000px) {
+    .top { display:none; }
+    .side { display:flex; flex-direction:column; position:fixed; inset:0 auto 0 0; width:270px; padding:28px 22px; border-right:2px solid var(--line); background:var(--bg); overflow-y:auto; z-index:5; }
+    body { padding-left:270px; }
+    .side .brand { font-size:24px; }
+    .side .brand small { display:block; margin:6px 0 0; }
+    .side .meta { font-family:var(--sl-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin:10px 0 22px; padding-bottom:18px; border-bottom:2px solid var(--line); }
+    .side ol { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px; }
+    .side button { all:unset; cursor:pointer; display:flex; gap:12px; align-items:baseline; padding:8px 10px; border-radius:10px; font-weight:600; font-size:15.5px; width:100%; box-sizing:border-box; }
+    .side button span { font-family:var(--sl-mono); font-size:12px; color:var(--mute); font-weight:500; min-width:18px; }
+    .side button:hover { background:var(--card); }
+    .side button[aria-current="true"] { background:var(--acc); color:var(--sl-ink); }
+    .side button[aria-current="true"] span { color:var(--sl-ink); }
+    .side .foot { margin-top:auto; padding-top:22px; font-size:13px; color:var(--mute); }
+    .side .foot a { display:block; margin-top:6px; }
+  }
 </style>
 </head>
 <body>
+
+<aside class="side" aria-label="Chapters">
+  <div class="brand">Orbit<small>Builder handbook</small></div>
+  <div class="meta">16 Dec 2026 · Mumbai</div>
+  <ol id="sideList"></ol>
+  <div class="foot"><a href="../flow/">How Orbit works →</a><a href="../playbook/">The full playbook →</a><a href="../cards/">All 128 cards →</a></div>
+</aside>
 
 <header class="top">
   <div class="wrap">
@@ -287,6 +312,13 @@
     <p class="kicker">07 / Idea library</p>
     <h1>The idea library.</h1>
     <p class="lede">Bring your own problem, or steal one of ours. Each is a real DSG brand's problem, matched to a track. More are landing from the DSG portfolio before the day.</p>
+    <h2>A taste</h2>
+    <div class="grid">
+      <div class="card"><p class="kicker">Track 01</p><h3>Scroll-stopper refresh</h3><p>Take your winners apart, then ship 20 fresh hooks on the bodies that already work.</p></div>
+      <div class="card hot"><p class="kicker" style="color:#3a3a3a">Track 02</p><h3>Full-funnel engine</h3><p>The ad, the landing page and the email HTML are each a Sloosh workflow. Your engine sits on top and personalises all three for every audience: one promise, start to finish.</p></div>
+      <div class="card"><p class="kicker">Track 03</p><h3>Shoot without a shoot</h3><p>One packshot in, a full catalogue out: lifestyle, in use, on a model.</p></div>
+    </div>
+    <h2>Pick one, or pitch your own</h2>
     <div class="filters" id="ideaFilters">
       <button class="chip" data-t="" aria-pressed="true">All</button>
       <button class="chip" data-t="01" aria-pressed="false">01 Stop the Scroll</button>
@@ -380,14 +412,15 @@ Write the script, word for word, with timings. Keep it plain.</pre>
   var chs = [].slice.call(document.querySelectorAll(".ch"));
   var ids = chs.map(function (c) { return c.dataset.id; });
   var list = document.getElementById("tocList");
-  list.innerHTML = chs.map(function (c, i) {
+  var side = document.getElementById("sideList");
+  list.innerHTML = side.innerHTML = chs.map(function (c, i) {
     return '<li><button data-go="' + c.dataset.id + '"><span>' + String(i).padStart(2, "0") + '</span>' + c.dataset.name + '</button></li>';
   }).join("");
 
   function show(id) {
     var i = ids.indexOf(id); if (i < 0) i = 0;
     chs.forEach(function (c, j) { c.classList.toggle("on", j === i); });
-    list.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-current", String(b.dataset.go === ids[i])); });
+    document.querySelectorAll("#tocList button, #sideList button").forEach(function (b) { b.setAttribute("aria-current", String(b.dataset.go === ids[i])); });
     var prev = document.getElementById("prevBtn"), next = document.getElementById("nextBtn");
     prev.hidden = i === 0; next.hidden = i === ids.length - 1;
     if (i > 0) { prev.dataset.go = ids[i - 1]; document.getElementById("prevName").textContent = chs[i - 1].dataset.name.replace("&amp;", "&"); }

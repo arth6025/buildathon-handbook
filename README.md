@@ -106,11 +106,11 @@ $1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live 
 | | What it is | Link |
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
-| 🎞️ **How it works** | 22-stage story deck: the Orbit day, from the brief to the CXO room to the Feed Test | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
+| 🎞️ **How it works** | 17-stage story deck: pick a track, pick an idea, build, the CXO room, the Feed Test | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards, 60 tagged to the three Orbit tracks; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| ✅ **The checklist** | 17 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| ✅ **The checklist** | 18 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
@@ -242,6 +242,7 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 5 | BytePlus build credits loaded for every team | **Baisakhi** | Amount per team agreed, loaded into each workspace before 10:15 |
 | 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
 | 7 | Hari, DSGCP: opening talk (tentative) | **Urmit** | Ask Hari; once he confirms, add him to the invite and handbook |
+| 7a | Simulate the whole day, end to end | **Arvind, Sai** | Full run as a brand team, from registration to showcase; fixes made before invites go out |
 | 8 | Onboard a BytePlus (ByteDance) director or head | **Arvind** | Global consumer-brand AI view for the CXO room; confirmed and briefed |
 | 9 | Onboard a consumer enabler from Shopify or Meta | **Arvind** | AI as the lever to scale, with BFCM insights; confirmed and briefed |
 | 10 | Onboard Saif, Kovra group, as an AI expert | **Arvind** | Confirmed and briefed |
