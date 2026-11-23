@@ -19,7 +19,7 @@ Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 - [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [The objective](#the-objective)
 - [The flow of the day](#the-flow-of-the-day) · [The three tracks](#the-three-tracks) · [The mentors](#the-mentors) · [How it's judged](#how-its-judged)
 - [What to bring](#what-to-bring) · [What you leave with](#what-you-leave-with)
-- [The five surfaces](#the-five-surfaces) · [The handbook](#the-handbook) · [The 128 cards](#the-128-cards)
+- [The five surfaces](#the-five-surfaces) · [The playbook](#the-playbook) · [The 128 cards](#the-128-cards)
 - [What brands can build](#what-brands-can-build) · [Reference libraries](#reference-libraries)
 - [Repo structure](#repo-structure) · [Running it locally](#running-it-locally) · [Contributing](#contributing)
 - [Action items](#action-items) · [Open items](#open-items) · [On sourcing](#on-sourcing)
@@ -141,14 +141,17 @@ Due **three days before**, so the day goes on building, not logins:
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
 | 🎞️ **How it works** | 20-stage story deck: how the Orbit day runs, from the brief to the showcase | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
-| 📖 **The handbook** | 15 sections, read in order | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
+| 📖 **The handbook** | 10 short chapters: rules, scoring, setup, tracks, ideas, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
+| 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards, 36 tagged to Orbit tracks A/B/C; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
 | ✅ **The checklist** | 5 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
 
-## The handbook
+## The playbook
+
+The [builder handbook](https://arth6025.github.io/buildathon-handbook/handbook/) is the short version every team reads. This is the deep reference behind it, at `/playbook/`.
 
 | # | Section | What it gives you |
 |---|---|---|
@@ -214,7 +217,8 @@ Seeds, not specs. Each fits one Orbit track, is small enough to build in a day, 
 ```
 ├── index.html              THE PITCH — the front door
 ├── preview/                every page in one link, with device frames
-├── handbook/               the 13-section handbook
+├── handbook/               the builder handbook: 10 short chapters, one file
+├── playbook/               the full 15-section reference (swipe files, prompts, briefs)
 ├── cards/                  the 128 cards, standalone
 │
 ├── assets/
@@ -271,7 +275,7 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 4 | Confirm dates and the soft commit from brands | **Urmit** | 16 Dec locked, and a named soft commit from each brand |
 | 5 | Onboard BytePlus credit redemption via Sloosh | **Baisakhi** | Redemption path live so credits can be claimed on the day |
 
-Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/handbook/#ai-build)) — Prashant + engineer.
+Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/playbook/#ai-build)) — Prashant + engineer.
 
 
 ---

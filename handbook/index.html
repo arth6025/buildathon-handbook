@@ -3,38 +3,414 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Orbit Buildathon — the handbook</title>
-<meta name="description" content="The working handbook for the Orbit Buildathon: Sloosh × DSG Consumer Partners, in partnership with BytePlus. Build an AI creative workflow your team runs itself in 2027.">
+<title>Orbit Buildathon · Builder Handbook</title>
+<meta name="description" content="Everything a brand team needs for the Orbit Buildathon, 16 Dec 2026, Mumbai. Sloosh × DSG Consumer Partners, in partnership with BytePlus.">
 <link rel="stylesheet" href="../assets/sloosh.css">
-<link rel="stylesheet" href="../assets/cards.css">
-<link rel="stylesheet" href="../assets/styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰️</text></svg>">
+<style>
+  :root { --bg:var(--sl-cream); --fg:var(--sl-ink); --mute:#5E5A50; --card:#fff; --acc:var(--sl-yellow); --line:var(--sl-ink); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0E0E0E; --fg:#F4F1E8; --mute:#A7A398; --card:#191919; --line:#F4F1E8; } }
+  :root[data-theme="dark"] { --bg:#0E0E0E; --fg:#F4F1E8; --mute:#A7A398; --card:#191919; --line:#F4F1E8; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:var(--sl-display); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  a { color:inherit; }
+  .wrap { width:min(100% - 32px, 760px); margin-inline:auto; }
+
+  /* top bar */
+  .top { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:2px solid var(--line); }
+  .top .wrap { display:flex; align-items:center; gap:14px; height:56px; }
+  .brand { font-weight:800; letter-spacing:-.03em; font-size:19px; white-space:nowrap; }
+  .brand small { font-family:var(--sl-mono); font-weight:500; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin-left:8px; }
+  .menu { margin-left:auto; font:700 14px var(--sl-display); background:var(--card); color:var(--fg); border:2px solid var(--line); border-radius:999px; padding:7px 14px; cursor:pointer; }
+  .toc { display:none; border-top:2px solid var(--line); background:var(--bg); }
+  .toc.open { display:block; }
+  .toc ol { list-style:none; margin:0; padding:10px 0 14px; display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:4px 16px; }
+  .toc button { all:unset; cursor:pointer; display:flex; gap:10px; padding:7px 0; font-weight:600; }
+  .toc button span { font-family:var(--sl-mono); color:var(--mute); font-weight:500; }
+  .toc button[aria-current="true"] { text-decoration:underline; text-decoration-thickness:3px; text-decoration-color:var(--acc); text-underline-offset:5px; }
+
+  /* chapters */
+  .ch { display:none; padding:44px 0 32px; }
+  .ch.on { display:block; }
+  .kicker { font-family:var(--sl-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--mute); margin:0 0 10px; }
+  h1 { font-size:clamp(34px, 6vw, 52px); line-height:1.02; letter-spacing:-.04em; margin:0 0 14px; }
+  .lede { font-size:20px; color:var(--mute); margin:0 0 28px; max-width:34em; }
+  h2 { font-size:24px; letter-spacing:-.02em; margin:36px 0 12px; }
+  p { margin:0 0 14px; }
+
+  /* hero */
+  .hero { text-align:center; padding:40px 0 8px; }
+  .hero .eyebrow { font-family:var(--sl-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--mute); }
+  .hero h1 { font-size:clamp(56px, 13vw, 112px); margin:10px 0 6px; }
+  .hero h1 em { font-style:normal; background:var(--acc); color:var(--sl-ink); padding:0 .12em; border-radius:8px; }
+  .hero .sub { font-size:19px; margin:18px auto 26px; max-width:30em; }
+  .hero .meta { font-family:var(--sl-mono); font-size:13px; letter-spacing:.06em; color:var(--mute); margin-bottom:26px; }
+
+  /* blocks */
+  .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); }
+  .card { background:var(--card); border:2px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--mute); font-size:15.5px; }
+  .card .big { font-size:28px; font-weight:800; letter-spacing:-.03em; color:var(--fg); margin-bottom:2px; }
+  .card.hot { background:var(--acc); color:var(--sl-ink); }
+  .card.hot p { color:#3a3a3a; }
+  .rows { border:2px solid var(--line); border-radius:14px; overflow:hidden; background:var(--card); }
+  .row { display:grid; grid-template-columns:120px 1fr; gap:14px; padding:14px 18px; border-top:2px solid var(--line); }
+  .row:first-child { border-top:0; }
+  .row .k { font-family:var(--sl-mono); font-weight:700; font-size:14px; }
+  .row .v b { display:block; }
+  .row .v span { color:var(--mute); font-size:15.5px; }
+  @media (max-width:520px) { .row { grid-template-columns:1fr; gap:4px; } }
+  .rule { display:grid; grid-template-columns:44px 1fr; gap:12px; padding:14px 0; border-top:2px dashed color-mix(in oklab, var(--line) 30%, transparent); }
+  .rule:first-of-type { border-top:0; }
+  .rule .n { font-family:var(--sl-mono); font-weight:700; color:var(--mute); padding-top:2px; }
+  .rule b { display:block; font-size:18px; }
+  .rule span { color:var(--mute); }
+  .two { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); }
+  ul.tick, ul.cross { list-style:none; padding:0; margin:0; }
+  ul.tick li, ul.cross li { padding:6px 0 6px 28px; position:relative; }
+  ul.tick li::before { content:"✓"; position:absolute; left:0; font-weight:800; color:#1d8a4f; }
+  ul.cross li::before { content:"✕"; position:absolute; left:0; font-weight:800; color:#d9453a; }
+  .note { border-left:4px solid var(--acc); padding:10px 16px; background:var(--card); border-radius:0 10px 10px 0; margin:18px 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:2px solid var(--line); border-radius:14px; overflow:hidden; font-size:15.5px; }
+  th, td { text-align:left; padding:11px 14px; border-top:2px solid var(--line); vertical-align:top; }
+  thead th { border-top:0; font-family:var(--sl-mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); }
+  td.w { font-family:var(--sl-mono); font-weight:700; white-space:nowrap; }
+  .tablewrap { overflow-x:auto; }
+  pre { white-space:pre-wrap; background:var(--card); border:2px solid var(--line); border-radius:14px; padding:16px 18px; font:14px/1.55 var(--sl-mono); margin:0; }
+  .copy { margin-top:10px; }
+
+  /* ideas */
+  .filters { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 16px; }
+  .chip { font:700 14px var(--sl-display); background:var(--card); color:var(--fg); border:2px solid var(--line); border-radius:999px; padding:6px 14px; cursor:pointer; }
+  .chip[aria-pressed="true"] { background:var(--acc); color:var(--sl-ink); }
+  .idea .tag { font-family:var(--sl-mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin-bottom:6px; }
+  .idea h3 { font-size:17px; }
+  .idea .brand-line { font-size:13.5px; font-weight:700; margin-top:8px; color:var(--fg); }
+
+  /* buttons + pager */
+  .btn { display:inline-flex; align-items:center; gap:8px; font:800 16px var(--sl-display); background:var(--acc); color:var(--sl-ink); border:2px solid var(--sl-ink); border-radius:999px; padding:12px 22px; cursor:pointer; text-decoration:none; box-shadow:3px 3px 0 var(--sl-ink); }
+  .btn.ghost { background:var(--card); color:var(--fg); border-color:var(--line); box-shadow:none; }
+  .pager { display:flex; justify-content:space-between; gap:12px; border-top:2px solid var(--line); padding:20px 0 48px; }
+  .pager button { all:unset; cursor:pointer; display:flex; flex-direction:column; gap:2px; max-width:48%; }
+  .pager button:last-child { text-align:right; margin-left:auto; }
+  .pager small { font-family:var(--sl-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--mute); }
+  .pager b { font-size:18px; }
+  .pager button[hidden], .pager[hidden] { display:none; }
+  :focus-visible { outline:3px dashed var(--acc); outline-offset:3px; }
+</style>
 </head>
 <body>
 
-<div class="shell">
-  <aside class="sidebar">
-    <div class="brand">
-      <div class="org">Sloosh × DSGCP · with BytePlus</div>
-      <div class="nm">Orbit</div>
-      <div class="sub">Buildathon · Mumbai</div>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Orbit<small>Builder handbook</small></div>
+    <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="toc">Chapters</button>
+  </div>
+  <nav class="toc" id="toc"><div class="wrap"><ol id="tocList"></ol></div></nav>
+</header>
+
+<main class="wrap" id="main">
+
+  <!-- 00 START -->
+  <section class="ch" data-id="start" data-name="Start">
+    <div class="hero">
+      <div class="eyebrow">Sloosh × DSG Consumer Partners · in partnership with BytePlus</div>
+      <h1>Orbit <em>Buildathon</em></h1>
+      <p class="sub">Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.</p>
+      <div class="meta">16 DEC 2026 · MUMBAI · ONE DAY · $2,500 ON THE LINE</div>
+      <button class="btn" data-go="welcome">Start →</button>
     </div>
-    <nav class="toc" id="toc"></nav>
-    <div class="side-foot">
-      <div class="progress" id="progress"></div>
-      <p>Mumbai · Wed 16 Dec 2026<br>
-         Three tracks · Built on Sloosh<br>
-         <a href="https://github.com/arth6025/buildathon-handbook" rel="noopener">Contribute →</a></p>
+  </section>
+
+  <!-- 01 WELCOME -->
+  <section class="ch" data-id="welcome" data-name="Welcome">
+    <p class="kicker">01 / Welcome</p>
+    <h1>Why Orbit is built differently.</h1>
+    <div class="grid">
+      <div class="card"><h3>🛠️ Everyone builds</h3><p>No talks to sit through. You start from an empty canvas and leave with a workflow that runs.</p></div>
+      <div class="card"><h3>🧑‍🏫 Mentors on the floor</h3><p>One AI creative expert for every 4 teams. Stuck? Raise a flag.</p></div>
+      <div class="card"><h3>🎯 Build to win</h3><p>You get the scoring before you start, so you build straight at what wins.</p></div>
+      <div class="card"><h3>📅 Ready for 2027</h3><p>What you build is the creative engine for your first campaign of next year.</p></div>
     </div>
-  </aside>
-  <main class="content" id="content"></main>
-</div>
+
+    <h2>Three things happen today.</h2>
+    <div class="rows">
+      <div class="row"><div class="k">09:00</div><div class="v"><b>Check-in and kickoff</b><span>Key check, then DSG, Sloosh and BytePlus open the day. You pick your track.</span></div></div>
+      <div class="row"><div class="k">10:15</div><div class="v"><b>Build</b><span>Three sprints, three checkpoints (12:00, 15:30, 16:30). Founders join the CXO track at lunch.</span></div></div>
+      <div class="row"><div class="k">16:30</div><div class="v"><b>Showcase</b><span>Three minutes each, live, no slides. Then awards and drinks.</span></div></div>
+    </div>
+
+    <h2>What's at stake.</h2>
+    <div class="grid">
+      <div class="card hot"><div class="big">$1,500</div><p>Winner</p></div>
+      <div class="card"><div class="big">$500</div><p>Runner-up</p></div>
+      <div class="card"><div class="big">$500</div><p>"Shipped in 30": best live campaign by mid-January</p></div>
+    </div>
+    <p style="margin-top:16px">Want the whole day as a story first? <a href="../flow/">How Orbit works →</a></p>
+  </section>
+
+  <!-- 02 PERKS -->
+  <section class="ch" data-id="perks" data-name="Prizes &amp; perks">
+    <p class="kicker">02 / Prizes &amp; perks</p>
+    <h1>Prizes &amp; perks.</h1>
+    <p class="lede">You don't need to win to walk away with something. Show up and the credits are yours.</p>
+
+    <h2>Every brand gets</h2>
+    <div class="grid">
+      <div class="card hot"><h3>BytePlus credits</h3><p>From <b>US$1,000</b> per brand, for Seedream (images) and Seedance (video). Redeemed inside Sloosh with your own key.</p></div>
+      <div class="card"><h3>A Sloosh workspace</h3><p>Where you build. It stays yours after the day.</p></div>
+      <div class="card"><h3>The CXO track</h3><p>For founders: closed-door, with top AI leaders and BytePlus leadership.</p></div>
+    </div>
+
+    <h2>How to claim your credits</h2>
+    <div class="rows">
+      <div class="row"><div class="k">Step 1</div><div class="v"><b>Claim from BytePlus</b><span>We introduce you to the BytePlus team, who set up your credits and send you an API key.</span></div></div>
+      <div class="row"><div class="k">Step 2</div><div class="v"><b>Add the key in Sloosh</b><span>Settings → bring your own key. Sloosh checks it and shows your balance.</span></div></div>
+      <div class="row"><div class="k">By when</div><div class="v"><b>The week before</b><span>Not on the day. Stuck? Reply to the invite and a mentor will help.</span></div></div>
+    </div>
+
+    <h2>The podium</h2>
+    <div class="rows">
+      <div class="row"><div class="k">🥇 $1,500</div><div class="v"><b>Winner</b><span>Highest score on the day.</span></div></div>
+      <div class="row"><div class="k">🥈 $500</div><div class="v"><b>Runner-up</b><span>Second-highest score.</span></div></div>
+      <div class="row"><div class="k">🚀 $500</div><div class="v"><b>Shipped in 30</b><span>Best live campaign built on your workflow by mid-January. Judged on results, not the showcase.</span></div></div>
+    </div>
+  </section>
+
+  <!-- 03 RULES -->
+  <section class="ch" data-id="rules" data-name="Rules">
+    <p class="kicker">03 / Rules</p>
+    <h1>The rules.</h1>
+    <div>
+      <div class="rule"><div class="n">01</div><div><b>Two people per brand.</b><span>The founder, and whoever runs creative or growth. Both registered, both in the room.</span></div></div>
+      <div class="rule"><div class="n">02</div><div><b>Pick one track.</b><span>A, B or C. You lock it at check-in. One rubric scores every track.</span></div></div>
+      <div class="rule"><div class="n">03</div><div><b>Build in Sloosh, on your credits.</b><span>Images on Seedream, video on Seedance, paid from your own BytePlus key.</span></div></div>
+      <div class="rule"><div class="n">04</div><div><b>Build from zero, on the day.</b><span>Every workspace starts empty at 10:15. Sloosh's version history is the audit trail.</span></div></div>
+      <div class="rule"><div class="n">05</div><div><b>The keyboard stays with you.</b><span>Mentors point, you click. That's how the skill stays in your team.</span></div></div>
+      <div class="rule"><div class="n">06</div><div><b>No false claims.</b><span>A product claim you can't back on any asset means you're out, whatever else you scored.</span></div></div>
+      <div class="rule"><div class="n">07</div><div><b>Lock by 16:30.</b><span>Late work is not judged, whatever the reason.</span></div></div>
+    </div>
+
+    <h2>What counts as a valid starting point.</h2>
+    <div class="two">
+      <div class="card"><h3>Allowed</h3>
+        <ul class="tick"><li>Your brand kit, ads, reviews and product links</li><li>This handbook and the playbook</li><li>Ideas and sketches on paper</li></ul></div>
+      <div class="card"><h3>Not allowed</h3>
+        <ul class="cross"><li>Workflows or prompts built before the day</li><li>Assets made before 10:15</li><li>An agency or freelancer building for you</li></ul></div>
+    </div>
+    <p class="note">Unsure whether something counts? Ask a mentor before you use it, not after.</p>
+  </section>
+
+  <!-- 04 SCORING -->
+  <section class="ch" data-id="scoring" data-name="Scoring">
+    <p class="kicker">04 / Scoring</p>
+    <h1>How you're scored.</h1>
+    <p class="lede">One rubric for all three tracks. It rewards a workflow that repeats over one beautiful asset.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Criterion</th><th>Points</th><th>How it's judged</th></tr></thead>
+      <tbody>
+        <tr><td><b>Repeats</b></td><td class="w">30</td><td>Judges hand you a second product and your workflow runs on it live, with no edits. A one-off asset scores zero here.</td></tr>
+        <tr><td><b>On-brand</b></td><td class="w">25</td><td>Would the brand run it tomorrow, without a designer fixing it first?</td></tr>
+        <tr><td><b>Converts</b></td><td class="w">20</td><td>A real angle in one sentence, a hook that earns the next 1.5 seconds, claims backed by proof.</td></tr>
+        <tr><td><b>Credit-efficient</b></td><td class="w">15</td><td>BytePlus credits spent per usable asset. Sloosh logs it.</td></tr>
+        <tr><td><b>Ready to ship</b></td><td class="w">10</td><td>Sized and labelled, each variant tagged with the one thing it changes.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note"><b>The test that decides most results:</b> can your workflow run again on a product it has never seen? Practise that before 15:30.</p>
+  </section>
+
+  <!-- 05 SETUP -->
+  <section class="ch" data-id="setup" data-name="Get set up">
+    <p class="kicker">05 / Get set up</p>
+    <h1>Get set up before the day.</h1>
+    <div class="rows">
+      <div class="row"><div class="k">1 week out</div><div class="v"><b>Credits and key</b><span>Claim your BytePlus credits and add the key in Sloosh.</span></div></div>
+      <div class="row"><div class="k">3 days out</div><div class="v"><b>Send your inputs</b><span>Brand kit (logo, colours, fonts) · top 3 ads · review export · 2 product links (one to build on, one for the re-run).</span></div></div>
+      <div class="row"><div class="k">The night before</div><div class="v"><b>Pick your track</b><span>Read chapter 06 and the idea library. Arrive with your track and product chosen.</span></div></div>
+      <div class="row"><div class="k">On the day</div><div class="v"><b>Key check at 09:00</b><span>Workspace live, key valid, brand kit loaded. If anything's red, a fixer comes to your table.</span></div></div>
+    </div>
+
+    <h2>Common breaks and fixes.</h2>
+    <div class="rows">
+      <div class="row"><div class="k">Key rejected</div><div class="v"><span>Check the key is pasted in full, with no spaces. Still failing? Raise a flag at check-in.</span></div></div>
+      <div class="row"><div class="k">No balance</div><div class="v"><span>The credits haven't been claimed yet on BytePlus. Do step 1 in chapter 02 again.</span></div></div>
+      <div class="row"><div class="k">Output looks generic</div><div class="v"><span>Feed it your reviews and your top ads, not just the product page. Customer words beat model words.</span></div></div>
+      <div class="row"><div class="k">Off-brand colours</div><div class="v"><span>Reload the brand kit and say in the prompt which colours to use.</span></div></div>
+    </div>
+  </section>
+
+  <!-- 06 TRACKS -->
+  <section class="ch" data-id="tracks" data-name="Pick a track">
+    <p class="kicker">06 / Pick a track</p>
+    <h1>Pick one track. Build one workflow.</h1>
+    <div class="grid">
+      <div class="card hot"><p class="kicker" style="color:#3a3a3a">Track A · the default</p><h3>Creative Velocity</h3><p>Take apart your top 3 ads, find what made them work, and build 12+ new statics from it. <b>Seedream.</b></p></div>
+      <div class="card"><p class="kicker">Track B</p><h3>Competitor → Creative</h3><p>Take apart a competitor's best ad, then rebuild the angle on your product with your own proof. <b>Seedream.</b></p></div>
+      <div class="card"><p class="kicker">Track C</p><h3>Video Ads</h3><p>Turn your reviews into scripts, then short UGC-style videos. <b>Seedance.</b></p></div>
+    </div>
+    <h2>Every track, same four steps.</h2>
+    <div class="rows">
+      <div class="row"><div class="k">1 · Input</div><div class="v"><span>One product, plus your ads or a competitor's.</span></div></div>
+      <div class="row"><div class="k">2 · Context</div><div class="v"><span>Your brand kit and your customers' own words from reviews.</span></div></div>
+      <div class="row"><div class="k">3 · Generate</div><div class="v"><span>12 angles → keep 4 → 20 hooks → keep 3 → 3 hooks × 4 sizes = 12 ads.</span></div></div>
+      <div class="row"><div class="k">4 · Re-run</div><div class="v"><span>Run the same workflow on your second product. No edits.</span></div></div>
+    </div>
+    <p class="note"><b>Not sure?</b> Pick A. It works for every brand with ads already running.</p>
+  </section>
+
+  <!-- 07 IDEAS -->
+  <section class="ch" data-id="ideas" data-name="Idea library">
+    <p class="kicker">07 / Idea library</p>
+    <h1>The idea library.</h1>
+    <p class="lede">Bring your own problem, or pick one of ours. Each one is a real DSG brand's problem, matched to a track.</p>
+    <div class="filters" id="ideaFilters">
+      <button class="chip" data-t="" aria-pressed="true">All</button>
+      <button class="chip" data-t="A" aria-pressed="false">Track A</button>
+      <button class="chip" data-t="B" aria-pressed="false">Track B</button>
+      <button class="chip" data-t="C" aria-pressed="false">Track C</button>
+    </div>
+    <div class="grid" id="ideaGrid"></div>
+    <p style="margin-top:16px">These are conversation starters, not audits. <a href="../cards/">See all 128 cards →</a></p>
+  </section>
+
+  <!-- 08 SUBMIT -->
+  <section class="ch" data-id="submit" data-name="Submit">
+    <p class="kicker">08 / Submit</p>
+    <h1>Lock it by 16:30, or it doesn't count.</h1>
+    <div class="rows">
+      <div class="row"><div class="k">The workflow</div><div class="v"><span>As it sits in your Sloosh workspace.</span></div></div>
+      <div class="row"><div class="k">The batch</div><div class="v"><span>12+ assets, sized and labelled with the one thing each changes.</span></div></div>
+      <div class="row"><div class="k">The angle</div><div class="v"><span>One sentence, with no product name in it.</span></div></div>
+      <div class="row"><div class="k">The re-run</div><div class="v"><span>Your second product, untouched.</span></div></div>
+      <div class="row"><div class="k">Credits used</div><div class="v"><span>From Sloosh's log.</span></div></div>
+    </div>
+    <p class="note">Track B adds the competitor ad you started from. Track C adds the review lines your scripts came from.</p>
+  </section>
+
+  <!-- 09 DEMO -->
+  <section class="ch" data-id="demo" data-name="Demo prep">
+    <p class="kicker">09 / Demo prep</p>
+    <h1>Three minutes. Live. No slides.</h1>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Segment</th><th>Time</th><th>What to show</th></tr></thead>
+      <tbody>
+        <tr><td><b>Context</b></td><td class="w">20 sec</td><td>Your track and your angle, in one sentence.</td></tr>
+        <tr><td><b>Live run</b></td><td class="w">100 sec</td><td>A judge picks a product. Run your workflow on it, end to end.</td></tr>
+        <tr><td><b>Argument</b></td><td class="w">40 sec</td><td>Why this angle, which hooks survived, what you killed.</td></tr>
+        <tr><td><b>January</b></td><td class="w">20 sec</td><td>The first 2027 campaign this workflow will make.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>Prepare your script with AI.</h2>
+    <p>Paste this into any AI assistant, fill the brackets, read the result twice.</p>
+<pre id="scriptPrompt">I'm demoing what I built at the Orbit Buildathon. I have 3 minutes,
+live, no slides: 20 seconds of context, 100 seconds running my workflow
+on a product the judges pick, 40 seconds on my argument, 20 seconds on
+what it will make in January.
+
+My brand: [what we sell, to whom]
+My track: [A velocity / B competitor / C video]
+My angle: [one sentence, no product name]
+Hooks that survived: [the 3]
+What I killed and why: [one line]
+
+Write the script, word for word, with timings. Keep it plain.</pre>
+    <button class="btn ghost copy" id="copyBtn" type="button">Copy prompt</button>
+
+    <h2>Before you walk up.</h2>
+    <ul class="tick">
+      <li>Your second product has run once, end to end, before 16:30.</li>
+      <li>Sloosh is open on the right workspace, logged in.</li>
+      <li>You know your weakest score and what you'd say about it.</li>
+    </ul>
+  </section>
+
+  <!-- 10 AFTER -->
+  <section class="ch" data-id="after" data-name="After">
+    <p class="kicker">10 / After</p>
+    <h1>You built something today.</h1>
+    <p class="lede">A workflow that didn't exist this morning, built by your own team. Your credits and your workspace stay with you.</p>
+    <h2>Tonight</h2>
+    <ul class="tick">
+      <li><b>Post the batch.</b> Your best three ads, with "built at Orbit" and the hosts tagged.</li>
+      <li><b>Write down the angle that won</b>, and the hook. You'll forget by Monday.</li>
+    </ul>
+    <h2>The next 30 days</h2>
+    <ul class="tick">
+      <li><b>Run it live.</b> Put the batch behind real spend.</li>
+      <li><b>Enter "Shipped in 30".</b> Send the live ad and its numbers by mid-January for the last $500.</li>
+      <li><b>Run it again</b> for your first launch of 2027.</li>
+    </ul>
+    <p style="margin-top:24px">Want to go deeper? The <a href="../playbook/">full playbook</a> has the swipe files, the prompt chain, the teardown protocol and the briefs.</p>
+  </section>
+
+  <nav class="pager" id="pager" aria-label="Chapters">
+    <button id="prevBtn" type="button"><small>← Previous</small><b id="prevName"></b></button>
+    <button id="nextBtn" type="button"><small>Next →</small><b id="nextName"></b></button>
+  </nav>
+</main>
 
 <script src="../data/cards.js"></script>
-<script src="../assets/cardgrid.js"></script>
-<script src="../data/swipe.js"></script>
-<script src="../data/prompts.js"></script>
-<script src="../data/handbook.js"></script>
-<script src="../app.js"></script>
+<script>
+(function () {
+  var chs = [].slice.call(document.querySelectorAll(".ch"));
+  var ids = chs.map(function (c) { return c.dataset.id; });
+  var list = document.getElementById("tocList");
+  list.innerHTML = chs.map(function (c, i) {
+    return '<li><button data-go="' + c.dataset.id + '"><span>' + String(i).padStart(2, "0") + '</span>' + c.dataset.name + '</button></li>';
+  }).join("");
+
+  function show(id) {
+    var i = ids.indexOf(id); if (i < 0) i = 0;
+    chs.forEach(function (c, j) { c.classList.toggle("on", j === i); });
+    list.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-current", String(b.dataset.go === ids[i])); });
+    var prev = document.getElementById("prevBtn"), next = document.getElementById("nextBtn");
+    prev.hidden = i === 0; next.hidden = i === ids.length - 1;
+    if (i > 0) { prev.dataset.go = ids[i - 1]; document.getElementById("prevName").textContent = chs[i - 1].dataset.name.replace("&amp;", "&"); }
+    if (i < ids.length - 1) { next.dataset.go = ids[i + 1]; document.getElementById("nextName").textContent = chs[i + 1].dataset.name.replace("&amp;", "&"); }
+    document.getElementById("pager").hidden = i === 0;
+    try { history.replaceState(null, "", "#" + ids[i]); } catch (e) {}
+    scrollTo(0, 0);
+  }
+
+  document.addEventListener("click", function (e) {
+    var go = e.target.closest("[data-go]");
+    if (go) { show(go.dataset.go); closeMenu(); }
+  });
+  var menuBtn = document.getElementById("menuBtn"), toc = document.getElementById("toc");
+  function closeMenu() { toc.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+  menuBtn.addEventListener("click", function () {
+    var open = !toc.classList.contains("open");
+    toc.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", String(open));
+  });
+
+  // idea library: the cards tagged to an Orbit track
+  var cards = (window.CARDS || []).filter(function (c) { return c.track; });
+  var names = { A: "Track A · Velocity", B: "Track B · Competitor", C: "Track C · Video" };
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]; }); }
+  function renderIdeas(t) {
+    document.getElementById("ideaGrid").innerHTML = cards.filter(function (c) { return !t || c.track === t; }).map(function (c) {
+      return '<div class="card idea"><div class="tag">' + names[c.track] + '</div><h3>' + esc(c.build) + '</h3><p>' +
+        esc(c.problem) + '</p><div class="brand-line">' + esc(c.brand) + ' · ' + esc(c.outputs) + '</div></div>';
+    }).join("");
+  }
+  document.getElementById("ideaFilters").addEventListener("click", function (e) {
+    var b = e.target.closest(".chip"); if (!b) return;
+    this.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+    renderIdeas(b.dataset.t);
+  });
+  renderIdeas("");
+
+  document.getElementById("copyBtn").addEventListener("click", function () {
+    var btn = this, txt = document.getElementById("scriptPrompt").textContent;
+    try { navigator.clipboard.writeText(txt).then(function () { btn.textContent = "Copied"; }); } catch (e) {}
+  });
+
+  addEventListener("hashchange", function () { show(location.hash.slice(1)); });
+  show(location.hash.slice(1));
+})();
+</script>
 </body>
 </html>
