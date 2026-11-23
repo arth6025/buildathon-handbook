@@ -113,7 +113,7 @@
         return '<section class="stage">' +
           '<div class="stage-head"><h3>' + esc(g.h) + '</h3><span>overflow uncapped</span></div>' +
           '<div class="table-wrap"><table>' +
-          '<thead><tr><th>Track</th><th>Points</th><th>Root parameter</th></tr></thead>' +
+          '<thead><tr><th>Track</th><th>Out of</th><th>What mentors score</th></tr></thead>' +
           '<tbody>' + g.rows.map(function (r) {
             return '<tr><td class="n">' + esc(r.n) + '</td><td class="w">' + esc(r.w) +
               '</td><td>' + esc(r.d) + '</td></tr>';
@@ -121,7 +121,7 @@
       }).join("") +
       '<h2>Tracking submissions</h2>' +
       '<p>One row per submission. Columns: team · track · angle in one sentence · hook pattern · ' +
-      'root parameter count · power-ups · gates passed · total · judge.</p>' +
+      'track score · power-ups · gates passed · total · mentor.</p>' +
       '<div class="callout"><p><strong>Disqualified:</strong> false product claims, or work built before the day.</p></div>' +
       '<p>The angle and variable columns are the ones worth keeping after the event — they\'re ' +
       'what turns a day of building into a reusable library.</p>' +
@@ -155,7 +155,7 @@
     { go:"briefs",   nm:"Brief Templates", ds:"One for creative, one for landing pages. Both force the decisions teams normally discover halfway through building — the angle, the one goal, the single objection, what gets omitted.", go_label:"2 templates →" },
     { go:"ai-build", nm:"The AI Build", ds:"A worked seven-stage spec for the creative engine — one product URL in, a labelled batch of testable variations out. Model-agnostic, assigned, implementable without further briefing.", go_label:"7 stages →" },
     { go:"pitch",    nm:"The Pitch", ds:"The six-part anatomy of a pitch page for a creative product, and the Orbit pitch built on the same bones. Doubles as your demo narrative.", go_label:"Anatomy + pitch →" },
-    { go:"scoring",  nm:"Judging Rubric", ds:"One outcome per track (Virality, Revenue, Your AI Agency), proven on screen, with the points published. Then the top 5 present to the panel.", go_label:"3 tracks →" },
+    { go:"scoring",  nm:"Judging Rubric", ds:"One rubric per track (Virality, Revenue, Your AI Agency), scored by mentors out of 100. Then the top 5 present to the panel.", go_label:"3 tracks →" },
     { go:"ship",     nm:"Ship & After", ds:"Where submitting and the top-5 demo live now, plus the launch-post skeleton for the days after.", go_label:"Launch post →" },
     { go:"outcomes", nm:"What Good Looks Like", ds:"The Gimme Gimme Ads swipe: one URL in, 500 ads a month out, 1st of 80 teams. The winning shape, and the pattern to steal from it.", go_label:"Case 01 →" },
     { go:null,       nm:"Engine Recipes", ds:"Nine recipes on Claude + the Sloosh MCP + BYOK, one per idea. They live in the builder handbook's idea library.", go_label:"In the handbook" }

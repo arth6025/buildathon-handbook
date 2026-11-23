@@ -61,13 +61,13 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 
 | Track | What teams build | Root parameter | Points |
 |---|---|---|---|
-| **01 Virality** | Statics, carousels, hooks, UGC-style video, regional cuts | Thumb-stops in the Feed Test, 10× | 150 base, overflow uncapped |
-| **02 Revenue** | A personalised funnel (ad → landing page → email HTML) run as one engine through the Sloosh MCP; listings, rival counter-ads | Buy taps + blind head-to-head wins, 20× | 200 base, overflow uncapped |
-| **03 Your AI Agency** | Replace the shoot, the catalogue or the rollout | Approved assets from a cold run on an unseen product, 5× | 150 base, overflow uncapped |
+| **01 Virality** | Statics, carousels, hooks, UGC-style video, regional cuts | Would a stranger stop (40) · the angle (30) · on-brand (30) | 100, scored by mentors |
+| **02 Revenue** | A personalised funnel (ad → landing page → email) on Sloosh; listings, rival counter-ads | One promise ad → page → email (40) · offer + proof (30) · on-brand (30) | 100, scored by mentors |
+| **03 Your AI Agency** | Replace the shoot, the catalogue or the rollout | Runs on a new product (40) · approved assets (30) · on-brand (30) | 100, scored by mentors |
 
 **Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
 **Power-ups (+10 each):** a regional-language version · a video cut · the 14:00 curveball cleared · finishing under the credit budget.
-**The Feed Test:** at 16:00 every entry goes into a mock feed on 100+ phones in the room, logging pauses and buy taps.
+**Judging:** mentors score every team on its track, with the build logs open. No audience vote. The best work goes in front of the public after the day, as a showcase.
 
 ---
 
@@ -82,7 +82,7 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 | 12:00 | Checkpoint: the map. Founders head to the **CXO room** over lunch. |
 | 14:00 | The curveball. |
 | 15:30 | Checkpoint: the batch. |
-| 16:00 | Lock. **The Feed Test.** |
+| 16:00 | Submissions close. **Mentors score.** |
 | 16:45 | Top 5 announced (at least one per track). |
 | 17:00 | **Top 5 present** to the room and the panel: 2 min demo, 1 min proof, 1 min Q&A. Champion crowned. |
 
@@ -110,7 +110,7 @@ $1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live 
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
 | 📋 **Run sheet** (internal) | Sloosh × DSGCP: teams, mentors, check-ins, submission, judging, owners | [Open](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/) |
-| 🎞️ **How it works** | 17-stage story deck: pick a track, pick an idea, build, the CXO room, the Feed Test | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
+| 🎞️ **How it works** | 19-stage story deck: roles, teams, tracks, ideas, the build, the CXO room, scoring, the top 5 | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards; 51 tagged to a track and an engine recipe (Claude + Sloosh MCP + BYOK) | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
@@ -254,10 +254,10 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 10a | Bring in 7 floor mentors | **Arvind, Urmit** | Agency owners, 1 for every 4 teams; briefed on tracks, scoring and the day-before calls |
 | 10b | Bring in 10 paired AI experts | **Baisakhi** | One per assisted team; briefed on fair play: guide, don't build |
 | 11 | Invites out to 30+ brands | **Urmit + DSGCP** | Personal invites with the handbook link and sign-up form |
-| 12 | Marketing and distribution plan | **Urmit + DSGCP** | Before: poster, LinkedIn, portfolio channels. After: shipped work, quotes, Feed Test numbers |
+| 12 | Marketing and distribution plan | **Urmit + DSGCP** | Before: poster, LinkedIn, portfolio channels. After: shipped work and quotes in a public showcase |
 | 13 | Venue locked | **Urmit** | ~63 at build tables, a closed CXO room, stage and screen, wifi for 60+ laptops |
 | 14 | F&B booked | **Tushna, Urmit, Baisakhi** | Breakfast, floor lunch, CXO room serve, evening drinks |
-| 15 | Photo and video team booked | **Tushna, Urmit, Baisakhi** | Full day; Feed Test, showcase and CXO room as priority shots |
+| 15 | Photo and video team booked | **Tushna, Urmit, Baisakhi** | Full day; the build, top-5 showcase and CXO room as priority shots |
 
 Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/playbook/#ai-build)) — Prashant + engineer.
 
@@ -271,7 +271,8 @@ Also open, from the AI build spec: the **creative engine** ([spec](https://arth6
 - [ ] **How many teams.** This sets the mentor count, at one mentor for every 4 teams
 - [ ] **The mentor roster:** named AI creative experts for the floor
 - [ ] **The venue**
-- [ ] **Build the Feed Test app:** a phone web app that shows a mock feed and logs pauses and buy taps
+- [ ] **Mentor scoring sheet:** one per pod, the three track rubrics, tested in the dry run
+- [ ] **The public showcase after the day:** where the best work goes live
 - [ ] **Onboard the CXO room experts** (BytePlus, Shopify or Meta, Saif from Kovra group)
 - [ ] **BytePlus build credits:** how many per team, and loaded before 10:15
 - [ ] **Who audits "Shipped in 30"** results in January

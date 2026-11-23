@@ -19,9 +19,9 @@ window.PROTOCOL = {
 
 window.SCORING = {
   orbit: [
-    { n:"01 Virality", w:"10× · 150 base", d:"Thumb-stops in the Feed Test: a pause of 1.5 seconds or more on your ad, across 100+ phones in the room." },
-    { n:"02 Revenue", w:"20× · 200 base", d:"Buy taps in the Feed Test plus blind head-to-head wins against your top rival's real listing or ad." },
-    { n:"03 Your AI Agency", w:"5× · 150 base", d:"Approved, on-brand assets from a cold run on a product the judges pick and you've never seen." }
+    { n:"01 Virality", w:"100", d:"Would a stranger stop scrolling (40), the angle underneath (30), on-brand (30). Scored by mentors." },
+    { n:"02 Revenue", w:"100", d:"One promise from ad to page to email (40), the offer and its proof (30), on-brand (30). Scored by mentors." },
+    { n:"03 Your AI Agency", w:"100", d:"Runs on a product it has never seen (40), approved assets out (30), on-brand (30). Scored by mentors." }
   ]
 };
 
@@ -49,7 +49,7 @@ window.SECTIONS = [
   {
     id:"the-day", nav:"The day", tick:"New",
     title:`The day <em>lives in the handbook.</em>`,
-    lede:`Timings, teams, the CXO room and the Feed Test are in the <a href="../handbook/#welcome">builder handbook</a> and <a href="../flow/">How Orbit works</a>.`,
+    lede:`Timings, teams, the CXO room and scoring are in the <a href="../handbook/#welcome">builder handbook</a> and <a href="../flow/">How Orbit works</a>.`,
     html:`<div class="prose"><div class="callout"><p><strong>The short version lives in the <a href="../handbook/">builder handbook</a>.</strong> This playbook is the deep reference: swipe files, the prompt chain, the teardown protocol and the briefs.</p></div></div>`
   },
 
