@@ -109,11 +109,11 @@
     __LAUNCHPOST__: blockEl(LAUNCH_POST),
 
     __SCORING__: '<div class="prose">' +
-      [{ h:"Every track — A, B and C", rows:SCORING.orbit }].map(function (g) {
+      [{ h:"The three tracks", rows:SCORING.orbit }].map(function (g) {
         return '<section class="stage">' +
-          '<div class="stage-head"><h3>' + esc(g.h) + '</h3><span>100 points</span></div>' +
+          '<div class="stage-head"><h3>' + esc(g.h) + '</h3><span>overflow uncapped</span></div>' +
           '<div class="table-wrap"><table>' +
-          '<thead><tr><th>Criterion</th><th>Weight</th><th>How it\'s judged</th></tr></thead>' +
+          '<thead><tr><th>Track</th><th>Points</th><th>Root parameter</th></tr></thead>' +
           '<tbody>' + g.rows.map(function (r) {
             return '<tr><td class="n">' + esc(r.n) + '</td><td class="w">' + esc(r.w) +
               '</td><td>' + esc(r.d) + '</td></tr>';
@@ -121,7 +121,7 @@
       }).join("") +
       '<h2>Tracking submissions</h2>' +
       '<p>One row per submission. Columns: team · track · angle in one sentence · hook pattern · ' +
-      'the single variable each variant changes · credits used · each criterion scored · total · judge.</p>' +
+      'root parameter count · power-ups · gates passed · total · judge.</p>' +
       '<div class="callout"><p><strong>Disqualified:</strong> false product claims, or work built before the day.</p></div>' +
       '<p>The angle and variable columns are the ones worth keeping after the event — they\'re ' +
       'what turns a day of building into a reusable library.</p>' +
@@ -146,7 +146,7 @@
   });
 
   var TOOLKIT = [
-    { go:"cards", nm:"The Cards", ds:"128 problem cards, every one named to a live DSG portfolio brand, with 36 tagged to Orbit tracks A, B and C. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
+    { go:"cards", nm:"The Cards", ds:"128 problem cards, every one named to a live DSG portfolio brand, with 60 tagged to the three Orbit tracks. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
     { go:"swipe-creative", nm:"Creative Swipe File", ds:"Hooks, formats, script structures and the benchmarks that judge them. Everything before the click, filed by the job it does.", go_label: creativeCount + " patterns →" },
     { go:"swipe-lp", nm:"Landing Page Swipe File", ds:"Above the fold, proof placement, friction and the ask. Everything after the click, with the test numbers attached.", go_label: lpCount + " patterns →" },
     { go:"content-swipe", nm:"Content Swipe File", ds:"Where to go and look at the work \u2014 ad libraries, conversion research and toolkits, with what each one is actually good for.", go_label:"9 sources \u2192" },

@@ -2,7 +2,8 @@
    Every card names a live DSG portfolio brand (Active / Partially Exited,
    all above Rs 1 Cr revenue). Brand and problem are chosen to match the
    build on the back of the card. "track" is the Orbit track the build fits
-   (A velocity, B competitor, C video), or null if it is beyond the day.
+   ("01" Stop the Scroll, "02" Make Them Buy, "03" Your Own Creative
+   Engine), or null if it is beyond the day.
    See CONTRIBUTING.md. */
 window.CARDS = [
  {
@@ -27,7 +28,7 @@ window.CARDS = [
   ],
   "metric": "Add-to-cart rate on the quick commerce listing",
   "outputs": "6 test tiles + exports for each app",
-  "track": null
+  "track": "02"
  },
  {
   "n": 2,
@@ -52,7 +53,7 @@ window.CARDS = [
   ],
   "metric": "Cost per purchase holds steady past day 10",
   "outputs": "20 statics, 5 motion ads, hook sheet",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 3,
@@ -76,7 +77,7 @@ window.CARDS = [
   ],
   "metric": "Saves per reel and recipe page visits",
   "outputs": "7 reels, 7 recipe cards, captions",
-  "track": "C"
+  "track": "03"
  },
  {
   "n": 4,
@@ -101,7 +102,7 @@ window.CARDS = [
   ],
   "metric": "Listing conversion and fewer \"what size is this?\" questions",
   "outputs": "7 listing images + 5 A+ modules",
-  "track": null
+  "track": "02"
  },
  {
   "n": 5,
@@ -199,7 +200,7 @@ window.CARDS = [
   ],
   "metric": "Order value and hamper share of orders",
   "outputs": "Hamper renders, 6 banners, 3 posts",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 9,
@@ -248,7 +249,7 @@ window.CARDS = [
   ],
   "metric": "Usable posts per 100 boxes sent",
   "outputs": "Brief, sample storyboard, checklist card",
-  "track": "C"
+  "track": null
  },
  {
   "n": 11,
@@ -272,7 +273,7 @@ window.CARDS = [
   ],
   "metric": "Bundle attach rate and average order value",
   "outputs": "A styled shot for every bundle",
-  "track": null
+  "track": "02"
  },
  {
   "n": 12,
@@ -297,7 +298,7 @@ window.CARDS = [
   ],
   "metric": "Thumb-stop rate and fewer \"is this healthy?\" comments",
   "outputs": "15 s explainer, 6 s cut, one static",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 13,
@@ -321,7 +322,7 @@ window.CARDS = [
   ],
   "metric": "Store sell-through during the promo",
   "outputs": "4 designs + print-ready files",
-  "track": "B"
+  "track": "02"
  },
  {
   "n": 14,
@@ -369,7 +370,7 @@ window.CARDS = [
   ],
   "metric": "CTR in the new market against the home baseline",
   "outputs": "Localised versions of 5 ads",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 16,
@@ -417,7 +418,7 @@ window.CARDS = [
   ],
   "metric": "Bars stocking the new batch in week one",
   "outputs": "4 labels, mockups, one merch design",
-  "track": "B"
+  "track": "02"
  },
  {
   "n": 18,
@@ -465,7 +466,7 @@ window.CARDS = [
   ],
   "metric": "Shade returns and \"which shade?\" DMs",
   "outputs": "72 try-on images + shade finder",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 20,
@@ -489,7 +490,7 @@ window.CARDS = [
   ],
   "metric": "\"Did nothing for me\" reviews drop",
   "outputs": "One 20 s how-to per SKU",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 21,
@@ -537,7 +538,7 @@ window.CARDS = [
   ],
   "metric": "Ad CTR against studio creative",
   "outputs": "Carousel + 10 s reel per customer",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 23,
@@ -561,7 +562,7 @@ window.CARDS = [
   ],
   "metric": "Sample orders and time on page",
   "outputs": "3 stills, a film, a note pyramid",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 24,
@@ -585,7 +586,7 @@ window.CARDS = [
   ],
   "metric": "Trial to full-size conversion",
   "outputs": "4-step message sequence + visuals",
-  "track": null
+  "track": "02"
  },
  {
   "n": 25,
@@ -609,7 +610,7 @@ window.CARDS = [
   ],
   "metric": "Approval rate on first submission",
   "outputs": "6 policy-safe ads + review notes",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 26,
@@ -633,7 +634,7 @@ window.CARDS = [
   ],
   "metric": "Hair-type questions in support",
   "outputs": "Hair-type grid + 3 reels",
-  "track": null
+  "track": "02"
  },
  {
   "n": 27,
@@ -681,7 +682,7 @@ window.CARDS = [
   ],
   "metric": "A decision made in one meeting",
   "outputs": "Renders, shelf tests, unboxing clip",
-  "track": null
+  "track": "03"
  },
  {
   "n": 29,
@@ -729,7 +730,7 @@ window.CARDS = [
   ],
   "metric": "Days from shoot to live everywhere",
   "outputs": "A ready image folder per marketplace",
-  "track": null
+  "track": "03"
  },
  {
   "n": 31,
@@ -777,7 +778,7 @@ window.CARDS = [
   ],
   "metric": "Live viewers to orders",
   "outputs": "Live set, overlays, 6 product cards",
-  "track": null
+  "track": "03"
  },
  {
   "n": 33,
@@ -801,7 +802,7 @@ window.CARDS = [
   ],
   "metric": "Scroll depth and add-to-cart on the page",
   "outputs": "Ingredient cards, reel, page section",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 34,
@@ -825,7 +826,7 @@ window.CARDS = [
   ],
   "metric": "Day-30 reorder rate",
   "outputs": "30 messages, 8 visuals, reorder nudge",
-  "track": null
+  "track": "02"
  },
  {
   "n": 35,
@@ -897,7 +898,7 @@ window.CARDS = [
   ],
   "metric": "CTR against product-only ads",
   "outputs": "3 data-led ads + stills",
-  "track": "B"
+  "track": "01"
  },
  {
   "n": 38,
@@ -921,7 +922,7 @@ window.CARDS = [
   ],
   "metric": "Package booking conversion",
   "outputs": "One-page guide, body map, 20 s video",
-  "track": null
+  "track": "02"
  },
  {
   "n": 39,
@@ -945,7 +946,7 @@ window.CARDS = [
   ],
   "metric": "CTR among 28 to 45 year old buyers",
   "outputs": "6 rewritten ads with copy",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 40,
@@ -993,7 +994,7 @@ window.CARDS = [
   ],
   "metric": "Creator posts that use the template",
   "outputs": "6 templates, recipe cards, sample video",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 42,
@@ -1017,7 +1018,7 @@ window.CARDS = [
   ],
   "metric": "ROAS of the best moment against the generic ad",
   "outputs": "5 moment ads + a ranking",
-  "track": null
+  "track": "01"
  },
  {
   "n": 43,
@@ -1041,7 +1042,7 @@ window.CARDS = [
   ],
   "metric": "Days from sample to live",
   "outputs": "A 3-angle on-model set per style",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 44,
@@ -1065,7 +1066,7 @@ window.CARDS = [
   ],
   "metric": "Size-related returns",
   "outputs": "Fit grid + page block per style",
-  "track": null
+  "track": "02"
  },
  {
   "n": 45,
@@ -1089,7 +1090,7 @@ window.CARDS = [
   ],
   "metric": "Thumb-stop rate and CTR",
   "outputs": "4 ads + 4 cutdowns",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 46,
@@ -1113,7 +1114,7 @@ window.CARDS = [
   ],
   "metric": "Hospital and clinic enquiries",
   "outputs": "Lookbook PDF + 6 social posts",
-  "track": null
+  "track": "03"
  },
  {
   "n": 47,
@@ -1137,7 +1138,7 @@ window.CARDS = [
   ],
   "metric": "Try-on to purchase rate",
   "outputs": "Frame-by-face grid + page block",
-  "track": null
+  "track": "02"
  },
  {
   "n": 48,
@@ -1161,7 +1162,7 @@ window.CARDS = [
   ],
   "metric": "Listing conversion against rivals",
   "outputs": "Proof video, listing video, 3 ad cuts",
-  "track": "C"
+  "track": "02"
  },
  {
   "n": 49,
@@ -1209,7 +1210,7 @@ window.CARDS = [
   ],
   "metric": "Items per order",
   "outputs": "3 tagged outfits per hero item",
-  "track": null
+  "track": "02"
  },
  {
   "n": 51,
@@ -1281,7 +1282,7 @@ window.CARDS = [
   ],
   "metric": "Page conversion and trial requests",
   "outputs": "Layer film, page film, 3 ad cuts",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 54,
@@ -1305,7 +1306,7 @@ window.CARDS = [
   ],
   "metric": "Conversion and safety questions in support",
   "outputs": "Comparison visual, explainer, trust strip",
-  "track": "A"
+  "track": null
  },
  {
   "n": 55,
@@ -1353,7 +1354,7 @@ window.CARDS = [
   ],
   "metric": "Repeat purchase and reel saves",
   "outputs": "6 test reels + stills",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 57,
@@ -1377,7 +1378,7 @@ window.CARDS = [
   ],
   "metric": "Page conversion and fewer size questions",
   "outputs": "5 scenes in page and ad sizes",
-  "track": null
+  "track": "03"
  },
  {
   "n": 58,
@@ -1425,7 +1426,7 @@ window.CARDS = [
   ],
   "metric": "CTR by breed against the generic ad",
   "outputs": "12 breed ads with copy",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 60,
@@ -1449,7 +1450,7 @@ window.CARDS = [
   ],
   "metric": "Trial pack sales",
   "outputs": "A carousel + a trial pack ad",
-  "track": "A"
+  "track": "02"
  },
  {
   "n": 61,
@@ -1473,7 +1474,7 @@ window.CARDS = [
   ],
   "metric": "Checkout conversion on personalised gifts",
   "outputs": "Personalised render + share card",
-  "track": null
+  "track": "02"
  },
  {
   "n": 62,
@@ -1545,7 +1546,7 @@ window.CARDS = [
   ],
   "metric": "CTR against last season's creative",
   "outputs": "Season sets for 10 products",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 65,
@@ -1569,7 +1570,7 @@ window.CARDS = [
   ],
   "metric": "Menu to cart conversion",
   "outputs": "Full menu set in every app spec",
-  "track": null
+  "track": "02"
  },
  {
   "n": 66,
@@ -1593,7 +1594,7 @@ window.CARDS = [
   ],
   "metric": "Units sold in launch week",
   "outputs": "Poster, counter card, reel, posts",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 67,
@@ -1665,7 +1666,7 @@ window.CARDS = [
   ],
   "metric": "Return visits from lapsed guests",
   "outputs": "A message + visual per group",
-  "track": null
+  "track": "02"
  },
  {
   "n": 70,
@@ -1737,7 +1738,7 @@ window.CARDS = [
   ],
   "metric": "Pre-orders before the occasion week",
   "outputs": "Box visuals, catalogue PDF, share cards",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 73,
@@ -1761,7 +1762,7 @@ window.CARDS = [
   ],
   "metric": "Orders per bowl after the refresh",
   "outputs": "Restyled bowls, overlays, a reel",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 74,
@@ -1785,7 +1786,7 @@ window.CARDS = [
   ],
   "metric": "App orders in the morning rush",
   "outputs": "A timer video + 3 ads",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 75,
@@ -1809,7 +1810,7 @@ window.CARDS = [
   ],
   "metric": "Listing click-through",
   "outputs": "Fixed photos, cover, listing score",
-  "track": null
+  "track": "03"
  },
  {
   "n": 76,
@@ -1857,7 +1858,7 @@ window.CARDS = [
   ],
   "metric": "Listing CTR and booking rate",
   "outputs": "Mood sets per guest type",
-  "track": null
+  "track": "03"
  },
  {
   "n": 78,
@@ -1930,7 +1931,7 @@ window.CARDS = [
   ],
   "metric": "RSVP rate and next-event signups",
   "outputs": "Poster, invite, recap reel, stills",
-  "track": null
+  "track": "03"
  },
  {
   "n": 81,
@@ -1954,7 +1955,7 @@ window.CARDS = [
   ],
   "metric": "Ticket sales per city",
   "outputs": "A folder per city, every format",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 82,
@@ -2026,7 +2027,7 @@ window.CARDS = [
   ],
   "metric": "Weekday occupancy",
   "outputs": "3 themed offers with ads",
-  "track": null
+  "track": "02"
  },
  {
   "n": 85,
@@ -2050,7 +2051,7 @@ window.CARDS = [
   ],
   "metric": "Off-brand assets that go live",
   "outputs": "A score + marked-up fixes",
-  "track": null
+  "track": "03"
  },
  {
   "n": 86,
@@ -2074,7 +2075,7 @@ window.CARDS = [
   ],
   "metric": "One new angle tested each week",
   "outputs": "A weekly rival board",
-  "track": "B"
+  "track": null
  },
  {
   "n": 87,
@@ -2098,7 +2099,7 @@ window.CARDS = [
   ],
   "metric": "Hit rate of new ads",
   "outputs": "Pattern report + 5 briefs",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 88,
@@ -2122,7 +2123,7 @@ window.CARDS = [
   ],
   "metric": "Followers and inbound DMs",
   "outputs": "8 posts with visuals",
-  "track": "A"
+  "track": "03"
  },
  {
   "n": 89,
@@ -2218,7 +2219,7 @@ window.CARDS = [
   ],
   "metric": "UGC videos delivered per month",
   "outputs": "20 scripts, sample cuts, briefs",
-  "track": "C"
+  "track": "01"
  },
  {
   "n": 93,
@@ -2266,7 +2267,7 @@ window.CARDS = [
   ],
   "metric": "Open and click rate trend",
   "outputs": "8 emails with headers",
-  "track": null
+  "track": "02"
  },
  {
   "n": 95,
@@ -2290,7 +2291,7 @@ window.CARDS = [
   ],
   "metric": "Conversion on the fixed SKUs",
   "outputs": "A scorecard + fixes for 10 SKUs",
-  "track": null
+  "track": "02"
  },
  {
   "n": 96,
@@ -2338,7 +2339,7 @@ window.CARDS = [
   ],
   "metric": "Tagged unboxing posts",
   "outputs": "3 concepts, renders, print files",
-  "track": null
+  "track": "03"
  },
  {
   "n": 98,
@@ -2386,7 +2387,7 @@ window.CARDS = [
   ],
   "metric": "CTR in tier 2 and tier 3 cities",
   "outputs": "30 localised ads",
-  "track": "A"
+  "track": "01"
  },
  {
   "n": 100,

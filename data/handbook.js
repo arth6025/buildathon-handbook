@@ -19,187 +19,38 @@ window.PROTOCOL = {
 
 window.SCORING = {
   orbit: [
-    { n:"Repeats", w:"30%", d:"Judges hand the team a second product in the showcase and the workflow runs on it cold, with no edits. A one-off asset scores zero here, however good it looks." },
-    { n:"On-brand", w:"25%", d:"Would the brand run it tomorrow? Colours, type, tone and product look right without a designer fixing them after." },
-    { n:"Converts", w:"20%", d:"A real angle underneath, statable in one sentence without the product name. A hook that earns the next 1.5 seconds. Claims backed by proof." },
-    { n:"Credit-efficient", w:"15%", d:"BytePlus credits spent per usable asset. Sloosh logs the spend, so this one is counted, not guessed." },
-    { n:"Ready to ship", w:"10%", d:"Sized and labelled for the placements it will run in, each variant tagged with the one thing it changes. Could go into Ads Manager tonight." }
+    { n:"01 Stop the Scroll", w:"10× · 150 base", d:"Thumb-stops in the Feed Test: a pause of 1.5 seconds or more on your ad, across 100+ phones in the room." },
+    { n:"02 Make Them Buy", w:"20× · 200 base", d:"Buy taps in the Feed Test plus blind head-to-head wins against your top rival's real listing or ad." },
+    { n:"03 Your Own Creative Engine", w:"5× · 150 base", d:"Approved, on-brand assets from a cold run on a product the judges pick and you've never seen." }
   ]
 };
 
 /* What brands can build — seeds, not specs. */
 window.IDEAS = [
-  { t:"Ad engine from your winners", d:"One input: your top 3 ads. Finds what made them work, writes new angles on the same bones and returns 12+ statics ready for Ads Manager.", s:"Track A · the proven shape" },
-  { t:"Creative refresh loop", d:"Watches which ads are fatiguing and generates iterations of the winner (new hooks on a proven body) instead of fresh concepts from zero.", s:"Track A" },
-  { t:"Hook tester", d:"Generates twenty openings against one angle, then stress-tests each as a skeptical media buyer and kills the ones that pattern-match as ads.", s:"Track A" },
-  { t:"Occasion switcher", d:"Takes one winning static and re-stages it for every moment in your 2027 calendar, with an argument that survives the discount being removed.", s:"Track A" },
-  { t:"Rival rebuild", d:"Give it a competitor's longest-running ad. It names the pattern and the angle, then rebuilds the angle on your product with your own proof. Never a copy.", s:"Track B" },
-  { t:"Category watch", d:"Pulls what rivals are claiming this month and returns the three claims nobody in the category is making, as ready-to-test statics.", s:"Track B" },
-  { t:"Review-to-video pipeline", d:"Reads the store's own reviews, pulls the verbatim customer language and turns it into short UGC-style scripts and Seedance videos. The proof and the copy come from the same place.", s:"Track C" },
-  { t:"Proof explainer", d:"Takes the one objection in your comments and answers it in a 15-second video and a 6-second cut, built from your own product shots.", s:"Track C" }
+  { t:"Ad engine from your winners", d:"One input: your top 3 ads. Finds what made them work, writes new angles on the same bones and returns 12+ statics ready for Ads Manager.", s:"Track 01 · the proven shape" },
+  { t:"Creative refresh loop", d:"Watches which ads are fatiguing and generates iterations of the winner (new hooks on a proven body) instead of fresh concepts from zero.", s:"Track 01" },
+  { t:"Hook tester", d:"Generates twenty openings against one angle, then stress-tests each as a skeptical media buyer and kills the ones that pattern-match as ads.", s:"Track 01" },
+  { t:"Occasion switcher", d:"Takes one winning static and re-stages it for every moment in your 2027 calendar, with an argument that survives the discount being removed.", s:"Track 01" },
+  { t:"Rival rebuild", d:"Give it a competitor's longest-running ad. It names the pattern and the angle, then rebuilds the angle on your product with your own proof. Never a copy.", s:"Track 02" },
+  { t:"Category watch", d:"Pulls what rivals are claiming this month and returns the three claims nobody in the category is making, as ready-to-test statics.", s:"Track 02" },
+  { t:"Review-to-video pipeline", d:"Reads the store's own reviews, pulls the verbatim customer language and turns it into short UGC-style scripts and Seedance videos. The proof and the copy come from the same place.", s:"Track 01" },
+  { t:"Proof explainer", d:"Takes the one objection in your comments and answers it in a 15-second video and a 6-second cut, built from your own product shots.", s:"Track 01" }
 ];
 
 /* ---------- sections ---------- */
 window.SECTIONS = [
   {
     id:"welcome", nav:"Welcome",
-    title:`One day. <em>One workflow.</em> Ready for 2027.`,
-    lede:`Everything you need for the <strong>Orbit Buildathon</strong>: Sloosh × DSG Consumer Partners, in partnership with BytePlus, on <strong>Wednesday 16 December 2026</strong> in Mumbai. One day, three tracks, one AI creative workflow your team runs itself. <strong>Read this before the day, not during.</strong>`,
-    html:`<div class="prose">
-      <h2>What we're actually trying to do</h2>
-      <p class="big">Get every brand in the room AI-native for 2027: a creative workflow the team
-        runs itself, built on the day and still running in January.</p>
-      <p>2026 ran on agencies. Every campaign meant a new brief, a new wait and a new invoice.
-        Orbit is where a brand team builds the engine instead, from an empty canvas, with AI
-        creative experts on the floor to unblock them.</p>
-      <p>Everything runs in <strong>Sloosh</strong> on <strong>BytePlus</strong> models: Seedream
-        for images, Seedance for video. Each brand redeems its own BytePlus credits (from
-        <strong>US$1,000</strong>), so what you build on the day keeps running on your account
-        afterwards.</p>
-
-      <h2>Who it's for</h2>
-      <p>Consumer brands doing <strong>₹1Cr+ in revenue</strong>. Two people from each brand:
-        the founder, and whoever runs creative or growth. The founder joins the closed-door CXO
-        track at lunch while the operator keeps building.</p>
-
-      <h2>The three tracks</h2>
-      <h3>A · Creative Velocity <span class="ask">(the default)</span></h3>
-      <p>Take apart your top 3 ads, find what made them work, and build 12+ new statics from it.
-        Works for every brand that already has ads running. Seedream.</p>
-      <h3>B · Competitor → Creative</h3>
-      <p>Take apart a competitor's best ad with the teardown protocol, then rebuild the angle on
-        your own product with your own proof. Seedream.</p>
-      <h3>C · Video Ads</h3>
-      <p>Pull customer language from your reviews, script it, and make short UGC-style videos.
-        Seedance.</p>
-      <p>Every track runs the same four steps: <strong>input → brand context → generate →
-        re-run.</strong> It only counts as a workflow if the re-run works on a second product with
-        no edits.</p>
-
-      <h2>What you leave with</h2>
-      <div class="callout">
-        <p><strong>A working creative workflow</strong> inside Sloosh, pointed at your own
-          products.</p>
-        <p><strong>The first batch:</strong> 12+ statics (video on track C), approved and ready to
-          ship.</p>
-        <p><strong>Your BytePlus credits</strong>, still in your account, so the workflow keeps
-          running into 2027.</p>
-      </div>
-
-      <h2>The blunt version</h2>
-      <div class="callout warn">
-        <p><strong>Most teams will make one great ad and call it a workflow.</strong> It will look
-          good on screen and fall over the moment a judge hands them a second product.</p>
-        <p><strong>The teams that place pick narrow and re-run early.</strong> One track, one
-          product, one angle, then the same workflow run again before 15:30 so there is time to fix
-          what breaks.</p>
-      </div>
-
-      <h2>How to use this handbook</h2>
-      <ol>
-        <li><strong>Before the day:</strong> read Welcome, The day and the Scoring rubric. Send your
-          inputs three days out and get your BytePlus key into Sloosh.</li>
-        <li><strong>Sprint 1:</strong> run the Teardown Protocol on your top ad (or a competitor's
-          on track B), then fill the creative brief.</li>
-        <li><strong>Building:</strong> live in the Prompt Chain and the creative swipe file.</li>
-        <li><strong>Last hour:</strong> Ship & after.</li>
-      </ol>
-    </div>`
+    title:`The playbook. <em>For going deeper.</em>`,
+    lede:`The deep reference behind the Orbit Buildathon. Read the <a href="../handbook/">builder handbook</a> first: rules, tracks, scoring and the day, in ten short chapters.`,
+    html:`<div class="prose"><h2>What's in here</h2><ul><li><strong>What good looks like</strong>: a winning build and the pattern under it</li><li><strong>The AI build</strong>: a seven-stage spec for a creative engine</li><li><strong>The pitch</strong>: how to pitch what you build</li><li><strong>The swipe files</strong>: creative, landing page and content patterns</li><li><strong>The prompt chain, teardown protocol and briefs</strong>: the tools you build with</li></ul><div class="callout"><p><strong>The short version lives in the <a href="../handbook/">builder handbook</a>.</strong> This playbook is the deep reference: swipe files, the prompt chain, the teardown protocol and the briefs.</p></div></div>`
   },
 
   {
     id:"the-day", nav:"The day", tick:"New",
-    title:`Walk in with a brand. <em>Walk out ready for 2027.</em>`,
-    lede:`<strong>Wednesday 16 December 2026 · Mumbai.</strong> One hands-on day. The brand rep makes three decisions, Sloosh and BytePlus do the work in between, and mentors unblock anyone who gets stuck. The whole day is drawn out in <a href="../flow/">How Orbit Works</a>.`,
-    html:`<div class="prose">
-      <h2>The objective</h2>
-      <p class="big">Build one AI creative workflow, from an empty canvas, that runs again on a
-        second product with no edits.</p>
-      <p>Not a tour of what AI can do. Every workspace starts empty on the morning, and Sloosh's
-        version history is the audit trail. By 16:30 the workflow exists, it has produced a batch
-        you could put behind spend, and it has survived a re-run.</p>
-
-      <h2>Who does what</h2>
-      <ul>
-        <li><strong>The brand rep decides.</strong> Three decisions: the track, the hooks that
-          survive, and what gets approved.</li>
-        <li><strong>AI works.</strong> Sloosh reads the brand and writes the angles; Seedream and
-          Seedance make the assets, paid from the brand's own credits.</li>
-        <li><strong>Mentors unblock.</strong> One AI creative expert for every 4 teams. Raise a
-          flag and one comes to your table; the target is under 10 minutes. Mentors point, you
-          click: the keyboard stays with the brand.</li>
-      </ul>
-
-      <h2>The flow</h2>
-      <div class="steps">
-        <div class="step"><div class="step-no">09:00</div><div>
-          <h4>Check-in and key check</h4>
-          <p>Sloosh workspace live, BytePlus key valid, brand kit loaded. Anyone without a green
-            tick gets a fixer at their table before the open.</p>
-          <p class="ask">You leave this with: a workspace that works.</p>
-        </div></div>
-        <div class="step"><div class="step-no">09:30</div><div>
-          <h4>Open</h4>
-          <p>DSG and Sloosh on why this room, then 15 minutes from BytePlus on what Seedream and
-            Seedance can do now.</p>
-        </div></div>
-        <div class="step"><div class="step-no">10:00</div><div>
-          <h4>Rung 1 · pick your track</h4>
-          <p>A, B or C. <strong>Not sure? Start with A</strong>: it works for every brand with ads
-            already running.</p>
-          <p class="ask">You leave this with: one track and one product.</p>
-        </div></div>
-        <div class="step"><div class="step-no">10:15</div><div>
-          <h4>Sprint 1 · ground up</h4>
-          <p>Sloosh reads your brand kit and reviews and writes 12 angles; you keep 4.
-            <strong>Rung 2:</strong> 20 hooks in, 3 survive. Every ad changes only the hook, so
-            when one wins you know why.</p>
-          <p class="ask">Checkpoint at 12:00: the workflow map and 3 hooks.</p>
-        </div></div>
-        <div class="step"><div class="step-no">12:30</div><div>
-          <h4>Lunch · the CXO track starts</h4>
-          <p>Founders go to the closed-door CXO track with top AI leaders and BytePlus leadership.
-            Operators keep building.</p>
-        </div></div>
-        <div class="step"><div class="step-no">13:30</div><div>
-          <h4>Sprint 2 · generate</h4>
-          <p>3 hooks × 4 sizes = 12 statics on Seedream, plus video on Seedance for track C.</p>
-          <p class="ask">Checkpoint at 15:30: the batch.</p>
-        </div></div>
-        <div class="step"><div class="step-no">15:30</div><div>
-          <h4>Rung 3 · approve, then run it again</h4>
-          <p>Approval stays locked until every product claim is true. Then run the whole workflow
-            on your second product, cold.</p>
-          <p class="ask">Checkpoint at 16:30: locked. Miss a stamp and a mentor sits with you.</p>
-        </div></div>
-        <div class="step"><div class="step-no">16:30</div><div>
-          <h4>Showcase</h4>
-          <p>Three minutes each, live, no slides. Judges pick a product and the team runs the
-            workflow on it in front of the room.</p>
-        </div></div>
-        <div class="step"><div class="step-no">17:30</div><div>
-          <h4>Awards, then drinks</h4>
-        </div></div>
-      </div>
-
-      <h2>What to bring</h2>
-      <p>Due <strong>three days before</strong>, so the day goes on building, not logins.</p>
-      <ul>
-        <li><strong>Your brand kit:</strong> logo, colours, fonts.</li>
-        <li><strong>Your top 3 ads</strong>, and one you can't explain.</li>
-        <li><strong>Your reviews:</strong> the export, or just the product pages. This is where
-          customer language comes from, and it is the single highest-leverage input.</li>
-        <li><strong>2 product links:</strong> one to build on, one for the re-run.</li>
-        <li><strong>Your BytePlus key</strong>, claimed and added to Sloosh the week before.
-          Mentors help with this before the day.</li>
-      </ul>
-
-      <div class="callout warn">
-        <p><strong>The failure mode to avoid.</strong> Teams spend the morning perfecting one ad
-          and run the second product for the first time at 16:25. <strong>Re-run early.</strong>
-          The 15:30 stamp exists so you find what breaks while there is still time to fix it.</p>
-      </div>
-    </div>`
+    title:`The day <em>lives in the handbook.</em>`,
+    lede:`Timings, teams, the CXO room and the Feed Test are in the <a href="../handbook/#welcome">builder handbook</a> and <a href="../flow/">How Orbit works</a>.`,
+    html:`<div class="prose"><div class="callout"><p><strong>The short version lives in the <a href="../handbook/">builder handbook</a>.</strong> This playbook is the deep reference: swipe files, the prompt chain, the teardown protocol and the briefs.</p></div></div>`
   },
 
   {
@@ -342,7 +193,7 @@ window.SECTIONS = [
         <div class="step"><div class="step-no">05</div><div>
           <h4>Produce the assets</h4>
           <p>Statics on Seedream, short videos on Seedance, product imagery into real-life
-            scenes, all inside Sloosh on the brand's own BytePlus credits. Everything lands in the ratios you'd actually run, with copy attached —
+            scenes, all inside Sloosh on the day's build credits. Everything lands in the ratios you'd actually run, with copy attached —
             <strong>ready for Ads Manager without a second tool.</strong></p>
           <p class="ask">The last mile is where these systems usually die. Budget real time for it.</p>
         </div></div>
@@ -364,7 +215,7 @@ window.SECTIONS = [
 
       <h2>Which model</h2>
       <p>At Orbit the images and video come from <strong>BytePlus</strong> (Seedream for statics,
-        Seedance for video), run inside Sloosh on each brand's own credits. The text chain in stages
+        Seedance for video), run inside Sloosh on the build credits we cover for the day. The text chain in stages
         01–03 is model-agnostic and works on either <strong>Claude or GPT</strong>: the prompts are
         written to be portable, and nothing in them depends on a provider-specific feature.</p>
       <p>The one thing that does matter: stages 02 and 03 hand the model long, constraint-heavy
@@ -462,7 +313,7 @@ window.SECTIONS = [
         <div class="case-top">
           <h3 class="case-nm">Build like the top 1%.</h3>
           <p class="case-one">Your brand problem. Our playbook. A working AI workflow, built by your
-            own team in one day on Sloosh, running on your own BytePlus credits into 2027.</p>
+            own team in one day on Sloosh, running into 2027.</p>
         </div>
         <div class="case-facts">
           <div class="fact"><div class="k">Input</div><div class="v">Your top ads + reviews</div></div>
@@ -478,8 +329,7 @@ window.SECTIONS = [
             against.</p>
 
           <h4>What a brand walks away with</h4>
-          <p>The workflow itself, the first approved batch, and BytePlus credits still in their
-            account so it keeps running. <strong>The day is the build; "Shipped in 30" is how it
+          <p>The engine itself and the first approved batch, still in their Sloosh workspace. <strong>The day is the build; "Shipped in 30" is how it
             becomes the first campaign of 2027.</strong></p>
 
           <h4>Who it's for</h4>
@@ -559,12 +409,12 @@ window.SECTIONS = [
   {
     id:"cards", nav:"The cards", tick:"New",
     title:`128 problems your brand <em>already has.</em>`,
-    lede:`The Sloosh × DSG deck, rewritten for 2027, with 36 cards tagged to Orbit tracks A, B and C. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
+    lede:`The Sloosh × DSG deck, rewritten for 2027, with 60 cards tagged to the three Orbit tracks. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
     html:`<div class="prose">
       <p><strong>Every card names a brand.</strong> All 128 are matched to one of the 70 live DSG
         portfolio companies — Active or Partially Exited, every one above ₹1 Cr. Brand and problem
         are both chosen to fit the build on the back, so the fix always suits the company named.</p>
-      <p>Pick the card that makes you wince. For Orbit, pick from the Track A, B or C filters: those builds fit one day on Sloosh. If two apply, take the
+      <p>Pick the card that makes you wince. For Orbit, pick from the track filters: those builds fit one day on Sloosh. If two apply, take the
         one whose metric you already report on, because you will be able to prove the change.</p>
       <div class="callout warn">
         <p><strong>These are conversation starters, not findings.</strong> Each problem is inferred
@@ -679,68 +529,14 @@ window.SECTIONS = [
   {
     id:"scoring", nav:"Scoring",
     title:`Published up front, <em>on purpose.</em>`,
-    lede:`Teams optimise for what gets measured, so the weights are visible from the start. One rubric for all three tracks, and it rewards a workflow that repeats over a single beautiful asset. That is the intended behaviour.`,
+    lede:`One outcome per track, proven on screen. Hit the base, then keep going: overflow is uncapped. The <a href="../handbook/#scoring">handbook</a> has the gates and power-ups.`,
     html:"__SCORING__"
   },
 
   {
     id:"ship", nav:"Ship & after",
-    title:`The demo is <em>a live re-run.</em>`,
-    lede:`Three minutes, no slides. The judges hand you a product and your workflow runs on it in front of the room. And what happens after the day matters more than the day: the last prize goes to whoever ships.`,
-    html:`<div class="prose">
-      <h2>What to submit</h2>
-      <p>Lock everything in Sloosh by <strong>16:30</strong>. Every track submits:</p>
-      <ul>
-        <li><strong>The workflow itself</strong>, as it sits in your Sloosh workspace.</li>
-        <li><strong>The batch</strong>, sized for the placements you'd actually run, each variant
-          labelled with the one thing it changes.</li>
-        <li><strong>Your angle in one sentence</strong>, with no product name in it.</li>
-        <li><strong>The re-run</strong> on your second product, untouched.</li>
-        <li><strong>Credits used</strong>, from Sloosh's log.</li>
-      </ul>
-      <p>Track B adds the competitor teardown you started from. Track C adds the review lines your
-        scripts were built from.</p>
-
-      <h2>The three-minute showcase</h2>
-      <ol>
-        <li><strong>0:00–0:20 · The one sentence.</strong> Your track and your angle. If a judge
-          can't repeat it back, nothing after this lands.</li>
-        <li><strong>0:20–2:00 · The live run.</strong> A judge picks a product and you run the
-          workflow on it. This is where the 30 points for "repeats" are won or lost.</li>
-        <li><strong>2:00–2:40 · The argument.</strong> Why this angle, which hooks survived, what
-          you killed and why.</li>
-        <li><strong>2:40–3:00 · What runs in January.</strong> The first 2027 campaign this
-          workflow will make.</li>
-      </ol>
-      <div class="callout warn">
-        <p><strong>Showcase failure modes, in order of frequency:</strong> showing the morning's
-          best ad instead of running the workflow · a re-run nobody tried before 16:30 · opening
-          with the brand story instead of the work · running long and getting cut before the live
-          run.</p>
-      </div>
-
-      <h2>Prizes</h2>
-      <div class="callout">
-        <p><strong>$1,500</strong> to the winner and <strong>$500</strong> to the runner-up, on
-          the day.</p>
-        <p><strong>$500 "Shipped in 30"</strong> for the best live campaign built on the workflow
-          by mid-January. Send the live ad and its numbers; this one is judged on results, not on
-          the showcase.</p>
-      </div>
-
-      <h2>After the day</h2>
-      <p>Your BytePlus credits stay in your account and the workflow stays in your Sloosh
-        workspace, so it keeps running. Mentors stay reachable for the 30 days of "Shipped in 30".
-        The aim is simple: the first campaign you launch in 2027 runs on what you built here.</p>
-
-      <h2>Post it while it's news</h2>
-      <p>The strongest thing you own at the end of the day is the credential: built at Orbit,
-        placed, shipped. That decays fast. The launch post below is the structure that worked, with
-        the specifics emptied out.</p>
-      <div class="blocks">__LAUNCHPOST__</div>
-      <p>Two notes on using it. The origin beat only works with real numbers (teams, tracks,
-        placement), so collect them on the day. And the P.S. crediting the event is not decoration:
-        it's what makes the post shareable by everyone else who was there.</p>
-    </div>`
+    title:`Submit and demo <em>live in the handbook.</em>`,
+    lede:`What to lock by 16:00, the three-minute showcase and the script prompt are in the <a href="../handbook/#submit">builder handbook</a>.`,
+    html:`<div class="prose"><div class="callout"><p><strong>The short version lives in the <a href="../handbook/">builder handbook</a>.</strong> This playbook is the deep reference: swipe files, the prompt chain, the teardown protocol and the briefs.</p></div></div>`
   }
 ];

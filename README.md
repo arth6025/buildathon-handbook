@@ -6,7 +6,7 @@
 
 Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 
-**Wednesday 16 December 2026** · Mumbai · One day · $2,500 on the line
+**Wednesday 16 December 2026** · Mumbai · 28 brands · $2,500 on the line
 
 [**See how it works →**](https://arth6025.github.io/buildathon-handbook/flow/) · [**Preview everything →**](https://arth6025.github.io/buildathon-handbook/preview/)
 
@@ -16,9 +16,8 @@ Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 
 ## Contents
 
-- [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [The objective](#the-objective)
-- [The flow of the day](#the-flow-of-the-day) · [The three tracks](#the-three-tracks) · [The mentors](#the-mentors) · [How it's judged](#how-its-judged)
-- [What to bring](#what-to-bring) · [What you leave with](#what-you-leave-with)
+- [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [Who's in the room](#whos-in-the-room-63-people)
+- [The three tracks](#the-three-tracks-pick-one-outcome-prove-it) · [The day](#the-day) · [Prizes](#prizes)
 - [The five surfaces](#the-five-surfaces) · [The playbook](#the-playbook) · [The 128 cards](#the-128-cards)
 - [What brands can build](#what-brands-can-build) · [Reference libraries](#reference-libraries)
 - [Repo structure](#repo-structure) · [Running it locally](#running-it-locally) · [Contributing](#contributing)
@@ -28,11 +27,9 @@ Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 
 ## What this is
 
-A one-day, invite-only creative buildathon for consumer brands doing **₹1Cr+ in revenue**. Each brand sends two people, the founder and whoever runs creative, and they build their own AI creative workflow from an empty canvas. AI creative experts work the floor as mentors and unblock them.
+One invite-only day where **28 consumer brands (₹1Cr+)** each build the AI creative engine they'll run all of 2027, from an empty canvas. AI experts sit with the teams that want one, agency owners mentor the floor, and founders get a closed-door CXO room.
 
-Everything a team needs is in this repo: the patterns, the prompt chain, the briefs, the judging rubric and 128 problem cards. It is deliberately **open and ungated**, and it takes pull requests.
-
-> **Not a talk. A build.** 2026 ran on agencies: a new brief, a new wait and a new invoice for every campaign. Orbit is where a brand team builds the engine it will run itself in 2027.
+> **Not a talk. A build.** 2026 ran on agencies. 2027 runs on you.
 
 ---
 
@@ -40,98 +37,66 @@ Everything a team needs is in this repo: the patterns, the prompt chain, the bri
 
 | | |
 |---|---|
-| **Sloosh** (by [ShopOS](https://shopos.ai/)) | The agentic creative canvas the teams build on, with DTC workflows for catalogue, ads and campaigns. |
-| **[DSG Consumer Partners](https://www.dsgcp.com/)** | *"Committed Partners to Insurgent Consumer Brands since 2012."* 100+ founders backed and 80+ insurgent brands. DSG brings the room. |
-| **BytePlus** | The models: Seedream for images and Seedance for video. Each brand gets credits from **US$1,000**, redeemed inside Sloosh with its own key. |
+| **Sloosh** (by [ShopOS](https://shopos.ai/)) | The creative canvas teams build on. Build credits for the day are covered. |
+| **[DSG Consumer Partners](https://www.dsgcp.com/)** | Brings the room: 100+ founders backed, 80+ insurgent brands. |
+| **BytePlus** | Partner. Seedream (images) and Seedance (video), and a seat in the CXO room. |
 
 ---
 
-## The objective
+## Who's in the room (≈63 people)
 
-**Get every brand AI-native for 2027: a creative workflow the team runs itself, built on the day and still running in January.**
-
-A workflow only counts if it runs again on a second product with no edits. Most of the scoring rests on that test.
-
----
-
-## The flow of the day
-
-The whole day is told as a 20-stage story deck: **[How Orbit works →](https://arth6025.github.io/buildathon-handbook/flow/)**
-
-| Time | Block | Teams leave the block with |
-|---|---|---|
-| 09:00 | Check-in and **key check**: Sloosh workspace live, BytePlus key valid, brand kit loaded | A green tick, or a fixer at their table |
-| 09:30 | Open (DSG + Sloosh), then 15 minutes from BytePlus on Seedream and Seedance | |
-| 10:00 | **Rung 1: pick your track.** Track A is the default | One track, one product |
-| 10:15 | **Sprint 1, ground up:** AI reads the brand → 12 angles → you keep 4 → **rung 2:** 20 hooks in, 3 survive | **Checkpoint at 12:00:** the workflow map |
-| 12:30 | Lunch. The **CXO track** starts (closed-door, founders go) while operators keep building | |
-| 13:30 | **Sprint 2, generate:** 3 hooks × 4 sizes = 12 statics, plus video | **Checkpoint at 15:30:** the batch |
-| 15:30 | **Rung 3: approve what ships**, then run the workflow cold on a second product | **Checkpoint at 16:30:** locked |
-| 16:30 | **Showcase:** 3 minutes each. Judges pick a product and the team runs the workflow live. No slides | |
-| 17:30 | Awards, then drinks | |
-
-### The colour code
-
-In the deck, **amber is the brand rep deciding** and **teal is AI working**. The brand rep makes three decisions (track, hooks, approval) and Sloosh does the work in between. The **owl is the mentor**, who steps in whenever a team is stuck.
-
----
-
-## The three tracks
-
-Simplified from the four tracks in the original Orbit plan. Landing Page Factory and Audience Intelligence are out: they aren't creative work, and they need a different set of mentors.
-
-| | Track | What the brand builds | Model |
+| Who | Team shape | Teams | People |
 |---|---|---|---|
-| **A** | **Creative Velocity** *(the default)* | Take apart your top 3 ads → 12+ new statics built from what made them work | Seedream |
-| **B** | **Competitor → Creative** | Take apart a competitor's best ad → your own version, with your proof | Seedream |
-| **C** | **Video Ads** | Reviews → scripts → short UGC-style videos | Seedance |
+| Brands already using AI | **Brand duo:** founder + operator | 18 | 36 |
+| Brands new to AI | **Assisted pair:** operator + paired AI expert | 10 | 20 |
+| Floor mentors | Agency owners, deep AI + creative, 1 for every 4 teams | 7 | 7 |
 
-Every track runs the same four steps: **input → brand context → generate → re-run.** It is only a workflow if the last step works.
-
----
-
-## The mentors
-
-- **One AI creative expert for every 4 teams.** The target is unblocking a team in under 10 minutes.
-- **Mentors point, the brand rep clicks.** The keyboard stays with the brand, which is how the skill stays inside the brand after the day.
-- **Three checkpoints** (12:00, 15:30, 16:30). A team that misses one gets a mentor at its table.
+Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-question AI-comfort check at registration.
 
 ---
 
-## How it's judged
+## The three tracks: pick one outcome, prove it
 
-| Criterion | Weight | How it's tested |
-|---|---|---|
-| **Repeats** | 30 | The judges' cold run in the showcase. A one-off asset scores zero here |
-| **On-brand** | 25 | Would the brand run it tomorrow? |
-| **Converts** | 20 | The hook, the angle, and the claim backed by proof |
-| **Credit-efficient** | 15 | BytePlus credits spent per usable asset |
-| **Ready to ship** | 10 | Sized and labelled, ready for Ads Manager |
+| Track | What teams build | Root parameter | Points |
+|---|---|---|---|
+| **01 Stop the Scroll** | Statics, carousels, hooks, UGC-style video, regional cuts | Thumb-stops in the Feed Test, 10× | 150 base, overflow uncapped |
+| **02 Make Them Buy** | Listings, quick-commerce tiles, rival counter-ads, lifecycle creative | Buy taps + blind head-to-head wins, 20× | 200 base, overflow uncapped |
+| **03 Your Own Creative Engine** | Replace the shoot, the catalogue or the rollout | Approved assets from a cold run on an unseen product, 5× | 150 base, overflow uncapped |
 
-**Disqualified:** false product claims, or work built before the day. Every workspace starts empty on the morning, and Sloosh's version history is the audit trail.
-
-**Prizes ($2,500):** $1,500 winner · $500 runner-up · **$500 "Shipped in 30"** for the best live campaign by mid-January.
+**Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
+**Power-ups (+10 each):** a regional-language version · a video cut · the 14:00 curveball cleared · finishing under the credit budget.
+**The Feed Test:** at 16:00 every entry goes into a mock feed on 100+ phones in the room, logging pauses and buy taps.
 
 ---
 
-## What to bring
+## The day
 
-Due **three days before**, so the day goes on building, not logins:
+| Time | What happens |
+|---|---|
+| 1 day out | Teams write their problem in one line, then a 10-minute mentor call. No platform access yet. |
+| 09:00 | Check-in, access check, kickoff. Tracks lock. |
+| 10:15 | Platform access opens. Build. |
+| 12:00 | Checkpoint: the map. Founders head to the **CXO room** over lunch. |
+| 14:00 | The curveball. |
+| 15:30 | Checkpoint: the batch. |
+| 16:00 | Lock. **The Feed Test.** |
+| 16:30 | Showcase: 3 minutes each, live, numbers on screen. Awards, drinks. |
 
-- **Your brand kit:** logo, colours, fonts.
-- **Your top 3 ads,** and one you can't explain.
-- **Your reviews:** the export, or just the product pages. This is where customer language comes from.
-- **2 product links:** one to build on, one for the re-run.
-- **Your BytePlus key,** claimed and added to Sloosh the week before. Mentors help with this before the day.
+The whole day as a story: **[How Orbit works →](https://arth6025.github.io/buildathon-handbook/flow/)**
+
+### The CXO room
+
+A closed-door table for founders and CXOs while their teams build. Leaders from platforms like Meta, Shopify and BytePlus, plus AI and consumer operators, open the playbook on how the world's best consumer brands use AI. Off the record, no slides, nothing off limits: budgets, building, hiring, shipping, what flopped.
+
+### Fair play
+
+Platform access opens at 10:15 on the day. Every workspace is logged from its first click. Pre-built workflows, prompts or assets, or work deployed from elsewhere, mean disqualification. Monitoring: **Baisakhi, Manish and engineering.**
 
 ---
 
-## What you leave with
+## Prizes
 
-- **A creative workflow** that runs on your own products, inside Sloosh.
-- **The first batch:** 12+ statics (and video on track C), approved and ready to ship.
-- **BytePlus credits** still in your account, so the workflow keeps running into 2027.
-- **Whatever you built.** It's yours either way.
+$1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live campaign by mid-January.
 
 ---
 
@@ -140,11 +105,11 @@ Due **three days before**, so the day goes on building, not logins:
 | | What it is | Link |
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
-| 🎞️ **How it works** | 20-stage story deck: how the Orbit day runs, from the brief to the showcase | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
-| 📖 **The handbook** | 10 short chapters: rules, scoring, setup, tracks, ideas, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
+| 🎞️ **How it works** | 22-stage story deck: the Orbit day, from the brief to the CXO room to the Feed Test | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
+| 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
-| 👀 **The cards** | 128 problem cards, 36 tagged to Orbit tracks A/B/C; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| ✅ **The checklist** | 5 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| 👀 **The cards** | 128 problem cards, 60 tagged to the three Orbit tracks; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
+| ✅ **The checklist** | 6 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
@@ -198,14 +163,14 @@ Seeds, not specs. Each fits one Orbit track, is small enough to build in a day, 
 
 | Idea | What it does | Track |
 |---|---|---|
-| **Ad engine from your winners** | One input: your top 3 ads. Finds what made them work and returns 12+ statics ready for Ads Manager. | A |
-| **Creative refresh loop** | Watches which ads are fatiguing, generates iterations of the winner rather than fresh concepts from zero. | A |
-| **Hook tester** | Twenty openings against one angle, each stress-tested as a skeptical media buyer. | A |
-| **Occasion switcher** | Re-stages one winning static for every moment in your 2027 calendar, with an argument that survives the discount being removed. | A |
-| **Rival rebuild** | Names the pattern and angle in a competitor's longest-running ad, then rebuilds the angle on your product with your own proof. | B |
-| **Category watch** | Pulls what rivals claim this month and returns the three claims nobody in the category is making, as ready-to-test statics. | B |
-| **Review-to-video pipeline** | Turns the verbatim language in your reviews into UGC-style scripts and Seedance videos. | C |
-| **Proof explainer** | Answers the one objection in your comments with a 15-second video and a 6-second cut. | C |
+| **Ad engine from your winners** | One input: your top 3 ads. Finds what made them work and returns 12+ statics ready for Ads Manager. | 01 |
+| **Creative refresh loop** | Watches which ads are fatiguing, generates iterations of the winner rather than fresh concepts from zero. | 01 |
+| **Hook tester** | Twenty openings against one angle, each stress-tested as a skeptical media buyer. | 01 |
+| **Occasion switcher** | Re-stages one winning static for every moment in your 2027 calendar, with an argument that survives the discount being removed. | 01 |
+| **Rival rebuild** | Names the pattern and angle in a competitor's longest-running ad, then rebuilds the angle on your product with your own proof. | 02 |
+| **Category watch** | Pulls what rivals claim this month and returns the three claims nobody in the category is making, as ready-to-test statics. | 02 |
+| **Review-to-video pipeline** | Turns the verbatim language in your reviews into UGC-style scripts and Seedance videos. | 01 |
+| **Proof explainer** | Answers the one objection in your comments with a 15-second video and a 6-second cut. | 01 |
 
 **The shape that wins is consistent:** narrowest possible input, output so complete it needs no second tool.
 
@@ -269,11 +234,12 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 
 | # | Action | Owner | Done means |
 |---|---|---|---|
-| 1 | Fill the 128 cards with the attendees' real problems | **Baisakhi × Urmit** | Inferred problems replaced with what each attending brand actually says, card by card |
+| 1 | Fill the idea library with real portfolio problems | **Baisakhi × Urmit** | Real problems sourced from the DSG portfolio (Urmit) and each attending brand, swapped in track by track |
 | 2 | Build at least 3 custom workflows per brand | **Baisakhi + workflow engineer** | Three working workflows per brand, pointed at their own catalogue |
 | 3 | Build the workflow for multiple landing pages | **Baisakhi + Prashant** | One page per angle, message-matched to its ad, live on a real Shopify store |
 | 4 | Confirm dates and the soft commit from brands | **Urmit** | 16 Dec locked, and a named soft commit from each brand |
 | 5 | Onboard BytePlus credit redemption via Sloosh | **Baisakhi** | Redemption path live so credits can be claimed on the day |
+| 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
 
 Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/playbook/#ai-build)) — Prashant + engineer.
 
@@ -287,9 +253,11 @@ Also open, from the AI build spec: the **creative engine** ([spec](https://arth6
 - [ ] **How many teams.** This sets the mentor count, at one mentor for every 4 teams
 - [ ] **The mentor roster:** named AI creative experts for the floor
 - [ ] **The venue**
-- [ ] **Bonus credits:** do the prep and "open workflow" bonuses come from BytePlus's pool?
+- [ ] **Build the Feed Test app:** a phone web app that shows a mock feed and logs pauses and buy taps
+- [ ] **Confirm CXO room speakers** (Meta, Shopify, BytePlus, AI and consumer operators)
+- [ ] **Build credits for the day:** how many per team, and who covers them
 - [ ] **Who audits "Shipped in 30"** results in January
-- [ ] **Lock the scoring weights** with DSG and BytePlus (the current set is a proposal)
+- [ ] **Lock the multipliers and base points** with DSG (the current set is a proposal)
 
 **Still from the earlier landing-page plan:** the landing page swipe file and action item 3 (the multi-page workflow). Orbit has no landing-page track, so decide whether item 3 stays.
 
