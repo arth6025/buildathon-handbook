@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assemble | Chapter 1 Mumbai — preview everything</title>
-<meta name="description" content="Every page of Assemble | Chapter 1 Mumbai in one preview: the pitch, the flow, the handbook, the 128 cards and the action checklist.">
+<title>Orbit Buildathon — preview everything</title>
+<meta name="description" content="Every page of the Orbit Buildathon in one preview: the pitch, the flow, the handbook, the 128 cards and the action checklist.">
 <link rel="stylesheet" href="../assets/sloosh.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👀</text></svg>">
 <style>
@@ -17,7 +17,7 @@
     border-bottom:3px solid #FFF8E6; display:flex; align-items:center;
     gap:clamp(12px,2.5vw,28px); flex-wrap:wrap; }
 
-  /* event lockup: Assemble, then the two hosts */
+  /* event lockup: Orbit, then the two hosts, then the partner */
   .lockup { display:flex; align-items:center; gap:16px; flex:0 0 auto; flex-wrap:wrap; }
   .event { display:flex; flex-direction:column; gap:3px; }
   .event .nm { font-size:25px; font-weight:800; letter-spacing:-0.045em;
@@ -35,6 +35,8 @@
   /* DSGCP lockup is 419×300 — needs more height than a wordmark to stay legible */
   .hosts .dsgcp { height:36px; width:auto; display:block; }
   .hosts .x { color:#5A5A54; font-size:13px; font-weight:700; }
+  .hosts .word { font-size:17px; font-weight:800; letter-spacing:-0.03em; color:#F2F2EE; }
+  .hosts .with { font-family:var(--sl-mono); font-size:9px; letter-spacing:.11em; text-transform:uppercase; color:#9A9A94; white-space:nowrap; }
 
   .tabs { display:flex; gap:7px; flex-wrap:wrap; }
   .tabs button { font-family:var(--sl-display); font-size:13.5px; font-weight:700;
@@ -81,24 +83,26 @@
 <header class="top">
   <div class="lockup">
     <div class="event">
-      <div class="nm">Assemble</div>
-      <div class="meta">Chapter 1 · Mumbai · 10 Oct</div>
+      <div class="nm">Orbit</div>
+      <div class="meta">Buildathon · Mumbai · 16 Dec</div>
     </div>
     <div class="hosts">
       <span class="lbl">By</span>
-      <a href="https://shopos.ai/" target="_blank" rel="noopener" aria-label="ShopOS">
-        <img class="shopos" src="../assets/logos/shopos-white.svg" alt="ShopOS">
+      <a href="https://shopos.ai/" target="_blank" rel="noopener" aria-label="Sloosh by ShopOS">
+        <span class="word">Sloosh</span>
       </a>
       <span class="x">×</span>
       <a href="https://www.dsgcp.com/" target="_blank" rel="noopener" aria-label="DSG Consumer Partners">
         <img class="dsgcp" src="../assets/logos/dsgcp-white.svg" alt="DSG Consumer Partners">
       </a>
+      <span class="with">in partnership with</span>
+      <span class="word">BytePlus</span>
     </div>
   </div>
 
   <div class="tabs" id="tabs" role="tablist">
     <button role="tab" aria-selected="true"  data-src="../"           data-label="The pitch">The pitch</button>
-    <button role="tab" aria-selected="false" data-src="../flow/"      data-label="The flow">The flow<span class="n">21</span></button>
+    <button role="tab" aria-selected="false" data-src="../flow/"      data-label="How it works">How it works<span class="n">20</span></button>
     <button role="tab" aria-selected="false" data-src="../handbook/"  data-label="The handbook">The handbook<span class="n">15</span></button>
     <button role="tab" aria-selected="false" data-src="../cards/"     data-label="The 128 cards">The 128 cards<span class="n">128</span></button>
     <button role="tab" aria-selected="false" data-src="../checklist/" data-label="The checklist">The checklist<span class="n">5</span></button>

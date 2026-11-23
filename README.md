@@ -1,14 +1,14 @@
 <div align="center">
 
-# Assemble | Chapter 1 — Mumbai
+# Orbit Buildathon — Mumbai
 
-**A hands-on workshop by [DSG Consumer Partners](https://www.dsgcp.com/) × [ShopOS](https://shopos.ai/)**
+**Sloosh × [DSG Consumer Partners](https://www.dsgcp.com/), in partnership with BytePlus**
 
-Build the two workflows that decide your festive season — ad creative at scale, and landing pages that convert — pointed at your own Shopify store.
+Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 
-**Friday 10 October 2026** · Mumbai · One day · Two workflows
+**Wednesday 16 December 2026** · Mumbai · One day · $2,500 on the line
 
-[**Preview everything →**](https://arth6025.github.io/buildathon-handbook/preview/)
+[**See how it works →**](https://arth6025.github.io/buildathon-handbook/flow/) · [**Preview everything →**](https://arth6025.github.io/buildathon-handbook/preview/)
 
 </div>
 
@@ -17,21 +17,22 @@ Build the two workflows that decide your festive season — ad creative at scale
 ## Contents
 
 - [What this is](#what-this-is) · [Who's behind it](#whos-behind-it) · [The objective](#the-objective)
-- [The flow of the day](#the-flow-of-the-day) · [The two workflows](#the-two-workflows) · [What to bring](#what-to-bring) · [What you leave with](#what-you-leave-with)
+- [The flow of the day](#the-flow-of-the-day) · [The three tracks](#the-three-tracks) · [The mentors](#the-mentors) · [How it's judged](#how-its-judged)
+- [What to bring](#what-to-bring) · [What you leave with](#what-you-leave-with)
 - [The five surfaces](#the-five-surfaces) · [The handbook](#the-handbook) · [The 128 cards](#the-128-cards)
 - [What brands can build](#what-brands-can-build) · [Reference libraries](#reference-libraries)
 - [Repo structure](#repo-structure) · [Running it locally](#running-it-locally) · [Contributing](#contributing)
-- [Assigned builds](#assigned-builds) · [Open items](#open-items) · [On sourcing](#on-sourcing)
+- [Action items](#action-items) · [Open items](#open-items) · [On sourcing](#on-sourcing)
 
 ---
 
 ## What this is
 
-Everything a team needs to walk into Assemble and leave with something that runs: the patterns, the prompt chain, the brief templates, the judging rubric, and 128 problem cards to pick from.
+A one-day, invite-only creative buildathon for consumer brands doing **₹1Cr+ in revenue**. Each brand sends two people, the founder and whoever runs creative, and they build their own AI creative workflow from an empty canvas. AI creative experts work the floor as mentors and unblock them.
 
-It is deliberately **open and ungated**. No form, no email capture, no "request access". The whole thing is in this repo and it takes pull requests.
+Everything a team needs is in this repo: the patterns, the prompt chain, the briefs, the judging rubric and 128 problem cards. It is deliberately **open and ungated**, and it takes pull requests.
 
-> **Not a demo. Not a deck.** By the end of the day a team should have assets that could run and a page that could take traffic. The festive window is the deadline that makes it real — whatever gets built has to be something a store could switch on in weeks, not quarters.
+> **Not a talk. A build.** 2026 ran on agencies: a new brief, a new wait and a new invoice for every campaign. Orbit is where a brand team builds the engine it will run itself in 2027.
 
 ---
 
@@ -39,66 +40,97 @@ It is deliberately **open and ungated**. No form, no email capture, no "request 
 
 | | |
 |---|---|
-| **[DSG Consumer Partners](https://www.dsgcp.com/)** | *"Committed Partners to Insurgent Consumer Brands since 2012."* Early-stage consumer investors across India and Southeast Asia — 100+ founders backed, 80+ insurgent brands built. They describe their role as rolling up sleeves: *partners, builders, enablers.* |
-| **[ShopOS](https://shopos.ai/)** | *"AI your brand & team won't dread using."* An AI toolkit purpose-built for Shopify, combining frontier AI with human experts who get the work done **and own the outcome**. |
-
-The workshop takes its name from ShopOS's own call to action — *Assemble a team.* Chapter 1 is Mumbai.
+| **Sloosh** (by [ShopOS](https://shopos.ai/)) | The agentic creative canvas the teams build on, with DTC workflows for catalogue, ads and campaigns. |
+| **[DSG Consumer Partners](https://www.dsgcp.com/)** | *"Committed Partners to Insurgent Consumer Brands since 2012."* 100+ founders backed and 80+ insurgent brands. DSG brings the room. |
+| **BytePlus** | The models: Seedream for images and Seedance for video. Each brand gets credits from **US$1,000**, redeemed inside Sloosh with its own key. |
 
 ---
 
 ## The objective
 
-**Get your brand festive-ready by building the two workflows that decide the season — creative supply, and the pages that creative lands on.**
+**Get every brand AI-native for 2027: a creative workflow the team runs itself, built on the day and still running in January.**
 
-Not a tour of what AI can do. By the end of the day the workflows exist, they're pointed at your catalogue, and they've produced real assets you could put behind spend. Everything runs on **ShopOS workflow**, so what gets built is built on the thing you'd keep using afterwards.
-
-The festive calendar is the deadline that keeps it honest: **if it can't be switched on in weeks, it doesn't count.**
+A workflow only counts if it runs again on a second product with no edits. Most of the scoring rests on that test.
 
 ---
 
 ## The flow of the day
 
-| | Stage | You leave it holding |
+The whole day is told as a 20-stage story deck: **[How Orbit works →](https://arth6025.github.io/buildathon-handbook/flow/)**
+
+| Time | Block | Teams leave the block with |
 |---|---|---|
-| **01** | **Frame** — the gap you're closing. Meta already picks the right ad for every impression; after the click everyone sees the same page. Pick the card that makes you wince. | One problem, named, and the metric it moves |
-| **02** | **Workflow 1 — creative at scale.** Research → angles → hooks → scripts → a labelled batch, run against your own reviews and catalogue. | A workflow that turns one product into a tested batch, and the first batch |
-| **03** | **Workflow 2 — landing pages that convert.** Message match → five-second answer → placed proof → friction stripped, built against the creative from stage 02. | A page workflow that produces one page per angle, and the first pages live |
-| **04** | **Join them.** Point the creative at the pages and check the hand-off. Message match is the seam, and it's where most funnels leak. | An ad and a page that say the same thing in the same words |
-| **05** | **Show the work.** Three minutes: the one sentence, the thing running live, the argument underneath, the next variable. | A demo that survives a cold start |
-| **06** | **After.** Credits, and a scoped FDE if you want the workflows in production for the sale. | Credits, and a next step |
+| 09:00 | Check-in and **key check**: Sloosh workspace live, BytePlus key valid, brand kit loaded | A green tick, or a fixer at their table |
+| 09:30 | Open (DSG + Sloosh), then 15 minutes from BytePlus on Seedream and Seedance | |
+| 10:00 | **Rung 1: pick your track.** Track A is the default | One track, one product |
+| 10:15 | **Sprint 1, ground up:** AI reads the brand → 12 angles → you keep 4 → **rung 2:** 20 hooks in, 3 survive | **Checkpoint at 12:00:** the workflow map |
+| 12:30 | Lunch. The **CXO track** starts (closed-door, founders go) while operators keep building | |
+| 13:30 | **Sprint 2, generate:** 3 hooks × 4 sizes = 12 statics, plus video | **Checkpoint at 15:30:** the batch |
+| 15:30 | **Rung 3: approve what ships**, then run the workflow cold on a second product | **Checkpoint at 16:30:** locked |
+| 16:30 | **Showcase:** 3 minutes each. Judges pick a product and the team runs the workflow live. No slides | |
+| 17:30 | Awards, then drinks | |
 
-### Why this order
+### The colour code
 
-They are one funnel, and the sequence isn't arbitrary. **The creative workflow comes first because it decides what promise gets made.** The page workflow comes second because a page can only be built — and judged — against the ad that feeds it. Build them the other way round and you get a page written for nobody in particular, which is the single most common failure in the swipe file.
+In the deck, **amber is the brand rep deciding** and **teal is AI working**. The brand rep makes three decisions (track, hooks, approval) and Sloosh does the work in between. The **owl is the mentor**, who steps in whenever a team is stuck.
 
 ---
 
-## The two workflows
+## The three tracks
 
-| | **01 — Creative, at scale** | **02 — Landing pages that convert** |
+Simplified from the four tracks in the original Orbit plan. Landing Page Factory and Audience Intelligence are out: they aren't creative work, and they need a different set of mentors.
+
+| | Track | What the brand builds | Model |
+|---|---|---|---|
+| **A** | **Creative Velocity** *(the default)* | Take apart your top 3 ads → 12+ new statics built from what made them work | Seedream |
+| **B** | **Competitor → Creative** | Take apart a competitor's best ad → your own version, with your proof | Seedream |
+| **C** | **Video Ads** | Reviews → scripts → short UGC-style videos | Seedance |
+
+Every track runs the same four steps: **input → brand context → generate → re-run.** It is only a workflow if the last step works.
+
+---
+
+## The mentors
+
+- **One AI creative expert for every 4 teams.** The target is unblocking a team in under 10 minutes.
+- **Mentors point, the brand rep clicks.** The keyboard stays with the brand, which is how the skill stays inside the brand after the day.
+- **Three checkpoints** (12:00, 15:30, 16:30). A team that misses one gets a mentor at its table.
+
+---
+
+## How it's judged
+
+| Criterion | Weight | How it's tested |
 |---|---|---|
-| **The job** | Ad creative that survives a feed, in volume, with attribution | The page that keeps the promise the ad made |
-| **The game** | The first 1.5 seconds, and whether there's a real argument underneath | Five seconds to answer what it is, who it's for, what to do |
-| **Judged on** | Hook strength · angle · platform nativeness · proof · iteration discipline | Five-second answer · message match · placed proof · friction · Shopify-ready |
-| **Not judged on** | Production value | Visual polish |
+| **Repeats** | 30 | The judges' cold run in the showcase. A one-off asset scores zero here |
+| **On-brand** | 25 | Would the brand run it tomorrow? |
+| **Converts** | 20 | The hook, the angle, and the claim backed by proof |
+| **Credit-efficient** | 15 | BytePlus credits spent per usable asset |
+| **Ready to ship** | 10 | Sized and labelled, ready for Ads Manager |
+
+**Disqualified:** false product claims, or work built before the day. Every workspace starts empty on the morning, and Sloosh's version history is the audit trail.
+
+**Prizes ($2,500):** $1,500 winner · $500 runner-up · **$500 "Shipped in 30"** for the best live campaign by mid-January.
 
 ---
 
 ## What to bring
 
-- **A real store.** Your Shopify URL and access to it — everything is built against your actual catalogue, not a sandbox.
-- **Your reviews.** The export, or just the product pages. This is where customer language comes from, and it's the highest-leverage input you have.
-- **One ad that worked**, and one you can't explain. Both are useful.
-- **Your festive calendar** — the dates you've already committed to.
+Due **three days before**, so the day goes on building, not logins:
 
-> **The failure mode to avoid.** Teams spend the first three hours choosing what to build and discover their angle at hour six. Everything needed to decide is in this handbook and it's readable beforehand. **Arrive with the card picked.**
+- **Your brand kit:** logo, colours, fonts.
+- **Your top 3 ads,** and one you can't explain.
+- **Your reviews:** the export, or just the product pages. This is where customer language comes from.
+- **2 product links:** one to build on, one for the re-run.
+- **Your BytePlus key,** claimed and added to Sloosh the week before. Mentors help with this before the day.
 
 ---
 
 ## What you leave with
 
-- **ShopOS credits** — the workflows don't switch off when the room empties.
-- **A call with the ShopOS team** to scope a **forward-deployed engineer** who takes them into production for the sale season.
+- **A creative workflow** that runs on your own products, inside Sloosh.
+- **The first batch:** 12+ statics (and video on track C), approved and ready to ship.
+- **BytePlus credits** still in your account, so the workflow keeps running into 2027.
 - **Whatever you built.** It's yours either way.
 
 ---
@@ -108,7 +140,7 @@ They are one funnel, and the sequence isn't arbitrary. **The creative workflow c
 | | What it is | Link |
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
-| 🎞️ **The flow** | 21-stage story deck: feed → ad → personalised page → proof | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
+| 🎞️ **How it works** | 20-stage story deck: how the Orbit day runs, from the brief to the showcase | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 15 sections, read in order | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 👀 **The cards** | 128 festive problem cards, flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
 | ✅ **The checklist** | 5 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
@@ -246,10 +278,21 @@ Also open, from the AI build spec: the **festive creative engine** ([spec](https
 
 ## Open items
 
-- [ ] **Agree the scoring weights** before the day (current set is a proposal, deliberately weighted toward argument over polish)
-- [ ] **Add the booking link** on the pitch page — currently a placeholder anchor
+**For Orbit, settle before invites go out:**
+
+- [ ] **How many teams.** This sets the mentor count, at one mentor for every 4 teams
+- [ ] **The mentor roster:** named AI creative experts for the floor
+- [ ] **The venue**
+- [ ] **Bonus credits:** do the prep and "open workflow" bonuses come from BytePlus's pool?
+- [ ] **Who audits "Shipped in 30"** results in January
+- [ ] **Lock the scoring weights** with DSG and BytePlus (the current set is a proposal)
+
+**Not yet updated for Orbit:** the pitch page, the handbook sections and the 128 cards still carry the earlier Assemble (10 Oct, festive) framing.
+
+**Carried over:**
+
+- [ ] **Add the booking link** on the pitch page (currently a placeholder anchor)
 - [ ] **Decide on the brand-named cards** staying in a public repo
-- [ ] Consider renaming this repo to `assemble` — the Pages URL would change with it
 
 ---
 
@@ -263,6 +306,6 @@ Use them to decide what to test first, not as facts to quote on stage. Meta publ
 
 ---
 
-Built for Assemble | Chapter 1 Mumbai · [DSG Consumer Partners](https://www.dsgcp.com/) × [ShopOS](https://shopos.ai/)
+Built for the Orbit Buildathon, Mumbai · Sloosh × [DSG Consumer Partners](https://www.dsgcp.com/), in partnership with BytePlus
 
 </div>
