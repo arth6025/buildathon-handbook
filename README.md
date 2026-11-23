@@ -61,9 +61,9 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 
 | Track | What teams build | Root parameter | Points |
 |---|---|---|---|
-| **01 Virality** | Statics, carousels, hooks, UGC-style video, regional cuts | Would a stranger stop (40) · the angle (30) · on-brand (30) | 100, scored by mentors |
-| **02 Revenue** | A personalised funnel (ad → landing page → email) on Sloosh; listings, rival counter-ads | One promise ad → page → email (40) · offer + proof (30) · on-brand (30) | 100, scored by mentors |
-| **03 Your AI Agency** | Replace the shoot, the catalogue or the rollout | Runs on a new product (40) · approved assets (30) · on-brand (30) | 100, scored by mentors |
+| **01 Virality** | Statics, carousels, hooks, UGC-style video, regional cuts | Outcome: a stranger stops scrolling | 40 + angle 30 + on-brand 30 |
+| **02 Revenue** | A personalised funnel (ad → landing page → email) on Sloosh; listings, rival counter-ads | Outcome: one promise, ad → page → email | 40 + angle 30 + on-brand 30 |
+| **03 Your AI Agency** | Replace the shoot, the catalogue or the rollout | Outcome: runs on a product it has never seen | 40 + angle 30 + on-brand 30 |
 
 **Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
 **Power-ups (+10 each):** a regional-language version · a video cut · the 14:00 curveball cleared · finishing under the credit budget.

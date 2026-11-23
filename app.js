@@ -109,11 +109,11 @@
     __LAUNCHPOST__: blockEl(LAUNCH_POST),
 
     __SCORING__: '<div class="prose">' +
-      [{ h:"The three tracks", rows:SCORING.orbit }].map(function (g) {
+      [{ h:"Every track, out of 100", rows:SCORING.orbit }].map(function (g) {
         return '<section class="stage">' +
           '<div class="stage-head"><h3>' + esc(g.h) + '</h3><span>overflow uncapped</span></div>' +
           '<div class="table-wrap"><table>' +
-          '<thead><tr><th>Track</th><th>Out of</th><th>What mentors score</th></tr></thead>' +
+          '<thead><tr><th>What mentors score</th><th>Points</th><th>What it means</th></tr></thead>' +
           '<tbody>' + g.rows.map(function (r) {
             return '<tr><td class="n">' + esc(r.n) + '</td><td class="w">' + esc(r.w) +
               '</td><td>' + esc(r.d) + '</td></tr>';

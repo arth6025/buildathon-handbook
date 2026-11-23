@@ -19,9 +19,9 @@ window.PROTOCOL = {
 
 window.SCORING = {
   orbit: [
-    { n:"01 Virality", w:"100", d:"Would a stranger stop scrolling (40), the angle underneath (30), on-brand (30). Scored by mentors." },
-    { n:"02 Revenue", w:"100", d:"One promise from ad to page to email (40), the offer and its proof (30), on-brand (30). Scored by mentors." },
-    { n:"03 Your AI Agency", w:"100", d:"Runs on a product it has never seen (40), approved assets out (30), on-brand (30). Scored by mentors." }
+    { n:"The outcome", w:"40", d:"What your track asks for. Virality: a stranger stops scrolling. Revenue: one promise from the ad to the landing page to the email. Your AI Agency: it runs on a product it has never seen." },
+    { n:"The angle", w:"30", d:"One sentence, no product name: a real reason to care. Polish with no angle scores low." },
+    { n:"On-brand", w:"30", d:"The brand would run it tomorrow, with no designer fixing it first." }
   ]
 };
 
