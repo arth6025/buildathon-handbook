@@ -146,7 +146,7 @@
   });
 
   var TOOLKIT = [
-    { go:"cards", nm:"The Cards", ds:"128 problem cards, every one named to a live DSG portfolio brand, with 60 tagged to the three Orbit tracks. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
+    { go:"cards", nm:"The Cards", ds:"128 problem cards, every one named to a live DSG portfolio brand, with 51 tagged to the three Orbit tracks and an engine recipe each. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
     { go:"swipe-creative", nm:"Creative Swipe File", ds:"Hooks, formats, script structures and the benchmarks that judge them. Everything before the click, filed by the job it does.", go_label: creativeCount + " patterns →" },
     { go:"swipe-lp", nm:"Landing Page Swipe File", ds:"Above the fold, proof placement, friction and the ask. Everything after the click, with the test numbers attached.", go_label: lpCount + " patterns →" },
     { go:"content-swipe", nm:"Content Swipe File", ds:"Where to go and look at the work \u2014 ad libraries, conversion research and toolkits, with what each one is actually good for.", go_label:"9 sources \u2192" },
