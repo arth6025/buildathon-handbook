@@ -6,7 +6,7 @@
 
 Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 
-**Wednesday 16 December 2026** · Mumbai · 28 brands · $2,500 on the line
+**Wednesday 16 December 2026** · Mumbai · 30+ brands · $2,500 on the line
 
 [**See how it works →**](https://arth6025.github.io/buildathon-handbook/flow/) · [**Preview everything →**](https://arth6025.github.io/buildathon-handbook/preview/)
 
@@ -27,7 +27,7 @@ Build like the top 1%. Your brand problem. Our playbook. A working AI workflow.
 
 ## What this is
 
-One invite-only day where **28 consumer brands (₹1Cr+)** each build the AI creative engine they'll run all of 2027, from an empty canvas. AI experts sit with the teams that want one, agency owners mentor the floor, and founders get a closed-door CXO room.
+One invite-only day where **30+ consumer brands (₹1Cr+)** each build the AI creative engine they'll run all of 2027, from an empty canvas. AI experts sit with the teams that want one, agency owners mentor the floor, and founders get a closed-door CXO room.
 
 > **Not a talk. A build.** 2026 ran on agencies. 2027 runs on you.
 
@@ -251,7 +251,7 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 10 | Onboard Saif, Kovra group, as an AI expert | **Arvind** | Confirmed and briefed |
 | 10a | Bring in 7 floor mentors | **Arvind, Urmit** | Agency owners, 1 for every 4 teams; briefed on tracks, scoring and the day-before calls |
 | 10b | Bring in 10 paired AI experts | **Baisakhi** | One per assisted team; briefed on fair play: guide, don't build |
-| 11 | Invites out to 28 brands | **Urmit + DSGCP** | Personal invites with the handbook link and sign-up form |
+| 11 | Invites out to 30+ brands | **Urmit + DSGCP** | Personal invites with the handbook link and sign-up form |
 | 12 | Marketing and distribution plan | **Urmit + DSGCP** | Before: poster, LinkedIn, portfolio channels. After: shipped work, quotes, Feed Test numbers |
 | 13 | Venue locked | **Urmit** | ~63 at build tables, a closed CXO room, stage and screen, wifi for 60+ laptops |
 | 14 | F&B booked | **Tushna, Urmit, Baisakhi** | Breakfast, floor lunch, CXO room serve, evening drinks |
