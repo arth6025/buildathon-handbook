@@ -275,14 +275,14 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s5" data-ch="1" data-chstart="1" data-chname="the path" aria-roledescription="slide" aria-label="5 of 19">
     <p class="eyebrow"><b>the path</b> · 5 / 19</p>
     <h2 class="head rough-text"><span class="a">four roles.</span> <span class="b">one room.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="four groups of creatures: a brand team of founder and operator, an AI builder, an owl mentor who is an AI and subject expert, and a panel of judges behind a table"></svg></div>
-    <div class="capwrap"><p class="cap">brand teams build. AI builders sit with the teams that want one. mentors, AI and subject experts, guide a pod of <b class="hw">4</b> teams. the panel judges the top 5.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="four groups of creatures: a brand team of founder and operator, an AI builder for every team, an owl mentor who is an AI and subject expert, and a panel of judges behind a table"></svg></div>
+    <div class="capwrap"><p class="cap">brand teams build, each with an AI builder at the table. mentors, AI and subject experts, guide a pod of <b class="hw">4</b> teams. the panel judges the top 5.</p></div>
   </section>
   <section class="slide" id="s6" data-ch="1" aria-roledescription="slide" aria-label="6 of 19">
     <p class="eyebrow"><b>the path</b> · 6 / 19</p>
     <h2 class="head rough-text"><span class="a">how teams form:</span> <span class="b">2 or 3, four to a pod.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="three team shapes, a duo of founder and operator, a pair of operator and AI builder, and a trio of all three, flowing into a pod of four teams with one mentor"></svg></div>
-    <div class="capwrap"><p class="cap">every team is one brand: founder, operator, or both. new to AI? an AI builder joins. never more than <b class="hw">3</b>. four teams on the same track share one mentor.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="two team shapes, founder or operator with an AI builder, and founder plus operator with an AI builder, flowing into a pod of four teams with one mentor"></svg></div>
+    <div class="capwrap"><p class="cap">every team is one brand plus an AI builder: <b class="hw">2</b> people, or <b class="hw">3</b> if the founder builds too. four teams on the same track share one mentor.</p></div>
   </section>
   <section class="slide" id="s7" data-ch="1" aria-roledescription="slide" aria-label="7 of 19">
     <p class="eyebrow"><b>the path</b> · 7 / 19</p>
@@ -965,7 +965,7 @@ body{overflow:hidden;padding-inline:0}
       S.add(0,'draw',col(165,'brand team','founder or operator','var(--accent)'),{delay:250});
       S.add(0,'draw',p=>T(p,165,250,'they build',18,'var(--accent)',{rot:-4}),{delay:400});
       S.crit(0,'blob',390,360,{body:'var(--accent-2)',acc:'antenna',s:1.1,delay:500});
-      S.add(0,'draw',col(390,'AI builder','an expert, if you want one','var(--accent-2)'),{delay:650});
+      S.add(0,'draw',col(390,'AI builder','one per team','var(--accent-2)'),{delay:650});
       S.add(0,'draw',p=>T(p,390,250,'sits at your table',18,'var(--accent-2)',{rot:3}),{delay:800});
       S.crit(1,'owl',620,355,{body:'var(--indigo)',acc:'glasses',s:1.1});
       S.add(1,'draw',col(620,'mentor','AI + subject expert','var(--indigo)'),{delay:200});
@@ -977,16 +977,16 @@ body{overflow:hidden;padding-inline:0}
     },
     // 6 · how teams form
     S => {
-      const R=[['duo','founder + operator',[['var(--accent)','crown'],['var(--accent)','bow']]],
-               ['assisted pair','operator + AI builder',[['var(--accent)','bow'],['var(--accent-2)','antenna']]],
-               ['trio','founder + operator + AI builder',[['var(--accent)','crown'],['var(--accent)','bow'],['var(--accent-2)','antenna']]]];
+      const R=[['team of 2','founder or operator + AI builder',[['var(--accent)','bow'],['var(--accent-2)','antenna']]],
+               ['team of 3','founder + operator + AI builder',[['var(--accent)','crown'],['var(--accent)','bow'],['var(--accent-2)','antenna']]]];
       R.forEach(([n,d,m],r)=>{
-        const y=190+r*105;
-        m.forEach(([c,a],k)=>S.crit(r,'blob',90+k*55,y,{body:c,acc:a,s:.75,delay:k*100}));
-        S.add(r,'draw',p=>{T(p,270,y-14,n,22,'var(--accent)',{anchor:'start'});T(p,270,y+12,d,16,'var(--line-soft)',{anchor:'start'});},{delay:250});
+        const y=220+r*130;
+        m.forEach(([c,a],k)=>S.crit(r,'blob',90+k*55,y,{body:c,acc:a,s:.8,delay:k*100}));
+        S.add(r,'draw',p=>{T(p,270,y-14,n,24,'var(--accent)',{anchor:'start'});T(p,270,y+14,d,16,'var(--line-soft)',{anchor:'start'});},{delay:250});
       });
+      S.text(1,270,430,'never more than 3',{size:18,color:'var(--accent)',rot:-2,anchor:'start'},{delay:400});
       S.add(2,'draw',p=>{arrow(p,540,290,615,290,'var(--line-soft)');p.rect(630,150,320,270,{stroke:'var(--indigo)',fill:'none'});T(p,790,450,'a pod: 4 teams + 1 mentor, one track',18,'var(--indigo)');},{delay:400});
-      [[710,290],[870,290],[710,380],[870,380]].forEach(([x,y],k)=>{S.crit(2,'blob',x-20,y,{body:'var(--accent)',s:.5,delay:500+k*80});S.crit(2,'blob',x+20,y,{body:k%2?'var(--accent-2)':'var(--accent)',s:.5,delay:540+k*80});});
+      [[710,290],[870,290],[710,380],[870,380]].forEach(([x,y],k)=>{S.crit(2,'blob',x-20,y,{body:'var(--accent)',s:.5,delay:500+k*80});S.crit(2,'blob',x+20,y,{body:'var(--accent-2)',s:.5,delay:540+k*80});});
       S.crit(2,'owl',790,225,{body:'var(--indigo)',acc:'glasses',s:.85,delay:800});
     },
     // 7 · rung 1: pick your track

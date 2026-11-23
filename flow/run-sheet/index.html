@@ -120,6 +120,8 @@
   .file em { font:700 11px var(--sl-mono); font-style:normal; letter-spacing:.08em; text-transform:uppercase; padding:4px 9px; border-radius:999px; border:2px solid var(--line); white-space:nowrap; }
   .file.int em { background:#d9453a; border-color:#d9453a; color:#fff; }
   @media (max-width:520px) { .file { grid-template-columns:26px 1fr; } .file em { grid-column:2; justify-self:start; } }
+  .muted { color:var(--mute); font-weight:500; }
+  tr.pick td { background:color-mix(in oklab, var(--acc) 30%, var(--card)); }
   .fwd { white-space:pre-wrap; background:var(--card); border:2px solid var(--line); border-radius:14px; padding:16px 18px; font:14px/1.55 var(--sl-mono); margin:0; }
   .btn { display:inline-flex; align-items:center; font:800 15px var(--sl-display); background:var(--card); color:var(--fg); border:2px solid var(--line); border-radius:999px; padding:10px 18px; cursor:pointer; margin-top:10px; }
 </style>
@@ -140,8 +142,8 @@
     <div class="grid">
       <div class="card hot"><div class="big">28</div><p>brands</p></div>
       <div class="card"><div class="big">3</div><p>tracks: Virality, Revenue, Your AI Agency · 9 recipes</p></div>
-      <div class="card"><div class="big">7 + 10</div><p>floor mentors + paired AI experts</p></div>
-      <div class="card"><div class="big">≤ 67</div><p>people on the floor</p></div>
+      <div class="card"><div class="big">30 + 8</div><p>AI experts (one per team) + mentors (1:4)</p></div>
+      <div class="card"><div class="big">60–72</div><p>people on the floor</p></div>
     </div>
   </section>
 
@@ -208,25 +210,37 @@ Invite only. Want a seat? {sign-up link}</pre>
   </section>
 
   <section class="sec">
-    <p class="kicker">01 / Teams</p>
-    <h2>Teams of 2 or 3. Never more.</h2>
+    <p class="kicker">01 / Teams · internal note</p>
+    <h2>Every team: brand people + one AI expert.</h2>
+    <p class="note"><b>Internal note.</b> Team sizing and headcount for planning only. Brands see the simple version in the handbook and the flow.</p>
+    <div class="two">
+      <div class="card"><h3>Team of 2 <span class="muted">· the default</span></h3><p>Founder <i>or</i> operator + an AI expert.</p></div>
+      <div class="card"><h3>Team of 3</h3><p>Founder + operator + an AI expert. When the founder wants to build too.</p></div>
+    </div>
+    <ul class="tick" style="margin-top:14px">
+      <li>Never more than 3 in a team.</li>
+      <li>One AI expert per team, matched at sign-up by category and AI comfort.</li>
+      <li>One mentor for every 4 teams, on the same track.</li>
+    </ul>
+
+    <h2>How many fit in 60–72 people</h2>
+    <p>People on the floor = brand people + AI experts + mentors. The panel and staff aren't counted.</p>
     <div class="tablewrap"><table>
-      <thead><tr><th>Team shape</th><th>Who</th><th>For</th><th>Teams</th><th>People</th></tr></thead>
+      <thead><tr><th>Room</th><th>Teams of 2</th><th>Teams of 3</th><th>Brands</th><th>AI experts</th><th>Mentors</th><th>People</th></tr></thead>
       <tbody>
-        <tr><td><b>Brand duo</b></td><td>Founder + operator</td><td>Brands already using AI</td><td class="w">18</td><td class="w">36</td></tr>
-        <tr><td><b>Assisted pair</b></td><td>Operator + paired AI expert</td><td>New to AI, founder not attending</td><td class="w">6</td><td class="w">12</td></tr>
-        <tr><td><b>Assisted trio</b></td><td>Founder + operator + paired AI expert</td><td>New to AI, founder attending</td><td class="w">4</td><td class="w">12</td></tr>
-        <tr><td><b>Floor mentors</b></td><td>Agency owners, AI + creative</td><td>One for every 4 teams</td><td class="w">7</td><td class="w">7</td></tr>
-        <tr><td colspan="3"><b>Total</b></td><td class="w">28 brands</td><td class="w">67</td></tr>
+        <tr><td><b>60</b></td><td class="w">24</td><td class="w">2</td><td class="w">26</td><td class="w">26</td><td class="w">7</td><td class="w">61</td></tr>
+        <tr><td><b>66</b></td><td class="w">26</td><td class="w">2</td><td class="w">28</td><td class="w">28</td><td class="w">7</td><td class="w">65</td></tr>
+        <tr class="pick"><td><b>72 · the plan</b></td><td class="w">26</td><td class="w">4</td><td class="w">30</td><td class="w">30</td><td class="w">8</td><td class="w">72</td></tr>
+        <tr><td><b>72 · max brands</b></td><td class="w">32</td><td class="w">0</td><td class="w">32</td><td class="w">32</td><td class="w">8</td><td class="w">72</td></tr>
       </tbody>
     </table></div>
-    <p class="note"><b>The trio cap is the room cap.</b> Every assisted pair that becomes a trio adds one person. Hold trios at 4 to stay under ~67.</p>
+    <p class="note"><b>The plan: 30 brands, 30 AI experts, 8 mentors, 72 people.</b> Below 68 people we can't seat 30 brands, so the public line drops from "30+ brands" to "25+ brands". AI experts always equal the number of teams: recruiting ~30 of them is the biggest dependency.</p>
 
     <h2>How a team forms</h2>
     <div class="rows">
-      <div class="row"><div class="k">Invite</div><div class="v"><b>Urmit + DSG send personal invites</b><span>To portfolio founders doing ₹1Cr+, with the handbook link and the sign-up form.</span></div></div>
-      <div class="row"><div class="k">Sign-up</div><div class="v"><b>Two names, one track, a 3-question AI check</b><span>Have you made an ad with AI? Do you use Claude or ChatGPT weekly? Who runs creative today? Low scores get an AI expert.</span></div></div>
-      <div class="row"><div class="k">T-5</div><div class="v"><b>Shape assigned</b><span>Duo, assisted pair or assisted trio. Paired AI expert named and introduced on email.</span></div></div>
+      <div class="row"><div class="k">Invite</div><div class="v"><b>DSG forwards the note</b><span>To portfolio founders doing ₹1Cr+ (see "The note DSG forwards").</span></div></div>
+      <div class="row"><div class="k">Sign-up</div><div class="v"><b>One or two names, one track, 3 questions</b><span>Category, how they use AI today, who runs creative. Used to match the AI expert.</span></div></div>
+      <div class="row"><div class="k">T-5</div><div class="v"><b>AI expert matched and introduced</b><span>By email, so they meet before the day.</span></div></div>
       <div class="row"><div class="k">T-1</div><div class="v"><b>Idea locked with the mentor</b><span>A recipe from the idea library, or a custom idea under the track. 10-minute call.</span></div></div>
     </div>
   </section>
@@ -236,10 +250,10 @@ Invite only. Want a seat? {sign-up link}</pre>
     <h2>Matched by track and recipe.</h2>
     <p>Mentors run <b>pods of 4 teams on the same track</b>, grouped by recipe where possible, so one person sees four versions of the same engine and can unblock fast. Pod sizes follow sign-ups; a likely split is 2–3 pods on Virality, 2 on Revenue and 2 on Your AI Agency.</p>
     <div class="two">
-      <div class="card"><h3>Floor mentor (7)</h3>
-        <ul class="tick"><li>Owns one pod of 4 teams all day</li><li>Runs the T-1 call with each of them</li><li>Stamps every check-in</li><li>Checks the gates: on-brand, no false claims</li><li>Points; never takes the keyboard</li></ul></div>
-      <div class="card"><h3>Paired AI expert (10)</h3>
-        <ul class="tick"><li>Sits with one assisted team all day</li><li>Sets up Claude + the Sloosh MCP and BYOK with them</li><li>Teaches the recipe; the brand drives</li><li>Flags fair-play doubts to the mentor</li></ul></div>
+      <div class="card"><h3>Mentor (1 for every 4 teams)</h3>
+        <ul class="tick"><li>Owns one pod of 4 teams on one track</li><li>Runs the T-1 call with each of them</li><li>Stamps every check-in</li><li>Checks the gates: on-brand, no false claims</li><li>Points; never takes the keyboard</li></ul></div>
+      <div class="card"><h3>AI expert (one per team)</h3>
+        <ul class="tick"><li>Sits with one team all day</li><li>Sets up Claude + the Sloosh MCP and BYOK with them</li><li>Teaches the recipe; the brand drives</li><li>Flags fair-play doubts to the mentor</li></ul></div>
     </div>
     <p class="note"><b>Experts in the CXO room</b> (BytePlus, Shopify or Meta, Saif from Kovra group) also sit on the final panel.</p>
   </section>
@@ -312,7 +326,7 @@ Invite only. Want a seat? {sign-up link}</pre>
       <div class="row"><div class="k">Arvind</div><div class="v"><span>Room lead, CXO room host, the panel.</span></div></div>
       <div class="row"><div class="k">Arvind + Sai</div><div class="v"><span>The full dry run before invites go out.</span></div></div>
       <div class="row"><div class="k">Urmit + DSG</div><div class="v"><span>Brands, invites, the opening, the venue.</span></div></div>
-      <div class="row"><div class="k">Baisakhi</div><div class="v"><span>Sloosh MCP and BYOK for every team, the paired AI experts.</span></div></div>
+      <div class="row"><div class="k">Baisakhi</div><div class="v"><span>Sloosh MCP and BYOK for every team, the ~30 AI experts.</span></div></div>
       <div class="row"><div class="k">Manish + eng</div><div class="v"><span>Fair-play logs, the Feed Test app, the submission form.</span></div></div>
       <div class="row"><div class="k">Tushna</div><div class="v"><span>F&amp;B, photo and video, signage.</span></div></div>
     </div>
@@ -327,7 +341,7 @@ Invite only. Want a seat? {sign-up link}</pre>
       <li>Landing-page and email HTML workflows: reachable through the MCP on the day?</li>
       <li>BYOK switched on for all 28 workspaces, and a small credit float for the BYOK fee.</li>
       <li>MCP re-auth loops seen in Claude Code (Oct): fixed before the day?</li>
-      <li>The panel's names, and the trio count.</li>
+      <li>The panel's names, and recruiting ~30 AI experts.</li>
     </ul>
   </section>
 </main>
