@@ -109,8 +109,7 @@
     __LAUNCHPOST__: blockEl(LAUNCH_POST),
 
     __SCORING__: '<div class="prose">' +
-      [{ h:"Track 01 — Creatives", rows:SCORING.creative },
-       { h:"Track 02 — Landing Pages", rows:SCORING.lp }].map(function (g) {
+      [{ h:"Every track — A, B and C", rows:SCORING.orbit }].map(function (g) {
         return '<section class="stage">' +
           '<div class="stage-head"><h3>' + esc(g.h) + '</h3><span>100 points</span></div>' +
           '<div class="table-wrap"><table>' +
@@ -121,9 +120,9 @@
           }).join("") + '</tbody></table></div></section>';
       }).join("") +
       '<h2>Tracking submissions</h2>' +
-      '<p>One row per submission. Columns: team · track · angle in one sentence · hook pattern or ' +
-      'hero pattern · the single variable changed from the previous version · each criterion ' +
-      'scored · total · judge.</p>' +
+      '<p>One row per submission. Columns: team · track · angle in one sentence · hook pattern · ' +
+      'the single variable each variant changes · credits used · each criterion scored · total · judge.</p>' +
+      '<div class="callout"><p><strong>Disqualified:</strong> false product claims, or work built before the day.</p></div>' +
       '<p>The angle and variable columns are the ones worth keeping after the event — they\'re ' +
       'what turns a day of building into a reusable library.</p>' +
       '<div class="callout warn"><p><strong>Weights are a proposal, not a decision.</strong> ' +

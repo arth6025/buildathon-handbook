@@ -287,11 +287,11 @@ Also open, from the AI build spec: the **festive creative engine** ([spec](https
 - [ ] **Who audits "Shipped in 30"** results in January
 - [ ] **Lock the scoring weights** with DSG and BytePlus (the current set is a proposal)
 
-**Not yet updated for Orbit:** the pitch page, the handbook sections and the 128 cards still carry the earlier Assemble (10 Oct, festive) framing.
+**Not yet updated for Orbit:** the 128 cards and three handbook sections (What good looks like, The AI build, The pitch) still carry the earlier Assemble festive and landing-page framing.
 
 **Carried over:**
 
-- [ ] **Add the booking link** on the pitch page (currently a placeholder anchor)
+- [ ] **Add the invite link** on the pitch page (currently a placeholder anchor)
 - [ ] **Decide on the brand-named cards** staying in a public repo
 
 ---
