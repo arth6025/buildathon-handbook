@@ -400,8 +400,7 @@ window.SECTIONS = [
     title:`Everything we use, <em>in one place.</em>`,
     lede:`The index. Each item is a section of this handbook — patterns to apply, prompts to run, protocols to follow, templates to fill. <strong>Nothing here is behind a form.</strong>`,
     html:`<div class="prose">
-      <p>These are working documents rather than lead magnets, and they're written for two tracks
-        rather than one. Everything is in the repo, and everything takes pull requests.</p>
+      <p>These are working documents rather than lead magnets, and they work for all three tracks: Virality, Revenue and Your AI Agency. Everything is in the repo, and everything takes pull requests.</p>
       <div class="index-list" id="toolkit-index"></div>
     </div>`
   },
