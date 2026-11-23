@@ -38,7 +38,7 @@ One invite-only day where **28 consumer brands (₹1Cr+)** each build the AI cre
 | | |
 |---|---|
 | **Sloosh** (by [ShopOS](https://shopos.ai/)) | The creative canvas teams build on. |
-| **[DSG Consumer Partners](https://www.dsgcp.com/)** | Brings the room: 100+ founders backed, 80+ insurgent brands. Hari opens the day. |
+| **[DSG Consumer Partners](https://www.dsgcp.com/)** | Brings the room: 100+ founders backed, 80+ insurgent brands. |
 | **BytePlus** | Partner. Gives the build credits for the day, the models (Seedream for images, Seedance for video) and a speaker in the CXO room. |
 
 ---
@@ -75,7 +75,7 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 |---|---|
 | 1 day out | Teams write their problem in one line, then a 10-minute mentor call. No platform access yet. |
 | 09:00 | Check-in and access check. |
-| 09:30 | **Opening talk: Hari, DSG Consumer Partners.** Tracks lock. |
+| 09:30 | **Opening** (Hari from DSG, tentative). Tracks lock. |
 | 10:15 | Platform access opens. Build. |
 | 12:00 | Checkpoint: the map. Founders head to the **CXO room** over lunch. |
 | 14:00 | The curveball. |
@@ -241,7 +241,7 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 4 | Confirm dates and the soft commit from brands | **Urmit** | 16 Dec locked, and a named soft commit from each brand |
 | 5 | BytePlus build credits loaded for every team | **Baisakhi** | Amount per team agreed, loaded into each workspace before 10:15 |
 | 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
-| 7 | Hari, DSGCP: the opening talk | **Urmit** | 09:30 slot confirmed, name on the invite |
+| 7 | Hari, DSGCP: opening talk (tentative) | **Urmit** | Ask Hari; once he confirms, add him to the invite and handbook |
 | 8 | Onboard a BytePlus (ByteDance) director or head | **Arvind** | Global consumer-brand AI view for the CXO room; confirmed and briefed |
 | 9 | Onboard a consumer enabler from Shopify or Meta | **Arvind** | AI as the lever to scale, with BFCM insights; confirmed and briefed |
 | 10 | Onboard Saif, Kovra group, as an AI expert | **Arvind** | Confirmed and briefed |
