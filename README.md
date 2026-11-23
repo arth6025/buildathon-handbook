@@ -37,9 +37,9 @@ One invite-only day where **28 consumer brands (₹1Cr+)** each build the AI cre
 
 | | |
 |---|---|
-| **Sloosh** (by [ShopOS](https://shopos.ai/)) | The creative canvas teams build on. Build credits for the day are covered. |
-| **[DSG Consumer Partners](https://www.dsgcp.com/)** | Brings the room: 100+ founders backed, 80+ insurgent brands. |
-| **BytePlus** | Partner. Seedream (images) and Seedance (video), and a seat in the CXO room. |
+| **Sloosh** (by [ShopOS](https://shopos.ai/)) | The creative canvas teams build on. |
+| **[DSG Consumer Partners](https://www.dsgcp.com/)** | Brings the room: 100+ founders backed, 80+ insurgent brands. Hari opens the day. |
+| **BytePlus** | Partner. Gives the build credits for the day, the models (Seedream for images, Seedance for video) and a speaker in the CXO room. |
 
 ---
 
@@ -74,7 +74,8 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 | Time | What happens |
 |---|---|
 | 1 day out | Teams write their problem in one line, then a 10-minute mentor call. No platform access yet. |
-| 09:00 | Check-in, access check, kickoff. Tracks lock. |
+| 09:00 | Check-in and access check. |
+| 09:30 | **Opening talk: Hari, DSG Consumer Partners.** Tracks lock. |
 | 10:15 | Platform access opens. Build. |
 | 12:00 | Checkpoint: the map. Founders head to the **CXO room** over lunch. |
 | 14:00 | The curveball. |
@@ -109,7 +110,7 @@ $1,500 champion · $500 runner-up · **$500 "Shipped in 30"** for the best live 
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards, 60 tagged to the three Orbit tracks; flip for the build | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
-| ✅ **The checklist** | 6 action items with owners, ticks that persist | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
+| ✅ **The checklist** | 15 action items in four groups (speakers, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
 ---
@@ -238,8 +239,17 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 2 | Build at least 3 custom workflows per brand | **Baisakhi + workflow engineer** | Three working workflows per brand, pointed at their own catalogue |
 | 3 | Build the workflow for multiple landing pages | **Baisakhi + Prashant** | One page per angle, message-matched to its ad, live on a real Shopify store |
 | 4 | Confirm dates and the soft commit from brands | **Urmit** | 16 Dec locked, and a named soft commit from each brand |
-| 5 | Onboard BytePlus credit redemption via Sloosh | **Baisakhi** | Redemption path live so credits can be claimed on the day |
+| 5 | BytePlus build credits loaded for every team | **Baisakhi** | Amount per team agreed, loaded into each workspace before 10:15 |
 | 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
+| 7 | Hari, DSGCP: the opening talk | **Urmit** | 09:30 slot confirmed, name on the invite |
+| 8 | BytePlus (ByteDance): a top director or head for the CXO room | **Arvind** | Global consumer-brand AI playbook; name, slot, topic confirmed |
+| 9 | A consumer enabler from Shopify or Meta | **Arvind** | AI as the lever to scale, with BFCM insights; confirmed |
+| 10 | Saif, Kovra group: how AI deployment works | **Arvind** | Confirmed and briefed on the room |
+| 11 | Invites out to 28 brands | **Urmit + DSGCP** | Personal invites with the handbook link and sign-up form |
+| 12 | Marketing and distribution plan | **Urmit + DSGCP** | Before: poster, LinkedIn, portfolio channels. After: shipped work, quotes, Feed Test numbers |
+| 13 | Venue locked | **Urmit** | ~63 at build tables, a closed CXO room, stage and screen, wifi for 60+ laptops |
+| 14 | F&B booked | **Tushna, Urmit, Baisakhi** | Breakfast, floor lunch, CXO room serve, evening drinks |
+| 15 | Photo and video team booked | **Tushna, Urmit, Baisakhi** | Full day; Feed Test, showcase and CXO room as priority shots |
 
 Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/playbook/#ai-build)) — Prashant + engineer.
 
@@ -255,7 +265,7 @@ Also open, from the AI build spec: the **creative engine** ([spec](https://arth6
 - [ ] **The venue**
 - [ ] **Build the Feed Test app:** a phone web app that shows a mock feed and logs pauses and buy taps
 - [ ] **Confirm CXO room speakers** (Meta, Shopify, BytePlus, AI and consumer operators)
-- [ ] **Build credits for the day:** how many per team, and who covers them
+- [ ] **BytePlus build credits:** how many per team, and loaded before 10:15
 - [ ] **Who audits "Shipped in 30"** results in January
 - [ ] **Lock the multipliers and base points** with DSG (the current set is a proposal)
 

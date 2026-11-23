@@ -7,6 +7,7 @@
 <meta name="description" content="The action list for the Orbit Buildathon, Mumbai. Tick what you own, copy your list, circle back.">
 <link rel="stylesheet" href="../assets/sloosh.css">
 <link rel="stylesheet" href="checklist.css">
+<style>.list .grp{list-style:none;font-family:var(--sl-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.7;margin:26px 0 8px;padding:0}.list .grp:first-child{margin-top:6px}</style>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
 </head>
 <body>
@@ -26,12 +27,13 @@
     </div>
 
     <h1>Tick what you own. <em>Circle back Friday.</em></h1>
-    <p class="lede">Five things stand between now and the room. Each one has an owner and a
-      definition of done — <b>tick it, copy your list, and send it to the group.</b></p>
+    <p class="lede">Everything between now and the room: speakers, marketing, logistics and the
+      build. Each item has an owner and a definition of done. <b>Tick it, copy your list, send it
+      to the group.</b></p>
 
     <div class="meter">
       <div class="bar"><i id="fill"></i></div>
-      <div class="meterlab"><span id="count">0 of 5 done</span><span id="daysleft"></span></div>
+      <div class="meterlab"><span id="count">0 done</span><span id="daysleft"></span></div>
     </div>
 
     <div class="filters" id="filters"></div>
@@ -51,22 +53,56 @@
 
 <script>
 const ITEMS = [
-  { id:"cards", owners:["Baisakhi","Urmit"],
+    // speakers
+  { id:"spk-hari", g:"Speakers", owners:["Urmit"],
+    t:"Hari, DSGCP: the opening talk",
+    d:"Hari opens the day at 09:30: why this room, why now. Slot confirmed and his name on the invite." },
+  { id:"spk-byteplus", g:"Speakers", owners:["Arvind"],
+    t:"BytePlus (ByteDance): book a top director or head",
+    d:"Opens the CXO room with the playbook: how the top consumer brands across the globe are using AI. Name, slot and topic confirmed." },
+  { id:"spk-enabler", g:"Speakers", owners:["Arvind"],
+    t:"A top consumer enabler: Shopify or Meta",
+    d:"How AI is the lever to scale, with fresh insights from the BFCM sale season. Name, slot and topic confirmed." },
+  { id:"spk-saif", g:"Speakers", owners:["Arvind"],
+    t:"Saif, Kovra group: how AI deployment actually works",
+    d:"The AI leader view from the team running AI deployment for 50M+ brands. Confirmed and briefed on the room." },
+
+  // marketing and distribution
+  { id:"mkt-invites", g:"Marketing & distribution", owners:["Urmit","DSGCP"],
+    t:"Invites out to 28 brands",
+    d:"Personal invites from Urmit and DSG to portfolio founders doing ₹1Cr+, with the handbook link and the sign-up form." },
+  { id:"mkt-plan", g:"Marketing & distribution", owners:["Urmit","DSGCP"],
+    t:"Marketing and distribution plan",
+    d:"Before: the poster, LinkedIn and portfolio channels. After: the shipped work, founder quotes and Feed Test numbers, with a named owner for posting." },
+
+  // logistics
+  { id:"log-venue", g:"Logistics", owners:["Urmit"],
+    t:"Venue locked",
+    d:"Room for ~63 at build tables, a closed room for the CXO track, a stage and screen for the showcase, and wifi that holds 60+ laptops." },
+  { id:"log-fnb", g:"Logistics", owners:["Tushna","Urmit","Baisakhi"],
+    t:"F&B booked",
+    d:"Breakfast, a working lunch on the floor, a separate serve for the CXO room, evening drinks. Ask DSG portfolio brands to supply in kind first." },
+  { id:"log-av", g:"Logistics", owners:["Tushna","Urmit","Baisakhi"],
+    t:"Photo and video team booked",
+    d:"Full day. Priority shots: the Feed Test, the showcase and the CXO room (with consent)." },
+
+  // the build
+  { id:"cards", g:"The build", owners:["Baisakhi","Urmit"],
     t:"Fill the idea library with real portfolio problems",
     d:"Source real problems from the DSG portfolio (Urmit) and from each attending brand, and swap them in for the inferred ones, track by track." },
-  { id:"workflows", owners:["Baisakhi","Workflow engineer"],
+  { id:"workflows", g:"The build", owners:["Baisakhi","Workflow engineer"],
     t:"Build at least 3 custom workflows per brand",
     d:"Three working workflows per attending brand, pointed at their own catalogue, before the day." },
-  { id:"pages", owners:["Baisakhi","Prashant"],
+  { id:"pages", g:"The build", owners:["Baisakhi","Prashant"],
     t:"Build the workflow for multiple landing pages",
     d:"One page per angle, message-matched to the ad that feeds it, live on a real Shopify store." },
-  { id:"dates", owners:["Urmit"],
+  { id:"dates", g:"The build", owners:["Urmit"],
     t:"Confirm dates and the soft commit from brands",
     d:"16 Dec locked, and a named soft commit from each brand expected in the room." },
-  { id:"credits", owners:["Baisakhi"],
-    t:"Onboard BytePlus credit redemption via Sloosh",
-    d:"Redemption path live so credits can be claimed through Sloosh before the day." },
-  { id:"fairplay", owners:["Baisakhi","Manish","Engineering"],
+  { id:"credits", g:"The build", owners:["Baisakhi"],
+    t:"BytePlus build credits loaded for every team",
+    d:"BytePlus provides the build credits for the day. Amount per team agreed, and loaded into each Sloosh workspace before access opens at 10:15." },
+  { id:"fairplay", g:"The build", owners:["Baisakhi","Manish","Engineering"],
     t:"Fair-play monitoring",
     d:"Platform access gated to 16 Dec from 10:15, workspace activity logs live, and anything imported from outside flagged to judges before scoring." }
 ];
@@ -86,9 +122,12 @@ document.getElementById("filters").innerHTML =
 
 function render() {
   const list = ITEMS.filter(i => !filter || i.owners.includes(filter));
+  let lastG = null;
   document.getElementById("list").innerHTML = list.map(i => {
     const on = !!state[i.id];
-    return `<li class="item${on ? " done" : ""}">
+    const head = i.g !== lastG ? `<li class="grp">${esc(i.g)}</li>` : "";
+    lastG = i.g;
+    return head + `<li class="item${on ? " done" : ""}">
       <button class="box" data-id="${i.id}" role="checkbox" aria-checked="${on}"
         aria-label="${esc(i.t)}">${on ? "✓" : ""}</button>
       <div class="body">
@@ -104,7 +143,7 @@ function render() {
 }
 
 (function days() {
-  const d = Math.ceil((new Date(2026, 9, 10) - new Date()) / 864e5);
+  const d = Math.ceil((new Date(2026, 11, 16) - new Date()) / 864e5);
   document.getElementById("daysleft").textContent =
     d > 1 ? `${d} days to Mumbai` : d === 1 ? "tomorrow" : d === 0 ? "today" : "";
 })();
@@ -121,7 +160,7 @@ document.addEventListener("click", e => {
   if (e.target.id === "reset") { state = {}; save(state); render(); return; }
   if (e.target.id === "copy") {
     const lines = ITEMS.filter(i => !filter || i.owners.includes(filter))
-      .map(i => `${state[i.id] ? "[x]" : "[ ]"} ${i.t} — ${i.owners.join(" + ")}`);
+      .map(i => `${state[i.id] ? "[x]" : "[ ]"} ${i.g}: ${i.t} — ${i.owners.join(" + ")}`);
     const txt = `Orbit Buildathon, Mumbai — 16 Dec\n\n${lines.join("\n")}`;
     navigator.clipboard.writeText(txt).then(() => {
       document.getElementById("hint").textContent = "Copied. Paste it to the group.";
