@@ -19,7 +19,7 @@ window.PROTOCOL = {
 
 window.SCORING = {
   orbit: [
-    { n:"The outcome", w:"40", d:"What your track asks for. Virality: a stranger stops scrolling. Revenue: one promise from the ad to the landing page to the email. Your AI Agency: it runs on a product it has never seen." },
+    { n:"The outcome", w:"40", d:"What your track asks for. Visibility: a stranger stops scrolling. Revenue: one promise from the ad to the landing page to the email. AI Agency: it runs on a product it has never seen." },
     { n:"The angle", w:"30", d:"One sentence, no product name: a real reason to care. Polish with no angle scores low." },
     { n:"On-brand", w:"30", d:"The brand would run it tomorrow, with no designer fixing it first." }
   ]
@@ -400,7 +400,7 @@ window.SECTIONS = [
     title:`Everything we use, <em>in one place.</em>`,
     lede:`The index. Each item is a section of this handbook — patterns to apply, prompts to run, protocols to follow, templates to fill. <strong>Nothing here is behind a form.</strong>`,
     html:`<div class="prose">
-      <p>These are working documents rather than lead magnets, and they work for all three tracks: Virality, Revenue and Your AI Agency. Everything is in the repo, and everything takes pull requests.</p>
+      <p>These are working documents rather than lead magnets, and they work for all three tracks: Visibility, Revenue and AI Agency. Everything is in the repo, and everything takes pull requests.</p>
       <div class="index-list" id="toolkit-index"></div>
     </div>`
   },

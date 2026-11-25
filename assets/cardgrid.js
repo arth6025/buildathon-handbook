@@ -68,7 +68,7 @@ window.CardGrid = (function () {
   }
 
   // Orbit tracks: cards tagged with the track their build fits
-  var TRACKS = [["01", "Virality"], ["02", "Revenue"], ["03", "Your AI Agency"]];
+  var TRACKS = [["01", "Visibility"], ["02", "Revenue"], ["03", "AI Agency"]];
 
   function mount(root, CARDS) {
     if (!root || !CARDS) return;

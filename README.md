@@ -57,13 +57,16 @@ Teams are 2 or 3 people, never more. Who gets an AI expert comes from a 3-questi
 
 ---
 
-## The three tracks: pick one outcome, prove it
+## Two tracks: brand and builder
+
+**The brand track** (Visibility, Revenue) is for brand teams, who pick an idea from the library or bring their own and make the case for why it works for their brand. **The builder track** (AI Agency) is for external AI builders: their best work in front of the 20–30 CXOs in the room, doubling as a hiring drive.
+
 
 | Track | What teams build | Root parameter | Points |
 |---|---|---|---|
-| **01 Virality** | Statics, carousels, hooks, UGC-style video, regional cuts | Outcome: a stranger stops scrolling | 40 + angle 30 + on-brand 30 |
+| **01 Visibility** | Statics, carousels, hooks, UGC-style video, regional cuts | Outcome: a stranger stops scrolling | 40 + angle 30 + on-brand 30 |
 | **02 Revenue** | A personalised funnel (ad → landing page → email) on Sloosh; listings, rival counter-ads | Outcome: one promise, ad → page → email | 40 + angle 30 + on-brand 30 |
-| **03 Your AI Agency** | Replace the shoot, the catalogue or the rollout | Outcome: runs on a product it has never seen | 40 + angle 30 + on-brand 30 |
+| **03 AI Agency** | Replace the shoot, the catalogue or the rollout | Outcome: runs on a product it has never seen | 40 + angle 30 + on-brand 30 |
 
 **Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
 **Power-ups (+10 each):** a regional-language version · a video cut · the 14:00 curveball cleared · finishing under the credit budget.
