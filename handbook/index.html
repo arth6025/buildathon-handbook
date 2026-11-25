@@ -95,7 +95,9 @@
   .levels b { display:block; font:800 18px var(--sl-mono); }
   .levels span { font-size:14px; color:var(--mute); }
   @media (max-width:640px) { .levels { grid-template-columns:1fr 1fr; } }
-  table.lv { min-width:760px; font-size:14px; }
+  table.lv { min-width:680px; font-size:14px; }
+  table.lv td:not(:first-child) { color:var(--mute); }
+  table.lv td:last-child { color:var(--fg); font-weight:600; }
   table.lv td:first-child { white-space:nowrap; }
   .rub { margin:18px 0 22px; }
   .rub h3 { margin:2px 0 10px; font-size:19px; }
@@ -256,38 +258,30 @@
   <section class="ch" data-id="scoring" data-name="Scoring">
     <p class="kicker">04 / Scoring</p>
     <h1>How you're scored.</h1>
-    <p class="lede">Your track's rubric, scored by mentors with the build logs open. One formula everywhere. No audience vote.</p>
+    <p class="lede">Your track's rubric, scored by mentors with the build logs open. No audience vote.</p>
 
     <h2>Rubric 101: L1 to L5</h2>
-    <p>Every parameter is scored on a level from L1 to L5. Use it as a lens while you build, not a form you fill at the end.</p>
-    <div class="levels">
-      <div><b>L1</b><span>Didn't attempt. 0 points.</span></div>
-      <div><b>L2</b><span>Attempted. Missing the core.</span></div>
-      <div><b>L3</b><span>Working. Does what it claims.</span></div>
-      <div><b>L4</b><span>Strong. Stands out in the room.</span></div>
-      <div><b>L5</b><span>Exceptional. Reachable if you ship well.</span></div>
-    </div>
-    <p class="note"><b>The formula:</b> points = (L − 1) × weight. The outcome is weighted ×10, so L5 is 40 points. The other two are ×7.5, so L5 is 30 each. <b>Max 100.</b> Power-ups (+10 each) go on top.</p>
+    <p>Mentors score each parameter on a level. <b>Each level is worth a quarter more:</b> L1 = 0 · L2 = 25% · L3 = 50% · L4 = 75% · L5 = all the points. Three parameters, <b>100 points</b>.</p>
 
     <div class="rub">
       <p class="kicker">Brand track · 01</p><h3>Visibility: would a stranger stop scrolling?</h3>
       <div class="tablewrap"><table class="lv">
         <thead><tr><th>Parameter</th><th>L1</th><th>L2</th><th>L3</th><th>L4</th><th>L5</th></tr></thead>
-        <tbody><tr><td><b>The outcome</b><br><span class="pts">×10 · max 40</span></td><td>Nothing submitted.</td><td>Ads exist but read as ads. Nobody would stop.</td><td>One ad stops a stranger in the first 1.5 seconds.</td><td>Two of three stop, in feed and story sizes.</td><td>All three stop, plus a video cut. The mentor can't scroll past.</td></tr><tr><td><b>The case</b><br><span class="pts">×7.5 · max 30</span></td><td>No case.</td><td>Names the product, not a reason.</td><td>A real reason, but it could be any brand.</td><td>A reason specific to this brand.</td><td>One line in customers' own words, pulled from the reviews.</td></tr><tr><td><b>On-brand</b><br><span class="pts">×7.5 · max 30</span></td><td>Off-brand, or the product looks wrong.</td><td>Needs a designer to fix it.</td><td>Runs after small fixes.</td><td>Runs after one tweak.</td><td>The brand would run it tomorrow, as is.</td></tr></tbody>
+        <tbody><tr><td><b>The outcome</b> <span class="pts">40</span></td><td>Nothing</td><td>Reads as an ad</td><td>1 of 3 ads stops you</td><td>2 of 3 stop you</td><td>All 3 stop you, plus a video</td></tr><tr><td><b>The case</b> <span class="pts">30</span></td><td>None</td><td>Names the product</td><td>A generic reason</td><td>A reason only this brand has</td><td>In customers' own words</td></tr><tr><td><b>On-brand</b> <span class="pts">30</span></td><td>Off-brand</td><td>Needs a designer</td><td>Small fixes</td><td>One tweak</td><td>Run it as is</td></tr></tbody>
       </table></div>
     </div>
     <div class="rub hot">
       <p class="kicker">Brand track · 02</p><h3>Revenue: does the promise hold from ad to cart?</h3>
       <div class="tablewrap"><table class="lv">
         <thead><tr><th>Parameter</th><th>L1</th><th>L2</th><th>L3</th><th>L4</th><th>L5</th></tr></thead>
-        <tbody><tr><td><b>The outcome</b><br><span class="pts">×10 · max 40</span></td><td>Nothing submitted.</td><td>Ad, page and email built, but they say different things.</td><td>The promise holds from ad to page to email for one audience.</td><td>It holds for two audiences, with the offer and proof placed.</td><td>It holds for three audiences, proof right where the doubt forms.</td></tr><tr><td><b>The case</b><br><span class="pts">×7.5 · max 30</span></td><td>No case.</td><td>Names the product, not a reason.</td><td>A real reason, but generic.</td><td>Why this audience buys, specific to the brand.</td><td>In customers' own words, pulled from the reviews.</td></tr><tr><td><b>On-brand</b><br><span class="pts">×7.5 · max 30</span></td><td>Off-brand.</td><td>Needs a designer to fix it.</td><td>Runs after small fixes.</td><td>Runs after one tweak.</td><td>All three pieces run tomorrow, as is.</td></tr></tbody>
+        <tbody><tr><td><b>The outcome</b> <span class="pts">40</span></td><td>Nothing</td><td>Ad, page, email disagree</td><td>Holds for 1 audience</td><td>Holds for 2 audiences</td><td>Holds for 3, proof placed</td></tr><tr><td><b>The case</b> <span class="pts">30</span></td><td>None</td><td>Names the product</td><td>A generic reason</td><td>Why this audience buys</td><td>In customers' own words</td></tr><tr><td><b>On-brand</b> <span class="pts">30</span></td><td>Off-brand</td><td>Needs a designer</td><td>Small fixes</td><td>One tweak</td><td>Run it as is</td></tr></tbody>
       </table></div>
     </div>
     <div class="rub">
       <p class="kicker">Builder track · 03</p><h3>AI Agency: does it do an agency's job?</h3>
       <div class="tablewrap"><table class="lv">
         <thead><tr><th>Parameter</th><th>L1</th><th>L2</th><th>L3</th><th>L4</th><th>L5</th></tr></thead>
-        <tbody><tr><td><b>The outcome</b><br><span class="pts">×10 · max 40</span></td><td>Doesn't run.</td><td>Runs only on the product it was built on.</td><td>Runs on a new product with a human fixing steps.</td><td>Runs on a new product end to end, with one nudge.</td><td>Runs live on a product the judges pick. No edits.</td></tr><tr><td><b>The pitch</b><br><span class="pts">×7.5 · max 30</span></td><td>No pitch.</td><td>Vague: "AI for marketing".</td><td>Names the agency job it replaces.</td><td>The job, and who it's for.</td><td>The job, who it's for, and why it beats hiring an agency.</td></tr><tr><td><b>Output quality</b><br><span class="pts">×7.5 · max 30</span></td><td>Unusable.</td><td>Needs major fixes.</td><td>Usable after small fixes.</td><td>Usable after one tweak.</td><td>A brand would ship it as is.</td></tr></tbody>
+        <tbody><tr><td><b>The outcome</b> <span class="pts">40</span></td><td>Doesn't run</td><td>Only on its own product</td><td>New product, human fixes</td><td>New product, one nudge</td><td>Live, judges' product, no edits</td></tr><tr><td><b>The pitch</b> <span class="pts">30</span></td><td>None</td><td>Vague</td><td>Names the job</td><td>The job + who it's for</td><td>+ why it beats an agency</td></tr><tr><td><b>Output quality</b> <span class="pts">30</span></td><td>Unusable</td><td>Major fixes</td><td>Small fixes</td><td>One tweak</td><td>Ship it as is</td></tr></tbody>
       </table></div>
     </div>
 
