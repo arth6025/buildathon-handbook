@@ -299,7 +299,7 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s9" data-ch="1" aria-roledescription="slide" aria-label="9 of 20">
     <p class="eyebrow"><b>the path</b> · 9 / 20</p>
     <h2 class="head rough-text"><span class="a">step 2:</span> <span class="b">pick an idea.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="a stack of idea library cards and a blank card for your own idea, both pointing to a circle marked track 02"></svg></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="a stack of idea library cards and a pencil writing your own idea, both leading to your case: the idea, why it works for your brand, and what it moves"></svg></div>
     <div class="capwrap"><p class="cap">steal one from the library or bring your own, then make the case: why will this work for your brand? builders pitch the agency they'd build.</p></div>
   </section>
   <section class="slide" id="s10" data-ch="1" aria-roledescription="slide" aria-label="10 of 20">
@@ -1013,11 +1013,12 @@ body{overflow:hidden;padding-inline:0}
     },
     // 9 · pick or pitch an idea
     S => {
-      [0,1,2].forEach(i=>S.doodle(0,'card',150+i*14,150+i*14,{w:150,h:110,delay:i*120}));
-      S.add(0,'draw',p=>T(p,240,330,'the idea library',22,'var(--accent-2)'),{delay:300});
-      S.add(1,'draw',p=>{p.rect(680,160,170,130,{fill:'var(--paper-hi)',fillStyle:'solid',strokeLineDash:[6,5]});T(p,765,232,'your own idea',20,'var(--accent)');});
-      S.doodle(1,'pencil',860,140,{delay:300});
-      S.add(2,'draw',p=>{arrow(p,330,250,440,330,'var(--accent-2)');arrow(p,690,300,560,340,'var(--accent)');p.circle(500,380,110,{fill:'var(--accent-soft)',fillStyle:'solid',stroke:'var(--accent)'});T(p,500,375,'your case',22,'var(--line)');T(p,500,400,'why it works',16,'var(--line-soft)');});
+      [0,1,2].forEach(i=>S.doodle(0,'card',110+i*14,110+i*14,{w:170,h:120,delay:i*120}));
+      S.add(0,'draw',p=>T(p,210,290,'the idea library',22,'var(--accent-2)'),{delay:300});
+      S.add(0,'draw',p=>{box(p,690,110,210,150);T(p,795,98,'your own idea',20,'var(--accent)');},{delay:400});
+      S.add(1,'draw',p=>{p.curve([[712,150],[740,144],[770,152],[800,146],[830,152],[860,147]],{stroke:'var(--line-soft)',strokeWidth:1.6});p.curve([[712,180],[745,174],[780,182],[815,176],[848,181]],{stroke:'var(--line-soft)',strokeWidth:1.6});p.curve([[712,210],[740,205],[770,212],[798,207]],{stroke:'var(--line-soft)',strokeWidth:1.6});},{dur:900});
+      S.add(1,'draw',p=>{p.poly([[798,207],[806,199],[858,147],[866,155],[814,207]],{fill:'var(--yolk)',fillStyle:'solid',strokeWidth:1.4});p.poly([[798,207],[806,199],[814,207]],{fill:'var(--paper-hi)',fillStyle:'solid',strokeWidth:1.2});p.line(858,147,866,155,{strokeWidth:1.4});p.poly([[858,147],[866,139],[874,147],[866,155]],{fill:'var(--blush)',fillStyle:'solid',strokeWidth:1.2});},{delay:800});
+      S.add(2,'draw',p=>{p.rect(360,330,300,160,{fill:'var(--accent-soft)',fillStyle:'solid',stroke:'var(--accent)',strokeWidth:2});T(p,510,362,'your case',24,'var(--accent)');T(p,385,398,'1 · the idea',16,'var(--line)',{anchor:'start'});T(p,385,428,'2 · why it works for you',16,'var(--line)',{anchor:'start'});T(p,385,458,'3 · what it moves',16,'var(--line)',{anchor:'start'});arrow(p,300,250,420,322,'var(--accent-2)');arrow(p,760,270,610,322,'var(--accent)');});
     },
     // 10 · the idea library
     S => {
