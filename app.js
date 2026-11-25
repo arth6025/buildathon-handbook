@@ -155,8 +155,8 @@
     { go:"briefs",   nm:"Brief Templates", ds:"One for creative, one for landing pages. Both force the decisions teams normally discover halfway through building — the angle, the one goal, the single objection, what gets omitted.", go_label:"2 templates →" },
     { go:"ai-build", nm:"The AI Build", ds:"A worked seven-stage spec for the creative engine — one product URL in, a labelled batch of testable variations out. Model-agnostic, assigned, implementable without further briefing.", go_label:"7 stages →" },
     { go:"pitch",    nm:"The Pitch", ds:"The six-part anatomy of a pitch page for a creative product, and the Assemble pitch built on the same bones. Doubles as your demo narrative.", go_label:"Anatomy + pitch →" },
-    { go:"scoring",  nm:"Judging Rubric", ds:"One rubric per track (Visibility, Revenue, AI Agency), scored by mentors out of 100. Then the top 5 present to the panel.", go_label:"3 tracks →" },
-    { go:"ship",     nm:"Ship & After", ds:"Where submitting and the top-5 demo live now, plus the launch-post skeleton for the days after.", go_label:"Launch post →" },
+    { go:"scoring",  nm:"Judging Rubric", ds:"One rubric per track (Visibility, Revenue, AI Agency), scored by mentors out of 100. Then the top 3 from each track present to the panel.", go_label:"3 tracks →" },
+    { go:"ship",     nm:"Ship & After", ds:"Where submitting and the top-3 demo live now, plus the launch-post skeleton for the days after.", go_label:"Launch post →" },
     { go:"outcomes", nm:"What Good Looks Like", ds:"The Gimme Gimme Ads swipe: one URL in, 500 ads a month out, 1st of 80 teams. The winning shape, and the pattern to steal from it.", go_label:"Case 01 →" },
     { go:null,       nm:"Engine Recipes", ds:"Nine recipes on Claude + the Sloosh MCP + BYOK, one per idea. They live in the builder handbook's idea library.", go_label:"In the handbook" }
   ];

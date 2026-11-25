@@ -51,7 +51,7 @@ Every team is one brand plus one AI builder: **a team of 2** (founder or operato
 | Brands already using AI | **Brand duo:** founder + operator | 18 | 36 |
 | Brands new to AI | **Assisted pair:** operator + paired AI builder | 10 | 20 |
 | Floor mentors | Agency owners: AI + creative experts, 1 for every 4 teams | 7 | 7 |
-| The panel | Consumer-tech + AI leaders who judge the top 5 | 4 | 4 |
+| The panel | Consumer-tech + AI leaders who judge the top 3 in each track | 4 | 4 |
 
 Teams are 2 or 3 people, never more. Who gets an AI builder comes from a 3-question AI-comfort check at registration.
 
@@ -64,9 +64,9 @@ Teams are 2 or 3 people, never more. Who gets an AI builder comes from a 3-quest
 
 | Track | What teams build | Root parameter | Points |
 |---|---|---|---|
-| **01 Visibility** | Statics, carousels, hooks, UGC-style video, regional cuts | Outcome: a stranger stops scrolling | 40 + angle 30 + on-brand 30 |
-| **02 Revenue** | A personalised funnel (ad → landing page → email) on Sloosh; listings, rival counter-ads | Outcome: one promise, ad → page → email | 40 + angle 30 + on-brand 30 |
-| **03 AI Agency** | Replace the shoot, the catalogue or the rollout | Outcome: runs on a product it has never seen | 40 + angle 30 + on-brand 30 |
+| **01 Visibility** | Statics, carousels, hooks, UGC-style video, regional cuts | Outcome: a stranger stops scrolling | outcome 30 · quality 30 · case 20 · on-brand 20 |
+| **02 Revenue** | A personalised funnel (ad → landing page → email) on Sloosh; listings, rival counter-ads | Outcome: one promise, ad → page → email | outcome 30 · quality 30 · case 20 · on-brand 20 |
+| **03 AI Agency** | Replace the shoot, the catalogue or the rollout | Outcome: runs on a product it has never seen | outcome 30 · quality 30 · case 20 · on-brand 20 |
 
 **Gates:** off-brand assets don't count · a false claim means you're out · failing fair play means you're out.
 **Power-ups (+10 each):** a regional-language version · a video cut · the 14:00 curveball cleared · finishing under the credit budget.
@@ -86,8 +86,8 @@ Teams are 2 or 3 people, never more. Who gets an AI builder comes from a 3-quest
 | 14:00 | The curveball. |
 | 15:30 | Checkpoint: the batch. |
 | 16:00 | Submissions close. **Mentors score.** |
-| 16:45 | Top 5 announced (at least one per track). |
-| 17:00 | **Top 5 present** to the room and the panel: 2 min demo, 1 min proof, 1 min Q&A. Champion crowned. |
+| 16:45 | Top 3 per track announced (6 teams). |
+| 17:00 | **Top 3 per track present** to the room and the panel: 2 min demo, 1 min proof, 1 min Q&A. Champion crowned. |
 
 The whole day as a story: **[How Assemble works →](https://arth6025.github.io/buildathon-handbook/flow/)** · Internal run sheet (teams, check-ins, submission, judging): **[How Assemble runs →](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/)**
 
@@ -113,7 +113,7 @@ Platform access opens at 10:15 on the day. Every workspace is logged from its fi
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
 | 📋 **Run sheet** (internal) | Sloosh × DSGCP: teams, mentors, check-ins, submission, judging, owners | [Open](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/) |
-| 🎞️ **How it works** | 19-stage story deck: roles, teams, tracks, ideas, the build, the CXO room, scoring, the top 5 | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
+| 🎞️ **How it works** | 20-stage story deck: roles, teams, the track mix, ideas, the build, the CXO room, scoring, the top 3 per track | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
 | 👀 **The cards** | 128 problem cards; 51 tagged to a track and an engine recipe (Claude + Sloosh MCP + BYOK) | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
@@ -254,13 +254,14 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 8 | Onboard a BytePlus (ByteDance) senior director | **Arvind** | Global consumer-brand AI view for the CXO room; confirmed and briefed |
 | 9 | Onboard a top AI operator for the CXO room | **Arvind** | Opens the playbook with the BytePlus senior director; confirmed and briefed |
 | 10 | Onboard Saif, Kovra group, as an AI builder | **Arvind** | Confirmed and briefed |
+| 9b | Source brand briefs for the builder track | **Urmit or Tushna (DSGCP)** | Real portfolio briefs and cold-run test products for the AI Agency teams |
 | 10a | Bring in 7 floor mentors | **Arvind, Urmit** | Agency owners, 1 for every 4 teams; briefed on tracks, scoring and the day-before calls |
 | 10b | Bring in 10 paired AI builders | **Baisakhi** | One per assisted team; briefed on fair play: guide, don't build |
 | 11 | Invites out to 30+ brands | **Urmit + DSGCP** | Personal invites with the handbook link and sign-up form |
 | 12 | Marketing and distribution plan | **Urmit + DSGCP** | Before: poster, LinkedIn, portfolio channels. After: shipped work and quotes in a public showcase |
 | 13 | Venue locked | **Urmit** | ~63 at build tables, a closed CXO room, stage and screen, wifi for 60+ laptops |
 | 14 | F&B booked | **Tushna, Urmit, Baisakhi** | Breakfast, floor lunch, CXO room serve, evening drinks |
-| 15 | Photo and video team booked | **Tushna, Urmit, Baisakhi** | Full day; the build, top-5 showcase and CXO room as priority shots |
+| 15 | Photo and video team booked | **Tushna, Urmit, Baisakhi** | Full day; the build, top-3 showcase and CXO room as priority shots |
 
 Also open, from the AI build spec: the **creative engine** ([spec](https://arth6025.github.io/buildathon-handbook/playbook/#ai-build)) — Prashant + engineer.
 

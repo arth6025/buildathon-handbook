@@ -19,9 +19,10 @@ window.PROTOCOL = {
 
 window.SCORING = {
   orbit: [
-    { n:"The outcome", w:"40", d:"What your track asks for. Visibility: a stranger stops scrolling. Revenue: one promise from the ad to the landing page to the email. AI Agency: it runs on a product it has never seen." },
-    { n:"The angle", w:"30", d:"One sentence, no product name: a real reason to care. Polish with no angle scores low." },
-    { n:"On-brand", w:"30", d:"The brand would run it tomorrow, with no designer fixing it first." }
+    { n:"The outcome", w:"30", d:"What your track asks for. Visibility: a stranger stops scrolling. Revenue: one promise from the ad to the landing page to the email. AI Agency: it runs on a product it has never seen." },
+    { n:"Output quality", w:"30", d:"The craft: sharp images, clean copy, no AI tells. Could it run tonight?" },
+    { n:"The case (or pitch)", w:"20", d:"One line on why it works for this brand, in customers' own words. Builders: the agency job it replaces, and why it beats an agency." },
+    { n:"On-brand", w:"20", d:"Unmistakably the brand: colours, type, tone and product all true." }
   ]
 };
 
