@@ -249,6 +249,7 @@ Owners and definitions of done. Live, tickable version: **[the checklist](https:
 | 5 | BytePlus build credits loaded for every team | **Baisakhi** | Amount per team agreed, loaded into each workspace before 10:15 |
 | 5a | Sloosh MCP ready for every team | **Baisakhi + engineering** | Teams orchestrate ad, landing-page and email workflows through the MCP; tested in the simulation |
 | 6 | Fair-play monitoring | **Baisakhi, Manish + engineering** | Access gated to 16 Dec from 10:15, workspace logs live, outside imports flagged to judges before scoring |
+| 6b | Arrive at the CXO room topic | **Urmit × Arvind × Ashna** | A separate jam; the topic locked before speakers are briefed |
 | 7 | Hari, DSGCP: opening talk (tentative) | **Urmit** | Ask Hari; once he confirms, add him to the invite and handbook |
 | 7a | Simulate the whole day, end to end | **Arvind, Sai** | Full run as a brand team, from registration to showcase; fixes made before invites go out |
 | 8 | Onboard a BytePlus (ByteDance) senior director | **Arvind** | Global consumer-brand AI view for the CXO room; confirmed and briefed |
