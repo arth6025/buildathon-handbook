@@ -408,7 +408,7 @@ window.SECTIONS = [
   {
     id:"cards", nav:"The cards", tick:"New",
     title:`128 problems your brand <em>already has.</em>`,
-    lede:`The Sloosh × DSG deck, rewritten for 2027, with 51 cards tagged to the three Assemble tracks and an engine recipe each. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
+    lede:`The Sloosh × DSG deck, rewritten for 2027, with 34 cards in the idea library for the brand track: Visibility and Revenue. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
     html:`<div class="prose">
       <p><strong>Every card names a brand.</strong> All 128 are matched to one of the 70 live DSG
         portfolio companies — Active or Partially Exited, every one above ₹1 Cr. Brand and problem

@@ -366,15 +366,14 @@
   <section class="ch" data-id="ideas" data-name="Idea library">
     <p class="kicker">07 / Idea library</p>
     <h1>The idea library.</h1>
-    <p class="lede">Every idea runs on the same stack: <b>Claude, connected to Sloosh through the Sloosh MCP</b>, chaining several Sloosh tools, with BytePlus models on your own key (BYOK). Pick a recipe, then a problem it solves.</p>
+    <p class="lede">For the brand track. Every idea is a Visibility or Revenue engine you can build on Sloosh in a day, with BytePlus models. Pick one, tweak it, or bring your own. Builder track teams get a DSGCP brand brief instead.</p>
 
-    <h2>Nine engine recipes</h2>
+    <h2>Six engine recipes</h2>
     <div class="filters" id="recipeFilters">
       <button class="chip" data-t="" aria-pressed="true">All</button>
       <button class="chip" data-t="01" aria-pressed="false">01 Visibility</button>
       <button class="chip" data-t="02" aria-pressed="false">02 Revenue</button>
-      <button class="chip" data-t="03" aria-pressed="false">03 AI Agency</button>
-    </div>
+          </div>
     <div class="grid" id="recipeGrid"></div>
     <p class="note"><b>"confirm"</b> marks a Sloosh workflow we're still confirming for the day. Mentors will tell you at the pre-call.</p>
 
@@ -382,7 +381,7 @@
     <div class="card hot"><p class="kicker" style="color:#3a3a3a">Swipe · Case 01</p><h3>Gimme Gimme Ads</h3><p>Enter a website, get 500 ads tailored to the brand, every month. It learns the brand, studies competitors' best Meta ads and returns images and copy ready for Ads Manager. 1st place out of 80 teams, public in 48 hours. <b>The shape to steal: one input, absurd output, lands in the tool you already use.</b></p><p style="margin-top:10px"><a href="../playbook/#outcomes">Read the full swipe →</a></p></div>
 
     <h2>Problems that need an engine</h2>
-    <p>Each one is a real DSG brand's problem, matched to a recipe. Steal one, tweak it, or pitch your own. More land from the DSG portfolio before the day.</p>
+    <p>34 real DSG brand problems, each checked as worth a full day. Steal one, tweak it, or pitch your own. More land from the DSG portfolio before the day.</p>
     <div class="grid" id="ideaGrid"></div>
     <p style="margin-top:16px">These are conversation starters, not audits. <a href="../cards/">See all 128 cards →</a></p>
   </section>
@@ -502,7 +501,7 @@ Write the script, word for word, with timings. Keep it plain.</pre>
   });
 
   // idea library: recipes, then the cards that run on them
-  var recipes = window.RECIPES || [];
+  var recipes = (window.RECIPES || []).filter(function (r) { return r.track !== "03"; });
   var rname = {}; recipes.forEach(function (r) { rname[r.id] = r.name; });
   var cards = (window.CARDS || []).filter(function (c) { return c.track; });
   var names = { "01": "Track 01 · Visibility", "02": "Track 02 · Revenue", "03": "Track 03 · AI Agency" };

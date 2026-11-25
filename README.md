@@ -113,10 +113,10 @@ Platform access opens at 10:15 on the day. Every workspace is logged from its fi
 |---|---|---|
 | 🎯 **The pitch** | The argument, and a worked landing-page build reference | [Open](https://arth6025.github.io/buildathon-handbook/) |
 | 📋 **Run sheet** (internal) | Sloosh × DSGCP: teams, mentors, check-ins, submission, judging, owners | [Open](https://arth6025.github.io/buildathon-handbook/flow/run-sheet/) |
-| 🎞️ **How it works** | 20-stage story deck: roles, teams, the track mix, ideas, the build, the CXO room, scoring, the top 3 per track | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
+| 🎞️ **How it works** | 21-stage story deck: roles, teams, the track mix, ideas, the build, the CXO room, scoring, the top 3 per track | [Open](https://arth6025.github.io/buildathon-handbook/flow/) |
 | 📖 **The handbook** | 10 short chapters: rules, fair play, scoring, setup, tracks, idea library, demo prep | [Open](https://arth6025.github.io/buildathon-handbook/handbook/) |
 | 📚 **The playbook** | The deep reference: swipe files, prompt chain, teardown, briefs | [Open](https://arth6025.github.io/buildathon-handbook/playbook/) |
-| 👀 **The cards** | 128 problem cards; 51 tagged to a track and an engine recipe (Claude + Sloosh MCP + BYOK) | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
+| 👀 **The cards** | 128 problem cards; 34 in the idea library (15 Visibility, 19 Revenue), each worth a full day | [Open](https://arth6025.github.io/buildathon-handbook/cards/) |
 | ✅ **The checklist** | 21 action items in five groups (mentors and experts, run of show, marketing, logistics, the build), with owners | [Open](https://arth6025.github.io/buildathon-handbook/checklist/) |
 | 👁️ **Preview** | **All five in one link**, with device frames | [Open](https://arth6025.github.io/buildathon-handbook/preview/) |
 
