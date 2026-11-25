@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Before Mumbai — Orbit Buildathon</title>
-<meta name="description" content="The action list for the Orbit Buildathon, Mumbai. Tick what you own, copy your list, circle back.">
+<title>Before Mumbai — Assemble Buildathon</title>
+<meta name="description" content="The action list for the Assemble Buildathon, Mumbai. Tick what you own, copy your list, circle back.">
 <link rel="stylesheet" href="../assets/sloosh.css">
 <link rel="stylesheet" href="checklist.css">
 <style>.list .grp{list-style:none;font-family:var(--sl-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.7;margin:26px 0 8px;padding:0}.list .grp:first-child{margin-top:6px}</style>
@@ -15,7 +15,7 @@
   <header class="top">
     <div class="lockup">
       <div class="event">
-        <div class="nm">Orbit</div>
+        <div class="nm">Assemble</div>
         <div class="meta">Buildathon · Mumbai · 16 Dec</div>
       </div>
       <div class="hosts">
@@ -55,19 +55,19 @@
 const ITEMS = [
     // mentors and experts
   { id:"spk-byteplus", g:"Mentors & experts", owners:["Arvind"],
-    t:"Onboard a BytePlus (ByteDance) director or head",
+    t:"Onboard a BytePlus (ByteDance) senior director",
     d:"Brings the global view into the CXO room: how the top consumer brands across the globe use AI. Confirmed, briefed and on the floor for the day." },
   { id:"spk-enabler", g:"Mentors & experts", owners:["Arvind"],
-    t:"Onboard a consumer enabler from Shopify or Meta",
-    d:"How AI is the lever to scale, with fresh BFCM sale-season insights. Confirmed and briefed." },
+    t:"Onboard a top AI operator for the CXO room",
+    d:"Opens the playbook of global consumer tech with the BytePlus senior director. Confirmed and briefed." },
   { id:"spk-saif", g:"Mentors & experts", owners:["Arvind"],
-    t:"Onboard Saif, Kovra group, as an AI expert",
+    t:"Onboard Saif, Kovra group, as an AI builder",
     d:"How AI deployment actually works, from the team running AI deployment for 50M+ brands. Confirmed and briefed." },
   { id:"mentors", g:"Mentors & experts", owners:["Arvind","Urmit"],
     t:"Bring in 7 floor mentors",
     d:"Agency owners with deep AI and creative know-how, one for every 4 teams. Confirmed, briefed on the tracks and scoring, and on the 10-minute pre-calls the day before." },
   { id:"experts", g:"Mentors & experts", owners:["Baisakhi"],
-    t:"Bring in 10 paired AI experts",
+    t:"Bring in 10 paired AI builders",
     d:"One per assisted team, matched from the registration AI check. Confirmed, Sloosh-fluent, and briefed on fair play: guide, don't build." },
 
   // run of show
@@ -182,7 +182,7 @@ document.addEventListener("click", e => {
   if (e.target.id === "copy") {
     const lines = ITEMS.filter(i => !filter || i.owners.includes(filter))
       .map(i => `${state[i.id] ? "[x]" : "[ ]"} ${i.g}: ${i.t} — ${i.owners.join(" + ")}`);
-    const txt = `Orbit Buildathon, Mumbai — 16 Dec\n\n${lines.join("\n")}`;
+    const txt = `Assemble Buildathon, Mumbai — 16 Dec\n\n${lines.join("\n")}`;
     navigator.clipboard.writeText(txt).then(() => {
       document.getElementById("hint").textContent = "Copied. Paste it to the group.";
       setTimeout(() => document.getElementById("hint").textContent = "Copies the open items with owners.", 2200);

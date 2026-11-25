@@ -42,14 +42,14 @@ window.SECTIONS = [
   {
     id:"welcome", nav:"Welcome",
     title:`The playbook. <em>For going deeper.</em>`,
-    lede:`The deep reference behind the Orbit Buildathon. Read the <a href="../handbook/">builder handbook</a> first: rules, tracks, scoring and the day, in ten short chapters.`,
+    lede:`The deep reference behind the Assemble Buildathon. Read the <a href="../handbook/">builder handbook</a> first: rules, tracks, scoring and the day, in ten short chapters.`,
     html:`<div class="prose"><h2>What's in here</h2><ul><li><strong>What good looks like</strong>: a winning build and the pattern under it</li><li><strong>The AI build</strong>: a seven-stage spec for a creative engine</li><li><strong>The pitch</strong>: how to pitch what you build</li><li><strong>The swipe files</strong>: creative, landing page and content patterns</li><li><strong>The prompt chain, teardown protocol and briefs</strong>: the tools you build with</li></ul><div class="callout"><p><strong>The short version lives in the <a href="../handbook/">builder handbook</a>.</strong> This playbook is the deep reference: swipe files, the prompt chain, the teardown protocol and the briefs.</p></div></div>`
   },
 
   {
     id:"the-day", nav:"The day", tick:"New",
     title:`The day <em>lives in the handbook.</em>`,
-    lede:`Timings, teams, the CXO room and scoring are in the <a href="../handbook/#welcome">builder handbook</a> and <a href="../flow/">How Orbit works</a>.`,
+    lede:`Timings, teams, the CXO room and scoring are in the <a href="../handbook/#welcome">builder handbook</a> and <a href="../flow/">How Assemble works</a>.`,
     html:`<div class="prose"><div class="callout"><p><strong>The short version lives in the <a href="../handbook/">builder handbook</a>.</strong> This playbook is the deep reference: swipe files, the prompt chain, the teardown protocol and the briefs.</p></div></div>`
   },
 
@@ -112,7 +112,7 @@ window.SECTIONS = [
       </div>
 
       <h2>What brands can build</h2>
-      <p>Seeds, not specs. Each of these fits one Orbit track, is small enough to build in a day,
+      <p>Seeds, not specs. Each of these fits one Assemble track, is small enough to build in a day,
         and is useful enough that a brand would keep running it through 2027.</p>
       <div class="ideas">
         ${window.IDEAS.map((i) => `<div class="idea">
@@ -214,7 +214,7 @@ window.SECTIONS = [
       </div>
 
       <h2>Which model</h2>
-      <p>At Orbit the images and video come from <strong>BytePlus</strong> (Seedream for statics,
+      <p>At Assemble the images and video come from <strong>BytePlus</strong> (Seedream for statics,
         Seedance for video), run inside Sloosh on the build credits we cover for the day. The text chain in stages
         01–03 is model-agnostic and works on either <strong>Claude or GPT</strong>: the prompts are
         written to be portable, and nothing in them depends on a provider-specific feature.</p>
@@ -243,7 +243,7 @@ window.SECTIONS = [
       </div>
 
       <div class="callout">
-        <p><strong>Timing is the whole argument.</strong> Orbit sits on 16 December, two weeks
+        <p><strong>Timing is the whole argument.</strong> Assemble sits on 16 December, two weeks
           before the year turns. A creative engine that exists on 1 January runs every launch of
           2027; the same engine built in March has already missed a quarter.</p>
       </div>
@@ -253,7 +253,7 @@ window.SECTIONS = [
   {
     id:"pitch", nav:"The pitch",
     title:`Sell the supply, <em>not the software.</em>`,
-    lede:`Whatever you build, you have to pitch it — on the day to judges, and afterwards to a brand. This is the anatomy of a pitch page that works for a creative product, and the Orbit pitch built on the same bones.`,
+    lede:`Whatever you build, you have to pitch it — on the day to judges, and afterwards to a brand. This is the anatomy of a pitch page that works for a creative product, and the Assemble pitch built on the same bones.`,
     html:`<div class="prose">
       <h2>The anatomy</h2>
       <p>A creative product is hard to pitch because the buyer has been sold "AI for marketing"
@@ -305,7 +305,7 @@ window.SECTIONS = [
         </div></div>
       </div>
 
-      <h2>The Orbit pitch</h2>
+      <h2>The Assemble pitch</h2>
       <p>Same bones, our offer. This is the version you're effectively demoing on the day, and the
         one a brand hears when they ask what they're walking away with.</p>
 
@@ -329,8 +329,7 @@ window.SECTIONS = [
             against.</p>
 
           <h4>What a brand walks away with</h4>
-          <p>The engine itself and the first approved batch, still in their Sloosh workspace. <strong>The day is the build; "Shipped in 30" is how it
-            becomes the first campaign of 2027.</strong></p>
+          <p>The engine itself and the first approved batch, still in their Sloosh workspace. <strong>Brand teams play for $1,500. Builders play for a paid pilot.</strong></p>
 
           <h4>Who it's for</h4>
           <p>Consumer brands doing ₹1Cr+ in revenue, with ads already running, where the
@@ -346,7 +345,7 @@ window.SECTIONS = [
       </div>
 
       <h2>The post-click pitch</h2>
-      <p>Landing pages are beyond the Orbit day, but if your creative lands on a page, this is the
+      <p>Landing pages are beyond the Assemble day, but if your creative lands on a page, this is the
         pitch for it. It's a sharp one, because it rests on a gap the buyer
         can verify in thirty seconds by looking at their own account. Two moves do the work.</p>
 
@@ -408,12 +407,12 @@ window.SECTIONS = [
   {
     id:"cards", nav:"The cards", tick:"New",
     title:`128 problems your brand <em>already has.</em>`,
-    lede:`The Sloosh × DSG deck, rewritten for 2027, with 51 cards tagged to the three Orbit tracks and an engine recipe each. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
+    lede:`The Sloosh × DSG deck, rewritten for 2027, with 51 cards tagged to the three Assemble tracks and an engine recipe each. Each card names one problem — click it to flip for the build that fixes it. <strong>Filter by track or section, or search a brand name.</strong>`,
     html:`<div class="prose">
       <p><strong>Every card names a brand.</strong> All 128 are matched to one of the 70 live DSG
         portfolio companies — Active or Partially Exited, every one above ₹1 Cr. Brand and problem
         are both chosen to fit the build on the back, so the fix always suits the company named.</p>
-      <p>Pick the card that makes you wince. For Orbit, pick from the track filters: those builds fit one day on Sloosh. If two apply, take the
+      <p>Pick the card that makes you wince. For Assemble, pick from the track filters: those builds fit one day on Sloosh. If two apply, take the
         one whose metric you already report on, because you will be able to prove the change.</p>
       <div class="callout warn">
         <p><strong>These are conversation starters, not findings.</strong> Each problem is inferred

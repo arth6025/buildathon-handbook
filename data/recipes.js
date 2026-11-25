@@ -1,4 +1,4 @@
-/* Engine recipes for the Orbit Buildathon.
+/* Engine recipes for the Assemble Buildathon.
    Every recipe is Claude connected to Sloosh through the Sloosh MCP, chaining
    three or more Sloosh tools. Sloosh is the platform; BytePlus (ByteDance)
    Seedream and Seedance are the default models, on the team's own key (BYOK). Each track-tagged card in cards.js points to one recipe through

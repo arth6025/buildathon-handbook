@@ -16,7 +16,7 @@ window.CardGrid = (function () {
 
   function recipeName(id) {
     var r = (window.RECIPES || []).find(function (x) { return x.id === id; });
-    return r ? r.name : "Orbit";
+    return r ? r.name : "Assemble";
   }
 
   function cardEl(c) {
@@ -39,7 +39,7 @@ window.CardGrid = (function () {
           '<p class="problem">' + esc(c.problem) + '</p>' +
           '<div class="f-foot">' +
             '<span class="flip-pill">' + esc(c.flip) + '</span>' +
-            '<span class="by-small">' + (c.track ? 'Orbit · Track ' + c.track : 'Sloosh × DSG') + '</span>' +
+            '<span class="by-small">' + (c.track ? 'Assemble · Track ' + c.track : 'Sloosh × DSG') + '</span>' +
             '<span class="flipcue">Flip ↻</span>' +
           '</div>' +
         '</div>' +
@@ -67,7 +67,7 @@ window.CardGrid = (function () {
       '</div></button>';
   }
 
-  // Orbit tracks: cards tagged with the track their build fits
+  // Assemble tracks: cards tagged with the track their build fits
   var TRACKS = [["01", "Visibility"], ["02", "Revenue"], ["03", "AI Agency"]];
 
   function mount(root, CARDS) {

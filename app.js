@@ -146,7 +146,7 @@
   });
 
   var TOOLKIT = [
-    { go:"cards", nm:"The Cards", ds:"128 problem cards, every one named to a live DSG portfolio brand, with 51 tagged to the three Orbit tracks and an engine recipe each. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
+    { go:"cards", nm:"The Cards", ds:"128 problem cards, every one named to a live DSG portfolio brand, with 51 tagged to the three Assemble tracks and an engine recipe each. Click a card to flip for the build that fixes it. The fastest way to pick what you're building on the day.", go_label:"128 cards →" },
     { go:"swipe-creative", nm:"Creative Swipe File", ds:"Hooks, formats, script structures and the benchmarks that judge them. Everything before the click, filed by the job it does.", go_label: creativeCount + " patterns →" },
     { go:"swipe-lp", nm:"Landing Page Swipe File", ds:"Above the fold, proof placement, friction and the ask. Everything after the click, with the test numbers attached.", go_label: lpCount + " patterns →" },
     { go:"content-swipe", nm:"Content Swipe File", ds:"Where to go and look at the work \u2014 ad libraries, conversion research and toolkits, with what each one is actually good for.", go_label:"9 sources \u2192" },
@@ -154,7 +154,7 @@
     { go:"teardown", nm:"Teardown Protocol", ds:"How to turn somebody else's winner into your own asset — taking the angle and the structure, never the execution. Run it before you write anything original.", go_label:"6 steps →" },
     { go:"briefs",   nm:"Brief Templates", ds:"One for creative, one for landing pages. Both force the decisions teams normally discover halfway through building — the angle, the one goal, the single objection, what gets omitted.", go_label:"2 templates →" },
     { go:"ai-build", nm:"The AI Build", ds:"A worked seven-stage spec for the creative engine — one product URL in, a labelled batch of testable variations out. Model-agnostic, assigned, implementable without further briefing.", go_label:"7 stages →" },
-    { go:"pitch",    nm:"The Pitch", ds:"The six-part anatomy of a pitch page for a creative product, and the Orbit pitch built on the same bones. Doubles as your demo narrative.", go_label:"Anatomy + pitch →" },
+    { go:"pitch",    nm:"The Pitch", ds:"The six-part anatomy of a pitch page for a creative product, and the Assemble pitch built on the same bones. Doubles as your demo narrative.", go_label:"Anatomy + pitch →" },
     { go:"scoring",  nm:"Judging Rubric", ds:"One rubric per track (Visibility, Revenue, AI Agency), scored by mentors out of 100. Then the top 5 present to the panel.", go_label:"3 tracks →" },
     { go:"ship",     nm:"Ship & After", ds:"Where submitting and the top-5 demo live now, plus the launch-post skeleton for the days after.", go_label:"Launch post →" },
     { go:"outcomes", nm:"What Good Looks Like", ds:"The Gimme Gimme Ads swipe: one URL in, 500 ads a month out, 1st of 80 teams. The winning shape, and the pattern to steal from it.", go_label:"Case 01 →" },
