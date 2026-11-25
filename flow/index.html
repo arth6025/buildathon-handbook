@@ -275,8 +275,8 @@ body{overflow:hidden;padding-inline:0}
   <section class="slide" id="s5" data-ch="1" data-chstart="1" data-chname="the path" aria-roledescription="slide" aria-label="5 of 19">
     <p class="eyebrow"><b>the path</b> · 5 / 19</p>
     <h2 class="head rough-text"><span class="a">four roles.</span> <span class="b">one room.</span></h2>
-    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="four groups of creatures: a brand team of founder and operator, an AI builder for every team, an owl mentor who is an AI and creative expert, and a panel of judges behind a table"></svg></div>
-    <div class="capwrap"><p class="cap">brand teams are operators plus an AI builder. builder track teams come on their own. mentors, AI + creative experts, guide a pod of <b class="hw">4</b> teams. the panel judges the top 5.</p></div>
+    <div class="figwrap"><svg class="fig" viewBox="0 0 1000 540" role="img" aria-label="four roles: brand operators, an AI builder, a mentor, and the judges"></svg></div>
+    <div class="capwrap"><p class="cap">brand operators build with an AI builder. a mentor guides every <b class="hw">4</b> teams. judges pick the top 5.</p></div>
   </section>
   <section class="slide" id="s6" data-ch="1" aria-roledescription="slide" aria-label="6 of 19">
     <p class="eyebrow"><b>the path</b> · 6 / 19</p>
@@ -959,21 +959,22 @@ body{overflow:hidden;padding-inline:0}
     },
     // 5 · four roles
     S => {
-      const col=(x,t,sub,c)=>p=>{T(p,x,410,t,24,c);T(p,x,442,sub,16,'var(--line-soft)');};
-      S.crit(0,'blob',130,360,{body:'var(--accent)',acc:'crown',s:1});
-      S.crit(0,'blob',200,360,{body:'var(--accent)',acc:'bow',s:1,delay:120});
-      S.add(0,'draw',col(165,'the teams','brand teams + builders','var(--accent)'),{delay:250});
-      S.add(0,'draw',p=>T(p,165,250,'they build',18,'var(--accent)',{rot:-4}),{delay:400});
-      S.crit(0,'blob',390,360,{body:'var(--accent-2)',acc:'antenna',s:1.1,delay:500});
-      S.add(0,'draw',col(390,'AI builder','one per brand team','var(--accent-2)'),{delay:650});
-      S.add(0,'draw',p=>T(p,390,250,'sits at your table',18,'var(--accent-2)',{rot:3}),{delay:800});
-      S.crit(1,'owl',620,355,{body:'var(--indigo)',acc:'glasses',s:1.1});
-      S.add(1,'draw',col(620,'mentor','AI + creative expert','var(--indigo)'),{delay:200});
-      S.add(1,'draw',p=>T(p,620,250,'1 per 4 teams',18,'var(--indigo)',{rot:-3}),{delay:350});
-      S.add(2,'draw',p=>{p.rect(760,365,200,16,{fill:'var(--paper-lo)',fillStyle:'solid'});});
-      [800,860,920].forEach((x,k)=>S.crit(2,'blob',x,360,{body:'var(--line-soft)',acc:k===1?'star':'glasses',s:.8,delay:100+k*120}));
-      S.add(2,'draw',col(860,'the panel','consumer-tech + AI leaders','var(--line)'),{delay:300});
-      S.add(2,'draw',p=>T(p,860,250,'judges the top 5',18,'var(--line)',{rot:4}),{delay:450});
+      const lab=(x,t,c)=>p=>T(p,x,420,t,24,c);
+      const note=(x,t,c,r)=>p=>T(p,x,250,t,18,c,{rot:r});
+      S.crit(0,'blob',150,370,{body:'var(--accent)',acc:'crown',s:1});
+      S.crit(0,'blob',220,370,{body:'var(--accent)',acc:'bow',s:1,delay:120});
+      S.add(0,'draw',lab(185,'brand operators','var(--accent)'),{delay:250});
+      S.add(0,'draw',note(185,'they build','var(--accent)',-3),{delay:400});
+      S.crit(0,'blob',420,370,{body:'var(--accent-2)',acc:'antenna',s:1.1,delay:500});
+      S.add(0,'draw',lab(420,'AI builder','var(--accent-2)'),{delay:650});
+      S.add(0,'draw',note(420,'builds with you','var(--accent-2)',3),{delay:800});
+      S.crit(1,'owl',640,365,{body:'var(--indigo)',acc:'glasses',s:1.1});
+      S.add(1,'draw',lab(640,'mentor','var(--indigo)'),{delay:200});
+      S.add(1,'draw',note(640,'1 per 4 teams','var(--indigo)',-3),{delay:350});
+      S.add(2,'draw',p=>p.rect(770,375,180,16,{fill:'var(--paper-lo)',fillStyle:'solid'}));
+      [805,860,915].forEach((x,k)=>S.crit(2,'blob',x,370,{body:'var(--line-soft)',acc:k===1?'star':'glasses',s:.75,delay:100+k*120}));
+      S.add(2,'draw',lab(860,'judges','var(--line)'),{delay:300});
+      S.add(2,'draw',note(860,'pick the top 5','var(--line)',3),{delay:450});
     },
     // 6 · how teams form
     S => {
